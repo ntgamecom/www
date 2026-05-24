@@ -1,4 +1,10 @@
 export default {
+  '*': {
+    theme: {
+      layout: 'full',
+      toc: false,
+    },
+  },
   index: {
     display: 'hidden',
   },

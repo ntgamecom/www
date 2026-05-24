@@ -1,4 +1,10 @@
 export default {
+  '*': {
+    theme: {
+      layout: 'full',
+      toc: false,
+    },
+  },
   'ch1': '第一章 黑风山',
   'ch2': '第二章 黄风岭',
   'ch3': '第三章 新西天',

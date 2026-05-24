@@ -31,6 +31,8 @@ export default async function RootLayout({ children }) {
           pageMap={pageMap}
           docsRepositoryBase="https://github.com/ntgamecom/www"
           footer={footer}
+          editLink={null}
+          feedback={{ content: null }}
         >
           {children ?? <></>}
         </Layout>
