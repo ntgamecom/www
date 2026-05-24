@@ -4,7 +4,7 @@ const withNextra = nextra({})
 
 export default withNextra({
   output: 'export',
-  basePath: '/www',
+  basePath: '',
   images: {
     unoptimized: true,
   },

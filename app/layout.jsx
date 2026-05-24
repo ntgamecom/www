@@ -29,7 +29,7 @@ export default async function RootLayout({ children }) {
           banner={banner}
           navbar={navbar}
           pageMap={pageMap}
-          docsRepositoryBase="https://github.com/example/ntgame"
+          docsRepositoryBase="https://github.com/ntgamecom/www"
           footer={footer}
         >
           {children ?? <></>}
