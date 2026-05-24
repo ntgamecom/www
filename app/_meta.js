@@ -2,5 +2,8 @@ export default {
   index: {
     display: 'hidden',
   },
-  wukong: '黑神话悟空攻略',
+  wukong: {
+    title: '黑神话悟空攻略',
+    type: 'page',
+  },
 }
