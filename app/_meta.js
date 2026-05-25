@@ -3,6 +3,7 @@ export default {
     theme: {
       layout: 'full',
       toc: false,
+      sidebar: false,
     },
   },
   index: {
