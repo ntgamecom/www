@@ -24,4 +24,8 @@ export default {
     title: '杀戮尖塔2攻略 / Slay the Spire 2 Guide',
     type: 'page',
   },
+  diablo4: {
+    title: '暗黑破坏神4攻略 / Diablo 4 Guide',
+    type: 'page',
+  },
 }
