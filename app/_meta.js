@@ -16,4 +16,8 @@ export default {
     title: '幻兽帕鲁指南 / Palworld Guide',
     type: 'page',
   },
+  sts: {
+    title: '杀戮尖塔攻略 / Slay the Spire Guide',
+    type: 'page',
+  },
 }
