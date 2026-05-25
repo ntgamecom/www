@@ -7,4 +7,6 @@ export default {
   },
   index: '/幻兽帕鲁指南 / Palworld Guide',
   'beginner': '新手入门 / Beginner Guide',
+  'map': '地图与区域 / Map & Regions',
+  'bosses': '全BOSS攻略 / All Bosses Guide',
 }
