@@ -1,0 +1,13 @@
+export default {
+  '*': {
+    theme: {
+      layout: 'full',
+      toc: false,
+    },
+  },
+  index: '杀戮尖塔2攻略 / Slay the Spire 2 Guide',
+  'beginner': '新手入门 / Beginner Guide',
+  'mechanics': '核心机制 / Core Mechanics',
+  'acts': '章节与敌人 / Acts & Enemies',
+  'bosses': 'BOSS攻略 / Boss Strategies',
+}

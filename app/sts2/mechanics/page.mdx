@@ -1,0 +1,183 @@
+---
+toc: false
+---
+
+# 核心机制 / Core Mechanics
+
+杀戮尖塔2在继承卡牌构建Roguelike核心的基础上，引入了全新的角色机制和系统深度。本章详解所有核心系统 / Slay the Spire 2 builds on the deck-building roguelike foundation with all-new character mechanics and system depth. This chapter covers every core system.
+
+---
+
+## 基础系统 / Base Systems
+
+### 能量系统 / Energy System
+
+每回合获得基础3点能量。能量可通过遗物、卡牌效果或特定角色机制提升 / You get 3 base energy per turn. Energy can be increased via relics, card effects, or character-specific mechanics.
+
+| 能量来源 / Energy Source | 说明 / Description |
+|------|------|
+| **基础能量 / Base** | 每回合3点 / 3 per turn |
+| **BOSS遗物 / Boss Relics** | 击败BOSS后选择，通常增加能量但有代价 / Picked after bosses, usually +1 energy with a downside |
+| **卡牌效果 / Card Effects** | 某些卡牌可临时或永久增加能量 / Some cards grant temporary or permanent energy |
+| **角色资源 / Character Resources** | 部分角色可用专属资源兑换额外能量 / Some characters can convert their unique resource into energy |
+
+### 生命与恢复 / HP & Restoration
+
+- **初始HP**：取决于角色，通常在60-80之间 / Starting HP varies by character, typically 60-80
+- **篝火休息**：回复30%最大HP，消耗一次篝火机会 / Campfire Rest: heal 30% max HP, costs one campfire use
+- **战斗回复**：击败敌人后可能获得回复奖励 / Post-combat heal is sometimes rewarded
+- **回复类卡牌**：部分卡牌提供战斗中回复 / Some cards provide in-combat healing
+
+### 卡牌系统 / Card System
+
+#### 卡牌类型 / Card Types
+
+| 类型 / Type | 说明 / Description |
+|------|------|
+| **攻击 / Attack** | 造成伤害的主要手段 / Primary damage-dealing cards |
+| **技能 / Skill** | 格挡、增益、抽牌、减益等 / Block, buffs, draw, debuffs |
+| **能力 / Power** | 整场战斗持续的被动效果 / Passive effects for the entire combat |
+| **全新类型：战术 / New: Tactical** | STS2新增——有条件的强力效果，满足条件时触发额外收益 / New in STS2 — conditional powerful effects with bonus when conditions are met |
+
+#### 卡牌稀有度 / Card Rarity
+
+| 稀有度 / Rarity | 出现概率 / Rate |
+|------|:----:|
+| **普通 / Common** | 最常见 / Most common |
+| **罕见 / Uncommon** | 中等 / Medium |
+| **稀有 / Rare** | 最稀有 / Rarest |
+| **传说 / Legendary** | STS2新增——极其稀有，效果改变游戏规则 / New in STS2 — extremely rare, game-changing effects |
+
+---
+
+## 全新角色一览 / New Characters Overview
+
+杀戮尖塔2带来4名全新角色，每个都拥有独一无二的核心机制 / STS2 introduces 4 brand-new characters, each with a unique core mechanic.
+
+### 1. 织影者 / Shadowweaver
+
+**核心机制：暗影印记（Shadow Marks）+ 终结技（Finishers）**
+
+织影者是一位敏捷型刺客角色，通过在敌人身上叠加暗影印记来造成额外效果。当暗影印记累积到一定层数时，可以消耗它们触发强力的终结技 / A敏捷 assassin who stacks Shadow Marks on enemies and consumes them with powerful Finishers.
+
+| 特性 / Trait | 说明 / Description |
+|------|------|
+| **初始HP / Starting HP** | 65 |
+| **初始遗物 / Starting Relic** | 暗影斗篷（Shadow Cloak）——战斗开始时对所有敌人施加2层暗影印记 / Apply 2 Shadow Marks to all enemies at combat start |
+| **核心机制 / Core Mechanic** | 暗影印记——敌人身上每层印记使其受到伤害+5%，叠加至10层时可消耗触发终结技 / Each Shadow Mark increases damage taken by 5%; at 10 stacks, consume them for a Finisher |
+| **难度评级 / Difficulty** | ★★☆☆☆（中等 / Medium） |
+| **推荐新手 / New Player?** | 是——机制直观，节奏明确 / Yes — intuitive mechanics, clear pacing |
+
+**关键卡牌类型 / Key Card Types**:
+- **印记牌 / Mark Cards**：给敌人叠暗影印记 / Apply Shadow Marks
+- **终结牌 / Finisher Cards**：消耗印记触发高伤或特效 / Consume marks for high damage or effects
+- **诡计牌 / Trick Cards**：闪避、复制、额外抽牌 / Dodge, duplicate, extra draw
+- **毒刃牌 / Poison Blade Cards**：叠加独立的中毒效果 / Stack a separate poison effect
+
+### 2. 铸甲师 / Ironwarden
+
+**核心机制：护甲值（Armor）+ 反击（Counter）**
+
+铸甲师是一位重装防御型角色，核心打法是积累护甲值并利用反击造成伤害。不同于传统格挡，护甲值在受到攻击时会损耗，但也会触发反击效果 / A heavily armored tank who accumulates Armor and deals damage through Counters. Unlike traditional block, Armor absorbs damage and triggers counterattacks.
+
+| 特性 / Trait | 说明 / Description |
+|------|------|
+| **初始HP / Starting HP** | 80 |
+| **初始遗物 / Starting Relic** | 熔炉核心（Forge Core）——每场战斗开始获得5点护甲值 / Gain 5 Armor at the start of each combat |
+| **核心机制 / Core Mechanic** | 护甲值——独立于格挡的伤害吸收层，每受到1点伤害消耗1点护甲。护甲存在时受到攻击触发反击 / Armor is a separate damage buffer. Each point absorbs 1 damage. When hit with Armor up, triggers Counter |
+| **难度评级 / Difficulty** | ★☆☆☆☆（简单 / Easy） |
+| **推荐新手 / New Player?** | **强烈推荐 / Highly recommended**——最友好的入门角色 / The most beginner-friendly character |
+
+**关键卡牌类型 / Key Card Types**:
+- **护甲牌 / Armor Cards**：增加护甲值 / Increase armor
+- **反击牌 / Counter Cards**：增强反击效果或触发额外反击 / Enhance counter effects or trigger bonus counters
+- **铁砧牌 / Anvil Cards**：在护甲和攻击之间转换资源 / Convert between armor and offense
+- **锻造牌 / Forge Cards**：永久增强牌组中的卡牌 / Permanently enhance cards in your deck
+
+### 3. 时计师 / Chronomancer
+
+**核心机制：计时器（Timer）+ 回溯（Rewind）**
+
+时计师是一位操控时间的高难度角色。核心玩法围绕计时器系统展开——每回合计时器前进一格，到达特定刻度时触发强大效果。回溯能力可以重置计时器或重做本回合的行动 / A time-manipulating high-skill character. The Timer advances each turn, triggering powerful effects at specific ticks. Rewind resets the timer or undoes actions this turn.
+
+| 特性 / Trait | 说明 / Description |
+|------|------|
+| **初始HP / Starting HP** | 60 |
+| **初始遗物 / Starting Relic** | 沙漏（Hourglass）——计时器初始前进2格 / Timer starts 2 ticks advanced |
+| **核心机制 / Core Mechanic** | 计时器——每回合+1。第3/6/9/12刻触发不同效果。回溯重置计时器或将本回合打出的卡牌回手 / Timer ticks +1 each turn. Thresholds at 3/6/9/12 trigger effects. Rewind resets the timer or returns played cards to hand |
+| **难度评级 / Difficulty** | ★★★★☆（困难 / Hard） |
+| **推荐新手 / New Player?** | 否——需要精准规划 / No — requires precise planning |
+
+**关键卡牌类型 / Key Card Types**:
+- **计时牌 / Time Cards**：推进计时器或触发计时效果 / Advance the timer or trigger timer effects
+- **回溯牌 / Rewind Cards**：重置计时器、回手卡牌、重复上一张卡 / Reset timer, return cards to hand, replay last card
+- **预言牌 / Prophecy Cards**：预览未来的抽牌并提前规划 / Preview future draws and plan ahead
+- **时停牌 / Time Stop Cards**：暂停计时器或获得额外回合效果 / Pause the timer or gain extra turn effects
+
+### 4. 元素使 / Elementalist
+
+**核心机制：元素充能（Elemental Charges）+ 融合（Fusion）**
+
+元素使是一位掌控火、冰、雷三种元素的法师角色。通过积累元素充能来释放强力法术，特定元素组合可以触发融合效果，产生更强大的协同法术 / A mage who commands Fire, Ice, and Lightning elements. Accumulate Elemental Charges to unleash powerful spells. Specific element combinations trigger Fusion effects for devastating synergies.
+
+| 特性 / Trait | 说明 / Description |
+|------|------|
+| **初始HP / Starting HP** | 70 |
+| **初始遗物 / Starting Relic** | 元素之环（Elemental Ring）——每回合获得1层随机元素充能 / Gain 1 random Elemental Charge each turn |
+| **核心机制 / Core Mechanic** | 三种元素充能（火/冰/雷），每种最多10层。消耗充能释放法术。特定组合（火+雷、冰+雷、火+冰、三元素）触发融合 / Three elements (Fire/Ice/Lightning), max 10 each. Spend charges for spells. Specific combos trigger Fusions |
+| **难度评级 / Difficulty** | ★★★☆☆（中等偏难 / Medium-Hard） |
+| **推荐新手 / New Player?** | 可尝试——需要管理资源但回报丰厚 / Manageable — resource management with great payoff |
+
+**关键卡牌类型 / Key Card Types**:
+- **充能牌 / Charge Cards**：生成特定元素充能 / Generate specific elemental charges
+- **法术牌 / Spell Cards**：消耗充能造成效果 / Spend charges for effects
+- **融合牌 / Fusion Cards**：特定元素组合触发额外强力效果 / Specific element combos trigger bonus effects
+- **光环牌 / Aura Cards**：每回合自动生成充能的能力 / Passive charge generation each turn
+
+---
+
+## 消耗品系统 / Consumable System
+
+STS2将药水系统扩展为更丰富的消耗品体系 / STS2 expands potions into a broader consumable system.
+
+| 类型 / Type | 说明 / Description | 示例 / Example |
+|------|------|------|
+| **药水 / Potion** | 一次性战斗效果，类似一代 / One-time combat effect, similar to STS1 | 烈焰药水（造成20伤害）/ Fire Potion (20 dmg) |
+| **卷轴 / Scroll** | 一次性非战斗效果，可在任意界面使用 / One-time non-combat effect, usable from any screen | 回城卷轴（回到上个篝火）/ Town Portal (return to last campfire) |
+| **符咒 / Charm** | 持续N场战斗的增益效果 / Multi-combat buff lasting N fights | 力量符咒（接下来3场战斗+2力量）/ Strength Charm (+2 Strength for 3 combats) |
+| **魔药 / Elixir** | 混合型——既有战斗效果又有持续效果 / Hybrid — both combat and persistent effects | 龙血魔药（战斗中获得10力量，但每场战斗后失去5HP）/ Dragon's Blood Elixir |
+
+最多携带3个消耗品（可通过遗物增加）/ Carry up to 3 consumables (increasable via relics).
+
+---
+
+## 遗物系统 / Relic System
+
+遗物系统在一代基础上大幅扩容 / The relic system is greatly expanded from STS1.
+
+| 遗物类型 / Relic Type | 说明 / Description |
+|------|------|
+| **普通遗物 / Common Relic** | 基础增益效果 / Basic benefits |
+| **罕见遗物 / Uncommon Relic** | 中等效果 / Medium effects |
+| **稀有遗物 / Rare Relic** | 强力效果 / Powerful effects |
+| **BOSS遗物 / Boss Relic** | 从BOSS获得，通常有正面+负面效果 / From bosses, usually benefit + drawback |
+| **传说遗物 / Legendary Relic** | STS2新增——极其稀有，只能通过特殊方式获得 / New in STS2 — extremely rare, special acquisition methods only |
+| **可激活遗物 / Active Relic** | STS2新增——有主动技能，在战斗中可点击使用的遗物 / New in STS2 — relics with active abilities you can click during combat |
+
+---
+
+## 新状态效果 / New Status Effects
+
+| 状态 / Status | 说明 / Description |
+|------|------|
+| **护甲 / Armor** | 独立减伤层，受击触发反击 / Separate damage buffer, triggers counter on hit |
+| **暗影印记 / Shadow Mark** | 使目标受到伤害增加，满层可消耗 / Increases damage taken, consumed at max stacks |
+| **计时加速 / Haste** | 每层使你在回合开始时多抽1张牌（持续1回合）/ Each stack = +1 card drawn at turn start (1 turn) |
+| **脆弱 / Brittle** | 受到的下一次伤害翻倍，然后移除 / Next damage taken is doubled, then removed |
+| **元素抗性 / Elemental Resist** | 减少受到的特定元素伤害 / Reduces specific elemental damage type |
+| **过载 / Overload** | 下回合获得能量减少 / Reduces energy gained next turn |
+| **灵巧 / Celerity** | 卡牌费用暂时减少 / Temporarily reduces card costs |
+
+---
+
+标签/Tags: 杀戮尖塔2, Slay the Spire 2, 机制, Mechanics, 角色, Characters, 攻略, Guide

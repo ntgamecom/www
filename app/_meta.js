@@ -20,4 +20,8 @@ export default {
     title: '杀戮尖塔攻略 / Slay the Spire Guide',
     type: 'page',
   },
+  sts2: {
+    title: '杀戮尖塔2攻略 / Slay the Spire 2 Guide',
+    type: 'page',
+  },
 }
