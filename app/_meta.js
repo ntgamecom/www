@@ -9,7 +9,7 @@ export default {
     display: 'hidden',
   },
   wukong: {
-    title: 'Black Myth: Wukong Guide',
+    title: '黑神话悟空攻略 / Black Myth: Wukong Guide',
     type: 'page',
   },
 }
