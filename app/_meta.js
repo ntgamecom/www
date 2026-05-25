@@ -8,24 +8,7 @@ export default {
   index: {
     display: 'hidden',
   },
-  wukong: {
-    title: '黑神话悟空攻略 / Black Myth: Wukong Guide',
-    type: 'page',
-  },
-  palworld: {
-    title: '幻兽帕鲁指南 / Palworld Guide',
-    type: 'page',
-  },
-  sts: {
-    title: '杀戮尖塔攻略 / Slay the Spire Guide',
-    type: 'page',
-  },
-  sts2: {
-    title: '杀戮尖塔2攻略 / Slay the Spire 2 Guide',
-    type: 'page',
-  },
-  diablo4: {
-    title: '暗黑破坏神4攻略 / Diablo 4 Guide',
-    type: 'page',
+  guides: {
+    title: '游戏攻略 / Guides',
   },
 }
