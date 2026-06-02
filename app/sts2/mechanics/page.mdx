@@ -4,7 +4,7 @@ toc: false
 
 # 核心机制 / Core Mechanics
 
-杀戮尖塔2在继承卡牌构建Roguelike核心的基础上，引入了全新的角色机制和系统深度。本章详解所有核心系统 / Slay the Spire 2 builds on the deck-building roguelike foundation with all-new character mechanics and system depth. This chapter covers every core system.
+杀戮尖塔2在继承卡牌构建Roguelike核心的基础上，引入了全新的角色机制和系统深度。本文详解所有核心系统，帮助新老玩家快速上手 / Slay the Spire 2 builds on the deck-building roguelike foundation with all-new character mechanics and system depth. This guide covers every core system for both new and returning players.
 
 ---
 
@@ -12,21 +12,33 @@ toc: false
 
 ### 能量系统 / Energy System
 
-每回合获得基础3点能量。能量可通过遗物、卡牌效果或特定角色机制提升 / You get 3 base energy per turn. Energy can be increased via relics, card effects, or character-specific mechanics.
+每回合获得基础3点能量，可通过遗物、卡牌效果或角色特定机制提升。能量管理是SLG类游戏的基本功 / You get 3 base energy per turn. Energy can be ramped via relics, cards, or character mechanics. Energy management is fundamental.
 
-| 能量来源 / Energy Source | 说明 / Description |
+| 能量来源 / Source | 说明 / Description |
 |------|------|
-| **基础能量 / Base** | 每回合3点 / 3 per turn |
-| **BOSS遗物 / Boss Relics** | 击败BOSS后选择，通常增加能量但有代价 / Picked after bosses, usually +1 energy with a downside |
-| **卡牌效果 / Card Effects** | 某些卡牌可临时或永久增加能量 / Some cards grant temporary or permanent energy |
-| **角色资源 / Character Resources** | 部分角色可用专属资源兑换额外能量 / Some characters can convert their unique resource into energy |
+| **基础 / Base** | 每回合3点 / 3 per turn |
+| **BOSS遗物 / Boss Relics** | 击败BOSS后选择，通常+1能量但有代价(例如"苦痛枷锁"每回合第一张牌额外耗能) / Picked after bosses, usually +1 energy with a downside |
+| **卡牌效果 / Card Effects** | 某些卡牌可临时或永久增加能量——但能量牌通常效率较低，需要配合抽牌使用 / Some cards grant temporary or permanent energy — usually inefficient without draw synergy |
+| **角色专属 / Character Unique** | 时计师的"计时加速"和元素使的"元素充能转化"可产生额外能量 / Chronomancer's Haste and Elementalist's Charge conversion generate extra energy |
 
 ### 生命与恢复 / HP & Restoration
 
-- **初始HP**：取决于角色，通常在60-80之间 / Starting HP varies by character, typically 60-80
-- **篝火休息**：回复30%最大HP，消耗一次篝火机会 / Campfire Rest: heal 30% max HP, costs one campfire use
-- **战斗回复**：击败敌人后可能获得回复奖励 / Post-combat heal is sometimes rewarded
-- **回复类卡牌**：部分卡牌提供战斗中回复 / Some cards provide in-combat healing
+| 来源 / Source | 数值 / Value | 说明 / Note |
+|------|:----:|------|
+| **初始HP / Starting HP** | 60-80 | 取决于角色 / Depends on character |
+| **篝火休息 / Campfire Rest** | 30%最大HP | 消耗一次篝火机会——如果有多余篝火可以考虑不休息/升级卡牌 / Costs one campfire use — skip if you can spare the HP |
+| **战斗回复 / Post-Combat** | 按关卡浮动 | 击败精英/BOSS后可能获得额外回复 / Bonus heal after Elites/Bosses |
+| **回复类卡牌 / Healing Cards** | 不等 | 数值通常不高——不能替代防御策略 / Usually low value — not a substitute for block |
+| **药水/消耗品回复 / Potion Heals** | 不等 | 紧急情况下使用，不要依赖 / Emergency only — don't rely on them |
+
+### 抽牌与手牌上限 / Draw & Hand Size
+
+| 机制 / Mechanic | 说明 / Description |
+|------|------|
+| **基础抽牌 / Base Draw** | 每回合抽5张 / 5 cards per turn |
+| **手牌上限 / Hand Limit** | 10张——超过的牌直接弃掉(不会保留) / 10 cards — excess are discarded immediately |
+| **保留牌 / Retain** | 某些卡牌或遗物可以让你在手牌间保留特定牌 / Some cards/relics let you retain specific cards between turns |
+| **过牌重要性 / Draw Importance** | 抽牌=选择权——过牌越多的卡组越稳定 / Draw = options — more draw = more consistent deck |
 
 ### 卡牌系统 / Card System
 
@@ -34,150 +46,207 @@ toc: false
 
 | 类型 / Type | 说明 / Description |
 |------|------|
-| **攻击 / Attack** | 造成伤害的主要手段 / Primary damage-dealing cards |
-| **技能 / Skill** | 格挡、增益、抽牌、减益等 / Block, buffs, draw, debuffs |
-| **能力 / Power** | 整场战斗持续的被动效果 / Passive effects for the entire combat |
-| **全新类型：战术 / New: Tactical** | STS2新增——有条件的强力效果，满足条件时触发额外收益 / New in STS2 — conditional powerful effects with bonus when conditions are met |
+| **攻击 / Attack** | 造成伤害的主要手段——STS2中的攻击牌更多样化，部分带条件增伤 / Primary damage — STS2 attacks are more varied, some have conditional bonuses |
+| **技能 / Skill** | 格挡、增益、抽牌、减益——功能最多的一类 / Block, buffs, draw, debuffs — most versatile category |
+| **能力 / Power** | 整场战斗持续的被动效果——开局优先上能力牌 / Passive effects for entire combat — prioritize playing Powers early |
+| **全新：战术 / New: Tactical** | STS2新增——有条件的强力效果，满足条件时触发额外收益。例如"背刺"：造成12伤害，如果敌人是满血则额外造成8伤害 / New in STS2 — conditional powerful effects with bonus when conditions are met. Example: "Backstab": Deal 12 damage, +8 if enemy is at full HP |
 
-#### 卡牌稀有度 / Card Rarity
+#### 卡牌稀有度与出率 / Card Rarity & Drop Rates
 
-| 稀有度 / Rarity | 出现概率 / Rate |
-|------|:----:|
-| **普通 / Common** | 最常见 / Most common |
-| **罕见 / Uncommon** | 中等 / Medium |
-| **稀有 / Rare** | 最稀有 / Rarest |
-| **传说 / Legendary** | STS2新增——极其稀有，效果改变游戏规则 / New in STS2 — extremely rare, game-changing effects |
+| 稀有度 / Rarity | 描述 / Description | 出现频率 / Approx Rate |
+|------|------|:----:|
+| **普通 / Common** | 基础效果——大多数卡牌 / Foundational effects | ~60% |
+| **罕见 / Uncommon** | 更强力的效果，需要配合 / Stronger effects requiring synergy | ~30% |
+| **稀有 / Rare** | Build定义级效果——看到就要考虑围绕它构筑 / Build-defining effects | ~9% |
+| **传说 / Legendary** | STS2新增——极其稀有，效果改变游戏规则。只有通过事件或特殊方式获得 / New in STS2 — extremely rare, game-changing. Only from events or special sources | ~1% |
+
+#### 卡牌升级机制 / Card Upgrade System
+
+| 升级方式 / Method | 说明 / Description |
+|------|------|
+| **篝火升级 / Campfire Upgrade** | 经典的升级方式，一次篝火升一张牌 / Classic method, one upgrade per campfire use |
+| **事件升级 / Event Upgrade** | 部分随机事件提供卡牌升级机会 / Some random events offer card upgrades |
+| **商店升级服务 / Shop Upgrade** | 商店中偶尔出售"升级服务"——付费升级一张牌 / Shops occasionally sell upgrade services |
+| **升级卷轴 / Upgrade Scroll** | 消耗品，可随时升级一张牌 / Consumable item, upgrade any card at any time |
+| **战斗奖励升级 / Combat Reward Upgrade** | 极少数战斗胜利后可选升级一张牌 / Very rarely, a combat reward offers a card upgrade |
 
 ---
 
-## 全新角色一览 / New Characters Overview
+## 全新角色详解 / New Characters Guide
 
-杀戮尖塔2带来4名全新角色，每个都拥有独一无二的核心机制 / STS2 introduces 4 brand-new characters, each with a unique core mechanic.
+杀戮尖塔2带来4名全新角色，每个都有独一无二的核心机制。角色选择的随机性比一代更大——建议新手从铸甲师或织影者开始 / STS2 introduces 4 brand-new characters, each with a unique core mechanic. Character choice has more variance than STS1 — beginners should start with Ironwarden or Shadowweaver.
 
-### 1. 织影者 / Shadowweaver
+### 1. 织影者 / Shadowweaver (推荐新手 / Recommended for beginners)
 
 **核心机制：暗影印记（Shadow Marks）+ 终结技（Finishers）**
 
-织影者是一位敏捷型刺客角色，通过在敌人身上叠加暗影印记来造成额外效果。当暗影印记累积到一定层数时，可以消耗它们触发强力的终结技 / A敏捷 assassin who stacks Shadow Marks on enemies and consumes them with powerful Finishers.
+织影者通过在敌人身上叠加暗影印记来造成额外效果。每层印记使目标受到伤害+5%，叠到10层时可消耗触发终结技 / Stacks Shadow Marks on enemies (+5% damage taken per stack). At 10 stacks, consume them for powerful Finishers.
 
-| 特性 / Trait | 说明 / Description |
-|------|------|
+| 特性 / Trait | 数值 / Value |
+|------|:----:|
 | **初始HP / Starting HP** | 65 |
-| **初始遗物 / Starting Relic** | 暗影斗篷（Shadow Cloak）——战斗开始时对所有敌人施加2层暗影印记 / Apply 2 Shadow Marks to all enemies at combat start |
-| **核心机制 / Core Mechanic** | 暗影印记——敌人身上每层印记使其受到伤害+5%，叠加至10层时可消耗触发终结技 / Each Shadow Mark increases damage taken by 5%; at 10 stacks, consume them for a Finisher |
-| **难度评级 / Difficulty** | ★★☆☆☆（中等 / Medium） |
-| **推荐新手 / New Player?** | 是——机制直观，节奏明确 / Yes — intuitive mechanics, clear pacing |
+| **初始遗物 / Starting Relic** | 暗影斗篷 / Shadow Cloak —— 战斗开始时对所有敌人施加2层暗影印记 |
+| **核心循环 / Core Loop** | 印记牌叠层 → 保持压力 → 10层时终结技爆发 / Mark → maintain pressure → Finisher at 10 stacks |
+| **难度 / Difficulty** | ★★☆☆☆ |
 
-**关键卡牌类型 / Key Card Types**:
-- **印记牌 / Mark Cards**：给敌人叠暗影印记 / Apply Shadow Marks
-- **终结牌 / Finisher Cards**：消耗印记触发高伤或特效 / Consume marks for high damage or effects
-- **诡计牌 / Trick Cards**：闪避、复制、额外抽牌 / Dodge, duplicate, extra draw
-- **毒刃牌 / Poison Blade Cards**：叠加独立的中毒效果 / Stack a separate poison effect
+**织影者实战策略**: 起手优先打印记牌(暗影打击、毒刃)，让所有敌人都挂上2-4层印记。不要急于消耗印记——印记增伤是全局受益。终结技留着处理高血量敌人或精英。AOE清怪能力偏弱——遇到群战要善用毒刃牌的中毒效果 / **Shadowweaver strategy**: Prioritize Mark cards first (Shadow Strike, Poison Blade) to apply 2-4 stacks on all enemies. Don't consume marks early — the damage amp is a global benefit. Save Finishers for high-HP enemies or elites. Weak AoE — lean on Poison Blade's poison for group fights.
 
-### 2. 铸甲师 / Ironwarden
+### 2. 铸甲师 / Ironwarden (新手强烈推荐 / Highly recommended for beginners)
 
 **核心机制：护甲值（Armor）+ 反击（Counter）**
 
-铸甲师是一位重装防御型角色，核心打法是积累护甲值并利用反击造成伤害。不同于传统格挡，护甲值在受到攻击时会损耗，但也会触发反击效果 / A heavily armored tank who accumulates Armor and deals damage through Counters. Unlike traditional block, Armor absorbs damage and triggers counterattacks.
+铸甲师累积独立于格挡的护甲值，受到攻击时护甲吸收伤害并触发反击。简而言之：叠甲→挨打→反伤→循环 / Accumulates Armor (separate from Block). When hit, Armor absorbs damage and triggers Counters. Simple: build armor → get hit → counter → repeat.
 
-| 特性 / Trait | 说明 / Description |
-|------|------|
+| 特性 / Trait | 数值 / Value |
+|------|:----:|
 | **初始HP / Starting HP** | 80 |
-| **初始遗物 / Starting Relic** | 熔炉核心（Forge Core）——每场战斗开始获得5点护甲值 / Gain 5 Armor at the start of each combat |
-| **核心机制 / Core Mechanic** | 护甲值——独立于格挡的伤害吸收层，每受到1点伤害消耗1点护甲。护甲存在时受到攻击触发反击 / Armor is a separate damage buffer. Each point absorbs 1 damage. When hit with Armor up, triggers Counter |
-| **难度评级 / Difficulty** | ★☆☆☆☆（简单 / Easy） |
-| **推荐新手 / New Player?** | **强烈推荐 / Highly recommended**——最友好的入门角色 / The most beginner-friendly character |
+| **初始遗物 / Starting Relic** | 熔炉核心 / Forge Core —— 每场战斗开始获得5点护甲 |
+| **核心循环 / Core Loop** | 叠护甲 → 敌人攻击触发反击 → 用铁砧牌把护甲转攻击 / Stack armor → enemy attack triggers counter → convert armor to offense with Anvil cards |
+| **难度 / Difficulty** | ★☆☆☆☆ |
 
-**关键卡牌类型 / Key Card Types**:
-- **护甲牌 / Armor Cards**：增加护甲值 / Increase armor
-- **反击牌 / Counter Cards**：增强反击效果或触发额外反击 / Enhance counter effects or trigger bonus counters
-- **铁砧牌 / Anvil Cards**：在护甲和攻击之间转换资源 / Convert between armor and offense
-- **锻造牌 / Forge Cards**：永久增强牌组中的卡牌 / Permanently enhance cards in your deck
+**铸甲师实战策略**: 开局不急着输出——先叠护甲(铁壁、熔炉护甲)。护甲叠到15+后，大部分敌人的攻击只会触发反击而不会伤到你。反击牌选择"铁棘"(每次触发额外伤害)和"回火"(反击时回血)。铁砧牌(转化护甲为攻击)是中后期爆发核心——注意不要在护甲太低时转化 / **Ironwarden strategy**: Don't rush damage — stack armor first (Iron Wall, Forge Armor). At 15+ armor, most enemy attacks only trigger counters without hurting you. Key counter cards: "Iron Thorns" (bonus counter damage) and "Temper" (heal on counter). Anvil cards (convert armor to attack) are mid-late burst tools — don't convert when armor is low.
 
-### 3. 时计师 / Chronomancer
+### 3. 时计师 / Chronomancer (高难度 / High skill ceiling)
 
 **核心机制：计时器（Timer）+ 回溯（Rewind）**
 
-时计师是一位操控时间的高难度角色。核心玩法围绕计时器系统展开——每回合计时器前进一格，到达特定刻度时触发强大效果。回溯能力可以重置计时器或重做本回合的行动 / A time-manipulating high-skill character. The Timer advances each turn, triggering powerful effects at specific ticks. Rewind resets the timer or undoes actions this turn.
+计时器每回合计时前进一格，在特定刻度触发效果(3/6/9/12)。回溯可以重置计时器或重做本回合操作——是高上限低下限的典型 / Timer advances each turn, triggering effects at specific ticks (3/6/9/12). Rewind resets the timer or undoes actions — high ceiling, low floor.
 
-| 特性 / Trait | 说明 / Description |
-|------|------|
+| 特性 / Trait | 数值 / Value |
+|------|:----:|
 | **初始HP / Starting HP** | 60 |
-| **初始遗物 / Starting Relic** | 沙漏（Hourglass）——计时器初始前进2格 / Timer starts 2 ticks advanced |
-| **核心机制 / Core Mechanic** | 计时器——每回合+1。第3/6/9/12刻触发不同效果。回溯重置计时器或将本回合打出的卡牌回手 / Timer ticks +1 each turn. Thresholds at 3/6/9/12 trigger effects. Rewind resets the timer or returns played cards to hand |
-| **难度评级 / Difficulty** | ★★★★☆（困难 / Hard） |
-| **推荐新手 / New Player?** | 否——需要精准规划 / No — requires precise planning |
+| **初始遗物 / Starting Relic** | 沙漏 / Hourglass —— 计时器初始前进2格 |
+| **核心循环 / Core Loop** | 规划计时器刻度 → 在第3/6/9刻度触发爆发 → 用回溯重置循环 / Plan timer ticks → trigger burst at 3/6/9 → Rewind to reset cycle |
+| **难度 / Difficulty** | ★★★★☆ |
 
-**关键卡牌类型 / Key Card Types**:
-- **计时牌 / Time Cards**：推进计时器或触发计时效果 / Advance the timer or trigger timer effects
-- **回溯牌 / Rewind Cards**：重置计时器、回手卡牌、重复上一张卡 / Reset timer, return cards to hand, replay last card
-- **预言牌 / Prophecy Cards**：预览未来的抽牌并提前规划 / Preview future draws and plan ahead
-- **时停牌 / Time Stop Cards**：暂停计时器或获得额外回合效果 / Pause the timer or gain extra turn effects
+**时计师实战策略**: 核心思路是让计时器的刻度效果和你的出牌计划对齐。第3刻度的效果(通常是伤害)适合清小怪，第6刻度(伤害+控制)适合打精英，第9刻度(终极效果)留给Boss。回溯牌不要乱用——留到关键回合(比如Boss发动大攻击时回溯重置自己的防御布局) / **Chronomancer strategy**: Align timer effects with your turn plan. Tick 3 (damage) for mobs, Tick 6 (damage + control) for elites, Tick 9 (ultimate) for bosses. Keep Rewind cards for critical turns — e.g., rewind when boss winds up a big attack.
 
-### 4. 元素使 / Elementalist
+### 4. 元素使 / Elementalist (中等难度 / Medium difficulty)
 
 **核心机制：元素充能（Elemental Charges）+ 融合（Fusion）**
 
-元素使是一位掌控火、冰、雷三种元素的法师角色。通过积累元素充能来释放强力法术，特定元素组合可以触发融合效果，产生更强大的协同法术 / A mage who commands Fire, Ice, and Lightning elements. Accumulate Elemental Charges to unleash powerful spells. Specific element combinations trigger Fusion effects for devastating synergies.
+元素使掌控火、冰、雷三元素，通过积累元素充能来释放法术。火+雷=爆炸，冰+雷=控制，火+冰=持续伤害，三元素齐发=终极融合 / Commands Fire, Ice, and Lightning. Accumulate charges to cast spells. Fire+Lightning = explosion, Ice+Lightning = control, Fire+Ice = DoT, all three = ultimate Fusion.
 
-| 特性 / Trait | 说明 / Description |
-|------|------|
+| 特性 / Trait | 数值 / Value |
+|------|:----:|
 | **初始HP / Starting HP** | 70 |
-| **初始遗物 / Starting Relic** | 元素之环（Elemental Ring）——每回合获得1层随机元素充能 / Gain 1 random Elemental Charge each turn |
-| **核心机制 / Core Mechanic** | 三种元素充能（火/冰/雷），每种最多10层。消耗充能释放法术。特定组合（火+雷、冰+雷、火+冰、三元素）触发融合 / Three elements (Fire/Ice/Lightning), max 10 each. Spend charges for spells. Specific combos trigger Fusions |
-| **难度评级 / Difficulty** | ★★★☆☆（中等偏难 / Medium-Hard） |
-| **推荐新手 / New Player?** | 可尝试——需要管理资源但回报丰厚 / Manageable — resource management with great payoff |
+| **初始遗物 / Starting Relic** | 元素之环 / Elemental Ring —— 每回合获得1层随机元素充能 |
+| **核心循环 / Core Loop** | 积攒充能 → 选择融合组合 → 释放法术 → 继续积攒 / Build charges → pick Fusion combo → cast spells → rebuild |
+| **难度 / Difficulty** | ★★★☆☆ |
 
-**关键卡牌类型 / Key Card Types**:
-- **充能牌 / Charge Cards**：生成特定元素充能 / Generate specific elemental charges
-- **法术牌 / Spell Cards**：消耗充能造成效果 / Spend charges for effects
-- **融合牌 / Fusion Cards**：特定元素组合触发额外强力效果 / Specific element combos trigger bonus effects
-- **光环牌 / Aura Cards**：每回合自动生成充能的能力 / Passive charge generation each turn
+**元素使实战策略**: 初期优先拿充能牌保证资源供应。不要固定一种融合——根据敌人类型选择：群怪用火+雷(范围爆炸)，高伤Boss用火+冰(持续灼烧)，需要控制用冰+雷(减速+麻痹)。光环牌(每回合自动生成充能)是中后期核心——让充电不再依赖出牌，可以专注打伤害 / **Elementalist strategy**: Prioritize Charge cards early for resource generation. Adapt Fusion to enemy type: mobs = Fire+Lightning (AoE explosion), boss = Fire+Ice (DoT), control = Ice+Lightning (slow + stun). Aura cards (passive charge generation) are mid-late game core — they free up your hands for damage cards.
 
 ---
 
 ## 消耗品系统 / Consumable System
 
-STS2将药水系统扩展为更丰富的消耗品体系 / STS2 expands potions into a broader consumable system.
+STS2将药水系统扩展为更丰富的消耗品体系——携带上限3个(可增加)。合理使用消耗品是高难度通关的关键 / STS2 expands potions into a broader consumable system — carry limit 3 (increasable). Smart consumable use is key to high-difficulty clears.
 
 | 类型 / Type | 说明 / Description | 示例 / Example |
 |------|------|------|
-| **药水 / Potion** | 一次性战斗效果，类似一代 / One-time combat effect, similar to STS1 | 烈焰药水（造成20伤害）/ Fire Potion (20 dmg) |
-| **卷轴 / Scroll** | 一次性非战斗效果，可在任意界面使用 / One-time non-combat effect, usable from any screen | 回城卷轴（回到上个篝火）/ Town Portal (return to last campfire) |
-| **符咒 / Charm** | 持续N场战斗的增益效果 / Multi-combat buff lasting N fights | 力量符咒（接下来3场战斗+2力量）/ Strength Charm (+2 Strength for 3 combats) |
-| **魔药 / Elixir** | 混合型——既有战斗效果又有持续效果 / Hybrid — both combat and persistent effects | 龙血魔药（战斗中获得10力量，但每场战斗后失去5HP）/ Dragon's Blood Elixir |
+| **药水 / Potion** | 一次性战斗效果，类似一代 / One-time combat effect, similar to STS1 | 烈焰药水(造成20伤害)/ Fire Potion (20 dmg), 铁壁药水(获得15护甲)/ Iron Potion (15 Armor) |
+| **卷轴 / Scroll** | 一次性非战斗效果，可在任意界面使用 / One-time non-combat, usable from any screen | 回城卷轴(回到上个篝火)/ Town Portal (return to last campfire), 升级卷轴(升级一张牌)/ Upgrade Scroll (upgrade a card) |
+| **符咒 / Charm** | 持续N场战斗的增益 / Multi-combat buff | 力量符咒(接下来3场+2力量)/ Strength Charm (+2 Str for 3 combats) |
+| **魔药 / Elixir** | 混合型——战斗+持续双效果 / Hybrid — combat + persistent | 龙血魔药(战斗中+10力量，但每战后失去5HP)/ Dragon's Blood Elixir (+10 Str, -5 HP after each fight) |
 
-最多携带3个消耗品（可通过遗物增加）/ Carry up to 3 consumables (increasable via relics).
+### 消耗品深度解析 / Consumable Deep Dive
+
+**药水分类 / Potion Categories**:
+
+| 药水类型 / Potion Type | 效果 / Effect | 最佳使用时机 / Best Use |
+|------|------|------|
+| **伤害药水 / Damage Potion** | 直接造成伤害 / Deal direct damage | 精英战补伤害、清残血小怪 / Elite burst, clean up low-HP adds |
+| **防御药水 / Defense Potion** | 获得格挡或护甲 / Gain block or armor | 抗住敌人爆发回合 / Survive enemy burst turns |
+| **回复药水 / Heal Potion** | 回复生命值 / Restore HP | 血量极低的紧急情况 / Emergency when critically low HP |
+| **能量药水 / Energy Potion** | 获得额外能量 / Gain extra energy | 需要爆发的回合 / Burst turns |
+| **增益药水 / Buff Potion** | 临时属性提升 / Temporary stat boost | BOSS战前使用 / Use before boss fights |
+
+**卷轴使用策略 / Scroll Usage Strategy**:
+
+| 卷轴 / Scroll | 最佳用途 / Best Use |
+|------|------|
+| **回城卷轴 / Town Portal** | 失误后补救——走了危险路线打不过精英，回到篝火重整 / Salvage bad pathing — took a dangerous route and can't beat the elite? Return to campfire |
+| **升级卷轴 / Upgrade Scroll** | 升级核心卡的最优方式——不需要去篝火 / Best way to upgrade a key card without using a campfire |
+| **侦查卷轴 / Scout Scroll** | 查看地图上剩余节点的内容——规划最优路线 / Reveal remaining map nodes — plan the optimal path |
+| **净化卷轴 / Purify Scroll** | 移除诅咒牌或一张不需要的卡 / Remove a curse or unwanted card |
+
+**符咒与魔药 / Charms & Elixirs**:
+
+符咒提供持续多场的战斗加成——在你确认接下来几场战斗都能受益时使用。魔药是双刃剑——效果强力但有副作用，只在最需要的时候使用 / Charms provide multi-combat buffs — use when you're sure you'll fight several more battles. Elixirs are double-edged — powerful effects with drawbacks, use only when necessary.
+
+### 消耗品管理原则 / Consumable Management Principles
+
+1. **不要囤积 / Don't Hoard**: 消耗品是为使用的，不是为收集的。带3瓶药水进BOSS战没用过=失败 / Consumables are meant to be used, not collected. Entering a boss with 3 unused potions = failure
+2. **精英战用1个 / Use 1 per Elite**: 精英战值得用1瓶药水——遗物收益远大于药水成本 / Elites are worth 1 potion — relic reward outweighs potion cost
+3. **BOSS战用2-3个 / Use 2-3 per Boss**: BOSS战是你花消耗品最多的地方 / Boss fights are where you should spend most consumables
+4. **卷轴不要留到最后 / Use Scrolls Early**: 升级卷轴这种越早用收益越大——不要等到第3章才用 / Upgrade Scroll benefits are larger the earlier you use them — don't save it for Act 3
 
 ---
 
 ## 遗物系统 / Relic System
 
-遗物系统在一代基础上大幅扩容 / The relic system is greatly expanded from STS1.
+遗物系统在一代基础上大幅扩容——新增可激活遗物(主动技能)和传说遗物(特殊获取)/ Greatly expanded from STS1 — adds Active Relics (clickable abilities) and Legendary Relics (special acquisition).
 
-| 遗物类型 / Relic Type | 说明 / Description |
+| 遗物类型 / Type | 说明 / Description |
 |------|------|
-| **普通遗物 / Common Relic** | 基础增益效果 / Basic benefits |
-| **罕见遗物 / Uncommon Relic** | 中等效果 / Medium effects |
-| **稀有遗物 / Rare Relic** | 强力效果 / Powerful effects |
-| **BOSS遗物 / Boss Relic** | 从BOSS获得，通常有正面+负面效果 / From bosses, usually benefit + drawback |
-| **传说遗物 / Legendary Relic** | STS2新增——极其稀有，只能通过特殊方式获得 / New in STS2 — extremely rare, special acquisition methods only |
-| **可激活遗物 / Active Relic** | STS2新增——有主动技能，在战斗中可点击使用的遗物 / New in STS2 — relics with active abilities you can click during combat |
+| **普通遗物 / Common** | 基础增益——掉率高、效果直接 / Basic benefits — high drop rate, straightforward |
+| **罕见遗物 / Uncommon** | 中等效果——通常需要配合 / Medium effects — usually need synergy |
+| **稀有遗物 / Rare** | 强力效果——大幅影响构筑方向 / Powerful — significantly impacts build direction |
+| **BOSS遗物 / Boss Relic** | 从BOSS获得——高收益但有代价 / From bosses — high reward with drawback |
+| **传说遗物 / Legendary** | STS2新增——极其稀有，只能用特殊方式获得。效果通常改变游戏玩法 / Extremely rare, special acquisition only. Often game-changing |
+| **可激活遗物 / Active** | STS2新增——战斗中可点击使用的主动技能遗物 / Clickable active abilities during combat |
+
+### 遗物交互与组合 / Relic Interactions & Synergies
+
+| 组合 / Combo | 效果 / Effect | 说明 / Note |
+|------|------|------|
+| **熔炉核心 + 铁之心 / Forge Core + Iron Heart** | 开局获得5护甲，护甲上限+20 = 25护甲储备 / Start with 5 Armor, cap +20 = 25 Armor pool | 铸甲师核心组合 / Ironwarden core combo |
+| **暗影斗篷 + 暗影之核 / Shadow Cloak + Shadow Core** | 开局2层印记，印记上限+5 / Start 2 Marks, cap +5 | 织影者快速叠层 / Shadowweaver fast stack |
+| **沙漏 + 永恒沙漏 / Hourglass + Eternal Hourglass** | 开局计时器前进2格，上限+3 / Timer start +2, cap +3 | 时计师刻度加速 / Chronomancer tick acceleration |
+| **元素之环 + 元素王冠 / Elemental Ring + Elemental Crown** | 每回合1随机充能，上限+3 / 1 random charge/turn, cap +3 | 元素使稳定资源 / Elementalist stable resources |
+| **反伤甲 + 铁棘 / Reactive Armor + Iron Thorns** | 反击伤害+50% + 每次反击额外4伤害 / Counter +50% + 4 bonus dmg per counter | 铸甲师高反伤 / Ironwarden high counter |
+
+### BOSS遗物取舍指南 / Boss Relic Decision Guide
+
+| BOSS遗物 / Boss Relic | 效果 / Effect | 适合 / Good For | 避免 / Avoid If |
+|------|------|------|------|
+| **苦痛枷锁 / Pain Shackles** | +1能量，每回合第一张牌多1费 / +1 energy, first card costs +1 | 低费卡组 / Low-cost decks | 高费核心牌卡组 / High-cost core card decks |
+| **黑暗契约 / Dark Pact** | +1能量，战斗结束时失去6HP / +1 energy, lose 6 HP after combat | 有回复手段的角色 / Characters with sustain | 血量紧张的角色 / Characters struggling with HP |
+| **时光沙漏 / Time Sandglass** | +1能量，每回合少抽1张牌 / +1 energy, draw 1 less per turn | 有过牌引擎的卡组 / Decks with draw engines | 依赖高抽牌量的卡组 / Draw-dependent decks |
+| **灵魂护符 / Soul Amulet** | +1能量，所有卡牌无法升级 / +1 energy, no card upgrades | 卡牌已全部升级的后期 / Late game when all cards upgraded | 还有很多卡没升级时 / Many unupgraded cards left |
 
 ---
 
 ## 新状态效果 / New Status Effects
 
-| 状态 / Status | 说明 / Description |
-|------|------|
-| **护甲 / Armor** | 独立减伤层，受击触发反击 / Separate damage buffer, triggers counter on hit |
-| **暗影印记 / Shadow Mark** | 使目标受到伤害增加，满层可消耗 / Increases damage taken, consumed at max stacks |
-| **计时加速 / Haste** | 每层使你在回合开始时多抽1张牌（持续1回合）/ Each stack = +1 card drawn at turn start (1 turn) |
-| **脆弱 / Brittle** | 受到的下一次伤害翻倍，然后移除 / Next damage taken is doubled, then removed |
-| **元素抗性 / Elemental Resist** | 减少受到的特定元素伤害 / Reduces specific elemental damage type |
-| **过载 / Overload** | 下回合获得能量减少 / Reduces energy gained next turn |
-| **灵巧 / Celerity** | 卡牌费用暂时减少 / Temporarily reduces card costs |
+STS2引入多种新状态效果——理解这些是掌握新角色的关键 / STS2 introduces multiple new status effects — understanding them is key to mastering new characters.
+
+| 状态 / Status | 效果 / Effect | 对抗策略 / Counter Strategy |
+|------|------|------|
+| **护甲 / Armor** | 独立减伤层——每点吸收1点伤害，受击触发反击 / Separate buffer — 1:1 damage absorption, triggers counter on hit | 用穿甲攻击或高单次伤害绕过 / Use armor-piercing or high single-hit damage |
+| **暗影印记 / Shadow Mark** | 每层使目标受到伤害+5%，满层可消耗触发终结 / +5% damage taken per stack, consumable at max for Finisher | 快速击杀施加者或带净化 / Kill stacker fast or bring cleanse |
+| **计时加速 / Haste** | 每层使回合开始时多抽1张牌——持续1回合 / +1 card drawn at turn start per stack (1 turn) | 无法直接对抗——加快输出节奏 / Can't counter directly — speed up offense |
+| **脆弱 / Brittle** | 下次受伤翻倍，然后移除 / Next damage taken doubled, then removed | 带净化移除，或在脆弱期间全力防守 / Cleanse it, or go full defense while Brittle |
+| **元素抗性 / Elemental Resist** | 减少特定元素伤害 / Reduces specific element damage type | 切换其他元素攻击或使用物理伤害 / Switch element type or use physical damage |
+| **过载 / Overload** | 下回合能量减少 / Reduces energy gained next turn | 规划本回合用完能量 / Use all energy this turn before Overload hits |
+| **灵巧 / Celerity** | 卡牌费用暂时减少 / Temporarily reduces card costs | 利用这个窗口期打出高费牌 / Play expensive cards during this window |
+| **审判 / Judgment** | 累积3层后受到30伤害 / 3 stacks = 30 damage | 带净化或在3层前击杀敌人 / Cleanse or kill before 3 stacks |
+| **中毒 / Poison** | 每回合受伤害，可叠加 / Take damage each turn, stacks | 速度击杀或回复扛过 / Kill fast or heal through |
+| **虚空 / Void** | 卡牌变为不可使用 / Card becomes unplayable | 避免——主要通过BOSS战出现 / Avoid — primarily from boss fights |
 
 ---
 
-标签/Tags: 杀戮尖塔2, Slay the Spire 2, 机制, Mechanics, 角色, Characters, 攻略, Guide
+## 新手指南 / Beginner Tips
+
+| 建议 / Tip | 说明 / Description |
+|------|------|
+| **角色选择 / Pick Ironwarden first** | 铸甲师最简单——叠甲→挨打→反伤，不用思考太多combo / Ironwarden is easiest — stack armor → get hit → counter, minimal combo thinking |
+| **删牌优先 / Prioritize card removal** | 初始牌组有5张打击+5张防御——尽快删掉打击牌，减少无效抽牌。商店除了买卡也要留钱删牌 / Remove basic Strikes first to thin your deck. Save gold for both card purchases AND removals |
+| **篝火选择 / Campfire Choice** | 早期：HP够就升级卡牌(优于休息)。中期：看Boss类型决定——要打精英就休息，要打小怪就升级 / Early: upgrade if HP is fine. Mid: decide based on upcoming fight — rest before elites, upgrade before normal fights |
+| **路线规划 / Route Planning** | STS2的路线比一代更复杂——事件点的结果更多样。新人推荐多走战斗和商店，少走随机事件 / STS2 routes are more complex — more event outcomes. Beginners: favor combat and shop nodes over question marks |
+| **关注意图图标 / Watch Intent Icons** | 攻击、格挡、Buff、Debuff、蓄力——每种图标对应不同行动。蓄力意味着下回合会有大伤害 / Attack, block, buff, debuff, charge — each icon means different actions. Charge = big damage next turn |
+| **不要跳过精英 / Don't Skip All Elites** | 至少打1-2个精英拿遗物。没有遗物的卡组上限很低 / Fight at least 1-2 elites for relics. Decks without relics have a low ceiling |
+
+---
+
+标签/Tags: 杀戮尖塔2, Slay the Spire 2, 机制, Mechanics, 角色, Characters, 攻略, Guide, 卡牌, Cards, 新手指南, Beginner

@@ -26,6 +26,10 @@ toc: false
 | F | 古代魔法攻击 / Ancient Magic Attack |
 | C | 扫描(显形) / Revelio |
 | V | 切换视角 / Camera Toggle |
+| Z | 切换目标 / Switch Target |
+| X | 吃治疗药水(快速)/ Use Wiggenweld (quick-use) |
+| I | 等待时间 / Wait (time skip) |
+| P | 暂停/菜单 / Pause/Menu |
 
 ---
 
@@ -33,36 +37,50 @@ toc: false
 
 | 元素 / Element | 说明 / Description |
 |---|---|
-| **生命值 / Health** | 左上角绿色条 / Green bar top-left |
-| **古代魔法条 / Ancient Magic** | 左下角紫色条——攻击填充，满后可放古代魔法 / Purple bar bottom-left — fills via attacks, used for Ancient Magic |
-| **法术轮盘 / Spell Wheel** | 屏幕下方——4×4格子(4套，每套4个) / 4 sets of 4 spells |
-| **小地图 / Minimap** | 右上角——显示敌人+收集品方向 / Top-right — shows enemies and collectible direction |
-| **任务指引 / Quest Marker** | 屏幕上方——目标点和距离 / Waypoint + distance at top |
-| **护盾类型 / Shield Type** | 敌人身上颜色——紫色(控制)红(力量)黄(攻击)/ Purple(control) Red(force) Yellow(attack) |
+| **生命值 / Health** | 左上角绿色条——受伤害减少，药水回复 / Green bar top-left — decreases on hit, restored by potions |
+| **古代魔法条 / Ancient Magic** | 左下角紫色条——攻击填充，满后可放古代魔法攻击或投掷 / Purple bar bottom-left — fills via attacks, used for AM attack or throw |
+| **法术轮盘 / Spell Wheel** | 屏幕下方——4×4格子(4套，每套4个)，按1/2/3/4切换 / 4 sets of 4 spells, press 1/2/3/4 to switch |
+| **小地图 / Minimap** | 右上角——显示敌人位置和收集品方向 / Top-right — shows enemy positions and collectible directions |
+| **任务指引 / Quest Marker** | 屏幕上方——目标点标记和距离提示 / Waypoint marker + distance indicator at top |
+| **护盾类型 / Shield Type** | 敌人周围颜色光环——紫色(控制)红(伤害)黄(力量) / Colored aura — purple(control) red(damage) yellow(force) |
+| **战斗提示 / Combat Prompts** | 屏幕中央——格挡/闪避提示 + 连击数显示 / Center — block/dodge prompts + combo counter |
+| **收集品雷达 / Collectible Radar** | 使用显形(Revelio)后——附近收集品以金色轮廓高亮 / After Revelio — nearby collectibles highlighted in gold |
+| **天赋点数 / Talent Points** | 屏幕右上角显示剩余天赋点数 / Top-right shows remaining talent points |
 
 ---
 
 ## 角色创建 / Character Creation
 
-| 选项 / Option | 影响 / Impact |
-|---|---|
-| 外观 / Appearance | 纯外观——任何时刻可更改(美容院) / Cosmetic — changeable anytime |
-| 学院 / House | 决定公共休息室+第一个专属支线 + 部分对话不同 / Common room + first exclusive quest + some dialogue |
-| 魔杖 / Wand | 纯外观——在奥利凡德定制 / Cosmetic — customize at Ollivander's |
+| 选项 / Option | 影响 / Impact | 可更改 / Changeable? |
+|---|---|---|
+| 外观 / Appearance | 纯外观——面部特征、发型、肤色、瞳色等 / Cosmetic — face, hair, skin, eyes, etc. | 任何时候(美容院) / Anytime (barbershop) |
+| 学院 / House | 决定公共休息室+第一个专属支线+部分对话 / Common room + first exclusive quest + some dialogue | **不可更改** / **Cannot change** |
+| 魔杖 / Wand | 纯外观——木材+杖芯+长度——在奥利凡德定制 / Cosmetic — wood+core+length — at Ollivander's | **不可更改** / **Cannot change** |
+| 语音音调 / Voice Pitch | 角色语音——不影响游戏 / Character voice — no gameplay effect | 任何时候 / Anytime |
+
+**创建建议 / Creation Tips**:
+- 学院选择最关键——想清楚再选，因为**不能修改** / House choice matters most — cannot change later
+- 魔杖木材不影响战斗——选你最喜欢的 / Wand wood doesn't affect combat — pick your favorite
+- 外观随时可以改——不着急决定 / Appearance can be changed anytime — no rush
 
 ---
 
-## 开局流程 / Early Game (First 5 Hours)
+## 开局流程 / Early Game (First 10 Hours)
 
 | 阶段 / Phase | 地点 / Location | 建议 / Tip |
 |---|---|---|
-| 1 | 古灵阁 / Gringotts | 开场动画——跟随指引 / Tutorial intro — follow instructions |
-| 2 | 分院仪式 / Sorting Ceremony | 选择你的学院 / Choose your house |
-| 3 | 霍格沃茨城堡 / Hogwarts Castle | 跟菲戈教授学基础施法——解锁第一个法术 / Learn Basic Cast from Professor Fig |
-| 4 | 黑魔法防御课 / Defence Class | 跟塞巴斯蒂安学"除你武器"——第一个战斗法术 / Learn Expelliarmus from Sebastian |
-| 5 | 活米村 / Hogsmeade | 初次去活米村——买装备+扫帚/ First visit — buy gear + broom |
-| 6 | 禁林 / Forbidden Forest | 第一个真正的地牢——遇到巨怪 / First real dungeon — troll encounter |
-| 7 | 有求必应屋 / Room of Requirement | **解锁你的个人基地** / **Unlock your personal base** |
+| 1 | 古灵阁 / Gringotts | 开场动画——跟随指引，熟悉移动 / Tutorial intro — follow instructions, learn movement |
+| 2 | 分院仪式 / Sorting Ceremony | 选择你的学院——仔细考虑 / Choose your house — think carefully |
+| 3 | 霍格沃茨城堡 / Hogwarts Castle | 跟菲戈教授学基础施法和显形——学会后狂按C扫描一切 / Learn Basic Cast + Revelio from Prof. Fig — spam C to scan everything |
+| 4 | 黑魔法防御课 / Defence Class | 跟塞巴斯蒂安学"除你武器"——第一个战斗法术 + 护身护卫 / Learn Expelliarmus from Sebastian — first combat spell + Protego |
+| 5 | 活米村 / Hogsmeade | 初次去活米村——买装备+扫帚配方 / First visit — buy gear + broom recipe |
+| 6 | 禁林 / Forbidden Forest | 第一个真正的地牢——遇到巨怪，练习格挡和翻滚 / First real dungeon — troll encounter, practice block and dodge |
+| 7 | 草药学课 / Herbology Lesson | 解锁种植台——开始种药水材料 / Unlock planting station — start growing potion ingredients |
+| 8 | 魔咒课 / Charms Class | 学统统加护(Glacius)和全速击退(Descendo)——两控两伤 / Learn Glacius + Descendo — two control and two damage spells |
+| 9 | 地图密室 / Map Chamber | 发现古老魔法——开启主线核心谜题 / Discover ancient magic — unlocks main story mystery |
+| 10 | 有求必应屋 / Room of Requirement | **解锁你的个人基地**——开始建造设施 / **Unlock personal base** — start building facilities |
+| 11 | 同伴任务开始 / Companion Quests Begin | 塞巴斯蒂安/纳察/波比的任务线开启——每个都做 / Sebastian/Natsai/Poppy quests begin — do all of them |
+| 12 | 第一轮作业 / First Assignments | 魔药课+魔咒课作业——奖励配方和新咒语 / Potions + Charms assignments — reward recipes and new spells |
 
 ---
 
@@ -70,17 +88,21 @@ toc: false
 
 | 设施 / Facility | 功能 / Function | 解锁条件 / Unlock |
 |---|---|---|
-| 魔药台 / Potion Station | 制作药水 / Brew potions | 主线自动 / Main quest auto |
+| 魔药台 / Potion Station | 制作6种药水 / Brew 6 potions | 主线自动 / Main quest auto |
 | 草药台 / Planting Station | 种植魔法植物 / Grow magical plants | 主线自动 / Main quest auto |
-| 附魔台 / Enchantment Table | 升级装备 / Upgrade gear | 主线自动 / Main quest auto |
-| 魔杖架 / Wand Stand | 展示魔杖 / Display wands | 收集品 / Collectibles |
-| 野兽笼 / Vivarium | 饲养魔法动物 / Raise magical beasts | "小精灵"任务 / "The Elf" quest |
-| 织物台 / Loom | 制作装备外观 / Craft gear appearance | 野兽任务 / Beast quest |
+| 附魔台 / Enchantment Table | 升级装备稀有度和词条 / Upgrade gear rarity + traits | 主线自动 / Main quest auto |
+| 魔杖架 / Wand Stand | 展示收集的魔杖 / Display collected wands | 飞贼雕像收集 / Demiguise collection |
+| 野兽笼 / Vivarium | 4个主题区域——饲养魔法动物 / 4 themed areas — raise magical beasts | "小精灵"任务 / "The Elf" quest |
+| 织物台 / Loom | 制作装备属性升级——使用动物材料 / Craft gear upgrades — uses beast materials | 野兽任务 / Beast quest |
+| 装饰品 / Decorations | 各种家具和主题套件——可自由布局 / Various furniture and themes — freely arrange | 任务奖励/商店购买 / Quest rewards/shop |
 
 **有求必应屋核心技巧 / Room Tips**:
 1. 种**土豆叶(Edurus)**和**马德拉卵石(Maxima)**——战斗中最有用的两种药水 / Grow Edurus + Maxima — most useful combat potions
-2. 建造至少3个大魔药台——批量制药 / Build 3+ large potion stations — batch brewing
-3. 附魔台升级装备——比拾取更高等级的装备更有效 / Enchantment table upgrades are more effective than finding higher-level gear
+2. 建造至少3个大魔药台——批量制药，节省时间 / Build 3+ large potion stations — batch brewing saves time
+3. 附魔台升级装备——比拾取更高等级的装备更有效，而且可以自定义词条 / Enchantment table upgrades are more effective than finding higher-level gear, plus customize traits
+4. 优先解锁野兽笼——动物材料可以制作高级装备升级 / Prioritize Vivarium — beast materials enable high-level gear upgrades
+5. 布置多个种植盆——同时种植多种植物，保持原材料充足 / Place multiple planting pots — grow multiple plant types simultaneously
+6. 有求必应屋的装饰不影响功能——按你的喜好布置 / Decorations don't affect functionality — decorate as you like
 
 ---
 
@@ -88,13 +110,13 @@ toc: false
 
 ### 法术颜色系统 / Spell Color System
 
-敌人的护盾有颜色——必须用对应颜色法术打破 / Enemy shields have colors — must use matching color to break.
+敌人的护盾有颜色——必须用对应颜色法术打破，否则无法造成伤害 / Enemy shields have colors — must use matching color to break, otherwise no damage.
 
-| 颜色 / Color | 法术类型 / Type | 代表法术 / Examples |
-|---|---|---|
-| **紫色 / Purple** | 控制 / Control | 昏昏倒地(Accio)、统统加护(Glacius) |
-| **红色 / Red** | 伤害 / Damage | 除你武器(Expelliarmus)、火焰熊熊(Incendio) |
-| **黄色 / Yellow** | 力量 / Force | 退敌三尺(Depulso)、飞沙走石(Flipendo) |
+| 颜色 / Color | 法术类型 / Type | 代表法术 / Examples | 克制 / Effective Against |
+|---|---|---|---|
+| **紫色 / Purple** | 控制 / Control | 昏昏倒地(Accio)、统统加护(Glacius)、降敌陷阱(Arresto) | 紫色护盾敌人 / Purple-shield enemies |
+| **红色 / Red** | 伤害 / Damage | 除你武器(Expelliarmus)、火焰熊熊(Incendio)、雷霆霹雳(Confringo) | 红色护盾敌人 / Red-shield enemies |
+| **黄色 / Yellow** | 力量 / Force | 退敌三尺(Depulso)、飞沙走石(Flipendo) | 黄色护盾敌人 / Yellow-shield enemies |
 
 ### 核心战斗循环 / Core Combat Loop
 
@@ -105,28 +127,42 @@ Protego (right-click) → Perfect block → Spell (break shield) → Ancient Mag
 
 | 技巧 / Technique | 操作 / Input | 效果 / Effect |
 |---|---|---|
-| 完美护身 / Perfect Protego | 敌人攻击瞬间右键 / Right-click right before hit | 击晕附近敌人 + 反制 / Stun + counter |
+| 完美护身 / Perfect Protego | 敌人攻击瞬间右键 / Right-click right before hit | 击晕附近敌人 + 反制 + 短暂无敌 / Stun nearby enemies + counter + brief invincibility |
 | 翻滚闪避 / Dodge Roll | Space + 方向 / + direction | 无敌帧——用于无法格挡的红光攻击 / I-frames — for unblockable red attacks |
-| 古代魔法投掷 / Ancient Magic Throw | 右键+左键 / Right+Left click | 抓起场景物体扔向敌人——高伤害 / Grab objects and throw — high damage |
-| 石化 / Petrificus Totalus | 潜行到背后 / Sneak behind | 秒杀大部分敌人——无声 / Instant kill most enemies — silent |
-| 终结技 / Finisher | 敌人眩晕时靠近 / Near stunned enemy | 酷炫处决动画 / Stylish execution |
+| 古代魔法投掷 / Ancient Magic Throw | 右键+左键 / Right+Left click | 抓起场景物体扔向敌人——高伤害 + AOE / Grab objects and throw — high damage + AoE |
+| 石化 / Petrificus Totalus | 幻身咒潜行到背后 / Disillusionment + sneak behind | 秒杀大部分敌人——无声，清营地的核心手段 / Instant kill most enemies — silent, essential for camp clearing |
+| 终结技 / Finisher | 敌人眩晕时靠近 / Near stunned enemy | 酷炫处决动画 + 少量回血 / Stylish execution + small HP restore |
+| 拉+火连招 / Accio + Incendio | 拉过来在空中→放火 / Pull in midair → cast fire | 空中燃烧——极高单体爆发 / Midair burn — extremely high single-target burst |
+
+### 进阶战斗技巧 / Advanced Combat Techniques
+
+| 技巧 / Technique | 说明 / Description |
+|---|---|
+| **法术轮盘规划 / Spell Wheel Planning** | 将同色法术分布到不同轮盘——这样切换时总有对应破盾法术 / Spread same-color spells across different sets — always have the right breaker |
+| **提前格挡 / Pre-blocking** | 按住右键不放——格挡持续生效直到攻击命中——比精确时机更安全 / Hold right-click — block stays active until hit — safer than precise timing |
+| **连击保持 / Combo Maintenance** | 切换目标保持攻击不断——连击数越高某些天赋和词条越强 / Switch targets to keep combo alive — higher combo = stronger talents and traits |
+| **古代魔法节奏 / AM Management** | 紫色条满后不必立即使用——留着破盾或紧急情况 / Don't use AM bar immediately when full — save for shield breaks or emergencies |
+| **环境利用 / Environment Use** | 爆炸桶、悬吊岩石、冰柱等都可利用——比法术更省蓝 / Explosive barrels, hanging rocks, icicles — more efficient than spells |
+| **空中战斗 / Aerial Combat** | 将敌人击飞到空中后接连招——空中敌人无法反击 / Launch enemies airborne then combo — airborne enemies can't counter |
 
 ---
 
 ## 天赋系统 / Talent System
 
-| 天赋树 / Talent Tree | 说明 / Description |
-|---|---|
-| **咒语 / Spells** | 增强各法术的效果——推荐优先加满 / Boost spell effects — recommended priority |
-| **黑暗艺术 / Dark Arts** | 增强不可饶恕咒——控制+dps / Boost Unforgivable Curses — control + DPS |
-| **核心 / Core** | 基础能力——生命值+古代魔法+防御 / Core abilities — HP + Ancient Magic + defense |
-| **潜行 / Stealth** | 增强潜行击杀——石化+隐身 / Boost stealth kills — Petrificus + Disillusionment |
+天赋系统在达到第5级后解锁——每个等级获得1点天赋，总共约50点 / Talent system unlocks at level 5 — 1 point per level, ~50 total.
+
+| 天赋树 / Talent Tree | 说明 / Description | 优先级 / Priority |
+|---|---|---|
+| **咒语 / Spells** | 增强各法术的效果——火焰变AOE、霹雳弹射、缴械爆炸等 / Boost spell effects — Incendio AoE, Confringo ricochet, Expelliarmus explosion | **最高 / Highest** |
+| **黑暗艺术 / Dark Arts** | 增强不可饶恕咒——诅咒增伤、阿瓦达穿透、控制增伤 / Boost Unforgivable Curses — curse damage, Avada pierce, Imperio boost | 中高 / Mid-High |
+| **核心 / Core** | 基础能力——生命值+古代魔法充能+防御 + 连击奖励 / Core abilities — HP + AM charge + defense + combo rewards | **高 / High** |
+| **潜行 / Stealth** | 增强潜行击杀——石化强化+隐身移动速度 / Boost stealth kills — Petrificus upgrade + invisibility speed | 中 / Mid |
 
 **推荐加点顺序 / Recommended Talent Order**:
-1. **咒语(核心输出)**— 第5级开始点 / Spells (main DPS) — start at level 5
-2. **核心(生存)**— 10级左右点几点活力 / Core (survival) — some vitality around level 10
-3. **黑暗艺术(可选)**— 如果你打算走不可饶恕咒路线 / Dark Arts (optional) — if using Unforgivable Curses
-4. **潜行(最后)**— 中后期 / Stealth (late)
+1. **咒语(核心输出)** — 第5级开始点，优先火焰精通和除你武器精通 / Spells (main DPS) — start at level 5, prioritize Incendio and Expelliarmus Mastery
+2. **核心(生存)** — 10级左右点几点活力I+II和古代魔法专注 / Core (survival) — Vitality I+II and Ancient Magic Focus around level 10
+3. **黑暗艺术(可选)** — 如果你打算走不可饶恕咒路线，15级后开始点 / Dark Arts (optional) — if using Unforgivables, start at level 15
+4. **潜行(最后)** — 中后期补点，潜行流玩家可以提前 / Stealth (late) — mid-to-late game, or earlier for stealth-focused builds
 
 ---
 
@@ -135,8 +171,42 @@ Protego (right-click) → Perfect block → Spell (break shield) → Ancient Mag
 | # | 错误 / Mistake | 正确做法 / Correct Way |
 |---|---|---|
 | 1 | 不用护身护卫 / Forget Protego | 格挡是战斗中最重要的操作——完美格挡致晕敌人 / Blocking is the most important combat mechanic |
-| 2 | 只用一套法术 / Use only 1 spell set | 随时切换4套法术轮盘——应对不同敌人 / Switch between 4 sets constantly — counter different enemies |
-| 3 | 不做作业任务 / Skip assignments | 作业任务奖励新咒语——咒语是战斗核心 / Assignments reward spells — spells = combat power |
-| 4 | 不升级装备 / Don't upgrade gear | 天降神兵附魔台可以大幅提升装备属性 / Enchantment table massively boosts gear stats |
+| 2 | 只用一套法术 / Use only 1 spell set | 随时切换4套法术轮盘——应对不同敌人和护盾颜色 / Switch between 4 sets constantly — counter different enemies and shield colors |
+| 3 | 不做作业任务 / Skip assignments | 作业任务奖励新咒语——咒语是战斗核心，不做任务少一半可用法术 / Assignments reward spells — spells = combat power, skipping halves your arsenal |
+| 4 | 不升级装备 / Don't upgrade gear | 天降神兵附魔台可以大幅提升装备属性，橙装升级后更强 / Enchantment table massively boosts gear stats, legendary upgraded becomes even stronger |
 | 5 | 随便乱加点天赋 / Waste talent points | 天赋不能重置——看到不喜欢的Build要花50小时重玩 / Talents can't be reset — bad build = 50 hour replay |
-| 6 | 不买扫帚 / Don't buy broom | 扫帚是跑图的必备工具——越早买越好 / Broom is essential for exploration — buy ASAP |
+| 6 | 不买扫帚 / Don't buy broom | 扫帚是跑图的必备工具——越早买越好，步行效率极低 / Broom is essential for exploration — buy ASAP, walking is extremely inefficient |
+| 7 | 不舍得用药水 / Hoard potions | 药水材料可以自己种——战斗中大胆用，不用白不用 / Potion ingredients are farmable — use them liberally in combat |
+| 8 | 忽视潜行 / Ignore stealth | 幻身咒+石化可以秒杀大部分敌人——清营地不需要正面战斗 / Disillusionment + Petrificus = instant kills — clear camps without fighting |
+| 9 | 不看小地图 / Ignore minimap | 小地图显示敌人位置和方向——避免被背后偷袭 / Minimap shows enemy positions — avoid being flanked |
+| 10 | 不锁定敌人 / Don't lock on | 按R锁定目标——施法自动瞄准，不会打空 / Press R to lock on — spells auto-aim, no more missed shots |
+
+---
+
+---
+
+## 开局优先事项 / Early Game Priority Checklist
+
+| 优先级 / Priority | 事项 / Task | 原因 / Why |
+|---|---|---|
+| **最高 / Highest** | 推进主线至解锁有求必应屋 / Push main quest to unlock Room of Requirement | 解锁种植+制药+附魔——核心系统 / Unlock planting, potions, enchanting — core systems |
+| **高 / High** | 购买扫帚 / Buy a broom | 跑图效率翻倍 / Double map travel efficiency |
+| **高 / High** | 完成魔咒课作业I / Complete Charms Assignment I | 获得阿拉霍洞开I——开锁 / Get Alohomora I — unlock chests |
+| **中 / Medium** | 收集飞贼雕像(Az第一区)/ Collect Demiguise statues (first area) | 升级阿拉霍洞开 / Upgrade Alohomora |
+| **中 / Medium** | 完成前几个梅林试炼 / Complete first few Merlin Trials | 扩展装备容量 / Expand gear inventory |
+| **低 / Low** | 全收集扫尾 / Completionist cleanup | 通关后再做 / Do after story completion |
+
+---
+
+## 游戏设置推荐 / Recommended Settings
+
+| 设置 / Setting | 推荐 / Recommendation | 说明 / Reason |
+|---|---|---|
+| 锁定模式 / Lock-on Mode | 切换(默认) / Toggle (default) | 不需要长按R / No need to hold R |
+| 自动拾取 / Auto-Loot | 开启 / On | 捡东西快很多 / Much faster looting |
+| 施法模式 / Cast Mode | 直接施法 / Direct Cast | 不需要额外按键确认 / No extra confirmation needed |
+| 字幕 / Subtitles | 开启 / On | 不遗漏对话 / Never miss dialogue |
+| 瞄准辅助 / Aim Assist | 高 / High | 战斗更流畅 / Smoother combat |
+| 难度 / Difficulty | 普通(首次)/困难(二周目) / Normal (first)/Hard (repeat) | 按经验调整 / Adjust by experience |
+
+标签/Tags: 霍格沃茨, 哈利波特, Hogwarts Legacy, Harry Potter, 新手, 入门, Beginner, Guide

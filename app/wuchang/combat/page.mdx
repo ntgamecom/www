@@ -1,0 +1,102 @@
+---
+toc: false
+---
+
+# 战斗系统 / Combat System
+
+明末：渊虚之羽的战斗系统融合了传统魂系和独特的羽化机制——理解羽化反击、武器切换和五行法术的配合是成为高手的关键 / Wuchang's combat system blends traditional souls-like mechanics with the unique Feather system — mastering Feather Counter, weapon switching, and Five Elements magic is the key to mastery.
+
+---
+
+## 基本操作 / Basic Controls
+
+| 操作 / Action | 效果 / Effect |
+|:----:|------|
+| **轻击 / Light Attack** | 快速攻击——连击积累羽化值 / Fast attack — builds Feather meter |
+| **重击 / Heavy Attack** | 蓄力攻击——高伤害+高削韧 / Charged attack — high dmg + high stagger |
+| **格挡 / Block** | 减伤消耗精力 / Reduce dmg, costs stamina |
+| **闪避 / Dodge** | 翻滚有无敌帧 / Roll with i-frames |
+| **羽化反击 / Feather Counter** | 完美闪避/格挡→自动触发反击 / Perfect dodge/block → auto counter |
+| **羽化形态 / Feather Form** | 羽化值满时→触发→15秒强化状态 / Meter full → activate → 15s buffed state |
+| **羽化终结技 / Feather Finisher** | 羽化形态中轻+重击同时按 / In Feather Form: light+heavy simultaneously |
+| **法术 / Spell** | 装备五行法术→消耗法力施放 / Equip Five Elements spell → costs mana |
+| **武器切换 / Weapon Swap** | 战斗中一键切换主副武器——冷却3秒 / One-button swap mid-combat — 3s cooldown |
+
+---
+
+## 羽化反击详解 / Feather Counter Guide
+
+**羽化反击是整个战斗系统的核心**——触发成功=时停+大量伤害+大量羽化值 / **Feather Counter is the entire combat system's core** — success = slow-mo + massive dmg + massive Feather gain.
+
+| 反击类型 / Counter Type | 触发方式 / Trigger | 伤害倍率 / DMG Multi |
+|:----:|:----:|:----:|
+| **完美闪避反击 / Perfect Dodge Counter** | 敌人攻击命中前0.2秒闪避 / Dodge within 0.2s of enemy hit | 1.5x |
+| **完美格挡反击 / Perfect Block Counter** | 敌人攻击命中前0.2秒格挡 / Block within 0.2s of enemy hit | 2.0x |
+| **空中反击 / Aerial Counter** | 敌人攻击时跳跃→空中闪避 / Jump + dodge in air during enemy attack | 1.8x |
+
+**所有Boss的攻击都有"可反击标记"**——攻击前敌人身上会闪烁红光。看到红光闪→等0.3-0.5秒→完美闪避/格挡 / **All boss attacks have a "counterable" marker** — enemy flashes red. See red flash → wait 0.3-0.5s → perfect dodge/block.
+
+---
+
+## 武器系统 / Weapon System
+
+每把武器有**轻击连招+重击蓄力+专属战技**三种攻击方式 / Each weapon has **light combo + heavy charge + unique skill**.
+
+| 武器 / Weapon | 专属战技 / Unique Skill | 最佳配属性 / Best Stat |
+|:----:|:----|:----:|
+| **刀 / Blade** | 拔刀斩——快速收拔刀→大伤害居合 / Iaijutsu — quick sheath → big damage draw | 力量 / STR |
+| **剑 / Sword** | 剑雨——多段快速突刺 / Sword Rain — multi-hit fast thrust | 敏捷 / DEX |
+| **枪 / Spear** | 回马枪——后退+突刺——反打神技 / Retreat + thrust — counter-attack skill | 力量 / STR |
+| **棍 / Staff** | 旋风棍——360度持续旋转攻击 / 360 sustained spin attack | 力量 / STR |
+| **双刀 / Dual Blades** | 乱舞——20连击——最后一下暴击 / 20-hit combo — final hit is guaranteed crit | 敏捷 / DEX |
+
+---
+
+## 五行法术系统 / Five Elements Magic
+
+| 法术 / Spell | 效果 / Effect | 消耗法力 / Mana |
+|:----:|:------|:----:|
+| **金·锋刃术** | 武器附魔金属性——+破甲+暴击率 / Weapon enchant metal — +AP + crit rate | 20 |
+| **木·荆棘术** | 地面长出荆棘——减速+持续伤害 / Thorn ground — slow + DoT | 30 |
+| **水·冰霜术** | 扇形冰霜——冰冻+减速 / Cone frost — freeze + slow | 25 |
+| **火·烈焰术** | 火球AOE——烧伤+击退 / Fireball AoE — burn + knockback | 35 |
+| **土·护盾术** | 生成护盾——吸收伤害+霸体(不会被攻击打断) / Shield — absorb dmg + hyper armor | 30 |
+
+**法术tips**: 水→火连招——先冰冻再火球→融化造成额外伤害。土→近战连招——开盾后冲脸重击 / **Spell tips**: Water→Fire combo — freeze then fireball → melt for bonus dmg. Earth→Melee — shield up then face-tank heavy attacks.
+
+---
+
+## 五行法术进阶连招 / Advanced Spell Combos
+
+| 连招 / Combo | 效果 / Effect | 适用场景 / Use Case |
+|:----:|:------|:----:|
+| **冰→火→爆发** | 水·冰霜术→轻击x2→火·烈焰术 | 冰+火=融化爆炸——范围伤害+烧伤 / Freeze+Fire=Melt Explosion — AoE dmg + burn | 被群怪包围时 / Surrounded by mobs |
+| **水→土→近战** | 水·冰霜术→土·护盾术→冲脸重击 | 减速敌人+护盾冲脸——安全突进 / Slow enemy + shield charge | Boss远程阶段突进 / Boss ranged phase gap close |
+| **金→木→持续** | 金·锋刃术→木·荆棘术→轻击连段 | 破甲+减速+持续伤害——风筝打法 / AP + slow + DoT — kite strategy | 高机动Boss / High mobility bosses |
+| **全五行循环** | 金→木→水→火→土 | 五行全属性覆盖——每个法术完后接2次轻击 / All elements covered — 2 light hits per spell | 属性弱点频繁切换的Boss / Bosses with alternating weaknesses |
+
+## 连招推荐 / Combo Recommendations
+
+| 连招 / Combo | 操作 / Input | 说明 / Description |
+|:----:|:----|:------|
+| **基础羽化连招** | 轻击x3→完美格挡→羽化反击→重击 | 通用的Boss战循环 / Universal boss fight loop |
+| **法术起手连招** | 冰霜术→轻击x3→火球术(融化爆炸)→重击 | 水火配合的高爆发连招 / Water+Fire combo burst |
+| **武器切换连招** | 刀轻击x3→切换剑→剑雨→切换回刀→拔刀斩 | 双武器切换最大化DPS / Dual weapon swap max DPS |
+| **羽化终结连招** | 羽化形态→轻击x5→羽化终结技→重击→轻击x3 | 羽化形态全输出循环 / Feather Form full DPS rotation |
+| **AOE清兵连招** | 土护盾→旋风棍(棍战技)→火球术→补刀 | 被包围时的脱困连招 / AoE escape combo when surrounded |
+
+---
+
+## 战斗技巧 / Combat Tips
+
+| 技巧 / Tip | 说明 / Description |
+|:----:|------|
+| **羽化反击优先于翻滚 / Counter > Roll** | 完美闪避(羽化反击)的收益远大于普通翻滚——练好完美闪避能让Boss战难度降一半 / Perfect dodge (Feather Counter) reward far exceeds normal roll — mastering it halves boss difficulty |
+| **武器切换不是摆设 / Weapon swap matters** | 主武器打空精力→切换副武器继续攻击→主武器精力恢复→切回来。实现无缝输出 / Main weapon stamina empty → swap to secondary → main regens → swap back. Seamless DPS |
+| **法术不是法系专属 / Magic isn't just for mages** | 物理Build也可以带土护盾或水减速——辅助近战输出 / Physical builds can carry Earth Shield or Water Slow — assist melee combat |
+| **羽化形态不是无敌 / Feather Form isn't invincible** | 羽化形态中虽然精力无限但**不是无敌**——被Boss打依然掉血。该躲还是要躲 / Infinite stamina ≠ invincibility — boss attacks still hurt. Dodge still required |
+| **背刺和处决 / Backstab & Riposte** | 人形敌人可以背刺(潜行到背后重击)。打失衡后正面重击=处决。伤害极高 / Humanoids can be backstabbed (sneak behind + heavy). Staggered enemy + front heavy = riposte. Massive damage |
+
+---
+
+标签/Tags: 明末渊虚之羽, Wuchang, Fallen Feathers, 战斗, Combat, 系统, 攻略, Guide

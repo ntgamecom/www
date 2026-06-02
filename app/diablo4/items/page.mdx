@@ -35,6 +35,19 @@ toc: false
 | **护符 / Amulet** | 防御+进攻词缀混合，+3技能等级 / Hybrid def+off affixes, +3 to skills |
 | **戒指 / Ring** | 暴击率、暴击伤害、资源上限 / Crit chance, crit dmg, resource cap |
 
+### 装备词缀选择策略 / Affix Selection Strategy
+
+| 部位 / Slot | 核心词缀 / Core Affix | 首选手册 / Best Tempering Manual |
+|------|------|------|
+| **头盔** | +技能等级 / +Skill Ranks | 防具效用 / Armor Utility |
+| **胸甲** | 全减伤 / All Damage Reduction | 防具生存 / Armor Defense |
+| **手套** | 攻击速度 / Attack Speed | 武器攻击 / Weapon Attacks |
+| **裤子** | 生命值 / Max Life | 防具生存 / Armor Defense |
+| **靴子** | 移动速度 / Movement Speed | 防具效用 / Armor Utility |
+| **武器** | 核心技能伤害 / Core Skill Dmg | 武器属性 / Weapon Stats |
+| **护符** | 冷却缩减 + 技能等级 / CDR + Skill Ranks | 防具效用 / Armor Utility |
+| **戒指** | 暴击几率 + 暴击伤害 / Crit Chance + Crit Dmg | 武器属性 / Weapon Stats |
+
 ---
 
 ## 传奇威能 / Legendary Aspects
@@ -68,6 +81,14 @@ toc: false
 | **移动威能 / Mobility** | 增加移速和机动性 / Increase speed and mobility |
 | **通用威能 / Utility** | 混合功能 / Hybrid functions |
 
+### 威能配置策略 / Aspect Setup Strategy
+
+- **双手武器**: 放唯一的攻击威能（数值翻倍）/ **2H weapon**: single offensive aspect (value doubled)
+- **护符**: 放核心攻击威能（数值+50%）/ **Amulet**: core offensive aspect (+50% value)
+- **单手武器+副手**: 可以放2个不同的攻击威能 / **1H + Off-hand**: 2 different offensive aspects
+- **防具**: 防御+资源+通用威能均衡搭配 / **Armor**: balance defensive, resource, and utility aspects
+- **戒指**: 剩余的攻击威能 / **Rings**: remaining offensive aspects
+
 ---
 
 ## 回火系统 / Tempering
@@ -93,6 +114,29 @@ toc: false
 | **防具效用 / Armor Utility** | 冷却缩减、资源生成、幸运一击 / Cooldown reduction, resource gen, lucky hit |
 | **首饰 / Jewelry** | 元素抗性、控制时长、伤害减免 / Elemental resist, CC duration, dmg reduction |
 
+### 回火手册获取来源 / Tempering Manual Sources
+
+| 手册类型 / Manual Type | 最佳获取地点 / Best Source |
+|------|------|
+| **武器攻击 / Weapon Attacks** | 世界BOSS / World Bosses |
+| **武器属性 / Weapon Stats** | 秘域传送门 / The Pit |
+| **防具生存 / Armor Defense** | 地狱狂潮神秘宝箱 / Helltide Mystery Chests |
+| **防具效用 / Armor Utility** | 梦魇地下城 / Nightmare Dungeons |
+| **首饰 / Jewelry** | 炼狱大军 / Infernal Hordes |
+
+### 回火推荐 / Recommended Tempering per Slot
+
+| 部位 / Slot | 首选 / First Choice | 次选 / Second Choice |
+|------|------|------|
+| **武器 / Weapon** | 核心技能伤害 / Core Skill Dmg | 暴击伤害 / Crit Dmg |
+| **头盔 / Helm** | 冷却缩减 / CDR | 资源生成 / Resource Gen |
+| **胸甲 / Chest** | 全减伤 / All DR | 近远减伤 / Close/Distant DR |
+| **手套 / Gloves** | 攻速 / Attack Speed | 暴击几率 / Crit Chance |
+| **裤子 / Pants** | 生命 / Max Life | 护甲 / Armor |
+| **靴子 / Boots** | 移速 / Move Speed | 闪避次数 / Evade Charges |
+| **护符 / Amulet** | 冷却缩减 / CDR | 技能等级 / Skill Ranks |
+| **戒指 / Ring** | 资源上限 / Resource Cap | 暴击几率 / Crit Chance |
+
 ---
 
 ## 精铸系统 / Masterworking
@@ -117,7 +161,19 @@ toc: false
 - **遗忘之魂 / Forgotten Souls**: 地狱狂潮神秘宝箱、炼狱大军 / Helltide Mystery Chests, Infernal Hordes
 - **金币 / Gold**: 卖装备、世界事件 / Selling gear, world events
 
+### 精铸策略 / Masterworking Strategy
+
+1. **前期只升到4级**: 材料有限时优先多件装备+4 / **Early: only go to +4**: prioritize getting all gear to 4
+2. **8级停手检查**: 升到8级看前两次暴击是否加在理想词缀上 / **Pause at 8**: check if first 2 crits hit desired affixes
+3. **如果不理想**: 使用重置功能（消耗精铸石）回到0级重来 / **If bad**: reset (costs Obolite) and retry
+4. **如果理想**: 继续升到12级，赌第三次暴击 / **If good**: push to 12, gamble on 3rd crit
+5. **优先精铸部位**: 武器 > 护符 > 手套 > 戒指 > 防具 / **Priority order**: Weapon > Amulet > Gloves > Rings > Armor
+
 > **精铸策略**：先用低等级精铸石升到8级，确认前两次暴击是否加到理想词缀上。如果不是，重置重来 / **Strategy**: Masterwork to level 8 first, check if the first 2 crits hit desired affixes — if not, reset and retry
+
+### 第8赛季精铸优化 / S8 Masterworking Improvements
+
+第8赛季降低了精铸重置成本，不再消耗遗忘之魂，只需要精铸石和金币 / S8 reduced reset costs — no more Forgotten Souls needed for reset, only Obolite + Gold
 
 ---
 
@@ -142,6 +198,17 @@ toc: false
 | **巴奥+克雷 / Bac + Cle** | 移动距离累积后触发圣光弹 / Move distance triggers holy bolts | 游侠/魂灵师 / Rogue/Spiritborn |
 | **艾奥+奈尔 / Ioe + Nal** | 消耗资源减少冷却 / Spending resources reduces cooldowns | 高消耗流派 / High-spend builds |
 | **瑟尔+伊格 / Thul + Igni** | 施放终极技能触发火球新星 / Cast ultimate triggers fireball nova | 法师 / Sorcerer |
+| **拉+加 / Rah + Jah** | 闪避后获得屏障 / Evade grants barrier | 生存困难流派 / Survival-dependent builds |
+
+### 符文掉落来源 / Rune Drop Sources
+
+| 来源 / Source | 掉率 / Drop Rate |
+|------|:----:|
+| **世界怪物 / World Mobs** | 低 / Low |
+| **梦魇地下城 / Nightmare Dungeons** | 中 / Medium |
+| **世界BOSS / World Bosses** | 高 / High |
+| **炼狱大军 / Infernal Hordes** | 中 / Medium |
+| **黑暗堡垒 / Dark Citadel** | 很高 / Very High |
 
 ---
 
@@ -169,6 +236,24 @@ toc: false
 | **装备 / Gear** | 佣兵可以装备武器和护符 / Mercenaries can equip weapons and amulets |
 | **忠诚度 / Rapport** | 一起战斗提升忠诚度，解锁额外奖励 / Fight together to increase rapport, unlock bonus rewards |
 
+### 佣兵选择建议 / Mercenary Recommendations
+
+| 场景 / Scenario | 推荐佣兵 / Recommended | 理由 / Reason |
+|------|------|------|
+| **冲层 / Pushing** | 拉希尔 / Raheir | 坦克嘲讽减轻压力 / Tank taunt reduces pressure |
+| **速刷 / Speed Farm** | 瓦莉雅娜 / Varyana | 高DPS加快清场 / High DPS speeds up clears |
+| **生存困难 / Squishy Build** | 索科 / Sokor | 治疗增加容错率 / Healing increases margin for error |
+| **组队 / Group Play** | 亚尔丹 / Aldkin | 控场辅助团队 / CC supports the group |
+
+### 忠诚度奖励 / Rapport Rewards
+
+| 忠诚度等级 / Rapport Level | 奖励 / Reward |
+|:----:|------|
+| **1-5** | 基础技能解锁 / Basic skill unlocks |
+| **6-10** | 佣兵装备槽解锁 + 新技能 / Gear slots + new skills |
+| **11-15** | 独特外观 / Unique cosmetics |
+| **16-20** | 佣兵专属独特装备 / Mercenary-specific unique item |
+
 ---
 
 ## 宝石系统 / Gem System
@@ -187,12 +272,47 @@ toc: false
 | **钻石 / Diamond** | +终极技能伤害 / +Ult Dmg | +屏障产生 / +Barrier Gen | +火抗 / +Fire Resist |
 | **骷髅 / Skull** | +生命值恢复 / +Life on Kill | +护甲值 / +Armor | 无 / None |
 
+### 宝石镶嵌推荐 / Gem Socketing Recommendations
+
+| 部位 / Slot | 推荐宝石 / Recommended Gem |
+|------|------|
+| **武器 / Weapon** | 绿宝石(易伤)或蓝宝石(暴击) / Emerald (Vuln) or Sapphire (Crit) |
+| **护甲 / Armor** | 红宝石(生命)通用性最好 / Ruby (Life) is the best all-rounder |
+| **饰品 / Jewelry** | 根据流派选择抗性宝石 / Choose resist gems based on your build |
+
 ### 宝石等级 / Gem Tiers
 
 粗糙 → 普通 → 优质 → 完美 → 皇家 → **传说**（最高级）/ Crude → Chipped → Standard → Perfect → Royal → **Legendary** (highest)
 
-> **赛季宝石提示**：某些赛季会引入赛季专属宝石，有赛季角色限定效果 / **Note**: Some seasons introduce seasonal-specific gems with exclusive effects
+> **赛季宝石提示**: 某些赛季会引入赛季专属宝石，有赛季角色限定效果 / **Note**: Some seasons introduce seasonal-specific gems with exclusive effects
+
+### 第8赛季宝石变化 / S8 Gem Changes
+
+第8赛季提升了传说级宝石的效果，传说红宝石在武器上提供更高的持续伤害加成 / S8 buffed Legendary-tier gem effects — Legendary Ruby now gives significantly more DoT damage on weapons
 
 ---
 
-标签/Tags: 暗黑破坏神4, Diablo 4, D4, 装备, Items, 锻造, Crafting, 威能, 精铸, 回火, 宝石, 攻略, Guide
+## 装备进阶策略 / Advanced Gearing Strategy
+
+### 完美装备流程 / Perfect Gear Progression
+
+1. **刷到好的远古底材** / **Farm a good Ancestral base**: 5条词缀中至少3条正确 / At least 3/5 affixes correct
+2. **附魔优化** / **Enchant**: 秘术师处重Roll一条错误词缀 / Reroll 1 bad affix at Occultist
+3. **刻印威能** / **Imprint Aspect**: 刻印最好的版本 / Imprint your best roll aspect
+4. **回火** / **Temper**: 添加2条回火词缀（不可撤销，谨慎选择）/ Add 2 temper affixes (irreversible, choose carefully)
+5. **打孔** / **Socket**: 使用散光棱镜添加插槽 / Add socket with Scattered Prism
+6. **精铸** / **Masterwork**: 升到12级 + 正确暴击 / Masterwork to 12 with correct crits
+7. **符文之语** / **Runewords**: 镶嵌合适的符文组合 / Socket the right rune combo
+
+### 散光棱镜获取 / Scattered Prism Sources
+
+| 来源 / Source | 数量 / Amount |
+|------|:----:|
+| 世界BOSS / World Bosses | 1-2个每次 / 1-2 per kill |
+| 炼狱大军 / Infernal Hordes | 1-3个 / 1-3 |
+| 军团事件 / Legion Events | 0-1个 / 0-1 |
+| 黑暗堡垒 / Dark Citadel | 2-3个 / 2-3 |
+
+---
+
+标签/Tags: 暗黑破坏神4, Diablo 4, D4, 装备, Items, 锻造, Crafting, 威能, 精铸, 回火, 宝石, 符文, 佣兵, 攻略, Guide, 第8赛季, Season 8

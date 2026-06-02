@@ -4,7 +4,13 @@ toc: false
 
 # 新手入门 / Beginner Guide
 
-小丑牌的规则简单——打牌→得分→过关。但想要稳定通关，你需要理解经济、牌组管理和倍率机制 / Balatro's rules are simple — play hands → score → advance. But consistent wins require understanding economy, deck management, and mult mechanics.
+小丑牌的规则简单——打牌→得分→过关。但想要稳定通关，你需要理解经济、牌组管理和倍率机制。本章从零开始，帮你打好坚实基础 / Balatro's rules are simple — play hands → score → advance. But consistent wins require understanding economy, deck management, and mult mechanics. This chapter builds your foundation from zero.
+
+---
+
+## 游戏目标 / Game Objective
+
+你的目标是从Ante 1打到Ante 8，战胜每个Ante的Boss盲注。每关你需要使用扑克牌组成牌型，达到目标分数。游戏结束后会根据表现解锁新牌组和道具 / Your goal is to progress from Ante 1 to Ante 8, defeating each Ante's Boss Blind. Each round requires forming poker hands to reach a target score. Wins unlock new decks and items.
 
 ---
 
@@ -21,6 +27,18 @@ toc: false
 
 ---
 
+## 记分机制详解 / Scoring Mechanics
+
+游戏分数计算方式: **分数 = 筹码 × 倍率**。每次出牌先计算"基础筹码"(根据牌型)，再累加"出牌筹码"(每张牌的筹码值)，最后乘以"倍率"。正确理解这个公式是构建强力Build的基础 / Score = **Chips × Mult**. First add base chips (hand type), then card chips (each card played), then multiply by mult. Understanding this formula is the foundation of every strong build.
+
+| 举例 / Example | 计算 / Calculation | 分数 / Score |
+|:----:|:----:|:----:|
+| 对子(10筹码) + 2张K(各10筹码) | (10+10+10) × 2 | 60 |
+| 同花(35筹码) + 5张♥(各8筹码) | (35+40) × 4 | 300 |
+| 同花(35筹码) + 5张♥ + 2个倍率小丑(+8,+10) | (35+40) × (4+8+10) | 1650 |
+
+---
+
 ## 基本牌型速查 / Poker Hand Reference
 
 | 牌型 / Hand | 基础筹码 / Chips | 基础倍率 / Mult | 说明 / Note |
@@ -34,7 +52,7 @@ toc: false
 | **葫芦 / Full House** | 40 | 4 | 三条+一对 / Three + pair |
 | **四条 / Four of a Kind** | 60 | 7 | 四张同点数 / Four of same rank |
 | **同花顺 / Straight Flush** | 100 | 8 | 同花+顺子 / Same suit + consecutive |
-| **皇家同花顺 / Royal Flush** | 100 | 8 | 1O-J-Q-K-A同花 / 10-J-Q-K-A same suit |
+| **皇家同花顺 / Royal Flush** | 100 | 8 | 10-J-Q-K-A同花 / 10-J-Q-K-A same suit |
 
 > **核心策略**：选一种牌型专注升级——推荐**同花**或**对子**。同花用星球牌升级后基础分很高 / Core: Pick ONE hand type to focus — **Flush** or **Pair** recommended. Planet cards level it up fast
 
@@ -45,10 +63,25 @@ toc: false
 | 概念 / Concept | 说明 / Description |
 |------|------|
 | **小丑牌槽位 / Joker Slots** | 初始5个——可通过幻灵牌"无形"增加 / 5 default — can be increased via Spectral "Invisible" |
-| **加成类型 / Buff Types** | 加法倍率('+Mult')、乘法倍率('×Mult')、筹码加成('+Chips')、触发效果('on x trigger') / +Mult, ×Mult, +Chips, Trigger effects |
+| **加成类型 / Buff Types** | 加法倍率(+Mult)、乘法倍率(×Mult)、筹码加成(+Chips)、触发效果(on x trigger) / +Mult, ×Mult, +Chips, Trigger effects |
 | **常见类型 / Common Types** | 牌型加成(同花时+Mult)、花色加成(♥倍率)、点数加成(K/Q加成)、经济型(利息+钱)等 / Hand-type, suit-specific, rank-specific, economy, etc |
 | **小丑牌等级 / Joker Rarity** | 普通(白色)→罕见(绿色)→稀有(蓝色)→传奇(红色)。越稀有越强，但越难出现 / Common → Uncommon → Rare → Legendary. Rarer = stronger but harder to find |
 | **负面小丑 / Negative Joker** | 带"Negative"词缀的不占槽位——极稀有，见到了必拿 / Negative Jokers don't count toward the 5-slot limit — must-buy if seen |
+
+---
+
+## 商店购买优先级 / Shop Priority
+
+| 优先级 / Priority | 商品 / Item | 理由 / Reason |
+|:----:|:----:|------|
+| **1** | 小丑牌 / Joker | 游戏的核心——没有小丑牌引擎就无法通关 / The core engine — no Jokers = no win |
+| **2** | 星球牌 / Planet | 升级牌型基础分——后期分数来源 / Scales your hand's base score — late game scaling |
+| **3** | 塔罗牌 / Tarot | 改造牌组——删除低牌、增加花色、镀金等 / Deck modification — delete low cards, add suits, gild etc |
+| **4** | 牌组升级 / Deck Upgrades | 增加弃牌/出牌数、小丑槽位等 / Increase discards/hands/Joker slots |
+| **5** | 幻灵牌 / Spectral | 强力但随机性强——新手慎用 / Powerful but random — use with caution |
+| **6** | 标准包 / Standard Pack | 价格便宜但收益不稳定——缺钱时跳过 / Cheap but inconsistent — skip when tight on cash |
+
+**商店技巧**: 不要每回合都重刷(花钱)。先想清楚你需要什么再决定是否重刷。如果你已经有一个稳定的Build，每关花$5以内就够了 / **Shop tip**: Don't reroll every round. Know what you need before spending. If your build is stable, spend ≤$5 per round.
 
 ---
 
@@ -59,9 +92,22 @@ toc: false
 | **1** | **优先买小丑 / Prioritize Jokers** | 前3关别省钱——看到小丑牌就买。没有小丑牌引擎，再高牌型也打不过 / First 3 antes: buy every Joker you see. No Joker engine = can't scale |
 | **2** | **攒钱吃利息 / Save for Interest** | 每回合持有$5得$1利息，最高$5。前中期尽量保持$25过回合 / $5 held = $1 interest (cap $5). Try to end rounds with $25+ |
 | **3** | **选简单牌型 / Pick Simple Hands** | 新手不要硬打同花顺——对子或同花最稳。星球牌好找，Build逻辑清晰 / Beginners: don't chase straight flushes — pair or flush is most consistent |
-| **4** | **别怕跳过大盲 / Skip Big Blinds** | 如果大盲奖励只是$3-5——跳过拿标签奖励(比如免费星球牌或小丑牌)可能更值 / If Big Blind reward is $3-5 — skip for tag bonuses (free Planet/Joker etc) |
-| **5** | **第一个Boss最危险 / First Boss is Tricky** | Ante 1的Boss盲注只有300分——但新手常因牌型散架翻车。确保你有一套稳定出牌方案 / Ante 1 boss needs only 300 points — but new players often fail from scattered hands. Have a consistent plan |
+| **4** | **别怕跳过大盲 / Skip Big Blinds** | 如果大盲奖励只是$3-5——跳过拿标签奖励(免费星球/小丑)可能更值 / If Big Blind reward is $3-5 — skip for tag bonuses |
+| **5** | **第一个Boss最危险 / First Boss is Tricky** | Ante 1的Boss盲注只有300分——但新手常因牌型散架翻车。确保你有一套稳定出牌方案 / Ante 1 boss needs only 300 points — but beginners fail from scattered hands. Plan ahead |
+| **6** | **牌组不要太大 / Keep Deck Small** | 推荐30-45张牌。超过50张会导致抽牌不稳定——用"死神"塔罗牌销毁低牌 / Ideal deck: 30-45 cards. Over 50 = inconsistent draws — use "Death" tarot to delete low cards |
+| **7** | **不要害怕重开 / Don't Fear Restarts** | 前2关商店和小丑牌决定大局——如果前2关没有像样的小丑，重开一局更省时间 / First 2 shops determine the run — if no decent Jokers appear by Ante 2, restarting saves time |
 
 ---
 
-标签/Tags: 小丑牌, Balatro, 新手, Beginner, 攻略, Guide, 牌型, Poker, 技巧, Tips
+## 推荐新手Build路径 / Recommended Beginner Build Path
+
+1. **选蓝牌组** (+1出牌) 或 **黄牌组** ($10开局) / Pick Blue Deck (+1 hand) or Yellow Deck (+$10 start)
+2. **前3关**: 买所有看到的小丑牌。存$25吃利息 / First 3 rounds: buy every Joker. Save $25 for interest
+3. **选择牌型**: 观察你拿到的小丑牌——如果小丑加同花分→走同花；如果加对子分→走对子 / Choose hand: look at your Jokers — suit Joker? Go flush. Pair Joker? Go pair
+4. **第4-6关**: 买星球牌升级牌型，买塔罗牌改造牌组 / Ante 4-6: buy Planet cards to level your hand, Tarot to modify deck
+5. **第7-8关**: 找乘法倍率(×Mult)小丑——这些决定了你能不能在最后两关存活 / Ante 7-8: hunt ×Mult Jokers — these determine whether you survive the final push
+6. **通关! / Win!**
+
+---
+
+标签/Tags: 小丑牌, Balatro, 新手, Beginner, 攻略, Guide, 牌型, Poker, 技巧, Tips, 入门

@@ -1,0 +1,118 @@
+---
+toc: false
+---
+
+# 战斗系统 / Combat System
+
+33号远征队的战斗是回合制指令+实时QTE的结合。策略深度在行动点分配、元素连携和QTE完美判定之间 / Expedition 33's combat blends turn-based commands with real-time QTE. Strategic depth lies in AP allocation, elemental combos, and perfect QTE timing.
+
+---
+
+## 战斗流程 / Battle Flow
+
+| 阶段 / Phase | 操作 / Actions |
+|:----:|------|
+| **1. 指令阶段 / Command Phase** | 选择每个角色的行动(攻击/技能/道具/防御)——每个行动消耗AP / Choose each character's action (attack/skill/item/defend) — each action costs AP |
+| **2. QTE阶段 / QTE Phase** | 发动攻击时出现QTE判定——完美判定(绿区中心)=伤害x1.5 / QTE on attack — perfect (green center) = 1.5x damage |
+| **3. 敌方行动 / Enemy Phase** | 敌人攻击——玩家可以消耗1AP闪避/格挡——同样有QTE判定 / Enemy attacks — player can spend 1AP to dodge/block — also has QTE |
+| **4. 回合结束 / End Turn** | 所有角色AP重置为4——进入下一回合 / All characters AP reset to 4 — next turn begins |
+
+---
+
+## 行动点(AP)管理 / AP Management
+
+| 策略 / Strategy | 说明 / Description |
+|:----:|------|
+| **3+1原则 / 3+1 Rule** | 每回合3AP用于进攻+留1AP用于防御闪避——最稳妥的分配方式 / 3AP for offense + 1AP reserved for defense — safest allocation |
+| **爆发回合 / Burst Turn** | 有终极技时存AP——4AP全部用于放技能。但要注意终极技需要蓄力/准备回合 / Save AP for ultimate skill — 4AP for full skill combo. Note: ultimates may need charge turns |
+| **防御型回合 / Defensive Turn** | Boss放大招时——全队2AP防御+2AP治疗——减员等于战斗失败 / Boss uses ultimate — party 2AP defend + 2AP heal — death = fight over |
+| **AP上限提升 / AP Cap Up** | 部分遗物和技能可以提升AP上限(如+1=上限5)。上限越高=爆发越强 / Some relics and skills boost AP cap. Higher cap = bigger burst potential |
+
+---
+
+## 元素反应详解 / Elemental Reactions
+
+| 组合 / Combo | 触发方式 / Trigger | 效果 / Effect |
+|:----:|:----:|------|
+| **冻结 / Freeze** | 水+冰(先后顺序可互换) / Water + Ice | 目标跳过下一回合——对Boss效果减半(只跳过部分行动) / Target skips next turn — halved on bosses |
+| **爆炸 / Explosion** | 火+油(敌人需要先有"油"状态) / Fire + Oil | 范围伤害x2+击退——油状态可由维克多的油弹技能施加 / AoE dmg x2 + knockback — oil applied by Victor's Oil Shot |
+| **传导 / Conduct** | 雷+水 / Lightning + Water | 单体伤害传导到相邻敌人——每传导一次伤害-20% / Single dmg chains to adjacent enemies — -20% per chain |
+| **烟雾 / Smoke** | 暗+火 / Shadow + Fire | 全队闪避率+50%持续2回合——配合泽农烟雾弹效果叠加 / Party evasion +50% for 2 turns — stacks with Zenon's Smoke Bomb |
+| **腐蚀 / Corrode** | 暗+水 / Shadow + Water | 目标全属性抗性-40%持续3回合——对高抗性Boss极有效 / Target all elemental resist -40% for 3 turns — excellent against high-resist bosses |
+
+**元素连携核心技巧**: 让露娜(冰)+古斯塔夫(物理)配合——先水后冰冻结→古斯塔夫重击冻结目标→额外伤害x1.5 / **Elemental combo core**: Luna (ice) + Gustave (physical) — water then ice to freeze → Gustave heavy on frozen target → bonus dmg x1.5.
+
+---
+
+## 完美QTE练习 / Perfect QTE Practice
+
+| QTE类型 / Type | 判定方式 / Judgment | 完美区间 / Perfect Window |
+|:----:|:----:|:----:|
+| **攻击QTE / Attack QTE** | 光圈收缩到中心时按键 / Press when circle shrinks to center | ±0.1秒 / ±0.1s |
+| **防御QTE / Block QTE** | 攻击命中前瞬间按键 / Press right before hit connects | ±0.15秒 / ±0.15s |
+| **闪避QTE / Dodge QTE** | 同防御——但失误后闪避失败直接受伤 / Same as block — miss = hit taken | ±0.1秒 / ±0.1s |
+| **连携QTE / Combo QTE** | 多个角色连续按键——每个角色有一个按键 / Multiple characters press in sequence | 每人±0.2秒 / ±0.2s per char |
+
+**QTE练习方法**: 游戏设置中有QTE练习模式——建议开荒前练习10分钟。完美QTE等于全队伤害x1.5——相当于多了一个角色 / **Practice**: The game has a QTE practice mode in settings — spend 10 min before starting. Perfect QTE = 1.5x party damage — equivalent to an extra character.
+
+---
+
+## 角色战斗定位 / Character Combat Roles
+
+| 角色 / Character | 定位 / Role | 核心职责 / Core Duty | 最佳出手时机 / Best Timing |
+|:----:|:----:|------|:----:|
+| **古斯塔夫 / Gustave** | 坦克+物理DPS / Tank + Physical DPS | 吸引仇恨、巨剑重击输出 / Taunt, greatsword heavy attacks | Boss蓄力时——重击可打断 / Interrupt boss charge with heavy |
+| **玛艾勒 / Maelle** | 治疗+增益 / Healer + Buffer | 全队血量维持>50%、驱散Debuff / Party HP >50%, debuff cleanse | 回合开始时——评估全队血量再行动 / Start of turn — assess party HP |
+| **露娜 / Luna** | 法师+控场 / Mage + Controller | 元素连携触发者——冰系控场优先 / Elemental combo trigger — freeze control | 敌人聚堆时——AOE冻结+连携 / When enemies group — AoE freeze + combo |
+| **泽农 / Zenon** | 刺客+破甲 / Assassin + Armor Break | 背刺、破甲Debuff、单体爆发 / Backstab, armor break, single-target burst | Boss露出破绽时——烟雾弹+背刺连招 / Boss exposed — smoke bomb + backstab |
+| **维克多 / Victor** | 炮台+辅助 / Turret + Support | 放置炮台提供持续输出、减伤盾 / Deploy turret for sustained DPS, damage shield | 回合开始先放炮台——炮台每回合自动攻击 / Place turret first — auto-attacks each turn |
+| **艾莉丝 / Iris** | 弓手+爆发 / Archer + Burst | 远程攻击、标记目标增伤、终极技充能 / Range attacks, mark target, ultimate charge | Boss破防后——终极技+爆发连射 / After boss stagger — ultimate + burst volley |
+
+---
+
+## Boss战策略 / Boss Strategy
+
+| Boss类型 / Type | 通用策略 / General Strategy |
+|:----:|:------|
+| **单体Boss / Single Boss** | 玛艾勒保持全队血量>50%。古斯塔夫/艾莉丝持续输出。露娜控场。Boss放大招时全队防御 / Maelle keeps HP >50%. Gustave/Iris sustained DPS. Luna controls. Party defends during boss ultimate |
+| **多目标Boss / Multi-target Boss** | 维克多炮台+露娜AOE→优先清小怪→再打Boss本体。不要被包围 / Victor turret + Luna AoE → clear adds first → then main boss. Don't get surrounded |
+| **高抗性Boss / High Resist Boss** | 先用腐蚀连携(暗+水)降低抗性→再上主力输出。元素抗性降低后伤害x1.6+ / Corrode combo (Shadow+Water) first to reduce resist → then DPS. After debuff = 1.6x+ damage |
+| **限时Boss / Timed Boss** | 全队堆爆发输出——泽农+艾莉丝+古斯塔夫——4回合内解决。不需要玛艾勒——速战速决 / All burst — Zenon + Iris + Gustave — finish in 4 turns. No healer needed — kill before they kill you |
+
+### Boss攻击模式识别 / Boss Attack Pattern Recognition
+
+| 前兆 / Telegraph | 即将释放 / Incoming | 对策 / Counter |
+|:----:|:----|:----|
+| **Boss身上泛红** | 强力单体攻击（可格挡） | 坦克角色消耗1AP格挡——完美格挡可反击 / Tank spend 1AP to block — perfect block = counter |
+| **Boss脚下出现光圈** | 范围AOE攻击（不可格挡） | 全队消耗1AP闪避——闪避失败会被击飞 / All party spend 1AP to dodge — miss = knockback |
+| **Boss停止行动一回合** | 下回合将释放终极技 / Charging ultimate | 全队防御+加满血——下回合全员1AP防御 / All defend + heal — next turn all spend 1AP on defend |
+| **Boss召唤小怪** | 需要快速清理 / Adds need quick clear | 露娜/维克多AOE——2回合内清完 / Luna/Victor AoE — clear within 2 turns |
+| **Boss目标切换至后排** | 跳过坦克攻击治疗/法师 | 古斯塔夫使用嘲讽技能强制拉回仇恨 / Gustave use taunt to pull aggro back |
+
+---
+
+## 推荐阵容 / Recommended Parties
+
+| 阵容 / Party | 配置 / Setup | 适用场景 / Best For |
+|:----:|:----|:----|
+| **开荒均衡队 / Balanced Starter** | 古斯塔夫 + 玛艾勒 + 露娜 + 艾莉丝 | 探索+主线推进——有坦有奶有输出有控制 / Exploration + main story — balanced all-round |
+| **爆发速杀队 / Burst Speed Kill** | 泽农 + 艾莉丝 + 维克多 + 古斯塔夫 | 限时Boss、刷素材——没有治疗，速战速决 / Timed boss, farming — no healer, kill fast |
+| **法系轰杀队 / Magic Burst** | 露娜 + 维克多 + 玛艾勒 + 艾莉丝 | 群体战斗——维克多炮台+露娜AOE覆盖全场 / Group fights — Victor turret + Luna AoE coverage |
+| **Boss挑战队 / Boss Slayer** | 古斯塔夫 + 玛艾勒 + 泽农 + 露娜 | 高难度Boss——泽农破甲+露娜控制+古斯塔夫输出 / Hard bosses — Zenon armor break + Luna control + Gustave DPS |
+
+---
+
+## 战斗状态效果 / Battle Status Effects
+
+| 状态 / Status | 效果 / Effect | 常见来源 / Common Source |
+|:----:|:------|:----:|
+| **灼烧 / Burn** | 每回合损失HPx0.1(3回合) / Lose HP x0.1 each turn (3 turns) | 火系技能 / Fire skills |
+| **冻结 / Freeze** | 跳过下一回合 / Skip next turn | 水+冰连携 / Water + Ice combo |
+| **麻痹 / Paralyze** | 30%概率跳过回合 / 30% chance to skip turn | 雷系技能 / Lightning skills |
+| **减速 / Slow** | AP恢复上限-1(持续2回合) / AP cap -1 (2 turns) | 冰系技能 / Ice skills |
+| **恐惧 / Fear** | 20%概率逃跑(持续2回合) / 20% chance to flee (2 turns) | 暗影技能 / Shadow skills |
+| **护盾 / Shield** | 吸收伤害(数值=施放者智力x2) / Absorb dmg (amount = caster INT x2) | 玛艾勒/维克多技能 / Maelle/Victor skills |
+
+---
+
+标签/Tags: 33号远征队, Expedition 33, 战斗, Combat, QTE, 攻略, Guide

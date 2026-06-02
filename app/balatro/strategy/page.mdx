@@ -4,13 +4,26 @@ toc: false
 
 # 进阶技巧 / Advanced Tips
 
-当你掌握了Balatro的基础——选择牌型、买小丑、攒利息——是时候学习高阶技巧了 / Once you've mastered the basics — pick a hand, buy Jokers, save interest — it's time for advanced strategies.
+当你掌握了小丑牌的基础——选择牌型、买小丑、攒利息——是时候学习高阶技巧了。本章涵盖倍率原理、经济管理、Boss应对和无限模式攻略 / Once you've mastered the basics — pick a hand, buy Jokers, save interest — it's time for advanced strategies. This chapter covers mult mechanics, economy management, boss counters, and Endless mode.
 
 ---
 
-## 高分核心策略 / Core High-Score Strategy
+## 经济管理 / Economy Management
 
-### 倍率堆叠原理 / Mult Stacking
+利息是小丑牌中最被低估的机制。每回合结束时，每$5存款产生$1利息(上限$5)。这意味着**存$25 = 每回合$5额外收入**——相当于一个免费"贪婪小丑" / Interest is the most underrated mechanic. At end of each round, every $5 saved earns $1 interest (cap $5). **$25 saved = $5 free income per round** — equivalent to a free Greedy Joker.
+
+| 关数 / Ante | 优先经济策略 / Economic Priority |
+|:----:|------|
+| **1-3** | 尽量存$25吃满利息。不买不需要的小丑。跳过小盲拿金钱标签(额外$25直接帮你达到利息上限) / Save to $25 for max interest. Skip small blinds for Money tags ($25 bonus pushes you to interest cap) |
+| **4-5** | 开始花钱升级Build——但保证不低于$10-$15。利息少了但Build强度比利息重要 / Spend to strengthen build — but keep $10-15 minimum. Build strength > interest at this stage |
+| **6-8** | 该花的钱全部花完。存钱的唯一意义是赌"债券"标签(花钱刷商店) / Spend everything. Only save to gamble on "Coupon" tag (discount) for shop rerolls |
+| **无限模式 / Endless** | 钱几乎没用——小丑牌槽满了，商店里没有需要的。重点是最大化分数 / Money is irrelevant — Joker slots full, nothing to buy. Focus is max score |
+
+**经济技巧**: 每关结束时看看你的存款——如果离$25差$2-$4，考虑卖掉一个不需要的小丑补上。$5利息比你保留一个过渡小丑的价值高 / **Pro tip**: Check your cash at round end — if you're $2-4 short of $25, consider selling a transitional Joker. $5 interest > a filler Joker.
+
+---
+
+## 倍率堆叠原理 / Mult Stacking
 
 分数 = (基础筹码 + 筹码加成) × (基础倍率 + 加法倍率) × 乘法倍率连乘 / Score = (base chips + chip bonuses) × (base mult + add mult) × (mult × mult × mult...)
 
@@ -21,14 +34,31 @@ toc: false
 | **7-8关 / Late (Ante 7-8)** | 乘法倍率连乘 | 分数爆炸 / Score explosion |
 | **无限模式 / Endless** | 纯乘法倍率 + 手牌中K/Q | 需要天文数字 / Need astronomical scores |
 
+**加法vs乘法误区**: 新手常犯的错误是堆加法倍率(+Mult)太多。1个×2倍率=任何+Mult小丑在后期。优先级: ×Mult > 筹码 > +Mult、 / **Common mistake**: Overstacking +Mult. A single ×2 Joker outperforms any +Mult Joker in late game. Priority: ×Mult > Chips > +Mult.
+
 ### 关键乘法倍率组合 / Key ×Mult Combos
 
 | 小丑组合 / Joker Combo | 计算 / Calculation | 效果 / Magnitude |
 |------|:----:|:----:|
-| Barron(手牌K=×1.5) × 5张K | 1.5^5 | ×7.6 |
-| Barron + Steel King(全钢牌K) | 1.5^5 × 1.5^5 | ×57.7 |
-| Barron + Steel + Red Seal | 1.5^5 × 1.5^5 × 1.5^5 | ×437 |
-| Bloodstone(1/2×2) × 5张♥ | 2^(5×50%) 期望值 / expected | ×5.7 |
+| **Barron(手牌K=×1.5) × 5张K** | 1.5^5 | ×7.6 |
+| **Barron + Steel King(全钢牌K)** | 1.5^5 × 1.5^5 | ×57.7 |
+| **Barron + Steel + Red Seal** | 1.5^5 × 1.5^5 × 1.5^5 | ×437 |
+| **Bloodstone(1/2×2) × 5张♥** | 2^(5×50%) | ×5.7 |
+| **Triboulet(出牌K/Q=×2) × 5张K** | 2^5 | ×32 |
+| **Triboulet + Sock and Buskin** | 2^5 × 2^5 | ×1024 |
+
+---
+
+## Build类型速查 / Build Archetypes
+
+| 类型 / Archetype | 核心小丑 / Core Joker | 牌型 / Hand | 难度 / Difficulty |
+|:----:|:----:|:----:|:----:|
+| **同花流 / Flush** | 同花之王、花色小丑 / Flush King, Suit Joker | ♠/♥/♣/♦ 同花 | ★☆☆ 新手友好 |
+| **对子流 / Pair** | 对子之王、欢呼小丑 / Pair King, Banner | 对子/两对 | ★☆☆ 最稳 |
+| **高牌流 / High Card** | 钢铁小丑、钢铁之王 / Steel Joker, Steel King | 高牌 | ★★★ 需要经济支撑 |
+| **顺子流 / Straight** | 顺子之王、跑者 / Straight King, Runner | 顺子 | ★★★ 操作要求高 |
+| **同花顺 / Straight Flush** | 同花顺之王 / Straight Flush King | 同花顺 | ★★★★ 高难高分 |
+| **四条/葫芦 / 4oak/FH** | 四条之王、精英 / 4oak King, Elite | 四条/葫芦 | ★★★ 中等 |
 
 ---
 
@@ -36,10 +66,13 @@ toc: false
 
 | 操作 / Action | 方法 / Method | 效果 / Effect |
 |:----:|------|------|
-| **移除低牌 / Remove Low Cards** | 塔罗牌"死神"("The Death")——销毁2张低牌 / Tarot "Death" — destroy 2 low cards | 牌组变薄，更容易抽到高牌 / Thinner deck = more consistent |
+| **移除低牌 / Remove Low Cards** | 塔罗牌"死神"("The Death")——销毁2张低牌 / Tarot "Death" — destroy 2 low cards | 牌组变薄，更容易抽到高牌 / Thinner deck = better consistency |
 | **增加同花色牌 / Add Same Suit** | 塔罗牌"战车"("The Chariot")——把1张牌变成指定花色 / Tarot "Chariot" — change 1 card to needed suit | 提高同花概率 / Higher flush consistency |
-| **全牌组变一种点数 / Convert to One Rank** | 先用"魔术师"复制——再用"世界"转换 / Copy with "Magician" then convert with "World" | 稳定出四条或葫芦 / Consistent 4-of-a-kind or full house |
+| **全牌组变一种点数 / Convert to One Rank** | 先用"魔术师"复制——再用"世界"转换 / Copy with "Magician" then convert with "World" | 稳定出四条或葫芦 / Consistent 4oak or full house |
 | **全钢牌化 / Steel Everything** | 幻灵牌"化钢"("Familiar") + 复制 / Spectral "Familiar" + duplication | 手牌中每张钢牌=×1.5倍率 / Each steel card in hand = ×1.5 Mult |
+| **全金/石牌 / Gold/Stone Cards** | 幻灵牌"点石成金" + 复制 / Spectral "Gold" + duplication | 金牌=每回合$1，石牌=加筹码 / Gold = $1/round, Stone = chips |
+
+**牌组改造的时机**: 前4关不要过度改造——保留资金买小丑。第5关开始批量改造。理想牌组大小是30-40张——少于30张容易牌库枯竭 / **Timing**: Don't over-modify first 4 rounds — save for Jokers. Start bulk modification from Ante 5. Ideal deck size: 30-40 cards — below 30 risks deck-out.
 
 ---
 
@@ -66,6 +99,8 @@ toc: false
 | **Ante 16** | ~10万亿 / ~10T | Barron/钢铁组合 / Barron + Steel combo |
 | **Ante 20+** | 天文数字 / Astronomical | 完美小丑组合+全钢牌组 / Perfect Joker setup + full Steel deck |
 
+**无限模式的核心**: 无限模式不是比谁Build强——是比谁的小丑combo能撑最久。Ante 12以后，所有非乘法小丑都变成废物。**唯一策略**: 凑齐3-4个乘法倍率小丑+全钢牌组+红印牌+Barron / **Endless core**: It's not about build strength — it's about which Joker combo scales furthest past Ante 12. After Ante 12, any non-×Mult Joker is worthless. **Only strategy**: 3-4 ×Mult Jokers + full Steel deck + Red Seal cards + Barron.
+
 ---
 
-标签/Tags: 小丑牌, Balatro, 进阶, Advanced, 策略, Strategy, 高分, High Score, 攻略, Guide
+标签/Tags: 小丑牌, Balatro, 进阶, Advanced, 策略, Strategy, 高分, High Score, 攻略, Guide, 经济, Economy
