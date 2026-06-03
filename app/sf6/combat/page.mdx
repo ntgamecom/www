@@ -1,0 +1,157 @@
+---
+title: 战斗系统 / Combat
+toc: false
+---
+
+# 战斗系统 / Combat System
+
+《街霸6》的战斗系统建立在Drive System之上，结合了系列经典的帧数数据、立回策略和确认技巧。理解这些概念是提升实力的关键。
+
+SF6's combat system is built on the Drive System, layered with classic frame data concepts, neutral game strategies and hit confirm techniques. Mastering these fundamentals is key to improving.
+
+## Drive系统深度解析 / Drive System Deep Dive
+
+Drive System的核心是六格驱动槽（Drive Gauge）。所有驱动技能共享这一资源，因此资源管理是战斗中的重要环节。
+
+The core of the Drive System is the six-stock Drive Gauge. All drive skills share this resource, making gauge management a critical aspect of combat.
+
+### Burnout（驱动枯竭）状态
+
+当驱动槽完全耗尽时，角色会进入Burnout状态。在此状态下：
+
+When the Drive Gauge is fully depleted, the character enters Burnout state:
+
+| 效果 / Effect | 说明 / Description |
+|---|---|
+| 无法使用驱动技能 Cannot use drive skills | 所有DI、DR、格挡、反击均不可用 All DI, DR, parry, reversal disabled |
+| 受到额外伤害 +50% damage taken | 被击中时承受1.5倍伤害 Take 1.5x damage on hit |
+| 恢复时间 Recovery time | Burnout持续约7秒，完全恢复后重新获得6格槽 Burnout lasts ~7 seconds, full 6 stocks on recovery |
+| 退避壁弹 Scrap Wall bounce | 被DI攻击命中时触发退避壁弹，无法反击 Triggers Scrap Wall bounce on DI hit, no punish possible |
+
+Burnout是游戏中最大的劣势状态，应尽量避免不必要地消耗全部驱动槽。
+
+Burnout is the most disadvantaged state in the game. Avoid unnecessary full depletion of the Drive Gauge.
+
+### Drive Impact（驱动冲击）对策
+
+应对DI的方法：
+
+Methods to counter DI:
+
+| 对策 / Counter | 输入 / Input | 时机 / Timing |
+|---|---|---|
+| 反击DI / Counter DI | 重拳+重脚 HP+HK | 看到对手DI后立刻反应 React as soon as opponent DI is visible |
+| 格挡 / Block | 后拉方向 Hold back | DI命中前防御 Block before DI connects |
+| 完美格挡 / Perfect Parry | 前方向 Forward | DI攻击前2帧内 Within 2 frames before DI attack |
+| 超必杀 / Super Art | 超必杀指令 SA input | 用超必杀无敌帧回避 Use invincibility frames of SA |
+| 跳避 / Jump | 上方向 Up | 跳过DI攻击 Jump over DI attack |
+| 后撤步 / Backdash | 后后 Back x2 | 利用无敌帧回避 Use backdash invincibility |
+
+### Drive Rush（驱动突进）连段应用
+
+DR在连段中的主要用途：
+
+DR's primary applications in combos:
+
+| 用途 / Usage | 消耗 / Cost | 说明 / Description |
+|---|---|---|
+| 普通技取消 Cancel from normal | 3格 3 stocks | 用特定普通技取消出DR，后续连段 Cancel a normal into DR for follow-up |
+| 地面突进 Raw approach | 1格 1 stock | 从站立状态直接发动DR接近 Raw DR from neutral to approach |
+| 版边连段 Corner carry | 3格 3 stocks | DR搬运对手到版边 Use DR to carry opponent to corner |
+| 正逆择 Side switch | 3格 3 stocks | DR通过对手切换左右 Use DR to cross under for side switch |
+
+### Perfect Parry（完美格挡）
+
+在攻击命中前2帧内进行格挡会触发完美格档。完美格档后角色可以发动强制反击（Guaranteed Punish），即使原本处于不利帧数也能反击。完美格档是高风险高回报的技术，需要精确的阅读和反应。
+
+Performing a parry within 2 frames before an attack hits triggers a Perfect Parry. The character can then execute a guaranteed punish even from disadvantage. Perfect Parry is a high-risk, high-reward technique requiring precise reads and reactions.
+
+## 帧数数据基础 / Frame Data Basics
+
+理解帧数数据是进阶的第一步。所有格斗游戏的动作都以帧（1/60秒）为单位衡量。
+
+Understanding frame data is the first step to advanced play. All fighting game actions are measured in frames (1/60 second).
+
+| 术语 / Term | 说明 / Description |
+|---|---|
+| 发生帧 / Startup | 出招到判定出现所需的帧数 Frames from input to active hitbox |
+| 持续帧 / Active | 攻击判定持续存在的帧数 Frames the hitbox remains active |
+| 收招帧 / Recovery | 判定结束后到角色可行动的帧数 Frames from active end to actionable state |
+| 有利帧 / Frame Advantage | 攻击后比对手先行动的正帧数 Positive frames where you act before opponent |
+| 不利帧 / Frame Disadvantage | 攻击后比对手后行动的负帧数 Negative frames where opponent acts first |
+| 确反 / Punish | 防御对手招式后利用不利帧反击 Counterattack after blocking a negative move |
+| 目押 / Link | 前一招收招结束到下一招发生之间的精确连接 Precise timing between recovery of one move and startup of another |
+
+### 帧数表阅读 / Reading Frame Data
+
+示例：Ryu的重升龙拳（HP Shoryuken）
+
+Example: Ryu's HP Shoryuken
+
+| 属性 / Property | 数值 / Value |
+|---|---|
+| 发生 / Startup | 3帧 3 frames |
+| 持续 / Active | 8帧 8 frames |
+| 收招 / Recovery | 23帧 23 frames |
+| 防御后不利 / Block Advantage | -22帧（确反） -22 frames (punishable) |
+
+### 不利帧分级 / Disadvantage Tiers
+
+| 不利帧 / Disadvantage | 后果 / Consequence |
+|---|---|
+| -1到-3帧 / -1 to -3 | 微不利，对方不能稳定确反 Slight disadvantage, no guaranteed punish |
+| -4到-6帧 / -4 to -6 | 中不利，可能被轻攻击确反 Moderate, may be punished by light attacks |
+| -7到-10帧 / -7 to -10 | 明显不利，被中攻击确反 Clearly negative, punished by medium attacks |
+| -11帧以上 / -11+ | 严重不利，被重攻击或必杀技确反 Severe, punished by heavy attacks or specials |
+
+## 立回 / Neutral Game
+
+立回是对局中双方在不直接接触时进行的牵制和移动博弈。目标是创造自己的进攻机会，同时阻止对手做同样的事情。
+
+Neutral game is the positioning and poking battle when both players are not directly engaging. The goal is to create your own offense opportunities while denying the opponent's.
+
+| 要素 / Element | 说明 / Description |
+|---|---|
+| 牵制技 / Poking | 用长距离普通技试探对手反应，命中后可取消连段 Use long-range normals to probe, cancel into combo on hit |
+| 差合 / Whiff Punish | 引诱对手出招落空后进行反击 Lure opponent into whiffing then punish |
+| 地面压制 / Footsies | 控制地面空间，在对手攻击范围边缘作战 Control ground space, fight at edge of opponent's range |
+| 跳跃攻击 / Jump-in | 用跳跃接近并压制对手 Approach with jump attack to apply aerial pressure |
+| 后退牵制 / Backwalk Poke | 后退中出招，利用攻击判定阻止对手追击 Poke while backwalking to intercept opponent pursuit |
+
+## 起攻 / Okizeme (Oki)
+
+击倒对手后进行的压制叫做起攻。良好的起攻可以迫使对手在起身时进行防守猜拳。
+
+Pressure applied after knocking down the opponent is called okizeme. Good oki forces the opponent into a defensive mixup on wake-up.
+
+| 起攻选项 / Oki Option | 说明 / Description |
+|---|---|
+| 安全压 / Safe Jump | 精确时机的跳跃攻击，即使被防也无确反风险 Timed jump attack that is safe on block |
+| 投压制 / Throw Pressure | 在对手起身时进行投技，逼迫对手拆投 Throw on opponent wake-up, forcing tech reaction |
+| 打击/投择 / Strike/Throw Mix | 同时威胁打击和投的起攻选择 Oki that threatens both strike and throw |
+| 打背 / Cross-up | 跳过对手头顶造成逆向攻击 Jump over opponent for cross-up attack |
+| 延迟进攻 / Delay Pressure | 延迟出招打乱对手起身时机判断 Delay attack timing to disrupt opponent wake-up |
+
+## 确反 / Punishing
+
+确反是格斗游戏最基础也是最重要的技术。防御对手的破绽招式后进行反击。了解每个角色的安全技和破绽技是对局准备的一部分。
+
+Punishing is the most fundamental and important technique in fighting games. Counterattack after blocking an opponent's unsafe move. Knowing each character's safe and unsafe moves is part of matchup preparation.
+
+### 确反示例 / Punish Examples
+
+| 情况 / Situation | 确反方式 / Punish Method |
+|---|---|
+| -2到-3帧 2-3 frame disadvantage | 轻攻击确认 Light attack confirm |
+| -4到-6帧 4-6 frame disadvantage | 中攻击开始连段 Medium attack starter combo |
+| -7到-10帧 7-10 frame disadvantage | 重攻击开始连段 Heavy attack starter combo |
+| -11到-15帧 11-15 frame disadvantage | 重攻击+必杀技 Heavy into special cancel |
+| -16帧以上 16+ disadvantage | 超必杀确反 Super Art punish |
+
+掌握这些基础战斗概念后，进入训练模式进行针对性练习可以事半功倍。
+
+Mastering these fundamental combat concepts and practicing them in Training Mode will accelerate your improvement significantly.
+
+---
+
+Tags: combat, 战斗, Drive System, frame data, neutral, 立回, oki, 起攻, punish, 确反
