@@ -1,0 +1,146 @@
+---
+title: 石油化工 / Oil
+description: 炼油，裂解与化工产品 / Refining, cracking, and petrochemical products
+toc: false
+---
+
+## 石油化工概述 / Petrochemical Overview
+
+石油加工是 Factorio 的中期核心挑战。你从石油中提炼多种液体，然后裂解和组合它们，生产出塑料、硫磺、电池等关键材料。石油加工的复杂度远超金属冶炼。
+
+Oil processing is the core mid-game challenge in Factorio. You refine crude oil into multiple fluids, then crack and combine them to produce plastics, sulfur, batteries, and other critical materials. Oil processing is far more complex than metal smelting.
+
+## 原油采集 / Crude Oil Collection
+
+### 油井 / Pumpjack
+在原油油田上放置油泵。油泵速度随油田产量降低而降低。产量低于 20% 时，考虑使用速度模块。
+
+Place Pumpjacks on crude oil fields. Pumpjack speed decreases as field yield drops. Consider speed modules when yield falls below 20%.
+
+### 原油运输 / Crude Oil Transport
+- 管道 (Pipe) — 短途运输，简单但压力损耗大 / Short distance, simple but high pressure loss
+- 液罐车厢 (Fluid Wagon) — 长途运输，推荐使用火车 / Long distance, recommended via train
+- 桶装油 (Barreling) — 与机器人物流配合使用 / Used with bot logistics
+
+### 油井产量 / Oil Well Yield
+原油油田的产量显示为百分比 (Yield%)。100% 表示每秒 10 单位。油井产量永远不会降到 0，但会持续衰减。
+
+Oil field yield is displayed as a percentage (Yield%). 100% equals 10 units per second. Oil wells never reach zero but decline continuously.
+
+## 炼油 / Oil Refining
+
+### 基础炼油 / Basic Oil Processing
+将原油炼成三种产品：
+```
+原油 100 → 重油 30 + 轻油 30 + 石油气 40
+Crude 100 → Heavy Oil 30 + Light Oil 30 + Petroleum Gas 40
+```
+副产品比例固定。这三种产品需要合理消耗或裂解。
+
+The byproduct ratio is fixed. These three products must be consumed or cracked appropriately.
+
+### 高级炼油 / Advanced Oil Processing
+``` 
+原油 100 + 水 50 → 重油 10 + 轻油 45 + 石油气 55
+Crude 100 + Water 50 → Heavy Oil 10 + Light Oil 45 + Petroleum Gas 55
+```
+更高效的配方，产生更多石油气和轻油。需要先进炼油科技。
+
+A more efficient recipe that produces more petroleum gas and light oil. Requires Advanced Oil Processing research.
+
+### 炼油厂配置 / Refinery Configuration
+建议设置 4-10 台炼油厂，输出通过储液罐缓冲，管道连接到下游工厂。
+
+Configure 4-10 refineries with outputs buffered in storage tanks, piped to downstream facilities.
+
+## 裂解 / Cracking
+
+### 重油 → 轻油 / Heavy Oil → Light Oil
+```
+重油 40 + 水 30 → 轻油 30
+Heavy Oil 40 + Water 30 → Light Oil 30
+```
+当重油过多时使用 / Use when heavy oil is in excess.
+
+### 轻油 → 石油气 / Light Oil → Petroleum Gas
+```
+轻油 30 + 水 30 → 石油气 20
+Light Oil 30 + Water 30 → Petroleum Gas 20
+```
+最常用的裂解配方。石油气短缺时开启。
+
+The most commonly used cracking recipe. Enable when petroleum gas is in short supply.
+
+### 裂解控制 / Cracking Control
+使用电路网络控制裂解：在储液罐上连接小型泵，当某种液体超过 20000 单位时开启裂解。
+
+Use the circuit network to control cracking: connect small pumps to storage tanks and enable cracking when a fluid exceeds 20000 units.
+
+## 关键产品 / Key Products
+
+### 塑料 / Plastic
+```
+石油气 20 + 煤 1 → 塑料 2
+Petroleum Gas 20 + Coal 1 → Plastic 2
+```
+用于红板、高级电路、低密度结构。塑料几乎是所有后期产品的基础。
+
+Used for red circuits, advanced circuits, and low-density structures. Plastic is the basis for nearly all late-game products.
+
+### 硫磺 / Sulfur
+```
+石油气 30 + 水 75 → 硫磺 2
+Petroleum Gas 30 + Water 75 → Sulfur 2
+```
+用于硫酸和硫化铜，最终用于蓝板和生产模块。
+
+Used for sulfuric acid and copper sulfide, ultimately for blue circuits and productivity modules.
+
+### 硫酸 / Sulfuric Acid
+```
+硫磺 5 + 铁矿 1 + 水 100 → 硫酸 50
+Sulfur 5 + Iron Ore 1 + Water 100 → Sulfuric Acid 50
+```
+用于电池、蓝板、铀矿处理。
+
+Used for batteries, blue circuits, and uranium processing.
+
+### 电池 / Battery
+```
+硫酸 20 + 铁板 2 + 铜板 1 → 电池 1
+Sulfuric Acid 20 + Iron Plate 2 + Copper Plate 1 → Battery 1
+```
+用于蓝板、机器人框架、激光炮塔。
+
+Used for blue circuits, robot frames, and laser turrets.
+
+### 固体燃料 / Solid Fuel
+可分别从重油、轻油、石油气中制造 / Can be made from heavy oil, light oil, or petroleum gas:
+- 重油 20 → 固体燃料 2 / Heavy Oil 20 → Solid Fuel 2
+- 轻油 20 → 固体燃料 3 / Light Oil 20 → Solid Fuel 3
+- 石油气 20 → 固体燃料 2 / Petroleum Gas 20 → Solid Fuel 2
+
+轻油是最有效率的原料 / Light oil is the most efficient input.
+
+## 高级产品 / Advanced Products
+
+### 润滑剂 / Lubricant
+```
+重油 10 → 润滑剂 10
+Heavy Oil 10 → Lubricant 10
+```
+用于电动机 / Used for electric engines.
+
+### 液罐车控制 / Fluid Wagon Control
+设置火车调度：油井装满原油 → 炼油厂空车。使用电路控制液罐列车的装卸。
+
+Set train schedules: oil field full of crude → refinery empty. Use circuit control for fluid train loading/unloading.
+
+### 综合化工厂 / Integrated Chemical Plant
+设计一个包含炼油、裂解、塑料、硫磺和电池的综合单元，用管道和化工泵控制流量。
+
+Design an integrated unit containing refining, cracking, plastic, sulfur, and battery production, using pipes and chemical pumps to control flow.
+
+---
+
+标签 / Tags: oil refining cracking plastic sulfur battery petrochemical Factorio

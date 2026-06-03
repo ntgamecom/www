@@ -1,0 +1,116 @@
+---
+title: 防御与战斗 / Defense
+description: 炮塔，虫群与污染管理 / Turrets, biters, and pollution management
+toc: false
+---
+
+## 敌人机制 / Enemy Mechanics
+
+### 虫群 / Biters
+异星虫群 (Biters) 是 Factorio 中的原生敌人。它们会因污染而进化并发动攻击。虫群有三种类型：
+
+The native enemies in Factorio. They evolve due to pollution and launch attacks. There are three types:
+
+- 小虫 (Small Biter) — 基础兵种 / Basic melee unit
+- 中虫 (Medium Biter) — 中期威胁 / Mid-game threat
+- 大虫 (Big Biter) — 高血量高伤害 / High HP and damage
+- 巨虫 (Behemoth Biter) — 后期最强 / Endgame powerhouse
+- 喷吐虫 (Spitter) — 远程攻击单位 / Ranged attack unit
+- 巨喷虫 (Behemoth Spitter) — 终极远程威胁 / Ultimate ranged threat
+
+### 虫巢 / Nests
+虫巢会不断生成虫群。必须彻底摧毁虫巢才能阻止再生。虫巢越密集，敌人的攻击波越频繁。
+
+Nests continuously spawn biters. Nests must be completely destroyed to prevent respawning. Denser nest clusters mean more frequent attack waves.
+
+### 进化因子 / Evolution Factor
+游戏有隐藏的进化因子，随三项指标增加：
+- 0-40% — 污染产生总量 / Total pollution produced
+- 0-30% — 摧毁虫巢数量 / Nests destroyed
+- 0-30% — 游戏时间 / Game time elapsed
+
+The game tracks a hidden evolution factor that increases with:
+- 0-40% — total pollution produced
+- 0-30% — nests destroyed
+- 0-30% — time elapsed
+
+进化因子越高，敌人越强。进化因子不会降低。
+
+Higher evolution factor means stronger enemies. Evolution never decreases.
+
+### 污染 / Pollution
+你的工厂产生的污染会在地图上扩散。当污染云覆盖虫巢时，虫群会进化并组织攻击波。减少污染的方法：
+
+Pollution from your factory spreads across the map. When pollution clouds cover nests, biters evolve and organize attack waves. Ways to reduce pollution:
+
+- 使用效率模块 (Efficiency Modules) / Use Efficiency Modules
+- 用电力取代燃烧发电 / Replace burner power with solar/nuclear
+- 种植树木（后期模组） / Plant trees (late-game mods)
+- 清理污染源附近的虫巢 / Clear nests near pollution sources
+
+## 防御系统 / Defense Systems
+
+### 炮塔类型 / Turret Types
+
+| 炮塔 / Turret | 弹药 / Ammo | 射程 / Range | 特点 / Features |
+|---|---|---|---|
+| 机枪炮塔 / Gun Turret | 弹匣 / Magazines | 18 | 低成本，前期主力 / Cheap, early-game workhorse |
+| 穿甲弹 / Piercing | 穿甲弹匣 / Piercing Rounds | 18 | 高伤害，贯穿效果 / High damage, piercing |
+| 激光炮塔 / Laser Turret | 电力 / Electricity | 24 | 无需弹药但耗电高 / No ammo, high power draw |
+| 火焰炮塔 / Flame Turret | 原油/重油 / Crude/Heavy Oil | 30 | 范围伤害，减速效果 / AoE, slow effect |
+| 炮台 / Artillery | 炮弹 / Shells | 7-224 | 超远程清巢 / Extreme range nest clearing |
+
+### 墙壁 / Walls
+- 基础墙 (Stone Wall) — 每格血量 350 / 350 HP per tile
+- 加固墙 (Reinforced Wall) — 每格血量 1000（模组） / 1000 HP per tile (mods)
+- 多层墙比单层墙更有效 / Multiple layers are more effective than single layer
+
+### 龙牙 / Dragon Teeth
+在墙壁前方放置交错排列的墙段，迫使虫群绕路，给炮塔更多射击时间。
+
+Place staggered wall segments in front of your main wall to force biters to path around, giving turrets more firing time.
+
+## 伤害升级 / Damage Upgrades
+
+### 物理伤害 / Physical Damage
+提升所有枪械类武器的伤害。优先升级。
+
+Increases damage of all gun-type weapons. Priority upgrade.
+
+### 能量武器伤害 / Energy Weapons Damage
+提升激光炮塔伤害。中后期关键升级。
+
+Increases laser turret damage. Critical mid-to-late game upgrade.
+
+### 爆炸伤害 / Explosive Damage
+提升火箭、手榴弹和火焰伤害。
+
+Increases rocket, grenade, and flame damage.
+
+### 其他升级 / Other Upgrades
+- 护甲 (Armor) — 降低你受到的伤害 / Reduces damage you take
+- 移动速度 (Movement Speed) — 战斗中的机动性 / Combat mobility
+- 子弹伤害 (Bullet Damage) — 大幅提升机枪塔效用 / Greatly improves turret effectiveness
+
+## 进攻战术 / Offensive Tactics
+
+### 清理虫巢 / Clearing Nests
+- 鱼雷 (Fish) — 回血物品，战斗必备 / Healing item, essential for combat
+- 坦克 (Tank) — 终极地面作战单位 / Ultimate ground combat vehicle
+- 蜘蛛机械人 (Spidertron) — 可跨越地形，可远程控制 / Terrain-crossing, remote-controllable
+- 火箭弹 (Rocket) — 远距离高爆炸伤害 / Long-range high explosive damage
+- 集束手榴弹 (Cluster Grenade) — 大范围清场 / Large area clearance
+
+### 自动化防御 / Automated Defense
+使用雷达 (Radar) 定期扫描区域。在检测到虫巢接近污染源时，使用火炮 (Artillery) 进行远程清除。
+
+Use Radars to periodically scan areas. When nests are detected approaching your pollution cloud, use Artillery for remote clearance.
+
+### 燃料 / Walls
+在防御区建设补给站，用火车或机器人系统供应弹药和维修材料。
+
+Build resupply stations in defensive areas, supplying ammo and repair materials via train or bot network.
+
+---
+
+标签 / Tags: combat defense biters turrets walls pollution artillery Factorio

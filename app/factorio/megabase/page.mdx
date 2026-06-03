@@ -1,0 +1,144 @@
+---
+title: 超级工厂 / Megabase
+description: 城市区块与万瓶基地 / City blocks and 10K SPM megabases
+toc: false
+---
+
+## 巨型基地概述 / Megabase Overview
+
+当你发射了火箭，完成了所有科技，游戏并没有结束。真正的挑战是扩展你的工厂，实现每分钟上千甚至上万瓶科技包的生产——这就是巨型基地 (Megabase)。
+
+When you launch the rocket and complete all technologies, the game is not over. The real challenge is scaling your factory to produce thousands or tens of thousands of science packs per minute — this is the Megabase.
+
+## 规模定义 / Scale Definitions
+
+| 规模 / Scale | SPM | 工厂特征 / Factory Characteristics |
+|---|---|---|
+| 小型基地 / Starter Base | 15-30 | 首个火箭，手动管理 |
+| 中型基地 / Mid Base | 60-120 | 物流机器人，火车网络 |
+| 大型基地 / Large Base | 250-500 | 城市区块雏形，多火车 |
+| 小巨型基地 / Mini Megabase | 500-1000 | 信标全覆盖，全局铁路 |
+| 巨型基地 / Megabase | 1000-5000 | 模块化区块，完全自动化 |
+| 超级基地 / Gigabase | 5000+ | 多人团队，UPS优化极限 |
+
+## 城市区块 / City Blocks
+
+### 什么是城市区块 / What Is a City Block
+城市区块是将地图划分为统一大小的正方形区域，每个区块执行一个特定的生产任务。区块之间用铁路连接。
+
+A city block divides the map into uniform square areas, each performing one specific production task. Blocks are connected by rail.
+
+### 标准区块尺寸 / Standard Block Size
+- 小型 (Small): 50x50 格 — 适合单线生产 / 50x50 tiles — suitable for single production line
+- 标准 (Standard): 100x100 格 — 最常用 / Most common
+- 大型 (Large): 200x200 格 — 大型冶炼或石油 / Large smelting or oil
+
+### 区块布局 / Block Layout
+每个区块的结构：
+- 外环 (Outer ring) — 铁路和信号 / Rail and signals
+- 车站 (Station) — 2-6 个装卸站 / 2-6 loading/unloading stations
+- 内部 (Interior) — 生产设施 / Production facility
+- 仓库 (Storage) — 原材料和成品缓冲 / Raw material and product buffers
+
+Each block structure:
+- Outer ring — rail and signals
+- Stations — 2-6 loading/unloading stations
+- Interior — production facility
+- Storage — raw material and product buffers
+
+### 区块间物流 / Inter-Block Logistics
+使用火车网络将原材料（铁板、铜板、钢铁、塑料等）从生产区块运送到消费区块。车站命名使用物品图标和类型。
+
+Use the train network to transport raw materials (iron plates, copper plates, steel, plastic, etc.) from production blocks to consumer blocks. Name stations using item icons and types.
+
+## 信标与模块 / Beacons and Modules
+
+### 8-信标设计 / 8-Beacon Design
+将组装机周围铺设 8 个带速度模块 3 的信标，组装机自身插产能模块 3。这是巨型基地的标准配置。
+
+Place 8 beacons with Speed Module 3 around each assembler, with Productivity Module 3 in the assembler itself. This is the standard megabase configuration.
+
+### 12-信标设计 / 12-Beacon Design
+通过巧妙排列，某些建筑可能被 12 个信标覆盖。这进一步提升速度，但布局更复杂。
+
+Through clever arrangement, some buildings can be covered by 12 beacons. This further improves speed but requires more complex layouts.
+
+### 模块成本 / Module Cost
+生产 1 个速度模块 3 约需要大量红板、蓝板和塑料。需要专门的生产线。
+
+Producing 1 Speed Module 3 requires substantial red circuits, blue circuits, and plastic. A dedicated production line is needed.
+
+## 采矿生产力 / Mining Productivity
+
+### 无限科技 / Infinite Research
+采矿生产力 (Mining Productivity) 是巨型基地最重要的无限科技。每级 +10% 采矿速度。
+
+Mining Productivity is the most important infinite tech for megabases. Each level adds +10% mining speed.
+
+### 资源耗尽 / Resource Depletion
+巨型基地会迅速耗尽附近的矿点。你需要：
+- 铺设铁路到远处矿点 / Lay rail to distant ore patches
+- 在矿点设置自动化火车站 / Set up automated train stations at mines
+- 使用大矿机模组或扩展矿区 / Use big miner mods or expand mining areas
+
+## UPS优化 / UPS Optimization
+
+### 什么是 UPS / What Is UPS
+UPS (Updates Per Second) 是 Factorio 的帧率。游戏逻辑以 60 UPS 运行。当工厂过大时，UPS 会下降。
+
+UPS (Updates Per Second) is Factorio's simulation tick rate. The game runs at 60 UPS. When the factory grows too large, UPS drops.
+
+### UPS 优化原则 / UPS Optimization Principles
+- 减少实体数量 / Reduce entity count
+- 使用直接插入而非传送带 / Use direct insertion instead of belts
+- 减少流体计算 / Reduce fluid calculations
+- 避免不必要的电路 / Avoid unnecessary circuits
+- 使用太阳能代替蒸汽/核能 / Use solar instead of steam/nuclear
+
+### 高效设计 / Efficient Designs
+- 冶炼：电炉 + 12 信标，直接输出至列车 / Smelting: 12-beacon electric furnaces direct to train
+- 绿板：直接插入铜线，避免二次搬运 / Green circuits: direct insertion of copper wire
+- 石油：使用基础炼油 + 裂解，最小化管道 / Oil: basic refining + cracking, minimize pipes
+
+## 1K SPM 指南 / 1K SPM Guide
+
+### 资源需求 / Resource Requirements
+每分钟生产 1000 瓶科技包需要 / 1000 SPM requires:
+- 铁板 (Iron Plates): 约 45000/分钟 / approx 45000/min
+- 铜板 (Copper Plates): 约 40000/分钟 / approx 40000/min
+- 钢铁 (Steel): 约 6000/分钟 / approx 6000/min
+- 绿板 (Green Circuits): 约 12000/分钟 / approx 12000/min
+- 原油 (Crude Oil): 约 15000/分钟 / approx 15000/min
+
+### 设计步骤 / Design Steps
+1. 选择区块尺寸 / Choose block size
+2. 设计标准区块模板 / Design standard block template
+3. 建设冶炼区块 / Build smelting blocks
+4. 建设中游产品区块 (绿板、红板、蓝板) / Build intermediate blocks
+5. 建设每种科技包的专用区块 / Build dedicated science pack blocks
+6. 建设火箭发射区块 / Build rocket launch block
+7. 连接铁路网络 / Connect rail network
+8. 大规模生产模块 / Mass produce modules
+
+## 10K SPM 指南 / 10K SPM Guide
+
+### 挑战 / Challenges
+10K SPM 需要数十个城市区块、数百列火车和极其谨慎的 UPS 管理。这是大多数玩家的终极目标。
+
+10K SPM requires dozens of city blocks, hundreds of trains, and extremely careful UPS management. This is the ultimate goal for most players.
+
+### 关键差异 / Key Differences from 1K SPM
+- 必须使用 12-信标设计 / Must use 12-beacon designs
+- 流体管理必须极简 / Fluid management must be minimal
+- 需要多个火箭发射场 / Need multiple rocket silos
+- UPS 优先于美观 / UPS over aesthetics
+
+### 工具 / Tools
+- Factorio Calculator (kirkmcdonald.github.io) — 精确计算资源需求
+- Factory Planner 模组 — 游戏内规划 / In-game planning
+- Rate Calculator 模组 — 选中区域计算速率 / Calculate rate of selected area
+- Map Editor — 离线设计和测试 / Offline design and testing
+
+---
+
+标签 / Tags: megabase city blocks UPS optimization beacon SPM megabase Factorio

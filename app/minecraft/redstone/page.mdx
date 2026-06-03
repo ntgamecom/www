@@ -1,0 +1,221 @@
+---
+title: 红石科技 Redstone — 我的世界 Minecraft 指南
+description: 红石科技全面指南：基础元件、逻辑门、活塞门与自动化农场设计
+toc: false
+---
+
+## 红石科技 / Redstone
+
+红石是 Minecraft 中的"电力"系统，可以用来建造从简单开关到复杂计算机的各种装置。
+
+Redstone is the electricity system in Minecraft, used to build everything from simple switches to complex computers.
+
+### 基础元件 / Basic Components
+
+#### 红石粉 / Redstone Dust
+
+- **放置 / Placement**: 铺在地上形成线缆
+- **信号强度 / Signal Strength**: 0-15，随距离衰减
+- **最大距离 / Max Distance**: 15 格（无中继器时）
+- **获取 / Obtaining**: 挖掘红石矿石，每块掉落 4-5 个红石粉
+
+#### 红石火把 / Redstone Torch
+
+- **功能 / Function**: 持续发出 15 级信号
+- **特性 / Property**: 被激活时会熄灭（反转信号）
+- **合成 / Crafting**: 红石粉 x1 + 木棍 x1
+- **延时 / Delay**: 1 刻（0.1 秒）响应延迟
+
+#### 拉杆 / Lever
+
+- **功能 / Function**: 开关信号，手动控制
+- **放置 / Placement**: 可放在方块任一面
+- **合成 / Crafting**: 圆石 x1 + 木棍 x1
+
+#### 按钮 / Button
+
+| 类型 / Type | 材料 / Material | 激活时间 / Activation Time |
+|---|---|---|
+| 木按钮 / Wooden Button | 任意木板 | 1.5 秒后自动关闭 |
+| 石按钮 / Stone Button | 石头 | 1 秒后自动关闭 |
+
+#### 红石中继器 / Redstone Repeater
+
+- **功能 / Function**: 延长信号至 15 格，可设置 1-4 刻延迟
+- **合成 / Crafting**: 红石火把 x2 + 红石粉 x1 + 石头 x1
+- **锁定 / Locking**: 侧面可被另一个中继器锁定
+
+#### 红石比较器 / Redstone Comparator
+
+- **功能 / Function**: 比较或减算两个信号强度
+- **两种模式 / Two Modes**:
+  - **比较模式 / Compare Mode**: 若 A 大于等于 B，输出 A，否则输出 0
+  - **减法模式 / Subtract Mode**: 输出 A 减 B（必须大于 0）
+- **合成 / Crafting**: 下界石英 x1 + 红石火把 x3 + 石头 x1
+
+#### 红石块 / Redstone Block
+
+- **功能 / Function**: 可移动的 15 级信号源
+- **合成 / Crafting**: 红石粉 x9
+- **用途 / Use**: 活塞推动时保持供电
+
+### 逻辑门 / Logic Gates
+
+逻辑门是红石计算机的基础，用红石元件实现布尔运算。
+
+Logic gates are the foundation of redstone computers.
+
+#### 非门 / NOT Gate
+
+使用红石火把实现信号反转。
+
+A redstone torch inverts the signal.
+
+- **输入 0 -> 输出 15**，输入 15 -> 输出 0
+- 最简单的红石元件电路
+
+#### 与门 / AND Gate
+
+所有输入均为 1 时输出 1。
+
+Outputs 1 only when all inputs are 1.
+
+- 使用两个中继器指向同一红石粉
+- 也可以用比较器实现
+
+#### 与非门 / NAND Gate
+
+与门 + 非门组合。
+
+AND gate followed by a NOT gate.
+
+- 输入均为 1 时输出 0，其他情况输出 1
+- 通用门，可组合出所有逻辑门
+
+#### 或门 / OR Gate
+
+任一输入为 1 则输出 1。
+
+Outputs 1 when any input is 1.
+
+- 用红石粉将两个输入并联即可
+
+#### 异或门 / XOR Gate
+
+输入不同时输出 1。
+
+Outputs 1 when inputs differ.
+
+- 需要比较器或火把配合
+- 常用于密码锁
+
+#### RS 锁存器 / RS Latch
+
+最基本的记忆单元，可存储 1 位信息。
+
+Basic memory cell storing 1 bit.
+
+- 两个非门交叉连接
+- 用于 T 触发器、密码锁
+
+### 活塞与门 / Pistons and Doors
+
+#### 普通活塞 / Piston
+
+- **功能 / Function**: 推动最多 12 个方块
+- **合成 / Crafting**: 圆石 x4 + 铁锭 x1 + 木棍 x3 + 红石粉 x1
+- **注意 / Note**: 不能拉动方块
+
+#### 粘性活塞 / Sticky Piston
+
+- **功能 / Function**: 推动并拉回方块
+- **合成 / Crafting**: 活塞 + 粘液球
+- **用途 / Use**: 制作门、陷阱
+
+#### 3x3 活塞门 / 3x3 Piston Door
+
+要建造一扇 3x3 的隐藏活塞门，需要：
+
+To build a 3x3 hidden piston door, you need:
+
+1. 上下各一排粘性活塞拉动墙壁方块
+2. 中间一排推拉中间的方块
+3. 使用红石中继器调整时序
+4. 用拉杆或压力板控制开关
+
+#### 飞行器 / Flying Machines
+
+利用活塞推动和粘液块的粘性，可以制造无限飞行的机器。
+
+Using pistons and slime blocks, you can build infinite flying machines.
+
+- **粘液块 / Slime Block**：相邻方块会被一起推动
+- **蜂蜜块 / Honey Block**：类似粘液块但不同（不会粘粘液块）
+- **观察者 / Observer**：检测方块更新，用于循环信号
+
+### 自动化农场 / Automatic Farms
+
+#### 自动收割农场 / Auto Crop Farm
+
+```
+观察者检测作物成熟 -> 活塞推动 -> 水流收集 -> 漏斗收集到箱子
+Observer detects crop growth -> Piston pushes -> Water collects -> Hopper to chest
+```
+
+- **检测 / Detection**：观察者检测作物生长瞬间
+- **收割 / Harvest**：活塞推动地面，破坏作物
+- **收集 / Collection**：漏斗矿车或水流集中掉落物
+
+#### 简易甘蔗机 / Simple Sugar Cane Farm
+
+- 观察者检测甘蔗生长到 3 格高
+- 活塞将第 2 格甘蔗打掉
+- 漏斗收集掉落物
+- 不需要重新种植
+
+#### 自动钓鱼机 / Auto Fish Farm
+
+- 使用音符盒（Note Block）和绊线钩
+- 检测钓鱼浮漂下沉信号
+- 自动右键收回并再次抛竿
+
+### 陷阱与防御 / Traps and Defenses
+
+| 陷阱 / Trap | 材料 / Materials | 原理 / Mechanism |
+|---|---|---|
+| 简易陷坑 / Pitfall | 活塞 + 压力板 | 踩到压力板触发脚下活板门 |
+| 箭矢发射器 / Arrow Turret | 发射器 + 红石钟 | 循环发射箭矢 |
+| 岩浆陷阱 / Lava Trap | 发射器 + 岩浆桶 | 头顶倒岩浆 |
+| TNT 陷阱 / TNT Trap | TNT + 红石比较器 | 检测玩家开启箱子 |
+
+### 实用电路 / Useful Circuits
+
+#### 脉冲发生器 / Pulse Generator
+
+产生短脉冲信号，用于触发某些一次性的红石装置。
+
+Produces a short pulse signal for triggering one-time redstone devices.
+
+#### 时钟电路 / Clock Circuit
+
+定期输出脉冲信号。
+
+Outputs pulses at regular intervals.
+
+```
+火把 -> 中继器（1-4刻）-> 回到火把
+Torch -> Repeater (1-4 ticks) -> Back to torch
+```
+
+- 最少需要 2 个中继器（2 刻间隔）
+- 使用红石火把 + 中继器环路实现
+
+#### T 触发器 / T Flip-Flop
+
+每次收到脉冲时翻转输出状态。用于拉杆替代按钮控制。
+
+Toggles output state with each pulse. Used for button-to-lever conversion.
+
+---
+
+`#红石` `#Redstone` `#逻辑门` `#自动化` `#活塞门` `#红石电路` `#Minecraft`

@@ -1,0 +1,132 @@
+---
+title: 电路与控制 / Circuits
+description: 组合逻辑，计数器与显示系统 / Combinators, counters, and display systems
+toc: false
+---
+
+## 电路网络概述 / Circuit Network Overview
+
+电路网络是 Factorio 中最强大的工具之一。它允许你用逻辑信号控制工厂的每一个方面——从简单的开/关控制到复杂的计算机系统。
+
+The circuit network is one of the most powerful tools in Factorio. It allows you to control every aspect of your factory with logic signals — from simple on/off control to complex computer systems.
+
+## 基础组件 / Basic Components
+
+### 红线和绿线 / Red and Green Wire
+两种独立的信号通道。红色和绿色线在同一建筑上可以同时使用，信号自动相加。
+
+Two independent signal channels. Red and green wires can both connect to the same building, and their signals are automatically summed.
+
+### 恒量组合器 / Constant Combinator
+输出恒定的信号值。用于设置参考值、阈值和参数。
+
+Outputs a constant signal value. Used for setting reference values, thresholds, and parameters.
+
+### 算术组合器 / Arithmetic Combinator
+执行数学运算：加、减、乘、除、幂、取模。输入两个信号，输出一个结果。
+
+Performs arithmetic operations: add, subtract, multiply, divide, exponent, modulus. Takes two inputs, outputs one result.
+
+### 判据组合器 / Decider Combinator
+根据条件输出特定信号。支持比较运算：`=`, `!=`, `&lt;`, `&lt;=`, `>`, `>=`。输入条件满足时输出指定信号。
+
+Outputs a specific signal based on conditions. Supports comparisons: `=`, `!=`, `&lt;`, `&lt;=`, `>`, `>=`. Outputs the specified signal when the condition is met.
+
+## 基本逻辑 / Basic Logic
+
+### 水泵控制 / Pump Control
+连接储液罐到判据组合器，当液体超过阈值时启动裂解泵。这是最常见的电路应用。
+
+Connect a storage tank to a decider combinator, enable a cracking pump when fluid exceeds a threshold. This is the most common circuit application.
+
+### 传送带控制 / Belt Control
+当后方缓冲区满时暂停前方传送带，减少不必要的物品生产和运输能耗。
+
+Pause upstream belts when downstream buffers are full, reducing unnecessary item production and transport energy.
+
+### 车站控制 / Station Control
+仅在装货/卸货站有足够物品/空间时才启用车站。防止列车空跑。
+
+Enable stations only when there are enough items/space to load/unload. Prevents trains from running empty.
+
+### 警报系统 / Alarm System
+使用判据组合器配合 `play-sound` 在箱子不足或电力短缺时触发警报。
+
+Use a decider combinator with `play-sound` to trigger alarms when chests are low or power is in shortage.
+
+## 高级电路 / Advanced Circuits
+
+### 内存单元 / Memory Cell
+最简单的内存单元：算术组合器的输出环回到输入。使用 `each * 1 + 0` 保持值不变。使用 `each * 0` 清除。
+
+The simplest memory cell: loop the output of an arithmetic combinator back to its input. Use `each * 1 + 0` to hold values. Use `each * 0` to reset.
+
+### SR 锁存器 / SR Latch
+使用两个判据组合器交叉连接，实现置位/复位功能。常用于控制开启和关闭阈值的场景。
+
+Use two decider combinators cross-connected to implement set/reset functionality. Commonly used for scenarios with separate enable and disable thresholds.
+
+### 计数器 / Counter
+使用算术组合器 `each + 1` 和内存单元组合，统计通过的物品数量。配合判据组合器实现计数报警。
+
+Combine an arithmetic combinator `each + 1` with a memory cell to count passing items. Pair with a decider combinator for count-based alarms.
+
+### 时钟 / Clock
+循环输出 tick 信号。使用 `each + 1` 算术组合器+判据组合器在达到上限时重置。
+
+Outputs a cycling tick signal. Use an `each + 1` arithmetic combinator plus decider combinator to reset at a maximum value.
+
+## 显示系统 / Display Systems
+
+### 灯光显示 / Lamp Display
+用编程灯 (Programmable Speaker) 配合颜色信号，可视化显示资源存量。绿色 = 充足，黄色 = 中等，红色 = 不足。
+
+Use Programmable Speakers with color signals to visualize resource levels. Green = full, yellow = medium, red = low.
+
+### Nixie 管 / Nixie Tube Display
+模组中的数字显示管，配合电路网络显示精确数值。常见于储液罐和箱子的实时数据显示。
+
+Nixie tubes from mods display exact numeric values via the circuit network. Commonly used for real-time tank and chest data display.
+
+### 屏幕显示 / In-Game Display
+使用键盘上的 `~` 键打开 Lua 控制台，可以编写脚本读取电路值。高级玩法，适合对 Lua 脚本有经验的玩家。
+
+Press `~` to open the Lua console and write scripts to read circuit values. Advanced technique for players experienced with Lua scripting.
+
+## 常用蓝图 / Common Blueprints
+
+### 自动裂解控制 / Auto Cracking Control
+```
+储液罐 → 判据组合器 [重油 > 20000, 输出 1 重油] → 泵（开启条件：重油 > 0）
+Tank → Decider [Heavy > 20000, output 1 Heavy] → Pump (enable: Heavy > 0)
+```
+
+### 列车调度优化 / Train Schedule Optimization
+```
+车站 → 判据组合器 [物品 < 2000, 输出 1 信号] → 车站启用条件：信号 > 0
+Station → Decider [Item < 2000, output 1 signal] → Station enable: signal > 0
+```
+
+### 平衡多线装载 / Balanced Multi-Lane Loading
+```
+箱子1 + 箱子2 + 箱子3 + 箱子4 → 算术组合器 [总和 / 4, 输出平均值]
+平均值为基准，控制每线的子弹补给
+Chest1-4 → Arithmetic [total / 4, output average]
+Average value controls each lane's item supply
+```
+
+### 自动维修系统 / Auto Repair System
+```
+维修机器人 → 判据组合器 [维修包 < 50, 输出 1] → 组装机开启
+Repair Bots → Decider [Repair Pack < 50, output 1] → Assembler enable
+```
+
+## 电路哲学 / Circuit Philosophy
+
+在 Factorio 中，电路不是必须的。你可以用纯机械的方式通关。但电路让你精确控制工厂，使其更高效、更紧凑、更有趣。
+
+In Factorio, circuits are not required. You can complete the game purely mechanically. But circuits give you precise control, making your factory more efficient, more compact, and more interesting.
+
+---
+
+标签 / Tags: circuits combinators logic counters displays blueprints Factorio

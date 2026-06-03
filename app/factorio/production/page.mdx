@@ -1,0 +1,109 @@
+---
+title: 生产与自动化 / Production
+description: 总线设计，比例计算与工厂规划 / Main bus design, ratios, and factory planning
+toc: false
+---
+
+## 生产哲学 / Production Philosophy
+
+在异星工厂中，生产不是目的，自动化才是。你的目标是设计一个自运行的工厂——原材料进去，产品出来，而你只需要处理意外情况。
+
+In Factorio, production is not the goal — automation is. Your objective is to design a self-running factory where raw materials go in and products come out, leaving you to handle only exceptions.
+
+## 主线总线设计 / Main Bus Design
+
+### 总线结构 / Bus Structure
+总线通常由 4-8 条平行的传送带组成，中间用地下通道 (Underground Belt) 跨越。每 2-4 条传送带之间留 2-4 格间隙供机械臂使用。
+
+A bus typically consists of 4-8 parallel belt lanes, crossed via Underground Belts. Leave 2-4 tile gaps between every 2-4 lanes for inserter access.
+
+### 标准总线布局 / Standard Bus Layout
+```
+铁板 | 铜板 | 钢铁 | 绿板 | 塑料 | 红板 | 蓝板 | 电池
+Iron | Copper | Steel | GC | Plastic | RC | BC | Battery
+```
+每条资源占用 1-4 条传送带，取决于需求。铁板和铜板通常各占 4 条。
+
+Each resource occupies 1-4 belts depending on demand. Iron and copper plates typically get 4 belts each.
+
+### 总线服务 / Bus Services
+在总线一侧或两侧建设专门的生产线。生产线从总线获取原材料，输出成品到末端或物流箱。
+
+Build production lines on one or both sides of the bus. Lines pull raw materials from the bus and output finished products to the end or into logistic chests.
+
+## 生产比例 / Production Ratios
+
+### 铜线与绿板 / Copper Wire and Green Circuits
+3 台铜线组装机可以供 2 台绿板组装机。比例 3:2。
+
+3 Copper Wire assemblers can feed 2 Green Circuit assemblers. Ratio is 3:2.
+
+### 红板 / Red Circuits
+红板需要绿板、塑料和铜线。每台红板组装机需要 1 台绿板组装机、1 台塑料生产线和 4 台铜线组装机（大约）。
+
+Red Circuits need green circuits, plastic, and copper wire. Each Red Circuit assembler needs roughly 1 Green Circuit assembler, 1 plastic production line, and 4 Copper Wire assemblers.
+
+### 钢铁冶炼 / Steel Smelting
+钢铁需要 5:1 的铁板与铁矿石比例。1 台钢铁熔炉消耗 5 台铁板熔炉的产量。
+
+Steel requires a 5:1 ratio of iron plates to iron ore. 1 Steel Furnace consumes the output of 5 Iron Plate Furnaces.
+
+### 铜板与铁板 / Copper and Iron Plates
+1 台电动熔炉 (Electric Furnace) — 带 2 个速度插件 (Speed Module 1) — 每分钟生产约 45 块板材。计算需求时以此为基准。
+
+1 Electric Furnace with 2 Speed Module 1 produces roughly 45 plates per minute. Use this as a baseline for calculating demand.
+
+## 商城设计 / Mall Design
+
+### 什么是商城 / What Is a Mall
+商城是自动生产所有常用建筑（传送带、机械臂、组装机、熔炉、管道等）的区域，放入物流箱或箱子中供你取用。
+
+A mall is an area that automatically produces all common buildings (belts, inserters, assemblers, furnaces, pipes, etc.) and stores them in chests for you to pick up.
+
+### 必备商城物品 / Essential Mall Items
+- 传送带 + 地下通道 + 分拣器 / Belts + Undergrounds + Splitters
+- 机械臂（黄、蓝、绿、红） / Inserters (yellow, blue, green, red)
+- 组装机 1/2/3 / Assembler 1/2/3
+- 熔炉（石炉、钢炉、电炉） / Furnaces (stone, steel, electric)
+- 管道 + 地下管道 + 泵 / Pipes + Underground Pipes + Pumps
+- 电线杆 + 变电站 / Power Poles + Substations
+- 采矿机 + 抽水机 / Miners + Offshore Pumps
+- 机械人 + 机器人平台 / Bots + Roboports
+
+### 商城设计原则 / Mall Design Principles
+- 每种建筑只占一小块区域 / Each building type gets a small dedicated area
+- 用箱子作为缓冲 / Use chests as buffers
+- 限制产量，不要吃掉所有原材料 / Limit production so it does not consume all raw materials
+- 预留扩展空间 / Leave room for expansion
+
+## 生产指标 / Production Metrics
+
+### 每分钟产量 / SPM and SPM
+衡量工厂规模的两个关键指标：
+- SPM (Science Per Minute) — 每分钟生产的科技包数量
+- SPM 也指火箭发射频率 (Rockets Per Minute)
+
+Key metrics for factory scale:
+- SPM (Science Per Minute) — number of science packs produced per minute
+- SPM also refers to rockets launched per minute
+
+### 消耗计算 / Consumption Calculation
+Factorio 内置的计算工具包括快捷键 P（产值图）和快捷键 O（电力图）。使用 `factoriolib.github.io` 或 `kirkmcdonald.github.io` 进行离线比例计算。
+
+Built-in tools include P key (production graph) and O key (power graph). Use factoriolib.github.io or kirkmcdonald.github.io for offline ratio calculations.
+
+## 高级生产 / Advanced Production
+
+### 级别3模块 / Tier 3 Modules
+速度模块 (Speed Module 3) 提高生产速度但增加能耗。产能模块 (Productivity Module 3) 提供免费产出但降低速度。效率模块 (Efficiency Module 3) 降低能耗和污染。
+
+Speed Module 3 increases speed but raises power usage. Productivity Module 3 gives free output but slows production. Efficiency Module 3 reduces power and pollution.
+
+### 信标 / Beacons
+信标可以向周围建筑传递模块效果。常见的配置是"8信标"设计：用 8 个速度信标包围 1 台组装机，配合产能模块。
+
+Beacons transmit module effects to surrounding buildings. A common configuration is the 8-beacon design: 8 speed beacons around 1 assembler with productivity modules.
+
+---
+
+标签 / Tags: production automation main bus ratios mall modules beacons Factorio

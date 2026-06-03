@@ -1,0 +1,129 @@
+---
+title: 铁路系统 / Trains
+description: 信号，路口与列车调度 / Signals, intersections, and train scheduling
+toc: false
+---
+
+## 铁路概述 / Train Overview
+
+铁路系统是 Factorio 中长途物流的核心。火车运输量巨大、速度快，是工厂扩张的必备工具。一条双轨铁路的吞吐量远超 8 条快速传送带。
+
+The train system is the core of long-distance logistics in Factorio. Trains offer massive throughput and high speed, essential for factory expansion. A single double-track railway far exceeds the throughput of 8 express belts.
+
+## 铁路基础 / Railway Basics
+
+### 轨道铺设 / Track Laying
+- 直轨 (Straight Rail) — 基本轨道单元 / Basic rail segment
+- 弯轨 (Curved Rail) — 90度转弯 / 90-degree curve
+- 道闸 (Rail Signal) — 控制列车进入区段 / Controls train access to blocks
+- 链信号 (Chain Signal) — 用于路口，防止死锁 / Used at intersections, prevents deadlocks
+
+### 车站 / Train Stops
+车站是列车装卸货物的地方。每站有 1-6 个装卸位。使用筛选器 (Filter) 控制货物类型。
+
+Stations are where trains load and unload. Each station has 1-6 loading/unloading positions. Use filters to control cargo types.
+
+### 机车与车厢 / Locomotives and Wagons
+- 机车 (Locomotive) — 提供动力 / Provides power
+- 货运车厢 (Cargo Wagon) — 运输物品 / Transports items
+- 液体车厢 (Fluid Wagon) — 运输液体 / Transports fluids
+- 装甲列车 (Artillery Wagon) — 移动炮台 / Mobile turret
+
+### 燃料选择 / Fuel Choices
+- 煤炭 (Coal) — 初期，速度 100% / Early game, speed 100%
+- 固体燃料 (Solid Fuel) — 中期，速度 120% / Mid game, speed 120%
+- 火箭燃料 (Rocket Fuel) — 后期，速度 180% / Late game, speed 180%
+- 核燃料 (Nuclear Fuel) — 终局，速度 250% / Endgame, speed 250%
+
+## 信号系统 / Signaling System
+
+### 区段原则 / Block Principle
+铁路被信号分割成一个个区段 (Block)。每个区段同时只能有一列火车。信号变为红色时表示前方区段被占用。
+
+Railway is divided into blocks by signals. Only one train can occupy a block at a time. A red signal means the block ahead is occupied.
+
+### 铁路信号 / Rail Signal
+- 放置于轨道右侧 / Place on the right side of the track
+- 绿色 (Green) — 区段空闲 / Block is free
+- 黄色 (Yellow) — 火车正在接近，但区段已预留 / Train approaching, block reserved
+- 红色 (Red) — 区段被占用 / Block is occupied
+- 蓝色 (Blue) — 出站信号，只有出站方向 / Chain signal with exit only
+
+### 链信号 / Chain Signal
+链信号不是根据自身区段变红，而是根据下一个信号的状况。它用于路口内部，防止列车停在路口中央。
+
+A chain signal does not look at its own block but at the next signal ahead. It is used inside intersections to prevent trains from stopping in the middle.
+
+### 信号放置规则 / Signal Placement Rules
+- 双轨铁路两侧都要放信号 / Both sides of double-track need signals
+- 路口前必须放链信号 / Always place chain signal before an intersection
+- 路口后必须放普通信号 / Always place a rail signal after an intersection
+- 长直线上每隔 2-3 个列车长度放一个信号 / Place signals every 2-3 train lengths on long straights
+
+## 路口设计 / Intersection Designs
+
+### 丁字路口 / T-Junction
+最简单的路口。两个方向的车流可能冲突。使用链信号避免死锁。
+
+The simplest junction. Two directions may conflict. Use chain signals to prevent deadlocks.
+
+### 十字路口 / Cross Intersection
+最常见的路口类型。四条道路交汇。不推荐简单十字路口用于高流量场景。
+
+The most common intersection type. Four roads meet. Simple cross intersections are not recommended for high-traffic scenarios.
+
+### 环岛 / Roundabout
+环岛可以有效减少冲突点。但环岛本身就是一个大区段，低通量。适合中低流量。
+
+A roundabout effectively reduces conflict points, but the entire roundabout is one block, limiting throughput. Suitable for low-to-medium traffic.
+
+### 立交 / Grade Separated Intersection
+高流量场景下，使用分层立交可大幅提升通量。常见设计包括：三叶草、风车、压缩立交。
+
+For high-traffic scenarios, grade-separated intersections greatly improve throughput. Common designs: cloverleaf, windmill, compact interchange.
+
+## 列车调度 / Train Scheduling
+
+### 基本调度 / Basic Schedule
+每车站一列列车，使用等待条件：
+- 满载 (Full cargo) — 离开装货站 / Leave loading station
+- 空载 (Empty cargo) — 离开卸货站 / Leave unloading station
+- 时间 (Time passed) — 固定时间后离开 / Leave after fixed time
+- 电路条件 (Circuit condition) — 根据网络信号 / Based on circuit network
+
+One train per station pair with wait conditions:
+- Full cargo — leave loading station
+- Empty cargo — leave unloading station
+- Time passed — leave after fixed time
+- Circuit condition — based on circuit network
+
+### 多列同路线 / Multiple Trains on Same Route
+使用相同站名。关闭"限制到前方车站"选项，让列车自动选择最近的闲置车站。
+
+Use the same station name. Disable "Limit to the front station" and let trains automatically choose the nearest available station.
+
+### 站名规范 / Station Naming Convention
+推荐命名方案 / Recommended naming convention:
+```
+[物品图标] 铁板 供应 / [Icon] Iron Plate Supply
+[物品图标] 铁板 需求 / [Icon] Iron Plate Demand
+```
+使用图标使站名一目了然。
+
+Use icons in station names for instant recognition.
+
+## 常见问题 / Common Issues
+
+### 死锁 / Deadlocks
+原因：路口过小、链信号不足、列车过多。解决方案：移除不必要的列车、改进路口设计、增加绕行路线。
+
+Cause: undersized intersections, insufficient chain signals, too many trains. Fix: remove unnecessary trains, improve intersection design, add bypass routes.
+
+### 通量瓶颈 / Throughput Bottlenecks
+原因：单轨区间过长、缺乏等待区。解决方案：关键路段铺设双轨、设置等待站点。
+
+Cause: long single-track segments, lack of waiting bays. Fix: double-track critical segments, add waiting stations.
+
+---
+
+标签 / Tags: trains rail signals intersections train stations logistics Factorio

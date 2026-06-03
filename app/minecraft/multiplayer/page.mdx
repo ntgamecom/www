@@ -1,0 +1,201 @@
+---
+title: 多人联机 Multiplayer — 我的世界 Minecraft 指南
+description: 多人联机指南：服务器搭建、Realms、迷你游戏、PvP 技巧与常用指令
+toc: false
+---
+
+## 多人联机 / Multiplayer
+
+与朋友一起玩 Minecraft 可以带来更多乐趣。本章介绍服务器搭建、Realms、小游戏和 PvP 技巧。
+
+Playing Minecraft with friends brings more fun. This chapter covers server setup, Realms, minigames, and PvP tips.
+
+### 联机方式 / Ways to Play Together
+
+#### 局域网联机 / LAN Play
+
+- **平台**: Java 版和基岩版均支持
+- **步骤 / Steps**:
+  1. 进入世界后按 Esc 打开菜单
+  2. 点击"对局域网开放"（Open to LAN）
+  3. 设置游戏模式和是否允许作弊
+  4. 同一局域网内的玩家可以在多人列表中找到房间
+
+#### Minecraft Realms
+
+Realms 是 Mojang 官方提供的托管服务器服务。
+
+Realms is Mojang's official hosted server service.
+
+| 服务 / Service | 价格 / Price | 玩家上限 / Max Players |
+|---|---|---|
+| Realms Java 版 | 月付制 | 10 人 |
+| Realms 基岩版 | 月付制 | 30 人 |
+| Realms Plus | 含 Marketplace 内容 | 30 人 |
+
+**优点 / Benefits**:
+- 24 小时在线，无需自己搭建
+- 自动备份
+- 支持资源包和数据包
+- 可通过邀请码加入
+
+#### 自建服务器 / Self-hosted Server
+
+##### Java 版服务器 / Java Edition Server
+
+1. 从 minecraft.net 下载服务器端（server.jar）
+2. 安装 Java 17 或更高版本
+3. 运行 `java -Xmx2G -Xms1G -jar server.jar nogui`
+4. 修改 `server.properties` 配置文件
+5. 开放端口 25565（需要在路由器中设置端口转发）
+
+##### 基岩版服务器 / Bedrock Edition Server
+
+1. 从 minecraft.net 下载 Bedrock Server
+2. 运行 `bedrock_server` 可执行文件
+3. 修改 `server.properties`
+4. 开放端口 19132（UDP）
+
+#### 第三方托管 / Third-party Hosting
+
+**推荐服务商 / Recommended Providers**:
+- Aternos — 免费服务器托管
+- BisectHosting — 付费高性能主机
+- PebbleHost — 适合中小型服务器
+- Server.pro — 一键部署
+
+### 服务器管理 / Server Management
+
+#### server.properties 关键配置 / Key Settings
+
+| 选项 / Option | 默认值 / Default | 说明 / Description |
+|---|---|---|
+| `server-port` | 25565 | 服务器端口 |
+| `max-players` | 20 | 最大玩家数 |
+| `gamemode` | survival | 默认游戏模式 |
+| `difficulty` | easy | 难度（peaceful/easy/normal/hard） |
+| `pvp` | true | 是否允许 PvP |
+| `motd` | A Minecraft Server | 服务器显示信息 |
+| `online-mode` | true | 启用在验证（关闭后允许离线账户） |
+
+#### 安装插件 / Installing Plugins
+
+Java 版使用 Bukkit/Spigot/Paper 等服务端来支持插件：
+
+1. 下载 Paper 或 Spigot 服务端
+2. 放入 `plugins` 文件夹
+3. 重启服务器
+4. 常用的有：EssentialsX、WorldEdit、LuckPerms、GriefPrevention
+
+#### 设置管理员 / Setting Up OPs
+
+- `/op <玩家名>` — 给予管理员权限
+- `/deop <玩家名>` — 取消管理员权限
+- `/whitelist add <玩家名>` — 添加白名单
+- `/ban <玩家名>` — 封禁玩家
+- `/kick <玩家名>` — 踢出玩家
+
+### 常用服务器指令 / Common Server Commands
+
+#### 基础指令 / Basic Commands
+
+| 指令 / Command | 用途 / Use |
+|---|---|
+| `/help` | 显示所有可用指令 |
+| `/list` | 查看在线玩家 |
+| `/msg <玩家> <消息>` | 私聊 |
+| `/me <动作>` | 表演动作 |
+| `/tellraw <玩家> <json>` | JSON 格式消息 |
+| `/seed` | 查看世界种子 |
+
+#### 传送指令 / Teleport Commands
+
+| 指令 / Command | 用途 / Use |
+|---|---|
+| `/tpa <玩家>` | 请求传送到玩家 |
+| `/tpaccept` | 接受传送请求 |
+| `/tpdeny` | 拒绝传送请求 |
+| `/spawn` | 传送到出生点 |
+| `/home set` | 设置家 |
+| `/home` | 传送回家 |
+| `/warp <名称>` | 传送到地标 |
+
+#### 管理指令 / Admin Commands
+
+| 指令 / Command | 用途 / Use |
+|---|---|
+| `/gamemode creative` | 更改游戏模式为创造 |
+| `/time set day` | 设为白天 |
+| `/weather clear` | 设为晴天 |
+| `/difficulty hard` | 设置难度为困难 |
+| `/gamerule doDaylightCycle false` | 停止昼夜交替 |
+| `/gamerule keepInventory true` | 死亡不掉落 |
+| `/kill @e[type=!player]` | 清除所有非玩家实体 |
+
+### 迷你游戏 / Minigames
+
+#### 热门小游戏 / Popular Minigames
+
+| 游戏 / Game | 类型 / Type | 说明 / Description |
+|---|---|---|
+| 起床战争 / BedWars | 团队 PvP | 保护你的床并摧毁敌方床 |
+| 空岛战争 / SkyWars | 个人/团队 PvP | 在浮空岛屿上战斗 |
+| 生存游戏 / Hunger Games | 大逃杀 | 搜索物资，最后存活者获胜 |
+| 跑酷 / Parkour | 技巧 | 跳跃通过障碍物到达终点 |
+| 掘一死战 / TNT Run | 技巧 | 不断挖掘脚下的方块避免掉落 |
+| 狼人杀 / Among Slimes | 社交推理 | 找出隐藏在玩家中的叛徒 |
+| 建筑比赛 / Build Battle | 创造 | 在限定时间内完成建筑主题 |
+
+#### 搭建小游戏服务器 / Setting Up a Minigame Server
+
+1. 使用 Paper 服务端
+2. 下载热门小游戏地图文件
+3. 使用 Multiverse-Core 插件管理多世界
+4. 设置世界边界和重生点
+5. 安装游戏特定插件（如 BedWars 插件）
+
+### PvP 技巧 / PvP Tips
+
+#### 手瞄技巧 / Aiming
+
+- **瞄准头部 / Aim for Head** — 暴击伤害为 150%
+- **预判走位 / Lead Your Shots** — 远程攻击需要预测敌人移动方向
+- **使用陀螺仪 / Use Gyro** — 基岩版移动端玩家可开启陀螺仪辅助瞄准
+
+#### 走位技巧 / Strafing
+
+- **W 键走位 / W-tap** — 击中后松开 W 再按，重置击退冷却
+- **S 键走位 / S-tap** — 用后退抵消部分击退
+- **跳劈 / Crit Jump** — 下落时攻击造成暴击
+- **左右晃步 / Left-right Strafing** — 不规则移动使敌人难以瞄准
+
+#### 装备选择 / Gear Selection
+
+| 情境 / Situation | 推荐装备 / Recommended Gear |
+|---|---|
+| 1v1 近战 | 钻石剑 + 盾牌 + 铁装 |
+| 团队战 | 弓箭 + 铁剑 + 锁链装 |
+| 攻城战 | 弩（烟花火箭）+ 全套铁装 |
+| 跑路 / 偷袭 | 速度药水 + 隐身药水 |
+
+### 多人模式注意事项 / Multiplayer Etiquette
+
+- **尊重他人建筑 / Respect Builds** — 未经允许不要破坏或拿走他人物品
+- **使用领地带 / Use Claim Land** — 安装领地插件保护自己的建筑
+- **合理使用公共资源 / Fair Resource Use** — 不要过度采集公共资源区
+- **聊天礼仪 / Chat Etiquette** — 不要在公频刷屏，避免争吵
+- **挂机规则 / AFK Rules** — 长时间挂机请前往 AFK 区域
+
+### 常见多人问题 / Common Multiplayer Issues
+
+| 问题 / Issue | 解决方案 / Solution |
+|---|---|
+| 连接超时 / Connection Timeout | 检查服务器是否在线、防火墙设置 |
+| 无法解析主机名 / Can't Resolve Hostname | 检查 IP 地址是否正确 |
+| 端口未开放 / Port Not Open | 在路由器中设置端口转发 |
+| 服务器卡顿 / Server Lag | 降低视距、减少实体数量、升级服务器 |
+| 版本不匹配 / Version Mismatch | 确保客户端和服务器版本一致 |
+
+---
+
+`#多人联机` `#Minecraft` `#服务器` `#Realms` `#PvP` `#小游戏` `#指令`

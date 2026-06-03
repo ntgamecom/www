@@ -1,0 +1,146 @@
+---
+title: 战斗系统详解
+description: Combat Guide - 战斗机制深度解析 / Combat mechanics deep analysis
+toc: false
+---
+
+## 战斗系统 / Combat System
+
+### 战斗基础 / Combat Basics
+
+《黑夜君临》的战斗系统继承了《艾尔登法环》的核心机制，并加入了新的合作战斗要素。掌握这些基础是生存的关键。
+
+Nightreign's combat system inherits the core mechanics of Elden Ring with new co-op combat elements added. Mastering these basics is key to survival.
+
+### 武器类型 / Weapon Types
+
+#### 近战武器 / Melee Weapons
+
+| 类型 / Type | 速度 / Speed | 伤害 / Damage | 范围 / Range | 说明 / Notes |
+|---|---|---|---|---|
+| 直剑 / Straight Sword | 快 | 中 | 中 | 均衡之选 / Balanced choice |
+| 大剑 / Greatsword | 中 | 高 | 中 | 力量系首选 / Strength favorite |
+| 特大剑 / Colossal Sword | 慢 | 极高 | 长 | 高伤害高风险 / High damage high risk |
+| 匕首 / Dagger | 极快 | 低 | 短 | 背刺专用 / Backstab specialist |
+| 太刀 / Katana | 快 | 中高 | 中 | 出血流核心 / Bleed build core |
+| 槌 / Hammer | 中 | 高 | 短 | 削韧利器 / Poise damage king |
+| 矛 / Spear | 中 | 中 | 长 | 安全距离攻击 / Safe range attacks |
+| 拳套 / Fist | 极快 | 低 | 极短 | 连击流派 / Combo-focused |
+| 斧 / Axe | 中 | 高 | 中 | 单手高伤害 / High one-hand damage |
+| 大斧 / Greataxe | 慢 | 极高 | 中 | 力量终极武器 / Strength ultimate weapon |
+
+#### 远程武器 / Ranged Weapons
+
+| 类型 / Type | 射速 / Fire Rate | 伤害 / Damage | 射程 / Range | 最佳使用 / Best Use |
+|---|---|---|---|---|
+| 短弓 / Shortbow | 快 | 低 | 中 | 快速射击机动战 / Mobile fast shots |
+| 长弓 / Longbow | 中 | 中高 | 远 | 狙击和开战 / Sniping and engagement |
+| 大弓 / Greatbow | 慢 | 极高 | 极远 | 远程压制 / Long range suppression |
+| 弩 / Crossbow | 中 | 中 | 中 | 无需属性要求 / No stat requirements |
+| 手炮 / Hand Ballista | 慢 | 极高 | 远 | 高额单发伤害 / High single-shot damage |
+
+### 战技系统 / Ash of War
+
+战技是武器附带的特殊技能，可以通过收集战灰来更换。不同战技适合不同战斗场景。
+
+Ash of War are special skills attached to weapons, changeable by collecting Whetblades. Different skills suit different combat scenarios.
+
+| 战技 / Ash of War | 效果 / Effect | 推荐武器 / Recommended Weapon |
+|---|---|---|
+| 准备架势 / Square Off | 快速连击 / Fast combo | 直剑 / Straight Sword |
+| 鲜血斩击 / Bloody Slash | 出血伤害 / Bleed damage | 太刀 / Katana |
+| 狮子斩 / Lion's Claw | 高削韧下劈 / High poise damage | 大剑 / Greatsword |
+| 风暴刃 / Storm Blade | 远程剑气 / Ranged blade beam | 任意 / Any |
+| 猎犬步法 / Bloodhound's Step | 无敌闪避 / Invincible dodge | 匕首 / Dagger |
+| 铁壁防御 / Shield Bash | 强力格挡反击 / Strong block counter | 大盾 / Greatshield |
+| 神圣刀刃 / Sacred Blade | 神圣伤害附魔 / Holy damage buff | 直剑 / Straight Sword |
+| 冰枪 / Ice Spear | 冻伤累积 / Frost buildup | 矛 / Spear |
+
+### 防御机制 / Defensive Mechanics
+
+#### 格挡 / Blocking
+
+使用盾牌格挡可以减少受到的伤害。不同盾牌的**防御强度**（Guard Boost）决定了格挡时消耗的耐力。
+
+Blocking with a shield reduces incoming damage. Each shield's **Guard Boost** determines stamina consumption while blocking.
+
+- 小盾 / Small Shield: 减伤80% / 80% damage reduction
+- 中盾 / Medium Shield: 减伤95% / 95% damage reduction
+- 大盾 / Greatshield: 减伤100% / 100% damage reduction
+
+#### 闪避 / Dodging
+
+闪避有短暂的无敌帧（Iframe），可以躲避所有伤害。闪避效果受**负重**（Equip Load）影响：
+
+Dodging has brief invincibility frames (Iframes) that can avoid all damage. Effectiveness depends on **Equip Load**:
+
+| 负重级别 / Load Level | 负重百分比 / Percentage | 闪避效果 / Dodge Effect |
+|---|---|---|
+| 轻 / Light | 低于30% / Below 30% | 最远最快 / Farthest and fastest |
+| 中 / Medium | 30%-70% | 标准距离 / Standard distance |
+| 重 / Heavy | 70%-100% | 缓慢翻滚 / Slow roll |
+| 极重 / Overloaded | 超过100% / Over 100% | 无法翻滚 / Cannot roll |
+
+#### 防御反击 / Guard Counter
+
+在格挡敌人攻击后立即按下重攻击键可发动**防御反击**，造成高削韧伤害，容易让敌人进入处决状态。
+
+Pressing heavy attack immediately after blocking an enemy attack triggers a **Guard Counter**, dealing high poise damage and easily staggering enemies for a riposte.
+
+### 削韧与处决 / Stance Breaking & Riposte
+
+连续攻击敌人会累积**削韧值**（Poise Damage）。当削韧值满时，敌人会进入可处决状态，此时按下轻攻击可发动**致命一击**（Critical Strike）。
+
+Continuous attacks build up **Poise Damage**. When the poise bar is full, enemies enter a ripostable state. Press light attack to perform a **Critical Strike**.
+
+- 大型武器削韧更高 / Larger weapons deal more poise damage
+- 跳跃攻击削韧翻倍 / Jumping attacks deal double poise damage
+- 处决伤害受武器攻击力影响 / Riposte damage scales with weapon attack power
+
+### 合作战斗 / Co-op Combat
+
+本作的合作战斗有几个独特机制：
+
+This game has several unique co-op combat mechanics:
+
+1. **联机处决** / **Team Execute** — 多名玩家可同时处决同一个大型敌人 / Multiple players can simultaneously riposte the same large enemy
+2. **仇恨系统** / **Aggro System** — 骑士类职业的嘲讽技能可吸引BOSS仇恨 / Tank classes have taunt skills to draw boss aggro
+3. **组合战技** / **Combined Skills** — 特定战技在队友附近使用时效果增强 / Certain skills are enhanced when used near teammates
+4. **复活机制** / **Revive Mechanic** — 倒地队友可在限定时间内被救起 / Downed teammates can be revived within a time limit
+
+### 新战斗机制 / New Combat Mechanics
+
+#### 夜之力 / Night Power
+
+在夜晚时，所有玩家会逐渐积累**夜之力**（Night Power）能量条。满能量时可释放强大的**夜之技能**（Night Skill），造成巨额伤害或提供团队增益。
+
+At night, all players gradually accumulate a **Night Power** gauge. When full, it enables powerful **Night Skills** dealing massive damage or providing team-wide buffs.
+
+#### 合体技 / Unity Attack
+
+当两名玩家在近距离同时使用战技时，可以触发**合体技**（Unity Attack），造成超过单人总和的高额伤害。
+
+When two players use skills in close proximity simultaneously, they can trigger a **Unity Attack**, dealing damage greater than the sum of individual attacks.
+
+#### 环境互动 / Environmental Interaction
+
+战斗中可以利用环境元素：
+
+Combat can utilize environmental elements:
+
+- 引燃油沼点燃敌人 / Ignite oil pools to burn enemies
+- 落下钟楼砸击敌人 / Drop bell towers on enemies
+- 引爆火药桶造成范围伤害 / Detonate gunpowder barrels for AoE damage
+- 利用毒沼消耗敌人 / Use poison swamps to drain enemies
+
+### 战斗技巧 / Combat Tips
+
+1. **观察敌人动作** / **Observe enemy patterns** — 每个BOSS都有固定的攻击模式 / Every boss has fixed attack patterns
+2. **管理耐力** / **Manage stamina** — 不要打空耐力，留一些用于闪避 / Don't deplete stamina, keep some for dodging
+3. **利用高低差** / **Use elevation** — 高处跳劈有伤害加成和削韧加成 / Jump attacks from height get damage and poise bonuses
+4. **属性克制** / **Elemental advantages** — 不同敌人有属性弱点 / Different enemies have elemental weaknesses
+5. **打断施法** / **Interrupt casting** — 物理攻击可以打断敌人的法术施放 / Physical attacks can interrupt enemy spellcasting
+
+---
+
+标签 / Tags: 战斗, combat, 武器, weapons, 战技, skills, 防御, defense, 削韧, poise
