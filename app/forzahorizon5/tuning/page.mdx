@@ -1,0 +1,271 @@
+---
+title: 调校指南 / Tuning Guide
+description: 极限竞速地平线5 调校完全指南——轮胎、传动系统、齿轮比、四轮定位、悬挂、差速器、刹车系统调校详解，不同赛事类型调校策略，变速箱类型选择与四驱转换 / Forza Horizon 5 tuning guide covering tires, gearing, alignment, suspension, differential, brake tuning, race-specific strategies, transmission types, and AWD conversion
+---
+
+## 调校系统概述 / Tuning System Overview
+
+调校是地平线5中最深奥也是最有回报的系统之一。通过对车辆各部件的精细调整，你可以改变车辆的操控特性来适应不同的赛道和驾驶风格。虽然下载社区调校是最快的方式，但理解调校原理能让你根据自己的需求进行精确调整。
+
+Tuning is one of the deepest and most rewarding systems in FH5. By fine-tuning various vehicle components, you can change handling characteristics to suit different tracks and driving styles. While downloading community tunes is the fastest approach, understanding tuning principles allows precise adjustments for your specific needs.
+
+### 调校前的准备 / Preparation Before Tuning
+
+1. 确保车辆升级完毕 / Ensure all upgrades are installed
+2. 选择一条熟悉的测试赛道 / Choose a familiar test track
+3. 先在默认调校下跑几圈，记录问题（转向不足/过度）/ Run a few laps on default tune, note issues (understeer/oversteer)
+4. 一次只调整一个参数，测试后再改下一个 / Adjust one parameter at a time, test before changing the next
+5. 使用 Forza 的 Telemetry 数据分析车辆状态 / Use Forza Telemetry data to analyze vehicle status
+
+## 轮胎调校 / Tire Tuning
+
+### 胎压 / Tire Pressure
+
+胎压影响轮胎的接地面积和侧向抓地力。正确的胎压设置可以显著改善弯道性能。
+
+Tire pressure affects the tire contact patch size and lateral grip. Correct pressure settings can significantly improve cornering performance.
+
+| 设置 / Setting | 效果 / Effect | 推荐场景 / Recommended Scenario |
+|:--------------|:------------|:-------------------------------|
+| 降低胎压 Lower Pressure | 增加接地面积，提高机械抓地力，但过弯时轮胎侧壁支撑不足 / Increases contact patch, improves mechanical grip, but reduces sidewall support during cornering | 湿滑路面 Wet surfaces, 越野 Offroad |
+| 升高胎压 Higher Pressure | 减少滚动阻力，提高极速和响应，但抓地力下降 / Reduces rolling resistance, improves top speed and response, but reduces grip | 干地干燥路面 Dry surface, 高速赛道 High-speed tracks |
+
+**胎压调校建议 / Tire Pressure Recommendations**:
+- 街头赛车 Street Racing: 前轮 28-30 psi, 后轮 26-28 psi
+- 公路赛道 Road Circuit: 前轮 29-31 psi, 后轮 27-29 psi
+- 越野 Dirt / CC: 前轮 22-25 psi, 后轮 20-23 psi（降低压力提高浮力 / lower pressure for better floatation）
+- 漂移 Drift: 前轮 32-35 psi（提高响应）, 后轮 20-24 psi（降低抓地力便于滑动）
+
+### 轮胎类型选择 / Tire Type Selection
+
+| 轮胎类型 Tire Type | 公路抓地力 Road Grip | 越野抓地力 Offroad Grip | 耐久性 Durability | 推荐用途 Recommended Use |
+|:------------------|:-------------------|:----------------------|:-----------------|:------------------------|
+| 街道胎 Street Tires | 低 Low | 低 Low | 高 High | 原厂车辆日常驾驶 Stock daily driving |
+| 运动胎 Sport Tires | 中等 Medium | 低 Low | 中 Medium | B 级和 A 级公路赛 / B and A class road racing |
+| 赛车胎 Race Slicks | 高 High | 极低 Very Low | 低 Low | S1/S2 级公路赛 / S1/S2 class road racing |
+| 越野胎 Offroad Tires | 低 Low | 高 High | 高 High | 越野和拉力赛 / Offroad and rally |
+| 雪地胎 Snow Tires | 中 Medium | 中 Medium (雪地) | 中 Medium | 雪地赛事 Winter events |
+
+## 传动系统与齿轮比 / Drivetrain and Gearing
+
+### 最终传动比 / Final Drive Ratio
+
+最终传动比决定车辆的整体加速能力和极速。这是调校中对驾驶感受影响最明显的参数之一。
+
+The final drive ratio determines overall acceleration and top speed. This is one of the most noticeable parameters affecting driving feel.
+
+**调校原则 / Tuning Principles**:
+- **缩短 Final Drive（数值更大）**: 加速更快，极速降低 / Faster acceleration, reduced top speed
+  - 适合多弯赛道 / Suitable for twisty circuits
+  - 适合越野赛（需要频繁加减速）/ Suitable for offroad (frequent acceleration/deceleration)
+- **延长 Final Drive（数值更小）**: 极速更高，加速变慢 / Higher top speed, slower acceleration
+  - 适合高速赛道 / Suitable for high-speed tracks
+  - 适合直线加速赛 / Suitable for drag racing
+
+**调试方法 / Tuning Method**:
+在测试赛道中达到最长直道的末端时，检查最高挡位的转速。理想情况下，你应该在刹车点前刚好达到红线转速。如果离红线还很远就到达刹车点，说明 Final Drive 过长（数值需要增大）。如果很早就在直道中段达到红线，说明 Final Drive 过短（数值需要减小）。
+
+When reaching the end of the longest straight on a test track, check the top gear RPM. Ideally, you should hit redline just before the braking point. If you are far from redline at the braking point, the final drive is too long (increase the value). If you hit redline early in the straight, the final drive is too short (decrease the value).
+
+### 齿轮比微调 / Individual Gear Ratio Tuning
+
+每个挡位的齿轮比可以单独调整，以优化特定赛段的加速表现。
+
+Each gear ratio can be adjusted individually to optimize acceleration for specific track sections.
+
+- **1-3 挡 / 1st-3rd Gears**: 影响出弯加速。缩短这些挡位（数值增大）可以加快低速弯的出弯速度 / Affect corner exit acceleration. Shortening (higher value) improves low-speed corner exit
+- **4-6 挡 / 4th-6th Gears**: 影响中高速区域。延长这些挡位可以提升最高速度 / Affect medium-to-high speed sections. Lengthening improves top speed
+- **最高挡 / Top Gear**: 设置为刚好在最长直道末端达到红线 / Set to hit redline at the end of the longest straight
+
+### 变速箱类型 / Transmission Types
+
+| 变速箱类型 Type | 特点 / Characteristics | 适用场景 / Best For |
+|:---------------|:---------------------|:-------------------|
+| 原厂变速箱 Stock | 齿轮比固定，不可调 / Fixed ratios, not adjustable | 原厂赛事 Stock events |
+| 运动变速箱 Sport | 6 挡可调齿轮比 / 6 adjustable gears | A 级赛事 A class events |
+| 赛车变速箱 Race | 6 挡可调 + 最终传动比可调 / 6 adjustable + final drive | 所有竞技赛事 All competitive events |
+| 漂移变速箱 Drift | 为漂移优化的齿轮比 / Drift-optimized ratios | 漂移赛 Drift events |
+
+## 四轮定位 / Alignment
+
+### 前束角 / Toe Angle
+
+前束角指从车顶向下看时，轮胎前部与车辆中心线的夹角。
+
+Toe angle refers to the angle between the front of the tire and the vehicle centerline when viewed from above.
+
+| 设置 Setting | 效果 Effect | 推荐场景 Recommended Use |
+|:------------|:-----------|:-----------------------|
+| 前束 Toe In (正数 Positive) | 增加直线稳定性，但入弯响应变慢 / Increases straight-line stability, slower turn-in response | 高速赛道，直线加速 / High-speed tracks, drag racing |
+| 前束 Toe Out (负数 Negative) | 提高入弯响应，但直线稳定性下降 / Improves turn-in response, reduced straight stability | 多弯赛道，街头赛 / Technical circuits, street racing |
+
+**推荐值 / Recommended Values**:
+- 公路赛 Road Racing: 前轮 -0.5 到 -1.0 (Toe Out), 后轮 0 到 +0.5 (Toe In)
+- 越野赛 Dirt Racing: 前轮 +0.3 到 +0.8 (Toe In), 后轮 +0.5 到 +1.0 (Toe In)
+- 漂移 Drift: 前轮 -1.0 到 -2.0 (Toe Out), 后轮 +0.5 到 +1.5 (Toe In)
+
+### 外倾角 / Camber Angle
+
+外倾角指从车头正面看时，轮胎顶部与垂直线的夹角。
+
+Camber angle is the angle between the top of the tire and the vertical line when viewed from the front.
+
+**调校原则 / Tuning Principles**:
+- 负外倾 Negative Camber（轮胎顶部向内）: 增加弯道抓地力（过弯时轮胎接触面更大），但直线加速和刹车的抓地力下降 / Increases cornering grip (larger contact patch during turns), but reduces straight-line acceleration and braking grip
+- 正外倾 Positive Camber（轮胎顶部向外）: 直线稳定性好，但弯道性能差 / Good straight-line stability, poor cornering
+
+**推荐值 / Recommended Values**:
+- 公路赛 Road Racing: 前轮 -1.8 到 -2.5, 后轮 -1.2 到 -1.8
+- 越野赛 Dirt: 前轮 -1.5 到 -2.0, 后轮 -1.0 到 -1.5
+- 漂移 Drift: 前轮 -2.0 到 -3.0, 后轮 -1.0 到 -2.0
+
+## 悬挂调校 / Suspension Tuning
+
+### 弹簧刚度 / Spring Stiffness
+
+弹簧刚度决定车辆在转弯时的侧倾程度和颠簸吸收能力。
+
+Spring stiffness determines body roll during cornering and bump absorption capability.
+
+| 设置 Setting | 效果 Effect | 适用场景 Best For |
+|:------------|:-----------|:----------------|
+| 更硬 Stiffer | 减少侧倾，提高转向响应，但颠簸路面抓地力下降 / Reduces body roll, improves steering response, but reduced grip on bumps | 平整赛道 Smooth tracks, 公路赛 Road racing |
+| 更软 Softer | 提高颠簸路面抓地力，但车身侧倾增加 / Improves grip on bumpy surfaces, but increases body roll | 越野赛 Offroad, 颠簸路面 Bumpy surfaces |
+
+**调校比例 / Tuning Ratios**:
+- 公路赛 Road: 前轮比后轮硬 10-20% / Front 10-20% stiffer than rear
+- 越野赛 Offroad: 前轮比后轮软 10-15% / Front 10-15% softer than rear
+- 漂移 Drift: 前轮硬，后轮软（便于甩尾）/ Front stiff, rear soft (easier to break traction)
+
+### 防倾杆 / Anti-Roll Bars
+
+防倾杆控制车辆在转弯时的侧倾程度，影响转向特性。
+
+Anti-roll bars control body roll during cornering and affect understeer/oversteer balance.
+
+| 设置 Setting | 效果 Effect |
+|:------------|:-----------|
+| 前轮更硬 Stiffer Front | 增加转向不足倾向 / Increases understeer tendency |
+| 后轮更硬 Stiffer Rear | 增加转向过度倾向 / Increases oversteer tendency |
+
+**推荐策略 / Recommended Strategy**:
+- 如果车辆转向不足 Understeer: 调软前防倾杆，或调硬后防倾杆 / Soften front ARB or stiffen rear ARB
+- 如果车辆转向过度 Oversteer: 调硬前防倾杆，或调软后防倾杆 / Stiffen front ARB or soften rear ARB
+
+### 行驶高度 / Ride Height
+
+行驶高度影响车辆重心位置和空气动力学。
+
+Ride height affects the center of gravity and aerodynamics.
+
+| 设置 Setting | 效果 Effect |
+|:------------|:-----------|
+| 降低 Lower | 降低重心，提升弯道稳定性，减少空气阻力 / Lowers CG, improves cornering stability, reduces drag |
+| 升高 Higher | 增加悬挂行程，提升越野通过性 / Increases suspension travel, improves offroad clearance |
+
+- 公路赛 Road: 尽可能最低 / As low as possible
+- 越野赛 Offroad: 中等偏高 / Medium-high
+- 越野拉力赛 Cross Country: 最高 / Highest possible
+
+## 差速器调校 / Differential Tuning
+
+差速器控制左右车轮之间的扭矩分配。正确的差速器设置可以显著改善出弯加速和弯道稳定性。
+
+The differential controls torque distribution between left and right wheels. Correct differential settings can significantly improve corner exit acceleration and cornering stability.
+
+| 设置 Setting | 加速 Acceleration | 减速 Deceleration | 推荐值 Recommended |
+|:------------|:-----------------|:-----------------|:------------------|
+| 前轮 Front | 控制前轮在加速时的抓地力 / Controls front grip during acceleration | 控制前轮在刹车时的稳定性 / Controls front stability during braking | 20-40% |
+| 后轮 Rear | 控制后轮在出弯时的抓地力，影响转向过度倾向 / Controls rear grip during corner exit, affects oversteer | 控制后轮在入弯时的稳定性 / Controls rear stability during turn-in | 40-65% |
+| 中央 Center | 仅限四驱车，控制前后轴扭矩分配 / AWD only, controls front/rear torque split | 同上 Same | 50-80%（偏后驱 / rear-biased）|
+
+### 差速器调校指南 / Differential Tuning Guide
+
+**前差速器 Front Diff**:
+- 数值越高，前轮在加速时抓地力越强，但入弯时转向不足会加重 / Higher value = more front grip during acceleration, but more understeer on turn-in
+- 推荐: 20%（公路）, 30%（越野）, 15%（漂移）
+
+**后差速器 Rear Diff**:
+- 数值越高，后轮在出弯时抓地力越强，但转向过度倾向降低 / Higher value = more rear grip during corner exit, but reduced oversteer tendency
+- 推荐: 50%（公路, 稳定 / stable）, 40%（公路, 更灵活 / more agile）, 60%（越野）
+
+**中央差速器 Center Diff (AWD)**:
+- 数值越高，更多扭矩分配到后轮（偏后驱特性）/ Higher value = more torque to rear (RWD-biased)
+- 推荐: 70%（偏后驱/ responsive）, 50%（均衡/ balanced）, 80%（极限后驱/ extreme rear bias）
+
+## 刹车调校 / Brake Tuning
+
+### 刹车平衡 / Brake Balance
+
+刹车平衡决定前后轮制动力分配比例。前后配比影响刹车时的车辆稳定性。
+
+Brake balance determines the front/rear braking force distribution ratio. This ratio affects vehicle stability during braking.
+
+| 设置 Setting | 效果 Effect | 推荐场景 Best For |
+|:------------|:-----------|:----------------|
+| 偏前 Front-biased (70%+) | 刹车时更稳定，但后轮容易锁死减少 / More stable braking, less rear lock-up | 新手新手 Beginner, 公路赛 Road racing |
+| 偏后 Rear-biased (60%-) | 入弯时更容易转向过度，辅助过弯 / Easier to rotate car during braking, assists cornering | 高级玩家 Advanced, 漂移 Drift |
+| 均衡 Balanced (50%) | 中性刹车表现 / Neutral braking performance | 大多数场景 Most scenarios |
+
+**推荐值 / Recommended Values**: 55-65%（偏前，大多数路面/ FWD-biased for most surfaces）
+
+### 刹车压力 / Brake Pressure
+
+刹车压力控制刹车踏板的力度灵敏度。不正确的设置会导致刹车的过度敏感或响应不足。
+
+Brake pressure controls pedal sensitivity. Incorrect settings cause either oversensitive or unresponsive braking.
+
+| 设置 Setting | 效果 Effect | 推荐场景 Best For |
+|:------------|:-----------|:----------------|
+| 高压力 High (150-200%) | 刹车响应极快，但容易锁死 / Very responsive braking,但容易锁死 | 赛道赛 Track racing (ABS开启时 / with ABS on) |
+| 中压力 Medium (100-130%) | 平衡的刹车响应 / Balanced braking response | 大多数场景 Most scenarios |
+| 低压力 Low (70-90%) | 需要更大的踏板行程，但更容易控制锁死 / Requires more pedal travel, but more controllable | 无 ABS 驾驶 Driving without ABS, 湿滑路面 Wet surfaces |
+
+## 空气动力学调校 / Aero Tuning
+
+### 尾翼角度 / Rear Wing Angle
+
+尾翼角度决定下压力水平，直接影响弯道速度和极速。
+
+Rear wing angle determines downforce level, directly affecting cornering speed and top speed.
+
+| 设置 Setting | 效果 Effect | 推荐场景 Best For |
+|:------------|:-----------|:----------------|
+| 高下压力 High Downforce | 弯道抓地力增加，极速降低 / Increased cornering grip, reduced top speed | 多弯赛道 Technical circuits, 高速弯高速弯 High-speed corners |
+| 低下压力 Low Downforce | 极速提高，弯道抓地力下降 / Increased top speed, reduced cornering grip | 高速赛道 High-speed tracks, 直线赛道直线赛道 tracks with long straights |
+
+**推荐策略 / Recommended Strategy**:
+- 公路赛道: 根据赛道特点调整——弯道多则增加下压力，直道长则减少 / Adjust based on track — more downforce for twisty circuits, less for high-speed tracks
+- 街头赛: 中等下压力（需要在城市街道的操控和极速之间平衡）/ Medium downforce (balance between city street handling and top speed)
+- 越野赛: 下压力通常不重要，但下压力可以帮助稳定高速跳跃后的车身 / Downforce is less critical, but helps stabilize the car after high-speed jumps
+
+## 不同赛事调校策略 / Tuning by Event Type
+
+### 公路赛调校 / Road Racing Tune
+- 轮胎: 赛车胎 Race Slicks
+- 悬挂: 尽可能低，较硬 / Lowest possible height, stiffer
+- 防倾杆: 中性或偏转向不足 / Neutral or slight understeer bias
+- 差速器: 前 20%, 后 50%
+- 刹车: 偏前 60%, 中等压力 / 60% front bias, medium pressure
+- 空气动力: 根据赛道调整 / Adjust based on track
+
+### 越野赛调校 / Dirt Racing Tune
+- 轮胎: 越野胎 Offroad Tires
+- 悬挂: 中等高度，较软 / Medium height, softer
+- AWD 转换 AWD Conversion: 强烈建议 / Strongly recommended
+- 差速器: 前 30%, 后 60%, 中央 70%
+- 刹车: 偏后 55%, 较低压力（防止在碎石路锁死）/ Rear bias 55%, lower pressure to prevent lockup on gravel
+- 胎压: 降低 / Lower tire pressure
+
+### 漂移调校 / Drift Tune
+- 轮胎: 运动胎或街道胎（便于滑动）/ Sport or Street tires (easier to slide)
+- 后轮胎压: 大幅降低（减少抓地力）/ Significantly lower rear tire pressure
+- 悬挂: 前硬后软 / Front stiff, rear soft
+- 防倾杆: 前硬后软 / Front stiff, rear soft
+- 差速器: 后差速器 100%（全锁止利于漂移）/ Rear diff 100% (locked for drifting)
+- 刹车: 偏后 / Rear bias
+- 动力: 大马力后驱 / High-power RWD
+
+---
+
+Tags: 调校, tuning, 悬挂, suspension, 差速器, differential, 轮胎, tires, 刹车, brakes, 齿轮, gearing, 四轮定位, alignment

@@ -1,0 +1,228 @@
+---
+title: '多人联机 / Multiplayer Guide'
+description: '泰拉瑞亚多人联机指南，包括服务器搭建、PvP技巧和Mod推荐 / Terraria multiplayer guide covering server setup, PvP tips, and mod recommendations'
+toc: false
+---
+
+## 多人联机指南 / Multiplayer Guide
+
+泰拉瑞亚支持最多8名玩家同时在线游玩。多人联机可以让游戏体验更加丰富多彩，但也需要注意一些特殊的游戏机制。
+
+Terraria supports up to 8 players playing simultaneously. Multiplayer can make the game experience more diverse, but special mechanics need attention.
+
+### 联机方式 / Connection Methods
+
+**局域网联机 / LAN Connection**:
+- 在同一网络下的计算机可以直接通过局域网连接 / Computers on the same network can connect directly via LAN
+- 主机选择"多人模式 - 主机和游戏" / Host selects "Multiplayer - Host & Play"
+- 其他玩家选择"加入游戏"并搜索局域网 / Others select "Join Game" and search LAN
+
+**Steam联机 / Steam Connection**:
+- 通过Steam好友系统直接邀请 / Directly invite through Steam friends system
+- 需要双方都有Steam版本 / Both parties need the Steam version
+- 在游戏中按Shift+Tab打开Steam界面邀请 / Press Shift+Tab in game to open Steam overlay and invite
+
+**IP直连 / IP Direct Connect**:
+- 主机需要设置端口转发（默认端口7777）/ Host needs to set up port forwarding (default port 7777)
+- 玩家输入主机的公网IP和端口加入 / Players enter the host's public IP and port to join
+- 需要知道主机的公网IP地址 / Need to know the host's public IP address
+
+### 专用服务器 / Dedicated Server
+
+对于稳定的联机体验，建议使用专用服务器：
+
+For a stable multiplayer experience, it is recommended to use a dedicated server:
+
+**Windows下搭建 / Setting Up on Windows**:
+1. 在Steam库中找到Terraria，右键属性 / Find Terraria in Steam library, right-click Properties
+2. 在本地文件标签中点击浏览 / Click Browse in Local Files tab
+3. 找到 `TerrariaServer.exe` / Locate `TerrariaServer.exe`
+4. 运行后设置世界和密码 / Run and configure world and password
+
+**Linux下搭建 / Setting Up on Linux**:
+```
+# 安装Terraria服务器 / Install Terraria server
+wget https://terraria.org/api/download/linux-dedicated-server
+unzip linux-dedicated-server
+cd DedicatedServer
+
+# 运行服务器 / Run the server
+./TerrariaServer
+```
+
+**服务器配置文件 / Server Configuration File**:
+
+```
+# 文件名 / File Name: serverconfig.txt
+maxplayers=8
+world=C:\Users\...\World.wld
+port=7777
+password=yourpassword
+motd=Welcome to my Terraria server
+language=en-US
+```
+
+**服务器配置选项 / Server Configuration Options**:
+
+| 选项 / Option | 说明 / Description |
+|---|---|
+| maxplayers | 最大玩家数 / Max players (1-255) |
+| port | 端口号 / Port number (默认7777) |
+| password | 服务器密码 / Server password |
+| world | 世界文件路径 / World file path |
+| motd | 服务器欢迎信息 / Server welcome message |
+| language | 服务器语言 / Server language |
+| secure | 开启反作弊 / Enable anti-cheat |
+| upnp | 自动端口转发 / Auto port forwarding |
+
+### PvP模式 / PvP Mode
+
+泰拉瑞亚的PvP（玩家对战）系统允许玩家之间进行战斗。
+
+Terraria's PvP (Player vs Player) system allows players to fight each other.
+
+**开启PvP / Enabling PvP**:
+- 默认情况下所有玩家PvP关闭 / By default, PvP is off for all players
+- 点击装备栏中的剑盾图标开启 / Click the sword and shield icon in the inventory to enable
+- 只有开启PvP的玩家才能互相伤害 / Only players with PvP enabled can damage each other
+
+**PvP技巧 / PvP Tips**:
+
+| 技巧 / Tip | 说明 / Description |
+|---|---|
+| 高机动性 / High Mobility | 翅膀 + 闪电靴 + 忍者装备 / Wings + Lightning Boots + Ninja Gear |
+| 远程优势 / Ranged Advantage | 使用追踪武器如叶绿弹 / Use homing weapons like Chlorophyte Bullets |
+| 近战突进 / Melee Rush | 使用日耀喷发或破晓之光等穿透武器 / Use piercing weapons like Solar Eruption or Daybreak |
+| 魔法爆发 / Magic Burst | 月耀可以瞬间造成巨量伤害 / Last Prism deals massive burst damage |
+| 防御配置 / Defense Setup | 堆高防御和减伤，使用十字章护盾 / Stack defense and DR, use Ankh Shield |
+
+**PvP装备推荐 / PvP Gear Recommendations**:
+- 近战PvP: 日耀盔甲 + 十字章护盾 + 忍者大师装备 + 天界壳
+- 远程PvP: 星旋盔甲 + S.D.M.G. + 晶体弹 + 追踪头饰
+- 魔法PvP: 星云盔甲 + 月耀 + 魔力花 + 天界手镯
+- 召唤PvP: 泰拉棱镜 + 星尘甲 + 万花筒鞭子
+
+**PvP地图建议 / PvP Map Suggestions**:
+- 使用宽阔的开放场地 / Use wide, open arenas
+- 加入障碍物提供战术掩体 / Add obstacles for tactical cover
+- 设置多个高度层次的平台 / Set up multi-height platforms
+- 避免岩浆和陷阱干扰战斗 / Avoid lava and traps interfering with battle
+
+### 物品交易 / Item Trading
+
+多人联机中玩家之间可以交换物品。
+
+Players can exchange items with each other in multiplayer.
+
+**交易方法 / Trading Methods**:
+
+| 方法 / Method | 说明 / Description |
+|---|---|
+| 直接丢弃 / Drop | 将物品丢在地上让对方拾取 / Drop items on the ground for pickup |
+| 箱子交易 / Chest Trade | 使用共用箱子存放交易物品 / Use shared chests for trade items |
+| 饰品栏交易 / Accessory Slot | 部分饰品可以直接通过饰品栏传递 / Some accessories can be passed through accessory slots |
+
+**交易安全提示 / Trading Safety Tips**:
+- 确保交易环境安全，不要被怪物打断 / Ensure a safe trading environment away from monsters
+- 使用房屋系统保护贵重物品 / Use the housing system to protect valuables
+- 与可信赖的队友交易 / Only trade with trusted teammates
+- 注意不要交易剧情关键物品如Boss召唤物 / Avoid trading quest-critical items like boss summons
+
+### 合作推进攻略 / Co-op Progression Tips
+
+**分工策略 / Role Division Strategy**:
+- 近战职业担任坦克吸引火力 / Melee class tanks and draws aggro
+- 远程和魔法职业负责输出 / Ranged and magic classes focus on DPS
+- 召唤师辅助控制和持续伤害 / Summoner provides control and sustained damage
+- 可以指定一个人专门负责建造和整理 / Designate one person for building and organizing
+
+**BOSS配合 / Boss Cooperation**:
+- BOSS血量会根据玩家数量提升 / Boss HP scales with player count
+- 在专家/大师模式下BOSS获得额外能力 / Bosses gain additional abilities in Expert/Master mode
+- 多人时更容易复活队友 / Easier to revive teammates with multiple players
+- 配合使用圣骑士护盾保护脆皮队友 / Coordinate Paladin's Shield to protect squishy teammates
+- 准备多个复活点药水 / Prepare multiple recall potions
+
+**资源分配 / Resource Allocation**:
+- 打造多个副本工具如镐和斧头 / Craft multiple copies of tools like pickaxes and axes
+- 矿石和锭按需分配 / Distribute ores and bars based on need
+- 特殊物品如泰拉之刃可以优先给近战玩家 / Priority special items like Terra Blade to melee players
+- 收集所有职业的盔甲套装 / Collect armor sets for all classes
+
+**沟通建议 / Communication Suggestions**:
+- 使用语音聊天软件辅助沟通 / Use voice chat software for communication
+- 开启游戏内的团队聊天 / Enable in-game team chat
+- 标记地图上的重要位置 / Mark important locations on the map
+- 使用路标或旗帜标记探索过的区域 / Use signs or flags to mark explored areas
+
+### tModLoader Mod推荐 / tModLoader Mod Recommendations
+
+tModLoader是泰拉瑞亚的官方Mod加载器，可以极大地扩展游戏内容。
+
+tModLoader is the official mod loader for Terraria, greatly expanding game content.
+
+**安装tModLoader / Installing tModLoader**:
+1. 在Steam中搜索tModLoader并安装 / Search and install tModLoader on Steam
+2. 打开tModLoader后点击Mod Browser / Open tModLoader and click Mod Browser
+3. 搜索并下载喜欢的Mod / Search and download desired mods
+4. 在Mods菜单中启用 / Enable in the Mods menu
+
+**内容扩展Mod / Content Expansion Mods**:
+
+| Mod名称 / Mod Name | 说明 / Description |
+|---|---|
+| Calamity Mod | 增加大量BOSS、武器和生物群系，是目前最大的内容Mod / Adds massive content, bosses, weapons, biomes |
+| Thorium Mod | 增加两个新职业和大量内容，与原版风格一致 / Adds two new classes and content, vanilla-friendly |
+| Spirit Mod | 增加1500+物品和10+BOSS / Adds 1500+ items and 10+ bosses |
+| Elements Awoken | 增加新的BOSS和生物群系 / Adds new bosses and biomes |
+
+**辅助功能Mod / Quality of Life Mods**:
+
+| Mod名称 / Mod Name | 说明 / Description |
+|---|---|
+| Magic Storage | 增加中央存储系统，彻底解决物品管理问题 / Adds centralized storage system |
+| Boss Checklist | 显示BOSS击杀进度和奖励 / Shows boss progression and rewards |
+| Recipe Browser | 在游戏中查看所有合成配方 / View all crafting recipes in-game |
+| Auto Trash | 自动丢弃不需要的物品 / Auto-trash unwanted items |
+| Yet Another Boss Health Bar | 显示BOSS血条 / Shows boss health bar |
+| Wing Slot | 增加独立的翅膀装备栏 / Adds separate wing slot |
+
+**Mod配置建议 / Mod Configuration Tips**:
+- 不要一次加载太多大型Mod，可能导致冲突 / Do not load too many large mods at once, may cause conflicts
+- 始终备份原版存档 / Always back up vanilla saves
+- 检查Mod之间的兼容性 / Check compatibility between mods
+- 使用Mod合集包时注意版本匹配 / Check version matching when using mod packs
+- 大型Mod如Calamity建议单独开新档 / Large mods like Calamity recommend starting a new save
+
+### 服务器管理 / Server Administration
+
+**管理员指令 / Admin Commands**:
+
+| 指令 / Command | 说明 / Description |
+|---|---|
+| /user | 管理用户 / Manage users |
+| /group | 管理用户组 / Manage user groups |
+| /kick | 踢出玩家 / Kick a player |
+| /ban | 封禁玩家 / Ban a player |
+| /time | 设置时间 / Set time |
+| /spawnboss | 生成BOSS / Spawn a boss |
+| /invade | 触加入侵 / Trigger an invasion |
+| /clear | 清空掉落物 / Clear dropped items |
+| /maxspawns | 设置最大刷怪数 / Set max spawns |
+
+**管理员权限设置 / Admin Permission Setup**:
+```
+# 在serverconfig.txt中设置 / Configure in serverconfig.txt
+# 添加管理员 / Add admin
+user=adminname,password,admin
+```
+
+**反作弊建议 / Anti-Cheat Suggestions**:
+- 开启 secure=true 设置 / Enable secure=true
+- 定期备份世界文件 / Regularly back up world files
+- 限制玩家权限 / Restrict player permissions
+- 记录服务器日志 / Enable server logging
+
+---
+
+**标签 / Tags**: 泰拉瑞亚联机, Terraria multiplayer, 服务器, PvP, tModLoader, Mod
