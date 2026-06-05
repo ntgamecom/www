@@ -1,0 +1,132 @@
+---
+title: 战斗系统详解 / Combat System Guide
+description: 茶杯头战斗系统深度解析 — 格挡机制、EX技能、超级必杀技、冲刺技巧、护符策略、BOSS阶段转换、双人合作战术
+toc: false
+---
+
+{/* Combat System - In-depth Combat Mechanics Guide */}
+
+## 格挡机制深度解析 / Parry Mechanics In-depth
+
+格挡是茶杯头战斗系统的核心机制，也是区分新手和老玩家的关键分水岭。当你面对粉色物体（粉色的弹幕、带有粉色光环的敌人、粉色的跳台、粉色的气球等）时，在接触的一瞬间按下跳跃键（或手柄的 Y 键）即可触发格挡。成功格挡后角色会向上弹起一小段距离，同时发出一声清脆的"叮"声，并为超级计量槽充能一整格。
+
+Parry is the core mechanic of Cuphead's combat system and the key differentiator between novice and veteran players. When facing pink objects (pink projectiles, enemies with pink halos, pink platforms, pink balloons, etc.), pressing the jump button (or Y button on controller) at the moment of contact triggers a parry. A successful parry bounces the character upward slightly, produces a crisp dinging sound, and fills one full card of the super meter.
+
+### 格挡的应用场景 / Parry Applications
+
+格挡的用途远不止充能那么简单。在 BOSS 战中，粉色弹幕经常被设计为固定轨迹，熟练格挡不仅可以积累能量，还能利用格挡后的弹跳调整位置。在某些 BOSS 战中，格挡粉色物体是躲避持续性攻击的最佳方式。例如在面对吉姆·米奇（Grim Matchstick）的火焰攻击时，格挡粉色火焰球可以让你在空中保持高度并继续输出。
+
+Parry is useful for much more than just charging energy. In boss battles, pink projectiles are often designed with fixed trajectories. Mastering parry not only builds energy but also allows you to reposition using the post-parry bounce. In certain boss battles, parrying pink objects is the best way to avoid sustained attacks. For example, when facing Grim Matchstick's fire attacks, parrying pink fireballs lets you maintain altitude while continuing to deal damage.
+
+格挡的另一个重要用途是通过粉色光环的敌人。许多 BOSS 战中的杂兵头顶带有粉色光环，这意味着你可以通过格挡他们来弹跳到更高的平台或越过障碍物。在实际战斗中，善于利用这些"垫脚石"可以大幅提高机动性。
+
+Another important use of parry is traversing via enemies with pink halos. Many mob enemies in boss battles have pink halos, meaning you can parry them to bounce to higher platforms or cross obstacles. In practical combat, making good use of these stepping stones can greatly improve mobility.
+
+### 高级格挡技巧 / Advanced Parry Techniques
+
+连续格挡（Chain Parry）是高手必备技巧。在短时间内连续格挡多个粉色物体可以快速填满超级计量槽，让你在 BOSS 进入下一阶段时立刻释放必杀技。某些 BOSS 会在特定阶段释放一连串粉色弹幕，这就是你积攒能量的黄金机会。
+
+Chain parrying is an essential advanced technique. Parrying multiple pink objects in quick succession rapidly fills the super meter, allowing you to unleash a super art immediately when a boss transitions to its next phase. Certain bosses release strings of pink projectiles during specific phases, presenting golden opportunities to build energy.
+
+需要注意的是，格挡存在限制条件。你不能在空中无限次格挡——每次落地后格挡计数器才会重置。部分攻击（如某些爆炸和火焰效果）虽然呈现粉色但不可格挡，需要经验来判断。在空中连续格挡时，每次格挡后的弹跳高度会递减，因此需要通过移动来维持高度。
+
+Note that parry has limitations. You cannot parry infinitely in the air — the parry counter resets only after landing. Some attacks (such as certain explosions and fire effects) appear pink but cannot be parried, requiring experience to distinguish. When chain parrying in the air, the bounce height decreases with each successive parry, so you must use movement to maintain altitude.
+
+## EX 技能系统 / EX Move System
+
+每把武器都拥有独特的 EX 技能，当超级计量槽至少有一格充能时，在射击的同时按下格挡键即可消耗一格能量释放 EX 技能。EX 技能通常具有更高的伤害、更大的攻击范围或特殊效果。
+
+Each weapon has a unique EX move. When the super meter has at least one card of charge, pressing the parry button while shooting consumes one card to unleash an EX move. EX moves typically deal higher damage, have larger attack ranges, or feature special effects.
+
+### 各武器 EX 技能一览 / EX Moves by Weapon
+
+| 武器 Weapon | EX 技能名称 EX Name | 效果 Effect |
+| --- | --- | --- |
+| 豌豆枪 Peashooter | 豌豆重击 Peashooter EX | 发射一枚大型豌豆弹丸，伤害约为普通射击的三倍 |
+| 散射枪 Spread | 散射爆裂 Spread EX | 近距离扇形喷射高伤害弹片，近身爆发力极强 |
+| 追踪枪 Chaser | 追踪连射 Chaser EX | 发射多枚自动追踪弹头，对移动目标效果出色 |
+| 抛射枪 Lobber | 抛射弹幕 Lobber EX | 投掷多个抛物线弹头，覆盖范围广 |
+| 充能枪 Charge | 充能爆破 Charge EX | 释放一次蓄力攻击，伤害极高但前摇较长 |
+| 回旋镖 Roundabout | 回旋射击 Roundabout EX | 向后发射回旋弹幕，适合背身输出 |
+| 裂纹射击 Crack Shot | 裂纹扩散 Crack Shot EX | 发射分裂弹头，覆盖面广 |
+| 汇聚 Converge | 汇聚光束 Converge EX | 发射一道集中的高伤害光束 |
+| 扭转 Twist-Up | 扭转旋风 Twist-Up EX | 发射旋转弹幕覆盖大片区域 |
+
+## 超级必杀技 / Super Arts
+
+超级必杀技是消耗满格超级计量槽（五格能量）释放的强力技能。游戏中提供三种超级必杀技，玩家在开始关卡前可以在菜单中更换。每种必杀技都有独特的定位和适用场景。
+
+Super arts are powerful skills that consume a full super meter (five cards of energy). The game offers three super arts, which players can swap before starting a level. Each super art has a unique role and suitable scenarios.
+
+### 能量光束 / Energy Beam
+
+第一种超级必杀技，发射一道贯穿全屏的巨大光束，对路径上的所有敌人造成巨额伤害。适合在 BOSS 血量较低时作为斩杀技使用，或者在 BOSS 暂停攻击的阶段输出最大化。
+
+The first super art, firing a massive beam that spans the entire screen, dealing massive damage to all enemies in its path. Suitable as a finisher when boss health is low, or for maximizing damage output during boss downtime phases.
+
+### 无敌冲锋 / Invincibility
+
+第二种超级必杀技，短时间内让角色进入无敌状态并自动对周围敌人造成伤害。适合在弹幕密集难以躲避的 BOSS 阶段使用，或者在被逼入角落时作为救命技能。
+
+The second super art, granting temporary invincibility while automatically damaging nearby enemies. Suitable for boss phases with dense bullet patterns that are difficult to avoid, or as a lifesaver when cornered.
+
+### 巨型幽灵 / Giant Ghost
+
+第三种超级必杀技，召唤一个巨大的幽灵对全屏敌人进行持续追击。幽灵会自动追踪 BOSS 并造成多次伤害。适合在 BOSS 频繁移动的战斗中使用，解放你的注意力用于躲避。
+
+The third super art, summoning a giant ghost that continuously pursues all enemies on screen. The ghost automatically tracks bosses and deals multiple hits. Suitable for battles where bosses move frequently, freeing your focus for dodging.
+
+## 冲刺技巧 / Dash Techniques
+
+冲刺（Dash）是躲避攻击的核心手段。短按冲刺键可以让角色朝当前移动方向快速位移一小段距离，期间有短暂的帧数动画但并非全程无敌。装烟雾弹（Smoke Bomb）护符后，冲刺变为烟雾冲刺，全程无敌且不发出声音，生存能力大幅提升。
+
+Dash is the primary means of avoiding attacks. Briefly pressing the dash key moves the character a short distance in the current movement direction, with brief invincibility frames. Equipping the Smoke Bomb charm transforms the dash into a smoke dash with full invincibility and silent movement, greatly improving survivability.
+
+### 冲刺的战术运用 / Tactical Dash Usage
+
+在 BOSS 战中，精确的冲刺时机比频繁冲刺更重要。观察弹幕的规律，在弹幕即将命中时瞬间冲刺穿过。过度冲刺会导致节奏混乱，反而增加被击中的概率。建议在面对新 BOSS 时先观察几轮攻击模式，再规划冲刺路线。
+
+In boss battles, precise dash timing is more important than frequent dashing. Observe bullet patterns and dash through projectiles just before they hit. Over-dashing disrupts rhythm and increases the chance of being hit. It is recommended to observe several attack cycles before planning dash routes when facing a new boss.
+
+## 护符搭配策略 / Charm Loadout Strategy
+
+护符选择直接影响战斗策略。不同的 BOSS 战需要不同的护符搭配：
+
+Charm selection directly affects combat strategy. Different boss battles require different charm loadouts:
+
+| 护符 Charm | 最佳场景 Best Scenario | 理由 Reason |
+| --- | --- | --- |
+| 烟雾弹 Smoke Bomb | 几乎所有 BOSS 战 | 无敌冲刺提高容错率 |
+| P·糖 P. Sugar | 需要频繁格挡格挡的 BOSS | 自动格挡粉色物体 |
+| 咖啡 Coffee | 持久战 BOSS | 自动充能提高必杀频率 |
+| 心环 Heart Ring | 新手开荒阶段 | 概率回复生命值 |
+| 双心 Twin Heart | 生存压力极大的战斗 | 额外一格生命值 |
+| 威士顿 Whetstone | 攻击机会少的 BOSS | 格挡造成额外伤害 |
+| 星界曲奇 Astral Cookie | DLC 全程 | 变身圣杯小姐获得全新能力 |
+
+## BOSS 阶段转换 / Boss Phase Transitions
+
+每个 BOSS 都包含多个阶段，当 BOSS 血量降低到特定阈值时触发阶段转换。阶段转换通常伴随视觉变化（BOSS 变形、换装、召唤新武器）和攻击模式的变化。部分 BOSS 有隐藏阶段或特殊机制。
+
+Each boss features multiple phases, triggered when boss health drops to specific thresholds. Phase transitions typically involve visual changes and attack pattern shifts. Some bosses have hidden phases or special mechanics.
+
+### 阶段转换技巧 / Phase Transition Tips
+
+在 BOSS 即将进入下一阶段时，合理规划超级必杀技的使用时机非常重要。如果你预判 BOSS 即将转换阶段，可以提前攒满能量，在转换后的第一时间释放必杀技压制 BOSS 的新攻击模式。许多 BOSS 在阶段转换后有一个短暂的"出场动画"窗口，这是输出的黄金时机。
+
+When a boss is about to transition to the next phase, planning super art usage is crucial. If you anticipate an upcoming phase transition, stock up on energy beforehand and unleash a super art immediately after the transition to suppress the boss new attack patterns. Many bosses have a brief introduction animation window after transitioning, which is prime time for damage output.
+
+## 双人合作战术 / Co-op Tactics
+
+双人合作模式下，战斗策略与单人模式有显著差异。两名玩家可以分工合作，一人负责吸引 BOSS 火力并格挡粉色物体攒能量，另一人全力输出。合作模式下共享生命值，这意味着团队生存能力取决于两人共同的回避水平。
+
+In co-op mode, combat strategies differ significantly from single-player. Two players can divide roles, with one drawing boss aggro and parrying pink objects to build energy while the other focuses on damage output. Co-op mode shares health, meaning team survivability depends on both players combined evasion skills.
+
+需要注意的是，合作模式下 BOSS 的血量会增加 50%-70%，但两名玩家的总输出能力也相应提高。关键在于配合——不要在狭小空间内互相挤占移动空间，保持适当的分散站位可以有效降低被弹幕同时命中的风险。
+
+Note that in co-op mode, boss health increases by 50-70%, but total player damage output also increases correspondingly. The key is coordination — avoid crowding each other in tight spaces and maintain proper spacing to reduce the risk of both players being hit simultaneously.
+
+---
+
+**标签**: 茶杯头, Cuphead, 战斗系统, 格挡, EX技能, 超级必杀技, 冲刺, 护符, 合作模式, BOSS战
+

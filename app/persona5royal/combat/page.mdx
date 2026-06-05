@@ -1,0 +1,358 @@
+---
+title: '战斗系统 / Combat System'
+description: "《女神异闻录5 皇家版》战斗系统全面解析，包含One More、Baton Pass、Technical攻击、Showtime、交涉系统、Hold Up与总攻击、Persona属性相克等。Complete guide to P5R's combat system."
+toc: false
+---
+
+# 战斗系统 / Combat System
+
+《女神异闻录5 皇家版》的战斗系统是在传统回合制JRPG基础上的深度创新。理解每个机制之间的联动关系是从新手到高手的必经之路。
+
+Persona 5 Royal\'s combat system builds on classic turn-based JRPG foundations with deep innovations. Understanding how each mechanic interconnects is the path from novice to master.
+
+## 回合制基础 / Turn-Based Basics
+
+战斗以回合制进行，每个参战单位按速度属性决定行动顺序。每回合可以进行攻击、使用技能、防御、使用道具或逃跑。
+
+Combat is turn-based. Each unit acts in order determined by speed (Agility). Each turn, you can attack, use a skill, guard, use an item, or attempt to flee.
+
+### 基本指令 / Basic Commands
+
+| 指令 Command | 效果 Effect |
+|---|---|
+| 攻击 Attack | 普通物理攻击，不消耗SP，基于武器攻击力 |
+| 技能 Skill | 使用Persona的技能，消耗SP/HP |
+| 防御 Guard | 减少受到的伤害，免疫部分异常状态 |
+| 道具 Item | 使用背包中的道具 |
+| 换手 Baton Pass | 将行动权交给下一个队友，提升攻击力 |
+| 守护 Protect | 代替同伴承受攻击 |
+| 逃跑 Escape | 有一定概率脱离战斗 |
+
+### 战斗评价 / Battle Rating
+
+每场战斗结束后会根据表现给出评价：
+
+| 评价 Rating | 条件 Conditions |
+|---|---|
+| 优 Excellent | 1回合内全灭敌人，获得额外金钱和经验 |
+| 良 Good | 2-3回合全灭，标准奖励 |
+| 可 Average | 4回合以上，奖励减少 |
+| 差 Poor | 被敌人发现陷入不利状态开始战斗 |
+
+## One More 系统 / One More System
+
+One More是P5R战斗系统的核心机制。当攻击命中敌人的属性弱点或造成暴击时，攻击者将获得一次额外行动机会。
+
+One More is the core mechanic of P5R\'s combat. When an attack hits an enemy\'s elemental weakness or lands a critical hit, the attacker gains an extra turn.
+
+### One More 触发条件 / Trigger Conditions
+
+- **弱点攻击**：使用敌人弱点的属性攻击命中
+- **暴击 Critical Hit**：物理攻击或特定技能造成暴击
+- **Technical**：对处于异常状态的敌人使用特定属性攻击
+
+### One More 使用策略 / One More Strategies
+
+1. **连锁攻击**：利用One More连续攻击，最大化单回合输出
+2. **转换战术**：利用One More进行回复、上Buff或更换Persona
+3. **换手准备**：One More回合中可以选择Baton Pass，将增益传递给队友
+4. **总攻击前置**：将全部敌人击倒后发动Hold Up进行All-Out Attack
+
+## Baton Pass 换手系统 / Baton Pass System
+
+Baton Pass是One More的进阶用法。当触发One More时，选择"换手"将行动权交给指定队友，该队友将获得攻击力大幅提升。
+
+Baton Pass is an advanced use of One More. When you trigger One More, you can pass your turn to a designated ally, who receives a significant damage boost.
+
+### Baton Pass 等级 / Baton Pass Levels
+
+在吉祥寺的飞镖游戏中提升与各角色的Baton Pass等级：
+
+| 等级 Level | 效果 Effect |
+|---|---|
+| 1 | 基础换手，伤害1.2倍 |
+| 2 | 伤害1.5倍，回复少量SP |
+| 3 | 伤害1.8倍，回复中量SP，可连续换手两次 |
+
+### Baton Pass 战术 / Baton Pass Tactics
+
+**标准连携**：A攻击弱点 → Baton Pass给B → B攻击另一个弱点 → Baton Pass给C → C总攻击
+
+**皇家版强化**：在皇家版中，Baton Pass后还可以继续Baton Pass，形成最多4人连携。最终接收者的攻击力可以达到惊人的2.5倍（Rank 3 Max）。
+
+**推荐连携顺序**：
+1. 第1人：使用单体弱点技能打出一个弱点
+2. 第2人：换手后攻击另一个弱点
+3. 第3人：继续换手攻击
+4. 第4人：使用最强范围技能或总攻击
+
+### Baton Pass 练习角色推荐 / BP Practice Partners
+
+优先提升以下角色的Baton Pass等级：
+- **Joker**：主角，万能换手
+- **Morgana**：回复+风属性，适合起始
+- **Ryuji**：物理大伤害，适合收尾
+- **Makoto**：核热属性+回复，多功能
+- **Haru**：念动力属性，物理魔法兼备
+
+## Technical 技术攻击 / Technical Attacks
+
+皇家版新增的Technical系统极大丰富了战斗策略。当敌人处于异常状态时，特定属性攻击会触发Technical，造成额外伤害并必定击倒敌人。
+
+Technical is a Royal-exclusive expansion. When an enemy is afflicted with a status ailment, specific elemental attacks trigger Technical, dealing bonus damage and guaranteed knockdown.
+
+### Technical 组合表 / Technical Combination Chart
+
+| 异常状态 Ailment | 有效属性 Effective Element | 效果 |
+|---|---|---|
+| 燃烧 Burn | 风 Wind / 念动 Psy | 额外伤害，高几率击倒 |
+| 冻结 Freeze | 物理 Phys / 枪击 Gun | 必定击倒，解除冻结 |
+| 触电 Shock | 物理 Phys / 枪击 Gun | 必定击倒，解除触电 |
+| 眩晕 Dizzy | 核热 Nuke / 咒怨 Curse | 额外伤害，击倒 |
+| 混乱 Confuse | 念动 Psy / 祝福 Bless | 额外伤害，击倒 |
+| 恐惧 Fear | 念动 Psy / 咒怨 Curse | 额外伤害，击倒 |
+| 遗忘 Forget | 电 Elec / 风 Wind | 额外伤害，击倒 |
+| 绝望 Despair | 核热 Nuke / 祝福 Bless | 回复效果反转 |
+| 洗脑 Brainwash | 核热 Nuke / 风 Wind | 额外伤害，击倒 |
+
+### Technical 战术应用 / Technical Strategy Applications
+
+- **先上状态，再打Technical**：使用低消耗技能先施加异常状态（如Tarunda/Fear），再用对应属性触发Technical
+- **群体Technical**：使用群体异常技能（如Pulinpa全体混乱）配合范围属性攻击
+- **SP效率**：Technical造成的额外伤害可以节省SP，因为不需要针对每个敌人的弱点换Persona
+- **无Weakness敌人**：对于没有属性弱点的强力敌人，Technical是最可靠的击倒手段
+
+## Showtime 合体攻击 / Showtime Attacks
+
+Showtime是皇家版新增的华丽合体攻击。当特定条件满足时，两名角色可以发动强力合体技能。
+
+Showtime is a new feature in Royal. When specific conditions are met, two characters can unleash a powerful combined attack.
+
+### 触发条件 / Trigger Conditions
+
+- Showtime计量表在特定条件下填充（队友被击倒、打出暴击、发动总攻击等）
+- 计量表满后，特定角色组合的Showtime按键提示会出现
+- 每场战斗可使用多次，但需要重新填充计量表
+
+### 全部Showtime组合 / All Showtime Combinations
+
+| 角色1 | 角色2 | 技能名称 | 属性 |
+|---|---|---|---|
+| Joker | Morgana | 魔术杂技 Magical Trickster | 风 Wind |
+| Joker | Ryuji | 横冲直撞 Rampage | 电 Elec |
+| Joker | Ann | 烈焰之心 Flame Lovers | 火 Fire |
+| Joker | Yusuke | 双极艺术 Polar Artiste | 冰 Ice |
+| Joker | Makoto | 核爆审判 Atomic Judgement | 核热 Nuke |
+| Joker | Futaba | 最终守护 Final Guard | 恢复+护盾 |
+| Joker | Haru | 魔女处刑 Witch Execution | 念动 Psy |
+| Joker | Akechi | 特别处刑 Special Execution | 祝福+咒怨 |
+| Joker | Kasumi | 玫瑰舞踏 Dance of the Rose | 祝福 Bless |
+
+### Showtime 使用建议 / Showtime Usage Tips
+
+- Showtime伤害不受属性相克影响，适合对付没有弱点的敌人
+- 在Boss战中使用效果最佳
+- Showtime动画无法跳过，但在伤害计算上是最优选择之一
+- 注意Showtime不消耗SP
+
+## 交涉与谈判 / Negotiation & Demands
+
+击倒全部敌人后进入Hold Up状态，可以选择进行谈判。
+
+After knocking down all enemies, you enter Hold Up state and can negotiate.
+
+### 谈判选项 / Negotiation Options
+
+| 选项 Option | 效果 Effect |
+|---|---|
+| 总攻击 All-Out Attack | 全员合击，造成大量伤害，战斗结束 |
+| 要求金钱 Demand Money | 敌人可能会交出金钱或逃走 |
+| 要求道具 Demand Items | 敌人可能会交出道具 |
+| 要求Persona Demand Persona | 敌人会给你一张Persona卡牌 |
+| 放过 Let Go | 敌人逃走，不获得任何奖励 |
+
+### 谈判技巧 / Negotiation Tips
+
+- 敌人的性格（开朗、胆怯、好斗等）影响谈判成功率和选择
+- 不同性格对应不同的有效对话选项
+- 谈判失败敌人会呼叫增援，重新进入战斗
+- 在有新Persona需要收集时使用"要求Persona"
+- 缺钱时选择"要求金钱"
+
+### 攻击欲望 / Demands During Negotiation
+
+在Royal版中，敌人也会反过来向您提出要求。满足他们的要求（金钱或道具）可以快速结束战斗并获得奖励。拒绝会重新开战。
+
+## 总攻击 / All-Out Attack
+
+当所有可见敌人都被击倒时，可以选择发动总攻击。所有怪盗团成员会合力发动一次华丽的全体攻击。
+
+When all visible enemies are knocked down, you can initiate an All-Out Attack. All Phantom Thieves members launch a stylish group attack.
+
+### 总攻击特性 / AOA Characteristics
+
+- **全体攻击**：对所有敌人造成无视属性耐性的伤害
+- **暴击率提升**：总攻击的暴击率高于普通攻击
+- **华丽收尾**：是快速结束战斗的最有效方式
+- **同伴数量影响**：队伍中可战斗人数越多，总攻击伤害越高
+- **回合结束**：总攻击后当前角色回合结束
+
+### 总攻击 vs Baton Pass
+
+| 场景 Scenario | 推荐行动 Recommended Action |
+|---|---|
+| 敌人血多 | Baton Pass，积累伤害后最后一击 |
+| 敌人血少 | 总攻击快速收尾 |
+| 多个强力敌人 | 先Baton Pass清掉部分敌人，再用总攻击 |
+| 需要收集Persona | 不总攻击，改为谈判 |
+
+## Persona 属性与相克 / Persona Affinities & Weaknesses
+
+每个Persona和敌人都具有特定的属性相克关系。这是战斗策略的基础。
+
+Every Persona and enemy has specific elemental affinities. This is the foundation of combat strategy.
+
+### 全部属性类型 / All Element Types
+
+| 属性 Element | 颜色 Color | 代表技能 Representative Skill |
+|---|---|---|
+| 物理 Physical | 红 Red | Cleave, Vicious Strike |
+| 枪击 Gun | 灰 Gray | Snipe, Triple Down |
+| 火焰 Fire | 橙 Orange | Agi, Maragi, Agidyne |
+| 冰冻 Ice | 蓝 Blue | Bufu, Mabufu, Bufula |
+| 电击 Elec | 黄 Yellow | Zio, Mazio, Ziodyne |
+| 疾风 Wind | 绿 Green | Garu, Magaru, Garudyne |
+| 念动 Psy | 紫 Purple | Psi, Mapsi, Psio |
+| 核热 Nuke | 红褐 Red-Brown | Frei, Mafrei, Freidyne |
+| 祝福 Bless | 金 Gold | Kouha, Makouha, Kougaon |
+| 咒怨 Curse | 黑 Black | Eiha, Maeiha, Eigaon |
+| 全能 Almighty | 白 White | Megidolaon, Myriad Truths |
+
+### 耐性等级 / Resistance Levels
+
+| 耐性 Resistance | 效果 Effect | 符号 Symbol |
+|---|---|---|
+| 弱点 Weak | 受到2倍伤害，触发One More | Weak |
+| 普通 Normal | 标准伤害 | (无) |
+| 耐性 Resist | 受到0.5倍伤害 | Resist |
+| 无效 Null | 完全免疫 | Null |
+| 反射 Repel | 反射攻击给攻击者 | Repel |
+| 吸收 Drain | 将伤害转为HP回复 | Drain |
+
+### 属性相克策略 / Affinity Strategy
+
+- **全覆盖**：确保Joker携带的Persona覆盖尽可能多的攻击属性
+- **扫描优先**：遇到新敌人先使用扫描查看弱点
+- **替换针对**：根据敌人弱点更换当前Persona
+- **耐性应对**：对反射/吸收属性的敌人绝对不要使用对应属性攻击
+- **物理系注意**：部分敌人对物理有耐性，枪击和物理分开计算
+
+## 异常状态 / Status Ailments
+
+异常状态分为"异常状态"（Aliments）和"能力降低"（Debuffs）两类。
+
+### 异常状态一览 / Ailment List
+
+| 状态 Ailment | 效果 Effect | 解除方式 Cure |
+|---|---|---|
+| 燃烧 Burn | 每回合受到伤害，命中率下降 | 使用冰属性攻击或药品 |
+| 冻结 Freeze | 无法行动，受到物理攻击则解除并暴击 | 受到物理攻击或等待 |
+| 触电 Shock | 无法行动，受到物理/枪击解除并暴击 | 受到物理攻击或等待 |
+| 眩晕 Dizzy | 命中率/回避率大幅下降 | 使用药品或等待 |
+| 混乱 Confuse | 随机行动，可能攻击同伴 | 使用药品或等待 |
+| 恐惧 Fear | 概率逃跑或无法行动 | 使用药品或Patra技能 |
+| 遗忘 Forget | 无法使用Persona技能 | 使用药品或Patra技能 |
+| 绝望 Despair | 每回合受到大量伤害，无法恢复 | 特定药品（不可自然恢复） |
+| 洗脑 Brainwash | 被敌人控制，攻击同伴 | 使用药品或等待 |
+| 睡眠 Sleep | 无法行动，醒来后第一击暴击 | 受到攻击或等待 |
+| 饥饿 Hunger | 攻击力下降，每回合受到少量伤害 | 使用药品或等待 |
+
+### 状态解除技能 / Status Cure Skills
+
+| 技能 Skill | 效果 Effect |
+|---|---|
+| Patra | 解除单人的遗忘/恐惧/洗脑/睡眠 |
+| Me Patra | 解除全体的遗忘/恐惧/洗脑/睡眠 |
+| Amrita | 解除全体的全部异常状态 |
+| Amrita Shower | 解除全体的全部异常状态（高级） |
+| Energy Shower | 解除全体的全部异常状态（被动） |
+
+## 增益与减益 / Buffs & Debuffs
+
+能力变化在P5R中最多可以叠加四层（皇家版为三层能力变化加一层特殊变化）。
+
+Stat changes stack up to four stages in Royal (three stages of standard change plus one special stage).
+
+### 主要增益技能 / Main Buff Skills
+
+| 技能 Skill | 效果 Effect | 目标 Target |
+|---|---|---|
+| Tarukaja | 攻击力上升 | 单人 |
+| Matarukaja | 攻击力上升 | 全体 |
+| Rakukaja | 防御力上升 | 单人 |
+| Marakukaja | 防御力上升 | 全体 |
+| Sukukaja | 命中/回避率上升 | 单人 |
+| Masukukaja | 命中/回避率上升 | 全体 |
+| Heat Riser | 攻击/防御/命中回避全部上升 | 单人 |
+
+### 主要减益技能 / Main Debuff Skills
+
+| 技能 Skill | 效果 Effect |
+|---|---|
+| Tarunda | 敌方单体攻击力下降 |
+| Matarunda | 敌方全体攻击力下降 |
+| Rakunda | 敌方单体防御力下降 |
+| Marakunda | 敌方全体防御力下降 |
+| Sukunda | 敌方单体命中/回避下降 |
+| Masukunda | 敌方全体命中/回避下降 |
+| Debilitate | 敌方单体攻击/防御/命中回避全部下降 |
+
+### Buff/Debuff 战术 / Buff Strategy
+
+- **叠加上限**：同类Buff/Debuff最多叠加至3级（Heat Riser/Debilitate直接到3级）
+- **更换敌人**：当敌人使用Buff时，优先使用Debuff抵消
+- **Boss战必备**：Tarukaja + Rakunda 组合可大幅提升输出
+- **关键节点**：在Boss战爆发输出前上好Buff和Debuff
+
+## 战斗流派 / Combat Styles
+
+根据不同情况可以选择不同的战斗流派：
+
+### 速杀流 / Speed Kill
+
+利用全场弱点攻击+Baton Pass+总攻击，一回合清场。
+
+适合：普通敌人、刷级场景
+核心：全属性覆盖、高SP、Rank 3 Baton Pass
+
+### 耐久流 / Endurance
+
+以防御和恢复为核心，持久战策略。
+
+适合：高难度Boss、第一次挑战
+核心：防御Buff、HP恢复、状态解除
+
+### Technical流 / Technical Rush
+
+利用异常状态+对应属性攻击造成持续击倒。
+
+适合：无弱点的精英敌人
+核心：异常状态施加技能+对应属性覆盖
+
+### 暴击流 / Crit Build
+
+通过高暴击率技能制造大量One More。
+
+适合：物理耐性低的敌人
+核心：暴击率提升技能、高暴击武器
+
+## 游戏内提示 / In-Game Tips
+
+- 在迷宫中按R1可以扫描附近敌人的信息
+- 从背后接近敌人可以发动先制攻击（Preemptive Attack），获得一个回合的免费行动
+- 如果被敌人从背后发现，会陷入"突袭"（Ambush）状态，全体被包围一回合
+- 在安全等级高的情况下，敌人会更频繁地巡逻和呼叫增援
+
+---
+
+标签：P5R, 女神异闻录5, 战斗系统, One More, Baton Pass, Technical, Showtime, 总攻击, 属性相克, Persona
