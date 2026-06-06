@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#16213e"/>
+  <rect x="200" y="140" width="100" height="100" rx="10" fill="none" stroke="#e94560" stroke-width="3"/>
+  <line x1="220" y1="190" x2="280" y2="190" stroke="#e94560" stroke-width="2"/>
+  <line x1="250" y1="160" x2="250" y2="220" stroke="#e94560" stroke-width="2"/>
+  <rect x="350" y="140" width="100" height="100" rx="10" fill="none" stroke="#0f3460" stroke-width="3"/>
+  <circle cx="400" cy="190" r="20" fill="none" stroke="#0f3460" stroke-width="2"/>
+  <circle cx="400" cy="190" r="8" fill="#0f3460"/>
+  <rect x="500" y="140" width="100" height="100" rx="10" fill="none" stroke="#e94560" stroke-width="3"/>
+  <path d="M530 170 L550 150 L570 170 L550 190 Z" fill="none" stroke="#e94560" stroke-width="2"/>
+  <path d="M540 200 L550 220 L560 200" fill="none" stroke="#e94560" stroke-width="2"/>
+  <text x="400" y="340" text-anchor="middle" fill="#e94560" font-size="24" font-family="serif">装备物品</text>
+  <text x="400" y="370" text-anchor="middle" fill="#8899aa" font-size="14" font-family="sans-serif">Equipment & Items</text>
+</svg>

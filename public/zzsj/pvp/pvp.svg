@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#16213e"/>
+  <circle cx="300" cy="180" r="50" fill="none" stroke="#e94560" stroke-width="3"/>
+  <circle cx="300" cy="180" r="20" fill="none" stroke="#e94560" stroke-width="2"/>
+  <line x1="300" y1="130" x2="300" y2="80" stroke="#e94560" stroke-width="2"/>
+  <line x1="300" y1="230" x2="300" y2="280" stroke="#e94560" stroke-width="2"/>
+  <circle cx="500" cy="180" r="50" fill="none" stroke="#0f3460" stroke-width="3"/>
+  <circle cx="500" cy="180" r="20" fill="none" stroke="#0f3460" stroke-width="2"/>
+  <line x1="500" y1="130" x2="500" y2="80" stroke="#0f3460" stroke-width="2"/>
+  <line x1="500" y1="230" x2="500" y2="280" stroke="#0f3460" stroke-width="2"/>
+  <line x1="350" y1="180" x2="450" y2="180" stroke="#e94560" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="400" y="340" text-anchor="middle" fill="#e94560" font-size="24" font-family="serif">PVP与公会</text>
+  <text x="400" y="370" text-anchor="middle" fill="#8899aa" font-size="14" font-family="sans-serif">PVP & Guild</text>
+</svg>

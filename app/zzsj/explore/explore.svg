@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#1a1a2e"/>
+  <path d="M100 300 Q200 200 300 250 Q400 150 500 220 Q600 100 700 200" fill="none" stroke="#e94560" stroke-width="3"/>
+  <path d="M100 320 Q200 240 300 280 Q400 200 500 260 Q600 150 700 240" fill="none" stroke="#0f3460" stroke-width="2"/>
+  <circle cx="400" cy="100" r="25" fill="none" stroke="#e94560" stroke-width="2"/>
+  <circle cx="400" cy="100" r="8" fill="#e94560"/>
+  <line x1="400" y1="125" x2="400" y2="180" stroke="#e94560" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="400" y="340" text-anchor="middle" fill="#e94560" font-size="24" font-family="serif">世界探索</text>
+  <text x="400" y="370" text-anchor="middle" fill="#8899aa" font-size="14" font-family="sans-serif">World Exploration</text>
+</svg>

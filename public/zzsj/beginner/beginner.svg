@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#16213e"/>
+  <path d="M100 200 Q200 80 300 200 Q400 320 500 200 Q600 80 700 200" fill="none" stroke="#e94560" stroke-width="4"/>
+  <circle cx="150" cy="200" r="8" fill="#e94560"/>
+  <circle cx="400" cy="200" r="8" fill="#e94560"/>
+  <circle cx="650" cy="200" r="8" fill="#e94560"/>
+  <text x="400" y="320" text-anchor="middle" fill="#e94560" font-size="24" font-family="serif">新手入门</text>
+  <text x="400" y="350" text-anchor="middle" fill="#8899aa" font-size="14" font-family="sans-serif">Beginner's Guide</text>
+</svg>

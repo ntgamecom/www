@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#16213e"/>
+  <rect x="150" y="100" width="500" height="200" rx="10" fill="none" stroke="#e94560" stroke-width="3"/>
+  <line x1="200" y1="160" x2="600" y2="160" stroke="#0f3460" stroke-width="2"/>
+  <line x1="200" y1="200" x2="500" y2="200" stroke="#8899aa" stroke-width="1"/>
+  <line x1="200" y1="230" x2="550" y2="230" stroke="#8899aa" stroke-width="1"/>
+  <line x1="200" y1="260" x2="450" y2="260" stroke="#8899aa" stroke-width="1"/>
+  <circle cx="180" cy="200" r="10" fill="none" stroke="#e94560" stroke-width="2"/>
+  <circle cx="180" cy="200" r="4" fill="#e94560"/>
+  <text x="400" y="340" text-anchor="middle" fill="#e94560" font-size="24" font-family="serif">任务与活动</text>
+  <text x="400" y="370" text-anchor="middle" fill="#8899aa" font-size="14" font-family="sans-serif">Quests & Events</text>
+</svg>

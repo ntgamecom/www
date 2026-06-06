@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#1a1a2e"/>
+  <circle cx="400" cy="180" r="120" fill="none" stroke="#e94560" stroke-width="3"/>
+  <circle cx="400" cy="180" r="80" fill="none" stroke="#0f3460" stroke-width="2"/>
+  <circle cx="400" cy="180" r="40" fill="none" stroke="#e94560" stroke-width="2"/>
+  <text x="400" y="340" text-anchor="middle" fill="#e94560" font-size="28" font-family="serif">主宰世界</text>
+  <text x="400" y="370" text-anchor="middle" fill="#8899aa" font-size="14" font-family="sans-serif">Master of the World</text>
+</svg>

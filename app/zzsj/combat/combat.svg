@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#16213e"/>
+  <polygon points="400,80 500,200 400,320 300,200" fill="none" stroke="#e94560" stroke-width="3"/>
+  <circle cx="400" cy="200" r="30" fill="none" stroke="#0f3460" stroke-width="2"/>
+  <line x1="400" y1="170" x2="400" y2="80" stroke="#e94560" stroke-width="2"/>
+  <line x1="400" y1="230" x2="400" y2="320" stroke="#e94560" stroke-width="2"/>
+  <line x1="370" y1="200" x2="300" y2="200" stroke="#e94560" stroke-width="2"/>
+  <line x1="430" y1="200" x2="500" y2="200" stroke="#e94560" stroke-width="2"/>
+  <text x="400" y="340" text-anchor="middle" fill="#e94560" font-size="24" font-family="serif">战斗系统</text>
+  <text x="400" y="370" text-anchor="middle" fill="#8899aa" font-size="14" font-family="sans-serif">Combat System</text>
+</svg>
