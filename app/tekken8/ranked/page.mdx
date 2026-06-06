@@ -1,0 +1,226 @@
+---
+title: 排位竞技指南 / Ranked Mode Guide
+---
+
+# 排位竞技指南 / Ranked Mode Guide
+
+排位赛是铁拳8在线对战的核心模式。本章节将详细解析段位系统、匹配机制和上分策略，帮助你在天梯中稳步提升。
+
+Ranked mode is the core online battle mode in Tekken 8. This chapter provides a detailed breakdown of the tier system, matchmaking mechanics, and climbing strategies to help you steadily rise through the ladder.
+
+## 段位系统总览 / Rank System Overview
+
+铁拳8的段位系统从初学者到铁拳之神共分为多个层级。每个段位又细分为多个小段（通常为3个小段）。
+
+Tekken 8's rank system spans from Beginner to Tekken God across multiple tiers. Each rank is further divided into sub-ranks (typically 3 sub-ranks).
+
+### 段位列表 / Rank List
+
+| 级别 / Tier | 段位名称 / Rank Name | 说明 / Description |
+|---|---|---|
+| 1 | Beginner / 初学者 | 初始段位，所有玩家从此开始 |
+| 2 | Warrior / 战士 | 完成了基本对战的玩家 |
+| 3 | Fighter / 斗士 | 掌握基础连段的玩家 |
+| 4 | Strategist / 猛者 | 开始理解立回概念的玩家 |
+| 5 | Vanquisher / 霸者 | 具备基本战术意识的玩家 |
+| 6 | Destroyer / 毁灭者 | 能够执行稳定连段的玩家 |
+| 7 | Dominator / 支配者 | 进攻手段较为全面的玩家 |
+| 8 | Mighty Ruler / 龙牙 | 高级玩家门槛 |
+| 9 | Flame Ruler / 龙炎 | 熟练掌握角色核心玩法的玩家 |
+| 10 | Battle Ruler / 龙黄 | 拥有优秀立回和确反能力的玩家 |
+| 11 | Tekken Emperor / 铁拳皇帝 | 顶尖玩家群体 |
+| 12 | Tekken God / 铁拳之神 | 最高段位，全服排名前列 |
+| 13 | Tekken God Supreme / 铁拳之神至尊 | 传说段位，极少数玩家可达 |
+
+### 小段系统 / Sub-Rank System
+
+除了铁拳之神以上的段位，每个段位分为3个小段（如 Warrior 1, Warrior 2, Warrior 3）。达到每个小段的最后一个时，需要积累足够的段位点数（Rank Points）才能晋升到下一个小段。
+
+Except for ranks above Tekken God, each rank is divided into 3 sub-ranks (e.g., Warrior 1, Warrior 2, Warrior 3). Upon reaching the final sub-rank of a tier, you need to accumulate enough rank points to advance to the next sub-rank.
+
+### 角色段位 vs 总体段位 / Character Rank vs Overall Rank
+
+铁拳8采用角色独立段位系统。每个角色拥有独立的段位，使用不同角色进行排位赛不会互相影响。这意味着你可以用一个角色达到高段位，同时用其他角色从较低段位开始练习。
+
+Tekken 8 uses an independent character rank system. Each character has their own rank, and playing ranked with different characters does not affect each other. This means you can reach a high rank with one character while starting from lower ranks with other characters for practice.
+
+## 排位匹配机制 / Ranked Matchmaking
+
+### 匹配范围 / Matchmaking Range
+
+排位赛使用隐藏积分（MMR - Matchmaking Rating）系统进行匹配。系统会优先匹配与你段位接近的对手。匹配范围通常为上下2个小段位。如果长时间找不到对手，匹配范围会逐步扩大。
+
+Ranked matches use a hidden MMR (Matchmaking Rating) system. The system优先匹配opponents close to your rank. The match range is typically within 2 sub-ranks above or below. If no opponent is found for an extended time, the range gradually expands.
+
+### 匹配地区 / Match Region
+
+你可以在设置中选择匹配地区优先级：
+
+You can set match region优先级in the settings:
+
+| 地区设置 / Region Setting | 描述 / Description |
+|---|---|
+| 同区域优先 / Same Region Priority | 匹配速度较快，连接质量最好 |
+| 全球 / Global | 匹配范围最大，但可能出现高延迟 |
+| 同区域仅限 / Same Region Only | 只匹配同地区玩家，连接最稳定 |
+
+### 连接质量要求 / Connection Quality Requirements
+
+铁拳8采用回滚式网络代码（Rollback Netcode）进行线上对战。游戏会检查双方连接的稳定性，如果延迟过高（通常超过150ms），匹配可能被拒绝或出现明显的网络延迟。
+
+Tekken 8 uses rollback netcode for online battles. The game checks both sides' connection stability. If latency is too high (typically over 150ms), the match may be rejected or show明显的network delay.
+
+## 段位点数系统 / Rank Points System
+
+### 点数计算 / Point Calculation
+
+每场排位赛结束后，段位点数的增减根据以下因素计算：
+
+After each ranked match, the rank point change is calculated based on the following factors:
+
+| 因素 / Factor | 影响 / Impact |
+|---|---|
+| 比赛结果 / Match Result | 获胜增加点数，失败减少点数 |
+| 对手段位 / Opponent Rank | 对手段位越高，获胜获取的点数越多，失败损失的点数越少 |
+| 连胜 / Win Streak | 连胜时获胜可获得额外点数加成 |
+| 浮动值 / Variance | 系统对你实力的评估越确定，点数变化越小 |
+
+### Promotion / Demotion / 升段与降段
+
+当段位点数达到当前段位的上限时，触发晋升赛（Promotion Match）。晋升赛为一场定胜负（BO1）。获胜后晋升到下一个段位。如果失败，保留在当前段位但点数会略微降低。
+
+When rank points reach the上限of the current rank, a promotion match is triggered. The promotion match is a best-of-one (BO1). Win to advance to the next rank. If you lose, you stay at the current rank with slightly reduced points.
+
+降段的规则如下：如果你在当前段位拥有保护点数（Protection Points），在输掉比赛后不会立即降段。保护点数耗尽后连续输掉比赛会导致降段。高段位（龙牙及以上）的降段保护较少。
+
+Demotion rules: If you have protection points at your current rank, you will not demote immediately after losing. Once protection points are depleted, consecutive losses lead to demotion. Higher ranks (Mighty Ruler and above) have fewer demotion protection points.
+
+### 段位重置 / Rank Reset
+
+每个赛季结束时，所有玩家的段位将进行部分重置。高段位玩家会被重置到较低段位，但会保留一定的段位点数作为下赛季的起点。具体重置规则如下：
+
+At the end of each season, all players' ranks undergo a partial reset. High-rank players are reset to lower ranks but retain some rank points as the starting point for the next season. The specific reset rules are as follows:
+
+| 当前段位 / Current Rank | 重置后段位 / Reset To |
+|---|---|
+| 铁拳神级以上 / Tekken God and above | 龙黄 / Battle Ruler |
+| 铁拳皇帝 / Tekken Emperor | 龙炎 / Flame Ruler |
+| 龙牙 ~ 龙黄 / Mighty Ruler ~ Battle Ruler | 支配者 / Dominator |
+| 霸者以下 / Vanquisher and below | 不变 / Unchanged |
+
+## 上分策略 / Climbing Strategies
+
+### 心态管理 / Mental Management
+
+排位赛中最容易被忽视的能力就是心态。心态波动会直接影响你的判断力和操作准确性。以下是一些心态管理建议：
+
+The most overlooked skill in ranked mode is mental management. Mental fluctuations directly affect your judgment and execution accuracy. Here are some mental management tips:
+
+**设定合理目标 / Set Realistic Goals**：不要追求一天内连升数段。每次排位设定一个小目标，如：今晚保持50%以上的胜率，或者专注于练习某个特定技巧。
+
+**休息间隔 / Take Breaks**：连败后立即继续排位通常会加剧心态恶化。建议连败两场后至少休息5到10分钟，做点别的事情让大脑重置。
+
+**复盘而非抱怨 / Review Instead of Complain**：每次输掉比赛后，与其抱怨对手的玩法或网络延迟，不如思考自己哪里可以做得更好。使用回放功能分析对局。
+
+**明白结果是过程的一部分 / Understand Results Are Part of the Process**：段位的上升不是线性的，每个人都会经历瓶颈期和掉段期。持续练习和学习最终会带来进步。
+
+**Set Realistic Goals**: Do not aim to jump multiple ranks in one day. Set small goals for each session, such as maintaining a 50% win rate for the night, or focusing on practicing a specific technique.
+
+**Take Breaks**: Continuing ranked matches immediately after consecutive losses usually worsens mental state. It is recommended to rest for at least 5 to 10 minutes after two consecutive losses, doing something else to reset your mind.
+
+**Review Instead of Complain**: After each loss, instead of complaining about the opponent's playstyle or network latency, think about what you could have done better. Use the replay function to analyze the match.
+
+**Understand Results Are Part of the Process**: Rank progression is not linear. Everyone experiences plateaus and demotion slumps. Consistent practice and learning will eventually lead to improvement.
+
+### 技术层面的上分建议 / Technical Climbing Tips
+
+**专精1到2个角色 / Master 1 to 2 Characters**：精通少数角色比浅尝辄止大量角色更有效率。选择适合自己节奏的角色并深入学习其所有核心招式、连段和对局策略。
+
+**建立角色知识 / Build Character Knowledge**：了解当前版本的主流角色，至少知道他们的关键招式和应对方法。不要求精通所有角色，但需要了解基本的对局知识。
+
+**练习基础基本功 / Practice Fundamentals**：不要过度追求花哨的极限连段。在低段位，稳定的基本功（移动、确反、防御、投技拆解）比华丽的连段更有价值。
+
+**利用练习模式 / Use Practice Mode**：花时间在练习模式中熟悉对手角色的招式帧数、确反点和连段对策。知识就是力量。
+
+**Master 1 to 2 characters**: Focusing on a few characters is more efficient than dabbling in many. Choose characters that fit your rhythm and deeply learn all their core moves, combos, and matchup strategies.
+
+**Build character knowledge**: Know the current meta characters, at least their key moves and counter strategies. You do not need to master every character, but basic matchup knowledge is necessary.
+
+**Practice fundamentals**: Do not over-pursue flashy optimal combos. At lower ranks, solid fundamentals (movement, punishment, defense, throw breaking) are more valuable than flashy combos.
+
+**Use practice mode**: Spend time in practice mode learning opponent character move frames, punish points, and combo counters. Knowledge is power.
+
+### 对局策略 / Match Strategies
+
+**防守反击策略 / Defensive Punish Strategy**：在不确定对手水平时，先以防守为主。观察对手的进攻习惯，找到破绽后再进行反击。这个策略在对抗激进型玩家时特别有效。
+
+**控制比赛节奏 / Control Match Tempo**：不要被对手的节奏牵着走。如果你的对手喜欢快速进攻，尝试用侧移和后退打乱他们的节奏。如果你面对的是防守型玩家，用Heat系统施加压力。
+
+**利用场地 / Use the Stage**：每个场地都可以利用墙壁和地板增加伤害。在连段中有意识地将对手搬运到墙壁方向。
+
+**适应对手 / Adapt to Opponent**：不要一套连段从头打到尾。观察对手的防御习惯，根据需要调整进攻策略。如果对手擅长拆投，减少投技使用频率。
+
+**Defensive Punish Strategy**: When unsure of the opponent's skill level, prioritize defense. Observe the opponent's offensive habits, find openings, then counter. This strategy is particularly effective against aggressive players.
+
+**Control Match Tempo**: Do not let the opponent dictate the rhythm. If your opponent favors fast offense, try sidestepping and backdashing to disrupt their flow. Against defensive players, use the Heat system to apply pressure.
+
+**Use the Stage**: Every stage allows using walls and floors to increase damage. Consciously carry the opponent toward walls during combos.
+
+**Adapt to Opponent**: Do not use the same strategy throughout the match. Observe the opponent's defensive habits and adjust accordingly. If the opponent is good at breaking throws, reduce throw usage frequency.
+
+### 排位赛避坑指南 / Ranked Pitfalls to Avoid
+
+**不要在连败中排位 / Do Not Queue During Losing Streaks**：连续输掉3场以上时，你的心态和判断力已经受到影响。建议退出排位，休息一段时间或去休闲模式调整状态。
+
+**不要责怪网络 / Do Not Blame the Network**：虽然网络延迟确实存在，但大多数情况下双方玩家面对的延迟条件是对等的。专注于自己能控制的因素（操作和决策），而不是外部因素。
+
+**不要只练习连段 / Do Not Only Practice Combos**：连段只是排位赛的一部分。立回、防御、确反和对局知识同等重要。不能成功启动连段的话，再华丽的连段也派不上用场。
+
+**不要高估Rage Art / Do Not Overestimate Rage Art**：Rage Art虽然伤害高，但被防御后风险极大。不要养成依赖Rage Art翻盘的习惯。
+
+**Do not queue during losing streaks**: After losing more than 3 consecutive matches, your mental state and judgment are already affected. Exit ranked, take a break, or go to casual mode to reset.
+
+**Do not blame the network**: While network latency is real, in most cases both sides face equivalent latency conditions. Focus on what you can control (your execution and decisions), not external factors.
+
+**Do not only practice combos**: Combos are only part of ranked. Neutral game, defense, punishment, and matchup knowledge are equally important. Flashy combos are useless if you cannot land the launcher.
+
+**Do not overestimate Rage Art**: Rage Art may deal high damage, but the risk after being blocked is enormous. Do not develop a habit of relying on Rage Art for comebacks.
+
+## 各段位特点 / Rank Level Characteristics
+
+### Beginner ~ Warrior (初学者 ~ 战士)
+
+- 特点：攻击杂乱无章，连段不稳定，基本不会拆投
+- 建议：专注于掌握一套稳定的基础连段，学习基本的移动和防御
+- Characterized by: Random attacks, unstable combos, rarely breaking throws
+- Advice: Focus on mastering one stable basic combo, learn basic movement and defense
+
+### Fighter ~ Vanquisher (斗士 ~ 霸者)
+
+- 特点：开始有意识地使用连段和Heat系统，但立回仍然薄弱
+- 建议：加强对局知识，学习确反和帧数概念，开始练习角色特定技巧
+- Characterized by: Conscious use of combos and Heat system, but neutral game is still weak
+- Advice: Strengthen matchup knowledge, learn punishment and frame data concepts, start practicing character-specific techniques
+
+### Destroyer ~ Dominator (毁灭者 ~ 支配者)
+
+- 特点：连段已经比较稳定，具备一定的对局知识，开始使用侧移和KBD
+- 建议：深化角色理解，学习高级移动技巧，建立系统的立回框架
+- Characterized by: Relatively stable combos, moderate matchup knowledge, beginning to use sidesteps and KBD
+- Advice: Deepen character understanding, learn advanced movement techniques, build systematic neutral game framework
+
+### Mighty Ruler ~ Battle Ruler (龙牙 ~ 龙黄)
+
+- 特点：高水平玩家聚集地，基本功扎实，对局经验丰富
+- 建议：精细化帧数知识，学习高端对战策略，分析顶级玩家的比赛回放
+- Characterized by: Gathering place for high-level players, solid fundamentals, rich match experience
+- Advice: Refine frame data knowledge, learn high-level strategies, analyze top player match replays
+
+### Tekken Emperor ~ Tekken God (铁拳皇帝 ~ 铁拳之神)
+
+- 特点：顶级玩家，操作精准，对局阅读能力强，几乎不存在明显的技术短板
+- Characterized by: Top-tier players, precise execution, strong match reading ability, no obvious technical weaknesses
+
+---
+
+Tags: 铁拳8, Tekken 8, 排位, ranked, 段位, rank, 天梯, ladder, 上分, climbing, Tekken God
