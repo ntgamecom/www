@@ -1,0 +1,38 @@
+.genre-section {
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.genre-section h3 {
+  margin-top: 0 !important;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid;
+}
+
+.genre-souls-like { background: #fef2f2; border-left: 4px solid #dc2626; }
+.genre-souls-like h3 { border-color: #dc2626; color: #dc2626; }
+
+.genre-action-rpg { background: #eff6ff; border-left: 4px solid #2563eb; }
+.genre-action-rpg h3 { border-color: #2563eb; color: #2563eb; }
+
+.genre-strategy-rpg { background: #f5f3ff; border-left: 4px solid #7c3aed; }
+.genre-strategy-rpg h3 { border-color: #7c3aed; color: #7c3aed; }
+
+.genre-shooter-horror { background: #fff7ed; border-left: 4px solid #ea580c; }
+.genre-shooter-horror h3 { border-color: #ea580c; color: #ea580c; }
+
+.genre-fighting { background: #fff1f2; border-left: 4px solid #e11d48; }
+.genre-fighting h3 { border-color: #e11d48; color: #e11d48; }
+
+.genre-open-world { background: #f7fee7; border-left: 4px solid #65a30d; }
+.genre-open-world h3 { border-color: #65a30d; color: #65a30d; }
+
+.genre-racing-sports { background: #ecfeff; border-left: 4px solid #0891b2; }
+.genre-racing-sports h3 { border-color: #0891b2; color: #0891b2; }
+
+.genre-simulation { background: #ecfdf5; border-left: 4px solid #059669; }
+.genre-simulation h3 { border-color: #059669; color: #059669; }
+
+.genre-roguelike-indie { background: #fdf4ff; border-left: 4px solid #d946ef; }
+.genre-roguelike-indie h3 { border-color: #d946ef; color: #d946ef; }
