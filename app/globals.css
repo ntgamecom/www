@@ -37,5 +37,8 @@
 .genre-roguelike-indie { background: #fdf4ff; border-left: 4px solid #d946ef; }
 .genre-roguelike-indie h3 { border-color: #d946ef; color: #d946ef; }
 
+.genre-coop { background: #fce7f3; border-left: 4px solid #ec4899; }
+.genre-coop h3 { border-color: #ec4899; color: #ec4899; }
+
 .genre-mobile { background: #fefce8; border-left: 4px solid #ca8a04; }
 .genre-mobile h3 { border-color: #ca8a04; color: #ca8a04; }

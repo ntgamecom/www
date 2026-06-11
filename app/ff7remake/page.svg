@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#1a1a2e"/>
+  <path d="M400 60 L520 180 L460 340 L340 340 L280 180 Z" fill="none" stroke="#4a90d9" stroke-width="3"/>
+  <path d="M400 80 L500 180 L450 320 L350 320 L300 180 Z" fill="none" stroke="#6bb3f0" stroke-width="2"/>
+  <circle cx="400" cy="200" r="20" fill="none" stroke="#4a90d9" stroke-width="2"/>
+  <text x="400" y="340" text-anchor="middle" fill="#4a90d9" font-size="22" font-family="serif">最终幻想7 重制版</text>
+  <text x="400" y="370" text-anchor="middle" fill="#8899aa" font-size="14" font-family="sans-serif">Final Fantasy VII Remake</text>
+</svg>

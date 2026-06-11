@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#1a1a2e"/>
+  <polygon points="400,60 550,180 480,340 320,340 250,180" fill="none" stroke="#c7a859" stroke-width="3"/>
+  <circle cx="400" cy="200" r="50" fill="none" stroke="#6b4423" stroke-width="2"/>
+  <circle cx="400" cy="200" r="15" fill="#c7a859"/>
+  <text x="400" y="340" text-anchor="middle" fill="#c7a859" font-size="24" font-family="serif">战神：诸神黄昏</text>
+  <text x="400" y="370" text-anchor="middle" fill="#8899aa" font-size="14" font-family="sans-serif">God of War Ragnarök</text>
+</svg>
