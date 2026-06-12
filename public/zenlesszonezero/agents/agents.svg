@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" rx="30" fill="#1a1a2e"/>
+  <circle cx="100" cy="75" r="30" fill="none" stroke="#e94560" stroke-width="3"/>
+  <rect x="70" y="115" width="60" height="50" rx="10" fill="none" stroke="#e94560" stroke-width="3"/>
+  <line x1="70" y1="115" x2="100" y2="95" stroke="#e94560" stroke-width="2"/>
+  <line x1="130" y1="115" x2="100" y2="95" stroke="#e94560" stroke-width="2"/>
+  <text x="100" y="185" text-anchor="middle" fill="#e94560" font-family="Arial" font-size="14">AGENTS</text>
+</svg>

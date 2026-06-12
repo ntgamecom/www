@@ -1,0 +1,162 @@
+---
+title: "战斗系统指南 / Combat Guide"
+description: "Turn-based combat mechanics, Weakness Break, Technique, and Ultimate systems"
+---
+
+![Combat Guide](/hsr/combat/combat.svg)
+
+## 回合制战斗基础 / Turn-Based Combat Basics
+
+《崩坏：星穹铁道》采用经典的回合制战斗系统，四名角色组成一队，与敌人轮番行动。战斗的核心在于合理管理战技点、能量和行动顺序。
+
+Honkai: Star Rail uses a classic turn-based combat system. Teams of four characters alternate actions with enemies. Core gameplay revolves around managing Skill Points, energy, and turn order.
+
+## 行动条系统 / Action Order System
+
+屏幕左侧的行动序列栏显示未来所有单位的行动顺序。角色的速度（SPD）属性决定行动频率。速度越高，行动越频繁。
+
+The action order bar on the left shows upcoming turns for all units. Speed (SPD) determines turn frequency. Higher speed means more frequent actions.
+
+**速度机制要点 / Speed Mechanics**：
+
+- 基础速度：每个角色有基础速度值，装备和行迹可以提升
+- 行动值：行动值越低越先行动，公式为 10000/速度
+- 推条/拉条：部分技能可以提前（拉条）或延后（推条）行动顺序
+- 速度阈值：134速和160速是常用的速度配速点
+
+- Base SPD: Each character has a base SPD value, boosted by gear and Traces
+- Action Value: Lower value acts first. Formula: 10000/SPD
+- Action Advance/Delay: Some skills advance or delay turn order
+- SPD Breakpoints: 134 and 160 are common speed tuning targets
+
+## 战技点系统 / Skill Point System
+
+队伍共享5个战技点，显示在屏幕下方。普攻回复1个战技点，战技消耗1个战技点。部分角色的强化技能可能消耗更多战技点或零消耗。
+
+The team shares 5 Skill Points displayed at the bottom. Basic ATK restores 1 SP. Skills consume 1 SP. Some enhanced skills may cost more or zero SP.
+
+**战技点管理技巧 / SP Management Tips**：
+
+- 辅助角色多用普攻产点，让主C消耗战技点输出
+- 停云、布洛妮娅等角色可以通过秘技或天赋缓解战技点压力
+- 花火和开拓者·同谐是优秀的战技点回复辅助
+- 战技点为0时仍然可以使用战技，但消耗生命值代替
+
+- Supports should use Basic ATK to generate SP for the main DPS
+- Tingyun, Bronya can alleviate SP pressure via Techniques or Talents
+- Sparkle and Harmony Trailblazer are excellent SP batteries
+- At 0 SP, Skills can still be used at the cost of HP
+
+## 弱点击破机制 / Weakness Break System
+
+这是游戏最核心的战斗机制。每个敌人头顶显示最多三种弱点属性。使用对应属性攻击会削减敌人的韧性（白色韧性条）。韧性条下方的百分比显示削韧进度。
+
+This is the core combat mechanic. Each enemy displays up to three weakness types. Attacks matching those weaknesses reduce the enemy's Toughness (white bar). The percentage below shows break progress.
+
+**击破效果 / Break Effects**：
+
+- 物理：造成物理伤害并施加裂伤（持续伤害），持续2回合
+- 火：造成火伤害并施加灼烧（持续火伤害）
+- 冰：造成冰伤害并冻结目标（无法行动一回合）
+- 雷：造成雷伤害并施加触电（持续雷伤害）
+- 风：造成风伤害并施加风化（持续风伤害）
+- 量子：造成量子伤害并施加纠缠（下次受击附加额外伤害）
+- 虚数：造成虚数伤害并施加禁锢（行动延后30%）
+
+- Physical: DMG + Bleed (DoT), 2 turns
+- Fire: DMG + Burn (DoT)
+- Ice: DMG + Freeze (skip next action)
+- Lightning: DMG + Shock (DoT)
+- Wind: DMG + Wind Shear (DoT)
+- Quantum: DMG + Entanglement (bonus DMG on next hit)
+- Imaginary: DMG + Imprisonment (30% action delay)
+
+**超击破 / Super Break**：在敌人已被击破的状态下继续累积削韧值，可以触发额外的超击破伤害。同谐开拓者是该机制的核心。
+
+Super Break deals additional damage when dealing Toughness reduction to a broken enemy. Harmony Trailblazer is the core enabler.
+
+## 终结技系统 / Ultimate System
+
+每个角色有独特的终结技，通过积累能量释放。能量上限各不相同，通常为100-140点。能量通过攻击、受击、击杀和部分技能回复。
+
+Each character has a unique Ultimate charged by accumulating energy. Energy caps vary, typically 100-140. Energy is gained through attacks, being hit, kills, and certain skills.
+
+**终结技特性 / Ultimate Features**：
+
+- **插入释放**：终结技可以在任何角色的行动序列中插入使用，不受当前行动顺序限制
+- **能量回复**：攻击命中回复30点能量，击杀额外回复10点，受击回复5-15点
+- **充能效率**：能量回复效率属性可以加快充能速度
+- **特殊机制**：部分角色如银枝的终结技有不同档位，黄泉的终结技通过负面效果充能
+
+- **Insertion**: Ultimates can be used at any time, ignoring turn order
+- **Energy Regen**: 30 energy per hit, +10 on kill, 5-15 when hit
+- **ERR**: Energy Regeneration Rate stat speeds up charging
+- **Special**: Argenti has variable energy levels. Acheron charges through debuffs
+
+## 秘技系统 / Technique System
+
+秘技是在进入战斗前使用的特殊能力。每个角色拥有独特的秘技，在进入战斗时提供各种优势。
+
+Techniques are special abilities used before battle. Each character has a unique Technique providing various combat advantages.
+
+**秘技类型 / Technique Types**：
+
+- 攻击型：进战后对敌人造成伤害并削韧（如镜流、希儿）
+- 增益型：进战后为全队提供增益效果（如布洛妮娅、停云）
+- 减益型：进战后对敌人施加负面效果（如银狼、佩拉）
+- 恢复型：进战后回血或复活（如罗刹、娜塔莎）
+- 特殊型：黑塔的秘技可清理小怪，黄泉的秘技直接秒杀普通敌人
+
+- Offensive: Pre-damage and Toughness reduction (Jingliu, Seele)
+- Buffing: Team buffs on battle start (Bronya, Tingyun)
+- Debuffing: Enemy debuffs on entry (Silver Wolf, Pela)
+- Healing: HP restore or revive (Luocha, Natasha)
+- Special: Herta clears mobs. Acheron one-shots normal enemies
+
+在探索地图时合理使用秘技可以大幅降低战斗难度。秘技点通过地图上的恢复点或特殊物品补充。
+
+Using Techniques wisely during exploration significantly reduces combat difficulty. Technique points recharge at rest stops or through special items.
+
+## 属性克制与抗性 / Elemental Coverage and Resistance
+
+虽然游戏没有传统意义上的属性克制伤害倍率，但弱点击破机制使得属性覆盖至关重要。如果队伍无法击破敌人的弱点，战斗会变得非常艰难。
+
+While there is no traditional elemental damage multiplier, the Weakness Break mechanic makes elemental coverage essential. Battles become very difficult without matching elements.
+
+**弱点击破效率 / Break Efficiency**：
+
+- 正常属性：每次攻击削韧1单位
+- 对应弱点属性：削韧单位取决于技能倍率（单体技能通常削韧2单位，AOE技能削韧1单位）
+- 非弱点属性：不削韧
+- 量子和虚数属性有额外的击破效率可以通过增益提升
+
+- Normal hit: 1 Toughness unit
+- Weakness hit: Depends on skill multiplier (single target: 2 units, AoE: 1 unit)
+- Non-weakness: No Toughness reduction
+- Quantum, Imaginary: Bonus break efficiency via buffs
+
+## 韧性与减伤 / Toughness and Damage Reduction
+
+敌人拥有韧性条时获得额外减伤（约10%）。击破后减伤消失，同时敌人跳过一回合（部分Boss除外）。
+
+Enemies with full Toughness gain approximately 10% damage reduction. Breaking removes this bonus and causes the enemy to skip a turn (some bosses excluded).
+
+## 状态效果 / Status Effects
+
+**负面效果 / Debuffs**：包括减防、减速、减攻、禁锢、纠缠、触电、灼烧、裂伤、风化等。
+
+Include DEF down, SPD down, ATK down, Imprisonment, Entanglement, Shock, Burn, Bleed, Wind Shear.
+
+**正面效果 / Buffs**：包括增伤、加速、加攻、护盾、持续治疗、净化等。
+
+Include DMG up, SPD up, ATK up, Shield, HoT, Cleanse.
+
+**控制效果 / Crowd Control**：冻结、禁锢、纠缠等控制效果对精英和首领敌人效果时间较短。
+
+Freeze, Imprisonment, Entanglement last fewer turns on elites and bosses.
+
+## 战斗总结 / Combat Summary
+
+掌握战技点循环、能量管理和弱点击破节奏是战斗的核心。合理搭配队伍成员的属性覆盖和命途职能，是通关高难度内容的关键。
+
+Mastering SP rotation, energy management, and Weakness Break timing is the heart of combat. Proper team building with complementary elements and Path roles is key to clearing difficult content.

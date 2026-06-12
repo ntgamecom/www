@@ -1,0 +1,158 @@
+---
+title: "战斗系统 / Combat"
+description: "In-depth combat mechanics guide for Zenless Zone Zero — dodge, assist, chain attack, ultimate, and attribute anomalies"
+---
+
+![Combat](/zenlesszonezero/combat/combat.svg)
+
+## 战斗基础 / Combat Basics
+
+绝区零的战斗系统是快节奏的三人小队动作玩法。玩家可随时切换操控角色，并利用各种战术动作应对敌人。
+
+ZZZ's combat system is a high-speed three-character action gameplay. Players can switch between characters at any time and use various tactical maneuvers to handle enemies.
+
+**基本操作 / Basic Controls**: 普通攻击、闪避、切换角色、特殊技、终结技。（Basic Attack, Dodge, Character Swap, EX Special, Ultimate.
+
+**队伍编成 / Team Formation**: 三人一队，战斗中按预设顺序切换。角色在后台时会缓慢恢复能量。角色顺序影响切换的便利性。（Three characters per team, switch in preset order during combat. Off-field characters slowly regenerate energy. Character order affects swap convenience.
+
+**战斗界面 / Combat UI**: 屏幕下方显示当前角色状态、技能CD和能量条。右侧为喧响值（终结技计量条）。角色头像显示支援点数。（The bottom of the screen shows the current character's status, skill cooldowns, and energy bar. The right side shows the Decibel meter for Ultimates. Character portraits display assist points.
+
+## 闪避系统 / Dodge System
+
+闪避是绝区零中最基础也最重要的防御手段。完美执行闪避可以获得巨大的战斗优势。
+
+Dodging is the most fundamental and important defensive tool in ZZZ. Executing it perfectly grants significant combat advantages.
+
+**普通闪避 / Basic Dodge**: 消耗闪避点数进行快速位移，规避敌人攻击。闪避点数随时间恢复。角色拥有2-3点闪避上限。有短暂的无敌帧。（Consumes dodge charges for quick movement to avoid enemy attacks. Charges regenerate over time. Characters have 2-3 max dodge charges. Has brief invincibility frames.
+
+**完美闪避 / Perfect Dodge**: 在敌人攻击命中瞬间闪避可触发完美闪避，进入子弹时间并回复闪避点数。此时敌人动作明显放缓，是反击的良好时机。（Dodging at the exact moment of enemy attack triggers Perfect Dodge, entering bullet time and restoring dodge charges. Enemy actions are noticeably slowed, creating a good counter window.
+
+**极限闪避 / Extreme Evasion**: 完美闪避后可衔接一段特殊攻击，造成额外伤害或积累异常值。这是衔接攻防转换的关键操作。不同角色的极限闪避攻击效果不同。（After Perfect Dodge, follow up with a special attack dealing bonus damage or building anomaly. This is a key operation for transitioning between defense and offense. Each character has a different Extreme Evasion attack.
+
+**闪避策略 / Dodge Strategy**: 不需要在所有情况下都追求完美闪避。面对多段攻击时，多次普通闪避可能比一次完美闪避更安全。（Do not need to chase Perfect Dodge in every situation. Multiple basic dodges may be safer than one Perfect Dodge against multi-hit attacks.
+
+## 支援系统 / Assist System
+
+支援系统是队伍切换的核心机制，提供多种战术选择。
+
+The Assist system is the core swap mechanic, offering multiple tactical options.
+
+**招架支援 / Parry Assist**: 在敌人发动黄色闪光攻击时切换角色，可招架攻击并大量积累失衡值。需要消耗一个切换资源。招架成功后敌人会短暂硬直，创造输出机会。（Swapping characters during a yellow flash enemy attack performs a parry, building significant daze. Consumes one swap charge. Successful parry briefly stuns the enemy, creating an attack opportunity.
+
+**回避支援 / Evasive Assist**: 在敌人发动红色闪光攻击时切换角色，可触发闪避换人，规避危险攻击。红色闪光攻击通常无法招架，必须回避。回避支援不消耗支援点数。（Swapping during a red flash enemy attack triggers an evasive swap, avoiding dangerous attacks. Red flash attacks usually cannot be parried and must be avoided. Evasive Assist does not consume assist points.
+
+**突击支援 / Follow-up Assist**: 在特定条件下切换角色发动追击攻击。例如后台角色满足条件时入场发动追加伤害。可用于延长连招或补充伤害。（Swap into a follow-up attack under specific conditions. For example, an off-field character enters dealing bonus damage when conditions are met. Can extend combos or supplement damage.
+
+**支援点数 / Assist Points**: 显示在角色头像旁，最多6点，用于执行招架和回避支援。随时间恢复。合理管理支援点数是战斗的关键。招架消耗1点，回避不消耗。（Displayed next to character portraits, max 6 points, used for parry assists. Regenerates over time. Managing assist points is key to combat. Parry costs 1 point, evasive costs 0.
+
+## 失衡与连携 / Daze and Chain Attacks
+
+**失衡值 / Daze Meter**: 攻击敌人会积累失衡值，充满后敌人进入失衡状态。失衡状态下敌人无法行动，受到伤害增加约50%。（Attacks build daze on enemies. When full, the enemy enters a staggered state, becoming unable to act and taking approximately 50% increased damage.
+
+**失衡积累方式 / Daze Building Methods**:
+- 击破角色的特殊技和连招 / Stun characters' EX skills and combos
+- 招架支援反击 / Parry Assist counterattacks
+- 部分重攻击 / Certain heavy attacks
+- 属性异常触发 / Attribute anomaly triggers
+
+**连携攻击 / Chain Attack**: 敌人失衡时可触发连携攻击。按顺序让所有队员发动强力攻击，造成巨额伤害并延长失衡时间。连携结束后失衡时间会重置倒计时。连携期间角色无敌。（When an enemy is staggered, trigger a Chain Attack. All team members unleash powerful attacks in sequence, dealing massive damage and extending the stagger window. Chain Attacks reset the stagger timer. Characters are invincible during Chain Attacks.
+
+**连携优先级 / Chain Priority**: 连携攻击的角色顺序可手动选择，建议将主力输出放在最后享受最高增伤。也可根据情况让辅助先上场施加增益。（The order of Chain Attacks can be manually selected. It is recommended to place your main DPS last for maximum damage bonus. Alternatively, supports can go first to apply buffs.
+
+## 终结技系统 / Ultimate System
+
+**喧响值 / Decibel Rating**: 战斗界面右侧的计量条，通过攻击和受击积累。满值时可发动终结技。不同角色的喧响值槽共享。（The meter on the right side of the battle UI, built through dealing and taking damage. When full, unleash the Ultimate. All characters share the Decibel meter.
+
+**终结技 / Ultimate Skill**: 每位代理人拥有独特的终结技演出动画。终结技造成巨额伤害并通常附带特殊效果，如全队增益或强力控制。终结技期间角色无敌。（Each Agent has a unique Ultimate animation. Ultimates deal massive damage and often have special effects such as team-wide buffs or powerful crowd control. Characters are invincible during Ultimates.
+
+**终结技使用策略 / Ultimate Usage Strategy**: 不要一满喧响值就释放。等待Boss失衡时配合连携攻击一起使用，可以达到伤害最大化。（Do not use Ultimate as soon as the meter is full. Wait for boss stagger and combine with Chain Attacks for maximum damage.
+
+## 属性异常 / Attribute Anomalies
+
+当累计属性伤害达到阈值时，会触发属性异常效果。不同属性的异常效果各不相同。
+
+When accumulated attribute damage reaches a threshold, an attribute anomaly is triggered. Each attribute has different anomaly effects.
+
+**强击 / Assault (物理/Physical)**: 造成物理额外伤害并中断敌人动作。持续时间结束后敌人被击飞。对小型敌人效果尤为显著。（Deals bonus physical damage and interrupts enemy actions. Knocks enemies back when it ends. Particularly effective against smaller enemies.
+
+**灼烧 / Burn (火/Fire)**: 造成持续火属性伤害。灼烧期间敌人受到火伤增加。多用于持续压制和增伤。（Deals continuous fire damage. Enemies take increased fire damage while burning. Used for sustained pressure and damage amplification.
+
+**冻结 / Freeze (冰/Ice)**: 冻结敌人使其无法行动，冻结结束后的短时间内受到暴击伤害增加。冰队的核心控制手段。冻结期间无法积累失衡值。（Freezes enemies in place. After thawing, they take increased crit damage for a short time. Core control tool for Ice teams. Daze cannot be built during freeze.
+
+**感电 / Shock (电/Electric)**: 对敌人造成电击伤害并传导至周围敌人。打断敌人动作。适合群体战斗场景。（Deals electric shock damage and conducts to nearby enemies. Interrupts enemy actions. Suitable for group combat scenarios.
+
+**侵蚀 / Corruption (以太/Ether)**: 降低敌人防御并造成持续以太伤害。对高防御敌人效果显著。（Reduces enemy defense and deals continuous Ether damage. Highly effective against high-defense enemies.
+
+## 异常精通与掌控 / Anomaly Proficiency and Mastery
+
+**异常精通 / Anomaly Proficiency**: 提高异常伤害的倍率。对异常流派来说是最重要的属性之一。（Increases anomaly damage multipliers. One of the most important stats for anomaly playstyles.
+
+**异常掌控 / Anomaly Mastery**: 提高异常积累速度。掌控越高，越容易在短时间内触发异常。（Increases anomaly buildup speed. Higher mastery makes it easier to trigger anomalies in a short time.
+
+堆叠这两项属性是异常流派打法的关键。两者需要平衡发展，过度偏重一方都会降低效率。通常建议优先提升异常掌控到一定程度后再堆异常精通。
+
+Stacking these two stats is key to anomaly-based playstyles. They need balanced development; over-focusing on either reduces efficiency. Generally prioritize Anomaly Mastery first, then Anomaly Proficiency.
+
+## 进阶技巧 / Advanced Techniques
+
+**闪避取消 / Dodge Cancel**: 使用闪避中断技能后摇，提高连招流畅性。几乎所有技能都可以被闪避取消，包括特殊技和部分终结技的动作后摇。（Use dodge to interrupt skill recovery frames for smoother combos. Almost all skills can be dodge-canceled, including EX skills and some ultimate recovery frames.
+
+**快速支援切换 / Quick Assist Swap**: 在支援技命中后快速切换角色，最大化输出窗口。这是高阶玩家的必修技巧。（Quickly swap after an assist skill lands to maximize damage windows. This is a must-learn technique for advanced players.
+
+**异常累积管理 / Anomaly Buildup Management**: 合理安排不同属性的攻击节奏，最大化异常触发频率。切换不同属性角色交替攻击可避免抗性衰减。（Manage attack rhythm across different attributes to maximize anomaly trigger frequency. Alternating between different attribute characters prevents resistance decay.
+
+**能量管理 / Energy Management**: 保留关键角色的能量用于应对敌人爆发阶段。不要盲目释放特殊技。后台角色能量恢复速度较慢，需要合理规划切换节奏。（Reserve key characters' energy for enemy burst phases. Do not blindly use EX skills. Off-field characters regenerate energy slowly, plan swap rhythm accordingly.
+
+**失衡值预判 / Daze Prediction**: 熟悉每个敌人需要多少攻击才能失衡，提前准备好爆发技能。（Learn how many hits it takes to stagger each enemy and prepare burst skills in advance.
+
+**换人取消硬直 / Swap Cancel**: 切换角色可以取消当前角色的部分硬直，实现更安全的连招。（Switching characters can cancel some recovery frames for safer combos.
+
+## 训练场 / Training Ground
+
+位于Random Play录像店中，玩家可在此练习连招、测试伤害和熟悉角色操作。
+
+Located in the Random Play video store, players can practice combos, test damage, and familiarize themselves with character controls.
+
+训练场提供无限血量木桩、自由切换角色、设置敌人类型等功能。建议每次获得新角色后先到训练场熟悉手感。训练场不消耗任何资源。
+
+The training ground offers infinite-HP dummies, free character swapping, and configurable enemy types. It is recommended to visit the training ground after obtaining any new character. The training ground consumes no resources.
+
+## 战斗心态 / Combat Mindset
+
+绝区零的战斗强调"攻防一体"。不要一味猛攻，也不要过度保守。观察敌人攻击模式，在防御中寻找反击机会，在进攻时保持闪避余地。
+
+ZZZ combat emphasizes "offense-defense integration." Do not blindly attack or be overly defensive. Observe enemy attack patterns, find counterattack opportunities while defending, and maintain dodge room while attacking.
+
+**节奏感 / Rhythm**: 每场战斗都有自己的节奏。掌握好攻守转换的节奏是成为高手的必经之路。（Every fight has its own rhythm. Mastering the offense-defense transition rhythm is essential for becoming an expert.
+
+## 不同场景的战斗策略 / Combat Strategy by Scenario
+
+**对单Boss / Single Boss**: 聚焦于积累失衡值和完美闪避。不要浪费技能在小怪身上。（Focus on daze building and perfect dodging. Do not waste skills on adds.
+
+**对群敌人 / Enemy Groups**: 使用范围攻击和群体控制。利用感电和冻结等范围异常效果。（Use AoE attacks and crowd control. Leverage Shock and Freeze for area anomaly effects.
+
+**限时挑战 / Timed Challenges**: 优先输出效率，减少闪避频率，在承受可接受伤害的前提下最大化DPS。（Prioritize DPS efficiency, reduce dodge frequency, maximize damage while accepting manageable damage.
+
+**生存挑战 / Survival Challenges**: 优先保证生存，多闪避多招架，慢慢消耗敌人。（Prioritize survival, dodge and parry more, slowly wear down enemies.
+
+## 角色定位与操作 / Character Roles and Controls
+
+**强攻角色操作 / Attack Character Playstyle**: 追求高伤害连招，在安全窗口内最大化输出。注意能量管理。（Pursue high-damage combos, maximize damage in safe windows. Manage energy carefully.
+
+**击破角色操作 / Stun Character Playstyle**: 积极进攻积累失衡值，多使用E技能。不要过于保守。（Aggressively build daze, use E skill frequently. Do not be too passive.
+
+**支援角色操作 / Support Character Playstyle**: 保持在安全位置，及时提供增益。切换上场释放技能后立即换回主C。（Stay in safe positions, provide buffs timely. Swap in, use skill, then immediately swap back to main DPS.
+
+**防护角色操作 / Defense Character Playstyle**: 在队伍前方吸收伤害，提供护盾。注意保护队友。（Absorb damage at the front, provide shields. Watch out for protecting teammates.
+
+**异常角色操作 / Anomaly Character Playstyle**: 持续攻击积累异常值，切换不同属性触发混合异常。（Continuously attack to build anomaly, swap between different attributes for mixed anomaly procs.
+
+## 设备与操作优化 / Controls and Settings Optimization
+
+**PC端操作 / PC Controls**: 建议键鼠操作，闪避和切换角色的反应速度更快。自定义快捷键找到适合自己的按键布局。（Keyboard and mouse recommended for faster dodge and swap reactions. Customize key bindings for optimal layout.
+
+**移动端操作 / Mobile Controls**: 使用触屏手势操作。部分角色在移动端上手难度较高，需要额外练习。（Use touch gestures. Some characters have higher skill floors on mobile and require extra practice.
+
+**手柄支持 / Controller Support**: 完全支持PS5和Xbox手柄，推荐PC玩家使用手柄获得更舒适的战斗体验。（Fully supports PS5 and Xbox controllers. PC players may prefer controllers for a more comfortable combat experience.
+
+**帧率设置 / Frame Rate Settings**: 高帧率下完美闪避和招架的成功率更高。推荐在设备支持的情况下开启60fps或更高。（Higher frame rates improve perfect dodge and parry success rates. Recommended to enable 60fps or higher if your device supports it.

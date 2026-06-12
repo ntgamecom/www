@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" rx="30" fill="#1a1a2e"/>
+  <circle cx="95" cy="80" r="25" fill="none" stroke="#e94560" stroke-width="3"/>
+  <rect x="65" y="95" width="60" height="70" rx="8" fill="none" stroke="#e94560" stroke-width="3"/>
+  <rect x="72" y="105" width="46" height="46" rx="5" fill="none" stroke="#e94560" stroke-width="2"/>
+  <circle cx="95" cy="120" r="8" fill="#e94560"/>
+  <text x="100" y="185" text-anchor="middle" fill="#e94560" font-family="Arial" font-size="14">COMBAT</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" rx="30" fill="#1a1a2e"/>
+  <rect x="60" y="40" width="20" height="120" fill="none" stroke="#e94560" stroke-width="3"/>
+  <rect x="85" y="65" width="20" height="95" fill="none" stroke="#e94560" stroke-width="3"/>
+  <rect x="110" y="50" width="20" height="110" fill="none" stroke="#e94560" stroke-width="3"/>
+  <rect x="135" y="75" width="16" height="85" fill="none" stroke="#e94560" stroke-width="3"/>
+  <polygon points="70,40 60,55 80,55" fill="#e94560"/>
+  <polygon points="95,65 85,80 105,80" fill="#e94560"/>
+  <polygon points="120,50 110,65 130,65" fill="#e94560"/>
+  <polygon points="143,75 135,90 151,90" fill="#e94560"/>
+  <text x="100" y="185" text-anchor="middle" fill="#e94560" font-family="Arial" font-size="14">ENDGAME</text>
+</svg>

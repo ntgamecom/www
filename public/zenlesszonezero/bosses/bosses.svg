@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" rx="30" fill="#1a1a2e"/>
+  <circle cx="100" cy="85" r="35" fill="none" stroke="#e94560" stroke-width="3"/>
+  <circle cx="85" cy="78" r="5" fill="#e94560"/>
+  <circle cx="115" cy="78" r="5" fill="#e94560"/>
+  <path d="M88 95 Q100 105 112 95" fill="none" stroke="#e94560" stroke-width="3"/>
+  <rect x="60" y="125" width="80" height="40" rx="8" fill="none" stroke="#e94560" stroke-width="3"/>
+  <line x1="70" y1="135" x2="90" y2="135" stroke="#e94560" stroke-width="2"/>
+  <line x1="110" y1="135" x2="130" y2="135" stroke="#e94560" stroke-width="2"/>
+  <text x="100" y="185" text-anchor="middle" fill="#e94560" font-family="Arial" font-size="14">BOSSES</text>
+</svg>

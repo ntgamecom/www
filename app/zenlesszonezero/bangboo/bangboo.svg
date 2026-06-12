@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" rx="30" fill="#1a1a2e"/>
+  <ellipse cx="100" cy="110" rx="45" ry="50" fill="none" stroke="#e94560" stroke-width="3"/>
+  <circle cx="85" cy="95" r="6" fill="#e94560"/>
+  <circle cx="115" cy="95" r="6" fill="#e94560"/>
+  <ellipse cx="100" cy="120" rx="15" ry="8" fill="none" stroke="#e94560" stroke-width="2"/>
+  <ellipse cx="70" cy="140" rx="18" ry="10" fill="none" stroke="#e94560" stroke-width="2"/>
+  <ellipse cx="130" cy="140" rx="18" ry="10" fill="none" stroke="#e94560" stroke-width="2"/>
+  <text x="100" y="185" text-anchor="middle" fill="#e94560" font-family="Arial" font-size="14">BANGBOO</text>
+</svg>

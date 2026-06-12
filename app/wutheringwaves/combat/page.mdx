@@ -1,0 +1,156 @@
+---
+title: "战斗系统详解 / Combat Guide"
+description: "Real-time combat, Concerto Energy, Intro/Outro Skills, dodge counter, and parry mechanics"
+---
+
+![Combat Guide](/wutheringwaves/combat/combat.svg)
+
+## 战斗系统概述 / Combat Overview
+
+鸣潮的战斗系统是游戏的核心亮点，以高速、流畅的实时动作为特色。队伍由三名角色组成，战斗中可随时切换角色，配合协奏能量系统打出华丽连招。
+
+Wuthering Waves' combat system is the game's standout feature, characterized by fast, fluid real-time action. Teams consist of three characters that can be freely swapped mid-combat, combining with the Concerto Energy system for stylish combos.
+
+## 基础操作 / Basic Controls
+
+**普通攻击 / Basic Attack**：连续点击进行多段攻击，不同角色的连段数量和动作模组各不相同。持续点击或按住可触发终结技。Tap repeatedly for multi-hit combos, varying by character. Hold or sustained press triggers finishers.
+
+**重击 / Heavy Attack**：消耗部分体力进行强力一击，部分角色重击有特殊效果如蓄力或范围攻击。Consumes stamina for a powerful strike. Some characters have special charged or AoE heavy attacks.
+
+**空中攻击 / Aerial Attack**：跳跃后在空中进行攻击，部分技能可在空中释放，增加操作维度。Jump then attack in mid-air. Some skills can be used airborne, adding a vertical dimension.
+
+**闪避 / Dodge**：快速位移躲避敌人攻击，消耗闪避耐力（黄色能量条）。闪避有短暂的无敌帧。Quick movement to evade attacks, consumes dodge stamina (yellow bar). Provides brief invincibility frames.
+
+**钩索攻击 / Grapple Hook Attack**：使用钩索命中敌人后拉近并追击，可用于起手或连段衔接。Use the Grapple Hook to pull toward an enemy for a follow-up attack, useful as an opener or combo linker.
+
+## 极限闪避与反击 / Extreme Dodge & Counter
+
+在敌人攻击命中前的瞬间进行闪避，触发极限闪避——进入子弹时间，敌人动作变慢，同时触发特殊反击。此时按下攻击键可发动极限闪避反击，造成额外伤害并击退敌人。
+
+Dodge precisely at the moment before an enemy attack hits to trigger Extreme Dodge, slowing time and enabling a special counter. Press attack to execute an Extreme Dodge Counter, dealing bonus damage and knocking enemies back.
+
+极限闪避反击是新手最重要的生存技巧——不要贪刀，观察敌人动作，掌握闪避节奏。
+
+Extreme Dodge Counter is the most important survival technique for beginners. Don't greed for damage, observe enemy patterns, and master dodge timing.
+
+**极限闪避触发时机 / Extreme Dodge Window**：在敌人攻击判定框即将接触角色时闪避，约0.2秒的判定窗口。Dodge when the enemy's hitbox is about to connect with the character, roughly a 0.2-second window.
+
+## 弹刀与招架 / Parry Mechanic
+
+部分敌人发动特定攻击时，身体或武器会发出金色光芒——这是「弹刀预警」信号。在这些攻击命中前使用攻击（而非闪避）正面迎击，可以触发弹刀（招架），大幅削减敌人的韧性值（白条）。
+
+When certain enemies glow gold during specific attacks, use an attack instead of dodge to meet them head-on, triggering a Parry. This significantly depletes the enemy's poise bar (white bar).
+
+弹刀成功后：敌人会陷入短暂硬直，韧性条大幅减少，韧性归零时敌人进入瘫痪状态，受到的伤害大幅提升。
+
+Successful parry results in: brief enemy stagger, major poise reduction, and when poise reaches zero, the enemy enters a瘫痪 (paralyzed) state, taking greatly increased damage.
+
+**弹刀小贴士 / Parry Tips**：注意金色闪光而非敌人动作本身。每个Boss的可弹刀攻击有固定模式，多练习即可掌握。Watch for the gold flash, not the enemy animation. Each boss has fixed parryable patterns, learnable through practice.
+
+## 协奏能量系统 / Concerto Energy System
+
+协奏能量是战斗的核心资源，位于角色头像旁的圆形进度条。通过攻击敌人和切换角色积累协奏能量。
+
+Concerto Energy is the core combat resource, shown as a circular progress bar next to the character avatar. Accumulated by attacking enemies and swapping characters.
+
+协奏能量充满后，当前角色头像会发光。此时切换角色将触发：
+
+When Concerto Energy fills, the current character's avatar glows. Switching at this point triggers:
+
+**变奏技能 / Intro Skill**：新入场角色释放的特殊技能，通常附带高伤害或控制效果。Special skill performed by the incoming character, often with high damage or control effects.
+
+**延奏技能 / Outro Skill**：退场角色释放的结束技能，通常为下一个角色提供增益（如增伤、元素附魔、能量回复等）。Exit skill performed by the outgoing character, typically buffing the next character (damage bonus, elemental infusion, energy regen, etc.).
+
+协奏能量循环是鸣潮战斗的策略核心——通过合理安排角色切换顺序，让每个角色的延奏技能为下一位角色增益，形成最大化输出循环。
+
+The Concerto Energy rotation is the strategic core of combat. By carefully planning swap order, each character's Outro Skill buffs the next, creating a maximized damage rotation.
+
+**协奏能量积累 / Concerto Energy Gain**：普通攻击（小量）、共鸣技能（中量）、共鸣解放（大量）、完美闪避/弹刀（中量）、切换角色入场攻击（中量）。
+
+## 共鸣技能与共鸣解放 / Resonance Skill & Liberation
+
+**共鸣技能 / Resonance Skill**：每个角色的核心技能，冷却时间短（通常5-12秒），是主要的伤害和功能来源。按E键释放。Each character's core skill, short cooldown (usually 5-12 seconds), primary source of damage and utility. Press E to use.
+
+**共鸣解放 / Resonance Liberation**：角色大招，需要积攒共鸣能量（角色头像旁的能量条）。能量通过攻击和受击积累，充满后按R键释放。共鸣解放伤害高、范围大，通常附带特殊演出动画。Each character's ultimate, requires Resonance Energy (bar next to avatar). Build through attacks and taking damage, press R to unleash. High damage, wide area, usually with special animation.
+
+共鸣解放是队伍的主要爆发手段，建议在Boss被瘫痪或延奏技能增伤期间释放以获得最大收益。
+
+Resonance Liberation is the team's main burst tool. Use during enemy瘫痪 windows or with Outro Skill buffs active for maximum benefit.
+
+## 共鸣回路 / Forte Circuit
+
+每个角色拥有独特的Forte Circuit（共鸣回路/核心被动），是角色玩法的精髓所在。Forte Circuit通常提供特殊的资源条或状态机制，需要特定操作来触发。
+
+Each character has a unique Forte Circuit, the essence of their playstyle. It typically provides a special resource bar or state mechanic activated through specific actions.
+
+例如：部分角色的Forte Circuit在特定连击后强化普通攻击，部分角色在施放共鸣技能后进入特殊状态获得额外效果，部分角色需要积攒特殊资源条来释放强化版技能。
+
+For example: some characters enhance basic attacks after specific combos, some enter special states after using Resonance Skill, and some accumulate a special resource bar for enhanced skills.
+
+## 队伍连招循环 / Team Rotation Strategy
+
+标准队伍循环模板：
+
+Standard team rotation template:
+
+1. 起手辅助技能 → 副C入场 → 积累协奏能量后切主C（触发延奏增伤）
+2. 主C站场输出 → 使用共鸣解放 → 打满协奏能量
+3. 切回辅助/副C → 释放技能 → 循环
+
+1. Start with support skill, swap to sub-DPS, build Concerto Energy then swap to main DPS (triggering Outro Skill buff).
+2. Main DPS stays on field, uses Resonance Liberation, fills Concerto Energy.
+3. Swap back to support/sub-DPS, use skills, repeat.
+
+**进阶技巧 / Advanced Tips**：利用变奏技能的无敌帧躲避攻击，在延奏增伤期间内打出最高伤害，合理分配共鸣解放的释放时机。Use Intro Skill i-frames to dodge, maximize damage during Outro Skill buff windows, and time Resonance Liberation usage carefully.
+
+## 元素反应 / Elemental Reactions
+
+鸣潮的元素系统不同于传统元素反应游戏，各元素间存在克制关系而非复杂反应：
+
+Wuthering Waves' element system features simple克制 (advantage) relationships rather than complex reactions:
+
+- 衍射克制湮灭 / Spectro counters Havoc
+- 湮灭克制衍射 / Havoc counters Spectro
+- 热熔克制冷凝 / Fusion counters Glacio
+- 冷凝克制热熔 / Glacio counters Fusion
+- 导电与气动互不克制 / Electro and Aero are neutral
+
+利用元素克制可获得额外伤害加成。屏幕上方会显示敌人的元素抗性信息。
+
+Using elemental advantage grants bonus damage. Enemy elemental resistance info is shown at the top of the screen.
+
+## 进阶战斗技巧 / Advanced Combat Techniques
+
+**闪避取消 / Dodge Cancel**：大多数攻击动作的后摇可以通过闪避取消，提前进行下一次操作。这是提高输出效率的基础技巧。Most attack recovery animations can be canceled with dodge for earlier follow-up actions. This is fundamental DPS optimization.
+
+**快速协奏 / Fast Concerto Building**：不同角色的协奏能量积累速度不同。利用共鸣技能接普攻的特定连段可以快速充满协奏能量。Swapping quickly after specific combos can rapidly fill Concerto Energy.
+
+**多目标策略 / Multi-Target Strategy**：面对群敌时，优先使用聚怪技能集中敌人，再用范围攻击清场。注意精英怪的仇恨优先级。Prioritize grouping skills on mobs, then AoE clear. Watch elite monster aggro priority.
+
+**Boss战站位 / Boss Positioning**：掌握Boss的攻击范围和安全点位，避免被逼入角落。大部分Boss的正面范围攻击最强，侧面和背后相对安全。Learn boss attack ranges and safe spots. Most bosses have the strongest attacks in front, with sides and rear being safer.
+
+**空中战斗 / Aerial Combat**：部分敌人对地面攻击有高抗性，利用钩索升空进行空中连击可以规避地面攻击并获得额外伤害加成。Some enemies have high ground-attack resistance. Use Grapple Hook for aerial combos to avoid ground attacks.
+
+**韧性管理 / Poise Management**：注意Boss的韧性条（白色）。使用弹刀和重击快速削减韧性，将Boss打入瘫痪状态是爆发输出的关键窗口。Watch the boss poise bar (white). Use parries and heavy attacks to quickly deplete it for the window to burst.
+
+**团队协同 / Team Coordination**：在联机模式中，注意队友的位置和状态。不要同时使用多个聚怪技能造成重叠浪费，合理分配治疗和增益的时机。In co-op, watch teammates' positions and status. Avoid overlapping grouping skills, coordinate healing and buff timing.
+
+## 伤害计算基础 / Damage Calculation Basics
+
+伤害的大致计算公式 / Simplified damage formula：
+
+`最终伤害 = 基础攻击力 × 技能倍率 × (1 + 伤害加成%) × (1 + 暴击伤害%) × 防御减免 × 抗性减免`
+
+`Final DMG = Base ATK × Skill Multiplier × (1 + DMG Bonus%) × (1 + Crit DMG%) × DEF Reduction × RES Reduction`
+
+了解伤害构成有助于合理搭配装备：攻击力、元素伤害和暴击暴伤应均衡发展，避免单一属性过度稀释。
+
+Understanding damage composition helps with gear choices: balance ATK, elemental damage, and crit stats to avoid diminishing returns.
+
+## 实战示例 / Combat Examples
+
+**单体Boss战 / Single Boss Fight**：起手使用辅助角色的共鸣技能（如维里奈的领域），切换副C打满协奏能量，触发延奏增伤后切主C，开启共鸣解放+回声技能爆发输出。一套完整循环约15-20秒。Start with support skill, swap to sub-DPS to fill Concerto, trigger Outro buff, swap to main DPS, ult + Echo skill burst. Full rotation roughly 15-20 seconds.
+
+**群怪场景 / Multi-Mob Encounter**：用秧秧或类似聚怪角色将敌人牵引到一起，切换范围输出角色释放AOE技能和共鸣解放清场。Group enemies with pull skills, then swap to AoE DPS for burst clear.
+
+**高难挑战 / High Difficulty Challenge**：优先确保生存，利用极限闪避的无敌帧规避伤害。不急于输出，等待Boss出招后的硬直窗口再反击。Prioritize survival, use Extreme Dodge i-frames. Don't rush, wait for boss attack windows to counter.
