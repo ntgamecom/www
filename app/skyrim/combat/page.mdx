@@ -1,0 +1,177 @@
+---
+title: 战斗系统 / Combat System
+description: 天际战斗机制详解——武器类型、魔法、龙吼与战术 / Skyrim combat mechanics — weapon types, magic, shouts, and tactics
+---
+
+# 战斗系统 / Combat System
+
+天际的战斗系统分为近战、远程和魔法三大流派——每种都有独特的战斗节奏 / Skyrim's combat divides into melee, ranged, and magic — each with unique pacing.
+
+---
+
+## 近战系统 / Melee Combat
+
+### 武器类型 / Weapon Types
+
+| 武器 / Weapon | 特点 / Traits | 每秒伤害 / DPS | 攻击速度 / Speed |
+|---|---|---|---|
+| **单手剑 / One-Handed Sword** | 速度均衡——暴击加成 / Balanced — crit bonus | 中等 / Medium | 快 / Fast |
+| **单手斧 / One-Handed Axe** | 流血效果——持续伤害 / Bleed effect — DoT | 中等 / Medium | 中等 / Medium |
+| **单手锤 / One-Handed Mace** | 无视护甲——对重甲有效 / Armor ignore — good vs heavy | 中等偏低 / Medium-low | 慢 / Slow |
+| **双手剑 / Greatsword** | 横扫范围攻击——可打多个 / Sweep attacks — hits multiple | 高 / High | 中等 / Medium |
+| **双手战斧 / Battleaxe** | 高伤害+流血 / High damage + bleed | 很高 / Very High | 慢 / Slow |
+| **双手战锤 / Warhammer** | 极高伤害+破甲 / Very high damage + armor ignore | 极高 / Very high | 极慢 / Very Slow |
+| **匕首 / Dagger** | 潜行背刺15倍伤害 / 15x sneak attack | 低(正面) / Low (frontal) | 极快 / Very Fast |
+
+**最佳近战策略 / Best Melee Strategy**:
+1. 剑盾组合是最稳健的打法——防御+低体力消耗 / Sword + shield is the safest — block + low stamina use
+2. 双持武器爆发力最高——但无防御手段 / Dual-wielding has highest burst — but no block
+3. 双手武器适合清理群敌——横扫Perk是核心 / Two-handed weapons excel at crowd clearing — Sweep perk is key
+
+---
+
+### 格挡系统 / Block System
+
+| 操作 / Action | 效果 / Effect | 说明 / Description |
+|---|---|---|
+| 右键按住 / Hold Right-Click | 格挡 / Block | 减少正面伤害 / Reduce frontal damage |
+| 格挡时攻击 / Attack While Blocking | 盾击 / Bash | 打断敌人攻击 / Interrupt enemy attacks |
+| 完美时机格挡 / Timed Block | 弹反 / Parry | 敌人硬直——可反击 / Enemy stagger — counter-attack |
+| 快速格挡 / Quick Block | 紧急防御 / Emergency block | 双持时唯一的防御手段 / Only defense for dual-wield |
+
+**格挡Perk关键节点 / Key Block Perks**:
+- 护盾之墙 / Shield Wall: 每级提升20%格挡效果 / +20% block effectiveness per rank
+- 快速退敌 / Quick Reflexes: 时间减慢——易格挡 / Slow time for easier blocking
+- 元素防护 / Elemental Protection: 格挡时50%元素伤害减免 / 50% elemental damage reduction when blocking
+- 盾牌冲锋 / Shield Charge: 冲刺中持盾冲倒敌人 / Sprint with shield to knock down enemies
+
+---
+
+### 耐力管理 / Stamina Management
+
+| 动作 / Action | 耐力消耗 / Stamina Cost | 备注 / Note |
+|---|---|---|
+| 普通攻击 / Normal Attack | 15-25 | 取决于武器重量 / Depends on weapon weight |
+| 重击 / Power Attack | 60-80 | 消耗巨大——但可击倒敌人 / High cost — knocks down |
+| 格挡 / Block | 取决于伤害 / Depends on damage | 格挡Perk可减少消耗 / Block perks reduce cost |
+| 冲刺 / Sprint | 20/秒 / per second | 战斗中慎用 / Use sparingly in combat |
+| 弓箭瞄准 / Bow Draw | 持续消耗 / Continuous | 瞄准越久消耗越多 / Longer draw = more cost |
+
+**耐力恢复技巧 / Stamina Recovery Tips**:
+- 耐力低时不攻击——等恢复后再输出 / Don't attack with low stamina — wait for regen
+- 蔬菜汤/牛肉汤提供持续耐力恢复 / Vegetable soup/beef stew give continuous stamina regen
+- 恢复系法术"快速恢复"可提升恢复速度 / Restoration spell "Fast Healing" improves regen
+
+---
+
+## 远程系统 / Ranged Combat
+
+### 弓箭系统 / Archery
+
+| 弓类型 / Bow Type | 基础伤害 / Base DMG | 拉弓速度 / Draw Speed | 推荐等级 / Level |
+|---|---|---|---|
+| 长弓 / Long Bow | 6 | 中等 / Medium | 1-5 |
+| 狩猎弓 / Hunting Bow | 7 | 快 / Fast | 5-15 |
+| 矮人弓 / Dwarven Bow | 10 | 中等 / Medium | 15-25 |
+| 精灵弓 / Elven Bow | 11 | 快 / Fast | 20-30 |
+| 玻璃弓 / Glass Bow | 13 | 快 / Fast | 30-40 |
+| 玄曜弓 / Ebony Bow | 15 | 中等 / Medium | 40-50 |
+| 魔族弓 / Daedric Bow | 17 | 中等 / Medium | 50+ |
+| 龙骨弓 / Dragonbone Bow | 19 | 慢 / Slow | 60+ |
+| 夜莺弓 / Nightingale Bow | 14 | 快 / Fast | 40+ |
+| 奥弓 / Auriel's Bow | 13 | 快 / Fast | 45+ |
+
+**弓箭战斗技巧 / Archery Combat Tips**:
+- 潜行弓是单人最高输出流派之一 / Stealth archer is one of the highest single-target damage builds
+- 毒素附魔弓箭可造成额外伤害 / Poison enchantments add extra damage
+- 拉满弓再射——半弓伤害减半 / Fully draw before firing — half-draw = half damage
+- 抛物线在远距离射箭时需要考虑 / Account for arrow drop at long distances
+
+---
+
+## 魔法系统 / Magic System
+
+### 五大魔法学派 / Five Schools of Magic
+
+| 学派 / School | 核心功能 / Core Function | 关键法术 / Key Spells |
+|---|---|---|
+| **毁灭 / Destruction** | 元素伤害 / Elemental Damage | 火球/冰刺/闪电链 / Fireball/Ice Spike/Chain Lightning |
+| **恢复 / Restoration** | 治疗+保护 / Heal + Protect | 治愈术/守护光环 / Healing/Guardian Circle |
+| **召唤 / Conjuration** | 召唤生物+灵魂陷阱 / Summon + Soul Trap | 魔人大君/灵魂陷阱 / Dremora Lord/Soul Trap |
+| **幻术 / Illusion** | 操控AI / AI Manipulation | 狂乱/平静/隐形 / Frenzy/Calm/Invisibility |
+| **变化 / Alteration** | 防御+实用 / Defense + Utility | 石甲术/光术/麻痹 / Ebonyflesh/Candlelight/Paralyze |
+
+**毁灭法术对比 / Destruction Spell Comparison**:
+
+| 法术 / Spell | 伤害 / DMG | 法力消耗 / Cost | 特殊效果 / Special |
+|---|---|---|---|
+| 火焰 / Flames | 8/秒 | 低 / Low | 点燃——持续灼烧 / Burn — DoT |
+| 寒霜 / Frostbite | 8/秒 | 低 / Low | 减耐力——对法师有效 / Stamina drain |
+| 闪电 / Sparks | 8/秒 | 低 / Low | 减法力——对施法者有效 / Magicka drain |
+| 火球 / Fireball | 40 | 中等 / Medium | 范围爆炸——aoe / AoE explosion |
+| 冰刺 / Ice Spike | 30 | 中等 / Medium | 穿透——对单体 / Penetrating |
+| 闪电链 / Chain Lightning | 40 | 高 / High | 弹射到三个目标 / Chains to 3 targets |
+| 焚化 / Incinerate | 60 | 高 / High | 高伤单体 / High single-target |
+| 冰风暴 / Icy Spear | 60 | 高 / High | 穿透多个敌人 / Penetrates multiple |
+| 闪电风暴 / Lightning Storm | 75/秒 | 极高 / Very High | 持续光束——射程无限 / Continuous beam |
+
+---
+
+### 双持施法 / Dual Casting
+
+| 学派 / School | 双持效果 / Dual Effect | 法力消耗 / Cost Multiplier |
+|---|---|---|
+| 毁灭 / Destruction | 2.8倍伤害——冲击击退 / 2.8x damage — Impact stagger | 2.8x |
+| 恢复 / Restoration | 2.2倍治疗量 / 2.2x healing | 2.2x |
+| 变化 / Alteration | 2.2倍持续时间 / 2.2x duration | 2.2x |
+| 幻术 / Illusion | 2.8倍等级上限——影响高等级敌人 / 2.8x level cap | 2.8x |
+| 召唤 / Conjuration | 召唤更强大的生物 / Summon stronger creatures | 2.2x |
+
+**冲击Perk (Impact) 说明**:
+毁灭系的核心Perk——双持施法必定打断敌人动作——包括龙 / The core Destruction perk — dual-casting always staggers enemies — including dragons.
+
+---
+
+## 龙吼在战斗中的应用 / Shouts in Combat
+
+| 龙吼 / Shout | 战斗用途 / Combat Use | 冷却 / Cooldown |
+|---|---|---|
+| 不卸之力 / Unrelenting Force | 击退近战敌人/打断施法 / Push enemies/interrupt casters | 15-40秒 |
+| 旋风精力 / Whirlwind Sprint | 快速拉近距离或脱离战线 / Close gap or disengage | 20-45秒 |
+| 缓落术 / Become Ethereal | 无敌走位——龙吼CD期间保命 / Invincibility — survive cooldowns | 30-60秒 |
+| 减速 / Slow Time | 大幅提高输出机会 / Massive damage window | 30-60秒 |
+| 元素之怒 / Elemental Fury | 武器攻击速度翻倍 / Double weapon attack speed | 20-40秒 |
+| 冰之形态 / Ice Form | 冻结敌人数秒——逐个击破 / Freeze enemies — pick them off | 40-90秒 |
+| 唤风 / Call Storm | 大范围闪电——清理室外区域 / AoE lightning — clear outdoor areas | 300秒 |
+| 召唤巨龙 / Call Dragon | 召唤奥达威英协助战斗 / Summon Odahviing to fight | 600秒 |
+
+---
+
+## 战斗流派推荐 / Combat Build Recommendations
+
+| 流派 / Build | 武器 / Weapons | 魔法 / Magic | 特点 / Style |
+|---|---|---|---|
+| 剑盾战士 / Sword & Board | 单手剑+盾牌 / 1H + Shield | 无/少量恢复 / None/minor Resto | 最稳健——能抗能打 / Safest — tanky and damaging |
+| 双持狂战 / Dual Berserker | 双单手武器 / 2x 1H | 无 / None | 输出爆炸——但脆 / Highest burst — but fragile |
+| 双手重甲 / Two-Handed Tank | 双手武器 / 2H Weapon | 无 / None | 横扫千军——适合新手 / Sweep attacks — beginner friendly |
+| 潜行弓 / Stealth Archer | 弓 + 匕首 / Bow + Dagger | 幻术辅助 / Illusion support | 最强单体输出——后期无敌 / Best single-target — endgame OP |
+| 战斗法师 / Spellsword | 单手+法术 / 1H + Spell | 毁灭/恢复 / Destruction/Resto | 混合输出——灵活多变 / Hybrid damage — versatile |
+| 纯毁灭法 / Pure Mage | 无 / None | 双持毁灭 / Dual Destruction | 远程炮台——冲击Perk控场 / Ranged turret — Impact control |
+| 召唤法 / Conjurer | 任意 / Any | 召唤+毁灭 / Conjuration + Destro | 召唤魔人+远程输出 / Summon + ranged damage |
+| 刺客 / Assassin | 匕首 / Dagger | 幻术 / Illusion | 隐形+背刺——一击必杀 / Invisibility + backstab |
+
+---
+
+## 战斗MOD推荐 / Combat Mod Recommendations
+
+| MOD名称 / Mod Name | 效果 / Effect | 推荐度 / Rating |
+|---|---|---|
+| Wildcat - Combat of Skyrim | 提高战斗难度——AI更智能 / Increased difficulty — smarter AI | ⭐⭐⭐⭐⭐ |
+| TK Dodge | 添加翻滚闪避动作 / Add dodge roll | ⭐⭐⭐⭐⭐ |
+| Ordinator - Perks of Skyrim | 重做Perk树——更多战斗选择 / Overhauled perk trees | ⭐⭐⭐⭐ |
+| Ultimate Combat | 增强AI+新战斗机制 / Enhanced AI + new combat mechanics | ⭐⭐⭐⭐ |
+| Mortal Enemies | 取消攻击追踪——需要瞄准 / Remove aim assist — requires precision | ⭐⭐⭐⭐ |
+
+---
+
+标签/Tags: Skyrim, 战斗, 武器, 魔法, 龙吼, Combat, Weapons, Magic, Shouts, 上古卷轴, 天际

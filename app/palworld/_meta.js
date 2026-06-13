@@ -11,4 +11,8 @@ export default {
   'bosses': '全BOSS攻略 / All Bosses Guide',
   'builds': '基地与配种 / Base & Breeding',
   'items': '制作与装备 / Crafting & Gear',
+  'combat': '战斗系统 / Combat System',
+  'skills': '技能系统 / Skills System',
+  'secrets': '隐藏要素 / Secrets & Hidden Content',
+  'endgame': '终局内容 / Endgame Content',
 }

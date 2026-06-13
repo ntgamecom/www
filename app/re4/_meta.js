@@ -11,4 +11,8 @@ export default {
   items: '装备与商人 / Items & Merchant',
   world: '章节攻略 / Chapters',
   bosses: '首领 / Bosses',
+  skills: '技能系统 / Skills',
+  secrets: '隐藏要素 / Secrets',
+  endgame: '终局内容 / Endgame',
+  characters: '角色图鉴 / Characters',
 }

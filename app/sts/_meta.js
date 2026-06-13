@@ -11,4 +11,8 @@ export default {
   'silent': '猎人 / Silent',
   'defect': '故障机器人 / Defect',
   'watcher': '观者 / Watcher',
+  'bosses': 'BOSS攻略 / Boss Guide',
+  'secrets': '隐藏要素 / Secrets & Unlockables',
+  'items': '物品与遗物 / Items & Relics',
+  'strategy': '策略技巧 / Strategy & Tips',
 }

@@ -11,4 +11,8 @@ export default {
   'bosses': 'BOSS攻略 / Boss Strategies',
   'builds': '武器与Build / Weapons & Builds',
   'items': '物品收集 / Items & Unlocks',
+  'combat': '战斗系统 / Combat System',
+  'skills': '技能系统 / Skills System',
+  'secrets': '隐藏要素 / Secrets & Hidden Content',
+  'endgame': '终局内容 / Endgame Content',
 }

@@ -13,4 +13,6 @@ export default {
   'enemies': '敌人与派系 / Enemies & Factions',
   'missions': '任务与成长 / Missions & Progression',
   'advanced': '进阶技巧 / Advanced Tactics',
+  'bosses': 'BOSS攻略 / Bosses',
+  'combat': '战斗系统 / Combat',
 }

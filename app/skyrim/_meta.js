@@ -11,4 +11,8 @@ export default {
   'skills': '种族与技能 / Races & Skills',
   'quests': '任务与阵营 / Quests & Factions',
   'items': '装备与物品 / Items & Equipment',
+  'combat': '战斗与魔法 / Combat & Magic',
+  'builds': '职业Build / Character Builds',
+  'bosses': 'Boss攻略 / Boss Fights',
+  'secrets': '隐藏要素 / Secrets & Easter Eggs',
 }

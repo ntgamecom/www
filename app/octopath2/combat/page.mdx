@@ -1,0 +1,73 @@
+---
+title: "战斗系统 — Combat System Guide"
+description: "歧路旅人2战斗系统全解析 — 破防Break、增幅Boost、潜力技能、装备搭配、队伍战术、终局战斗策略"
+---
+
+![战斗系统](/octopath2/combat/combat.svg)
+
+{/* Octopath Traveler 2 combat system — Break, Boost, Latent Skills, gear setups, party tactics, endgame strategies */}
+
+## 核心战斗机制 / Core Combat Mechanics
+
+歧路旅人2的战斗系统围绕两个核心机制：**破防(Break)**和**增幅(Boost)**。掌握这两个系统是通关的关键 / Octopath Traveler 2's combat revolves around two core mechanics: **Break** and **Boost**. Mastering these is essential for clearing the game.
+
+### 破防系统 / Break System
+
+敌人拥有**护盾点数(Shield Points)**——显示在敌人名字下方。使用敌人的**弱点武器**或**弱点属性**攻击可以降低护盾点数。护盾归零后敌人进入**破防(Break)**状态——无法行动一回合+受到伤害x2。破防期间攻击力大幅上升——这是主要的爆发窗口。破防结束后的下一回合敌人恢复全部护盾 / Enemies have **Shield Points (SP)** below their name. Attacking with weak weapons/elements reduces SP. At 0 SP, enemy enters **Break** — can't act for 1 turn + receives 2x damage. This is the main burst window. After Break ends, enemy recovers full shield next turn.
+
+### 弱点类型 / Weakness Types
+
+| 武器弱点 / Weapon Weakness | 属性弱点 / Elemental Weakness |
+|:----:|:----:|
+| 剑(Sword)、枪(Lance)、短剑(Dagger)、斧(Axe)、弓(Bow)、杖(Staff) | 火(Fire)、冰(Ice)、雷(Lightning)、风(Wind)、光(Light)、暗(Dark) |
+
+**探知弱点的几种方法**: 学者技能"洞察"——直接显示全部弱点。舞娘技能"诱惑"——使敌人泄露弱点。部分NPC可以提供敌人弱点情报。多次攻击同一敌人——新命中有几率自动发现一个弱点——攻击种类越多发现越快 / **Ways to reveal weaknesses**: Scholar skill "Scrutiny" — reveals all. Dancer skill "Allure" — makes enemy leak weakness. NPCs provide enemy weakness info. Multiple hit types on same enemy — each new type may auto-reveal one weakness.
+
+### 增幅系统 / Boost System
+
+每回合积累**增幅点数(BP)**——最多5点。使用技能时可以消耗BP增幅——每个BP增加技能效果(伤害x1.5/2/3 + 额外效果)。增幅也可以用于普通攻击——消耗1BP额外攻击一次——消耗3BP额外攻击3次(适合快速破防)。**BP管理核心**: 不要攒着BP不用——战斗中积极使用BP来加速破防或提升爆发伤害 / Each turn you gain **Boost Points (BP)** — max 5. Spend BP to boost skills — each BP increases effect (1.5x/2x/3x damage + bonus effects). Boost also applies to normal attacks — 1BP = +1 attack, 3BP = +3 attacks (great for breaking). **BP Management**: Don't hoard BP — actively spend to break faster or boost burst damage.
+
+## 潜力技能系统 / Latent Skills
+
+每个角色有独特的**潜力技能(Latent Skill)**——通过**潜力槽**积累——每次行动(被攻击或攻击)积累潜力值。潜力值满后可以释放强力技能 / Each character has a unique **Latent Skill** — charges through a **Latent Gauge** — gains charge on each action (attack or being attacked). When full, release a powerful skill.
+
+| 角色 / Character | 潜力技能 / Latent Skill | 效果 / Effect | 推荐使用时机 / Best Use |
+|---|---|---|---|
+| 剑士 / Warrior | 一瞬千击 / Thousand Blades | 无视护盾直接破防 / Break shield ignoring SP | Boss破防前拉满 / Before boss break |
+| 舞娘 / Dancer | 诱惑之舞 / Alluring Dance | 全体敌人行动推迟1回合 / Delay all enemies 1 turn | 紧急控场 / Emergency CC |
+| 盗贼 / Thief | 无影之刃 / Shadowless Blade | 2回合内盗贼行动后敌人无法反击 / Enemy can't counter for 2 turns | 应对高反击敌人 / Vs counter-heavy enemies |
+| 学者 / Scholar | 超频 / Overclock | 消耗潜力全回复BP+额外行动 / Full BP + extra action | 爆发连招 / Burst combo setup |
+| 猎人 / Hunter | 无限弓矢 / Endless Arrow | 对单个敌人连续射击直到破防 / Shoot until break | 快速破单目标 / Fast single target break |
+| 牧师 / Cleric | 神圣庇护 / Divine Protection | 全队2回合无敌 / Party invincible 2 turns | 应对Boss大招 / Boss ultimate defense |
+| 商人 / Merchant | 呼朋引伴 / Call Help | 随机召唤NPC助战 / Random NPC ally | 辅助/伤害全随机 / Random helper |
+| 药师 / Apothecary | 最强调和 / Ultimate Mix | 三回合内调和效果全部双倍效果 / Double mix effects 3 turns | 全体回血+增益 / Party heal + buff |
+
+## 队伍搭配 / Party Composition
+
+### 四人队标准配置 / Standard 4-Person Party
+
+| 位置 / Slot | 推荐角色 / Recommended | 职责 / Role |
+|---|---|---|
+| 坦克 / Tank | 剑士 / Warrior | 前排抗伤+物理输出 / Frontline tank + phys DPS |
+| 治疗 / Healer | 牧师 / Cleric | 回血+增益/减益清除 / Heal + buff/debuff clear |
+| 主输出 / Main DPS | 学者/猎人 / Scholar/Hunter | 属性/物理爆发伤害 / Elemental or phys burst |
+| 辅助/副输出 / Support | 舞娘/盗贼 / Dancer/Thief | 强化/破防/辅助 / Buff/break/support |
+
+**推荐开局队伍**: 剑士(坦)+牧师(奶)+学者(法系输出)+舞娘(辅助)。这个组合覆盖4种武器和3种属性——可以应对大多数敌人弱点 / **Recommended Starter**: Warrior (tank) + Cleric (healer) + Scholar (magic DPS) + Dancer (support). This covers 4 weapons and 3 elements — handles most enemy weaknesses.
+
+### Boss战阵容 / Boss Party
+
+Boss战推荐带: 学者(探弱点+属性输出)、剑士或猎人(物理破防)、牧师(治疗+无敌)、舞娘或药师(辅助/回复)。破防节奏: 先探弱点→用对应武器快速削盾→增幅技能打爆发→重复。注意不要提前破防——等Boss蓄力大招时再破防可以打断Boss技能 / Boss party recommendation: Scholar (reveal + magic), Warrior/Hunter (phys break), Cleric (heal + invincible), Dancer/Apothecary (support/heal). Break rhythm: Reveal weaknesses → fast shield reduction → Boost burst → repeat. Don't break early — save Break for when boss charges ultimate to interrupt.
+
+## 战斗技巧 / Combat Tips
+
+1. **Boss蓄力时破防**——大部分Boss在蓄力大招时如果被破防会直接打断技能——这是最重要的战术 / Break boss during charge — most bosses' ultimates are interrupted if broken during charge — most important tactic.
+2. **增幅普攻破防**——消耗3BP普攻x4次攻击——对4点护盾的敌人可以1回合破防 / Boost normal attack — 3BP = 4 attacks — breaks 4-shield enemies in one turn.
+3. **学者探弱点配合**——第一回合学者用洞察看弱点→全队对应攻击 / Scholar reveal round 1 → whole party targets revealed weaknesses.
+4. **潜力和增幅分开用**——不要同时用完——留一个作为应对手段 / Don't use Latent + Boost simultaneously — save one as contingency.
+5. **BP药水備用**——炼金术可以制作BP回复药——Boss战至少带3个 / Craft BP recovery items — carry at least 3 for boss fights.
+6. **装备速度影响行动顺序**——速度高的角色先行动——想让牧師先奶就堆速度 / Speed determines turn order — stack SPD on healer for early heals.
+7. **增益/减益叠加规则**——同类增益取最高值不叠加——不同类可以叠加(如攻击up+属性攻击up) / Same-type buffs don't stack (highest wins) — different types stack (e.g., ATK up + Elemental ATK up).
+8. **弱点转化机制**——部分Boss在血量降低后会变换弱点——需要重新探索 / Some bosses change weaknesses at HP thresholds — need to re-reveal.
+
+标签/Tags: 歧路旅人2, Octopath Traveler 2, 战斗, Combat, Break, 破防, Boost, 增幅, Latent, 潜力, 队伍, Party

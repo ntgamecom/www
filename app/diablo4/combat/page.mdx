@@ -1,0 +1,108 @@
+---
+title: "战斗系统 — Combat System Guide"
+description: "暗黑破坏神4战斗系统全解析 — 资源系统、核心机制、伤害类型、减伤机制、战斗技巧、第8赛季改动"
+---
+
+![战斗系统](/diablo4/combat/combat.svg)
+
+{/* Diablo 4 combat system — resource management, core mechanics, damage types, damage reduction, combat tips, S8 changes */}
+
+## 资源系统 / Resource System
+
+暗黑破坏神4每个职业使用不同的战斗资源。资源的管理决定了战斗效率。不同职业的资源机制差异很大——理解你的职业资源是成为高手的第一步 / Each class in Diablo 4 uses different combat resources. Resource management determines combat efficiency. Resource mechanics vary greatly between classes — understanding your class resource is the first step to mastery.
+
+### 各职业资源 / Class Resources
+
+| 职业 / Class | 资源类型 / Resource | 生成方式 / Generation | 消耗方式 / Spending |
+|---|---|---|---|
+| 野蛮人 / Barbarian | 怒气 / Fury | 基础技能命中、受伤受击 / Basic skills hit, taking damage | 核心技能、武器精通 / Core skills, weapon mastery |
+| 德鲁伊 / Druid | 灵力 / Spirit | 基础技能命中 / Basic skills hit | 核心技能 / Core skills |
+| 死灵法师 / Necromancer | 精魂 / Essence | 基础技能命中、尸体消耗 / Basic skills hit, consume corpse | 核心技能、召唤 / Core skills, summons |
+| 游侠 / Rogue | 能量 / Energy | 基础技能命中、移动 / Basic skills hit, moving | 核心技能、灌注 / Core skills, imbuements |
+| 法师 / Sorcerer | 法力 / Mana | 自动回复、基础技能 / Auto-regeneration, basic skills | 核心技能、掌握 / Core skills, mastery |
+| 魂灵师 / Spiritborn | 灵力 / Vigor | 基础技能+被动回复 / Basic skills + passive regen | 核心技能 / Core skills |
+
+### 资源管理技巧 / Resource Management Tips
+
+**怒气野蛮人**: 战斗中始终保持怒气消耗与生成的平衡。核心技能"双手挥击"消耗25怒气——基础技能"猛烈打击"每次命中生成8怒气。推荐怒气生成效率堆到35%+。**精魂死灵法师**: 尸体是精魂之外的第二资源。"分解"基础技能生成精魂，"尸体爆炸"和"邪爆"消耗尸体。**尸爆流**在精魂充足时只用核心技能 + 尸爆作为补充。**法力法师**: 自动回复是法力的主要来源——攻速和幸运一击可以触发法力回复效果。**能量游侠**: 能量恢复速度和移动速度相关——保持移动等于保持输出 / **Barbarian Fury**: Balance spending and generation. "Double Swing" costs 25 Fury — "Bash" generates 8 per hit. Aim for 35%+ Fury generation. **Necromancer Essence**: Corpses are secondary resource. "Decompose" generates essence, "Corpse Explosion" consumes. **Bone Spear build** uses core skills + corpse explosion. **Sorcerer Mana**: Auto-regen is main source — attack speed and lucky hit trigger mana recovery. **Rogue Energy**: Regen speed tied to movement — keep moving = keep DPSing.
+
+## 核心战斗机制 / Core Combat Mechanics
+
+### 易伤系统 / Vulnerable System
+
+**易伤**是暗黑4中最重要的伤害加成状态。被易伤的敌人受到伤害+20%(基础)。所有职业都有至少一种方式施加易伤。推荐所有Build的易伤覆盖率保持80%+。第8赛季中易伤的持续时间被略微缩短但基础伤害加成提高至25% / **Vulnerable** is the most important damage multiplier. Vulnerable enemies take +20% damage (base). Every class has at least one way to apply Vulnerable. Aim for 80%+ Vulnerable uptime. In Season 8, Vulnerable duration is slightly reduced but base damage bonus increased to 25%.
+
+| 职业 / Class | 易伤施加方式 / Vulnerable Application | 持续时间 / Duration |
+|---|---|---|
+| 野蛮人 / Barbarian | 跃击——升级后 / Upheaval with upgrade | 3秒 / 3 seconds |
+| 德鲁伊 / Druid | 爪击——暴击后 / Claw after crit | 4秒 / 4 seconds |
+| 死灵法师 / Necromancer | 骨矛+碎裂骨片 / Bone Spear + splinters | 3秒 / 3 seconds |
+| 游侠 / Rogue | 穿透射击+弱点暴露 / Penetrating Shot + Exposure | 5秒 / 5 seconds |
+| 法师 / Sorcerer | 冰霜新星 / Frost Nova | 4秒 / 4 seconds |
+| 魂灵师 / Spiritborn | 四灵之击——暴击触发 / Spirit strike on crit | 3秒 / 3 seconds |
+
+### 压制系统 / Overpower System
+
+**压制**是独立于暴击的伤害系统。压制有3%基础触发率。压制伤害=生命值+强固值加成。压制不能和暴击同时触发——优先计算压制。**熊人德鲁伊**和**鲜血死灵法师**是压制率最高的Build。第8赛季中压制的基础触发率可以通过装备词缀提升至最高12% / **Overpower** is separate from crit. 3% base trigger rate. Overpower damage = life + fortify bonuses. Overpower and crit cannot trigger together. **Werebear Druid** and **Blood Necromancer** have the highest overpower rates. In S8, base overpower rate can be boosted to 12% via gear affixes.
+
+### 强固系统 / Fortify System
+
+**强固**为你提供最高生命值10%的额外伤害减免。强固值可以通过特定技能和被动积累。**德鲁伊的灵物恩惠**、**野蛮人的挑战怒吼**、**死灵法师的铁处女**都可以提供强固。强固Build的减伤能力极强——推荐高难内容优先考虑强固机制 / **Fortify** provides up to 10% of max life as damage reduction. Accumulate through specific skills and passives. **Druid's Boon**, **Barbarian's Challenging Shout**, **Necromancer's Iron Maiden** all provide fortify. Fortify builds have exceptional survivability — recommended for high-difficulty content.
+
+## 伤害类型与计算 / Damage Types and Calculation
+
+### 乘伤与加伤 / Multiplicative vs Additive
+
+暗黑4的伤害计算包含**乘伤**和**加伤**两大类。乘伤(如易伤、暴击伤害、压制伤害)互相独立相乘——提升乘伤比堆加伤更有效。加伤(如"对近距敌人伤害+15%")全部相加后再乘入公式。**最佳伤害配比**: 易伤200%+ > 暴击率100% > 暴击伤害400%+ > 压制率 > 加伤属性。优先堆满暴击率和易伤覆盖 / Diablo 4's damage calc has **multiplicative** and **additive** buckets. Multiplicative (Vulnerable, Crit, Overpower) multiply independently — stacking multiplicative is more efficient than additive. Additive (eg "+15% damage to close enemies") adds together before being multiplied in. **Optimal Balance**: Vulnerable 200%+ > Crit chance 100% > Crit damage 400%+ > Overpower rate > Additive damage. Max crit chance and vulnerable uptime first.
+
+### 元素伤害 / Elemental Damage
+
+| 元素 / Element | 效果 / Effect | 代表职业 / Representative Class |
+|---|---|---|
+| 火焰 / Fire | 持续伤害(DOT) / DoT (Damage over Time) | 法师火焰系 / Sorcerer Fire |
+| 冰霜 / Cold | 冻结+控场 / Freeze + CC | 法师冰霜系 / Sorcerer Cold |
+| 闪电 / Lightning | 击晕+高爆发 / Stun + high burst | 法师闪电系 / Sorcerer Lightning |
+| 毒素 / Poison | 持续伤害+减速 / DoT + slow | 游侠灌注 / Rogue Imbuement |
+| 暗影 / Shadow | 暗影伤害+减益 / Shadow damage + debuffs | 死灵法师暗影系 / Necromancer Shadow |
+| 物理 / Physical | 直接伤害 + 流血 / Direct damage + bleed | 野蛮人 / Barbarian |
+
+## 减伤机制 / Damage Reduction Mechanics
+
+### 护甲 / Armor
+
+护甲提供对所有元素的伤害减免，但对物理伤害效果翻倍。护甲上限为85%减伤(对60级怪物需要9230护甲)。**护甲破碎**是野蛮人和游侠的核心机制——降低敌人护甲相当于全队增伤。装备上的"护甲%"词缀比固定护甲值更有效——优先百分比 / Armor reduces all elemental damage, but doubles effectiveness against physical. Cap is 85% DR (9230 armor vs level 60). **Armor Break** is core for Barbarian and Rogue — reducing enemy armor = party-wide damage increase. "Armor %" affixes are more efficient than flat armor — prioritize percentages.
+
+### 抗性 / Resistances
+
+元素抗性在暗黑4中效果较低——每个元素抗性上限70%。高难度的抗性惩罚(-40%至-80%)使得堆抗性的收益递减严重。推荐通过**护甲+伤害减免**的方式获得生存能力。第8赛季中抗性系统有所调整——护甲不再提供非物理减伤——元素抗性变得更加重要 / Elemental resistances are less effective — hard cap 70% per element. High difficulty penalties (-40% to -80%) make resistance stacking inefficient. Recommended to rely on **armor + damage reduction** for survivability. In S8, armor no longer provides non-physical DR — elemental resistances have become more important.
+
+## 世界层级与战斗难度 / World Tier and Combat Difficulty
+
+| 世界层级 / World Tier | 经验加成 / XP Bonus | 金币加成 / Gold Bonus | 敌人强度 / Enemy Power |
+|---|---|---|---|
+| 世界1: 普通 / WT1: Normal | +0% | +0% | 基础 / Baseline |
+| 世界2: 困难 / WT2: Hard | +20% | +15% | 生命值+20% / HP +20% |
+| 世界3: 梦魇 / WT3: Nightmare | +100% | +15% | 生命+200%, 伤害+50% |
+| 世界4: 折磨 / WT4: Torment | +200% | +30% | 生命+500%, 伤害+150% |
+
+**快速升级路线**: 世界1完成主线至50级→切换到世界3完成圣光大教堂→进入梦魇地下城刷装备→65级左右挑战世界4的堕落神殿→切换到世界4刷巅峰等级。**第8赛季推荐**: 直接在世界1快速通关战役——25级后参加世界事件快速升级 / **Fast leveling**: WT1 complete main story to 50 → switch to WT3 for Cathedral of Light → Nightmare dungeons for gear → WT4 Fallen Temple around 65 → switch to WT4 for paragon levels. **S8 recommendation**: Rush campaign on WT1 — join world events after 25 for fast leveling.
+
+## 战斗技巧总结 / Combat Tips Summary
+
+1. **保持易伤覆盖**——全队增伤最关键的状态 / Maintain Vulnerable uptime — most critical party-wide damage bonus
+2. **移动是生存的关键**——暗黑4是高速ARPG，站着不动=死亡 / Movement is survival — Diablo 4 is fast-paced ARPG, standing still = death
+3. **控制免疫期**——Boss有控场免疫条，控制技能需要留到免疫条打破前 / Bosses have CC immunity bars — save CC for when the bar breaks
+4. **伤害减免>血量恢复**——堆减伤比堆秒回有效得多 / DR > HP regen — stacking damage reduction is far more effective
+5. **噩梦地下城的词缀需要针对性配装**——每把噩梦副本开始前检查词缀 / Nightmare dungeon affixes require targeted gear — check before starting
+6. **爆击和易伤是核心乘伤**——所有Build都优先堆这两项 / Crit and Vulnerable are core multiplicative — prioritize in every build
+7. **尸体是死灵的资源**——尸爆流需要尸体，召唤流需要尸体 / Corpses are Necromancer's resource — Corpse Explosion and Summon both need them
+8. **第8赛季重要改动**——魂灵师职业大更新、新符文系统、抗性机制调整 / S8 major changes — Spiritborn rework, new rune system, resistance rebalance
+9. **组队游戏的优势**——4人组队怪物血量x4但经验和掉落更多——组队效率更高 / Party play advantage — 4-player party = 4x monster HP but more XP and loot
+10. **地狱狂潮是综合效率最高的活动**——经验+装备+材料三位一体 / Helltide is the most efficient activity — XP + gear + materials all in one
+11. **巅峰盘雕文升级路径规划**——优先升级雕文到15级再激活稀有节点加成 / Plan glyph leveling path — prioritize level 15 for radius expansion
+12. **终局Boss材料不要浪费**——先在地下城和狂潮中积累足够材料再一次性挑战 / Don't waste boss materials — accumulate enough before challenging in one session
+13. **赛季旅程按章节推进**——完成赛季旅程获得赛季祝福提升全赛季体验 / Complete seasonal journey chapters for seasonal blessings to enhance the experience
+14. **交易行合理使用**——缺特定威能时先看交易行——比自己刷效率高 / Use trade market wisely — check for specific aspects before farming yourself
+15. **装备比对用装等和词缀的双重标准**——高装等但词缀不对的装备不如低装等但词缀完美的 / Compare gear by both item power and affixes — high IP with wrong affixes is worse than lower IP with perfect ones
+
+标签/Tags: 暗黑破坏神4, Diablo 4, D4, 战斗, Combat, 资源, Resource, 伤害, Damage, 机制, Mechanics, 第8赛季, Season 8

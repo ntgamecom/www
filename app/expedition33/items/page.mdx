@@ -14,113 +14,137 @@ toc: false
 
 ### 武器基础属性 / Base Weapon Stats
 
-| 角色 / Character | 武器类型 / Weapon | +0基础攻击 / Base ATK | +5满级攻击 / +5 Max ATK | 附加效果 / Bonus Effect |
-|:----:|:----:|:----:|:----:|:----|
-| **古斯塔夫** | 巨剑 / Greatsword | 30 | 75 | 命中时30%概率击退 / 30% knockback on hit |
-| **玛艾勒** | 法杖 / Staff | 15 (治疗量) | 40 (治疗量) | 治疗效果+15% / Healing +15% |
-| **露娜** | 法书 / Spellbook | 22 | 58 | 元素连携伤害+10% / Elemental combo +10% |
-| **泽农** | 双匕首 / Dual Daggers | 25 | 65 | 暴击率+5% / Crit rate +5% |
-| **维克多** | 扳手 / Wrench | 20 | 52 | 炮台持续时间+1回合 / Turret duration +1 turn |
-| **艾莉丝** | 长弓 / Longbow | 28 | 70 | 远程伤害+10% / Ranged dmg +10% |
+| 角色 / Character | 武器 / Weapon | 基础攻击 / Base ATK | 特殊效果 / Special | 升级材料 / Upgrade Mat |
+|---|---|---|---|---|
+| 古斯塔夫 / Gustave | 巨剑 / Greatsword | 45-55 | 命中回复2%HP / 2% HP on hit | 金属锭+巨兽骨 / Metal Ingot + Beast Bone |
+| 主角 / Protagonist | 单手剑 / Sword | 35-42 | 光系技能伤害+10% / +10% Light skill | 光之结晶 + 金属锭 / Light Crystal + Ingot |
+| 艾伦 / Allen | 长弓 / Longbow | 38-46 | 暴击率+5% / Crit +5% | 木材+弓弦纤维 / Wood + Bowstring Fiber |
+| 塞拉 / Sera | 法杖 / Staff | 40-50(法伤) | 法力回复+10% / Mana regen +10% | 魔法精华+水晶 / Magic Essence + Crystal |
+| 莉莎 / Lisa | 机械臂 / Mech Arm | 30-38 | 召唤物伤害+15% / Minion dmg +15% | 机械零件+能源核心 / Mech Parts + Energy Core |
+| 维克多 / Victor | 锤+盾 / Hammer+Shield | 32-40(锤) / 格挡值20-25(盾) | 格挡率+10% / Block +10% | 金属锭+重甲片 / Ingot + Heavy Plate |
 
-### 武器升级材料 / Upgrade Materials
+### 武器升级消耗 / Weapon Upgrade Costs
 
-| 等级 / Level | 材料 / Materials | 来源 / Source |
-|:----:|:----|:----|
-| +1 | 铁矿石x3 + 金币200 / Iron Ore x3 + 200 gold | 白崖镇采集+商人 / White Cliff mining + merchant |
-| +2 | 铁矿石x5 + 金币500 / Iron Ore x5 + 500 gold | 白崖镇+灰烬森林 / White Cliff + Ashen Forest |
-| +3 | 精炼钢x3 + 金币1000 / Refined Steel x3 + 1000 gold | 冰封湖采集+商人 / Frozen Lake mining + merchant |
-| +4 | 精炼钢x5 + 金币2000 / Refined Steel x5 + 2000 gold | 冰封湖+锈蚀工厂 / Frozen Lake + Rusted Factory |
-| +5 | 核心水晶x1 + 金币5000 / Core Crystal x1 + 5000 gold | 区域Boss掉落 / Zone boss drop |
+| 等级 / Level | +0至+1 | +1至+2 | +2至+3 | +3至+4 | +4至+5 |
+|---|---|---|---|---|---|
+| 金币 / Gold | 500 | 1500 | 4000 | 10000 | 25000 |
+| 基础材料 / Base Mat | 5 | 10 | 15 | 20 | 30 |
+| 特殊材料 / Special Mat | 1 | 2 | 4 | 8 | 15 |
 
-### 武器蓝图获取 / Blueprint Acquisition
-
-| 武器蓝图 / Blueprint | 角色 / Character | 获取位置 / Location |
-|:----:|:----:|:----|
-| **终末巨剑 / Final Greatsword** | 古斯塔夫 | 画师之塔·3F隐藏房间 / Painter's Tower 3F hidden room |
-| **生命法杖 / Life Staff** | 玛艾勒 | 白崖镇·教堂支线奖励 / White Cliff church quest reward |
-| **永冻法书 / Permafrost** | 露娜 | 冰封湖·湖底神殿Boss掉落 / Frozen Lake temple boss drop |
-| **暗影匕首 / Shadow Daggers** | 泽农 | 灰烬森林·隐藏洞穴宝箱 / Ashen Forest hidden cave chest |
-| **巨像扳手 / Colossus Wrench** | 维克多 | 锈蚀工厂·工程师支线奖励 / Rusted Factory engineer quest |
-| **穿心弓 / Heartpiercer Bow** | 艾莉丝 | 画师之塔·2F油画谜题宝箱 / Painter's Tower 2F painting puzzle chest |
-
-**武器升级优先顺序**: 主DPS角色武器(古斯塔夫/艾莉丝/露娜)→坦克武器(古斯塔夫)→治疗法杖(玛艾勒)→副输出 / **Weapon upgrade priority**: Main DPS > Tank > Healer > Sub DPS.
-
----
+**升级策略**: 武器优先升+3(性价比最高/材料要求低)。+4和+5提升大但材料昂贵——终局再升。优先升级主输出角色的武器——团队的DPS上限决定Boss战难度 / **Strategy**: +3 first (best value/mat cost). +4/+5 big boost but expensive — save for endgame. Upgrade main DPS weapon first — party DPS ceiling determines boss difficulty.
 
 ## 防具系统 / Armor System
 
-防具分为头盔、胸甲、手套、靴子四个部位——每个部位可以强化提升效果。不同套装提供额外的套装效果 / Armor has 4 slots — Helmet, Chest, Gloves, Boots — each can be upgraded. Set bonuses are available for wearing matching pieces.
+| 槽位 / Slot | 属性 / Stats | 推荐优先级 / Priority |
+|---|---|---|
+| 头盔 / Helmet | 防御+智力+精神 / DEF + INT + SPR | 中 — 智力角色优先 / INT chars first |
+| 胸甲 / Chest | 防御+力量+体质 / DEF + STR + CON | 高 — 所有角色核心防御件 / Core defense for all |
+| 手套 / Gloves | 防御+敏捷+攻击 / DEF + DEX + ATK | 中 — 输出角色优先 / DPS first |
+| 靴子 / Boots | 防御+速度+闪避 / DEF + SPD + Dodge | 高 — 速度影响行动顺序 / SPD affects turn order |
+| 披风 / Cape | 防御+元素抗性 / DEF + Elemental Res | 低 — 元素抗性特定场合 / Situational |
 
-### 防具基础 / Armor Basics
+### 防具品质对比 / Armor Quality Comparison
 
-| 部位 / Slot | 基础效果 / Base Effect | 强化效果 / Upgrade Effect | 主要来源 / Source |
-|:----:|:------|:------|:----:|
-| **头盔 / Helmet** | +HP | +HP+异常抗性 / +HP + status resist | 商人购买/Merchant |
-| **胸甲 / Chest** | +物理防御+HP / +Phys DEF +HP | +DEF+全抗性 / +DEF +all resists | 宝箱/Boss掉落/Chest+Boss |
-| **手套 / Gloves** | +攻击力+暴击率 / +ATK +Crit rate | +ATK+暴击伤害 / +ATK +crit dmg | 支线奖励/Quest reward |
-| **靴子 / Boots** | +速度+闪避率 / +SPD +Evasion | +SPD+行动顺序加成 / +SPD +turn order bonus | 隐藏区域/Hidden zones |
-
-### 防具套装 / Armor Sets
-
-| 套装 / Set | 2件套效果 / 2-Piece | 4件套效果 / 4-Piece | 获取 / Location |
-|:----:|:------|:------|:----|
-| **白崖旅者 / White Cliff Traveler** | HP+15% | 战斗外每3秒回复2%HP / Out-of-combat regen | 白崖镇商人 + 宝箱 / Merchant + chests |
-| **灰烬守卫 / Ash Guardian** | 火抗+30% | 被火系攻击时回复5%HP / Fire atk heals 5% HP | 灰烬森林拾取 / Ashen Forest loot |
-| **冰原猎手 / Frost Hunter** | 冰抗+30% | 冰系技能伤害+25% / Ice skill dmg +25% | 冰封湖宝箱+Boss / Frozen Lake chests+boss |
-| **机械之心 / Mechanical Heart** | 全抗性+15% | 每回合自动回复5%HP / Auto-heal 5% HP per turn | 锈蚀工厂隐藏区 / Rusted Factory hidden |
-| **画师之袍 / Painter's Robe** | 元素连携伤害+20% | 终极技充能速度+30% / Ultimate charge +30% | 画师之塔各层 / Painter's Tower floors |
-
-| 部位 / Slot | 基础效果 / Base Effect | 强化效果 / Upgrade Effect |
-|:----:|:------|:------|
-| **头盔 / Helmet** | +HP | +HP+异常抗性 / +HP + status resist |
-| **胸甲 / Chest** | +物理防御+HP / +Phys DEF +HP | +DEF+全抗性 / +DEF +all resists |
-| **手套 / Gloves** | +攻击力+暴击率 / +ATK +Crit rate | +ATK+暴击伤害 / +ATK +crit dmg |
-| **靴子 / Boots** | +速度+闪避率 / +SPD +Evasion | +SPD+行动顺序加成 / +SPD +turn order bonus |
-
----
+| 品质 / Quality | 基础防御 / Base DEF | 附加属性数 / Affix Count | 强化等级上限 / Max Upgrade |
+|---|---|---|---|
+| 白色 / Common | 10-15 | 0 | +2 |
+| 绿色 / Uncommon | 16-22 | 1 | +3 |
+| 蓝色 / Rare | 24-32 | 2 | +4 |
+| 紫色 / Epic | 34-44 | 3 | +5 |
+| 橙色 / Legendary | 46-58 | 4 | +5 |
 
 ## 遗物系统 / Relic System
 
-遗物是33号远征队中最强大的装备类型——每个角色可以装备1个遗物。遗物通常在隐藏宝箱或Boss战中获得 / Relics are the most powerful equipment type in Expedition 33 — each character equips 1 relic. Relics are found in hidden chests or boss fights.
+遗物是特殊的被动装备——每个角色最多装备2个。遗物提供强力效果——是Build构建的核心组成部分。遗物通过探索、Boss掉落和任务获得 / Relics are special passive equipment — each character equips up to 2. Relics provide powerful effects — core to build crafting. Obtained via exploration, boss drops, and quests.
 
-| 遗物 / Relic | 效果 / Effect | 获取 / Location |
-|:----:|:------|:----:|
-| **时光沙漏 / Hourglass** | 每回合AP上限+1 / +1 AP cap per turn | 灰烬森林·隐藏洞穴 / Ashen Forest hidden cave |
-| **勇者之证 / Hero's Proof** | 全队ATK+20% / Party ATK +20% | 冰封湖·湖底神殿Boss / Frozen Lake temple boss |
-| **治愈之泉 / Healing Spring** | 战后全队回复15%HP / Recover 15% HP post-battle | 白崖镇·教堂地下室 / White Cliff church basement |
-| **水手护符 / Sailor's Charm** | 水上移动速度+50%+可在水面战斗 / Water move +50% + fight on water | 白崖镇·码头隐藏洞穴 / White Cliff dock secret cave |
-| **画师之笔 / Painter's Brush** | 全队元素连携伤害x1.5 / Party elemental combo dmg x1.5 | 画师之塔·隐藏画室 / Painter's Tower hidden studio |
-| **不灭之灯 / Eternal Lantern** | 全队每回合自动回复10%血量 / Party auto-heal 10% HP each turn | 锈蚀工厂·隐藏区域 / Rusted Factory hidden zone |
-| **远征队徽章 / Expedition Badge** | 全队终极技充能速度x2 / Party ultimate charge speed x2 | 画师之塔·石碑支线 / Painter's Tower monument quest |
+### 顶级遗物推荐 / Top Relic Recommendations
 
----
+| 遗物 / Relic | 效果 / Effect | 获取 / Source | 适用角色 / Best For |
+|---|---|---|---|
+| 角斗士之证 / Gladiator's Crest | 全属性+5 / All stats +5 | 地下竞技场 / Underground Arena | 全角色通用 / Universal |
+| 时之沙漏 / Time Hourglass | 战斗外时间停止10秒 / Stop time 10 sec out of combat | 时空迷路者任务 / Time Lost Wanderer | 探索特化 / Exploration |
+| 幸运金币 / Lucky Coin | 掉落率+15% / Drop rate +15% | 光辉之城井中反射 / City well reflection | 刷装备用 / Farming |
+| 魂之护符 / Soul Amulet | 战斗开始获得护盾 / Start combat with shield | 魂之井(5次使用) / Soul Well (5 uses) | 坦克 / Tank |
+| 深渊之翼 / Abyss Wings | 额外跳跃+1, 掉落伤害减半 / +1 jump, half fall dmg | 深渊画廊隐藏房间 / Gallery hidden room | 探索特化 / Exploration |
+| 牺牲之刃 / Sacrificial Blade | 攻击消耗2%HP但伤害+40% / 2% HP per attack, +40% dmg | 魂之井底(3+次) / Soul Well bottom | 输出角色 / DPS |
+| 光之核心 / Light Core | 光系伤害+30% / Light dmg +30% | 20光之碎片全收集 / All 20 Fragments | 主角专属 / Protagonist |
+| 机械之心 / Mech Heart | 召唤物+50%攻速+30%伤害 / Summon ATK SPD +50%, DMG +30% | 隐藏机械工厂制作 / Hidden Mech Factory | 莉莎专属 / Lisa |
 
-## 消耗品指南 / Consumables Guide
+## 消耗品系统 / Consumables
 
-| 物品 / Item | 效果 / Effect | 推荐使用时机 / Use |
-|:----:|:------|:----:|
-| **回复药水 / HP Potion** | 单体回复HPx2.0 / Single heal x2.0 | Boss战中血量低于30%时 / When HP &lt;30% in boss fights |
-| **全回复药水 / Mega Potion** | 全体回复HPx1.5 / Party heal x1.5 | Boss AOE后全队残血时 / After boss AoE party low |
-| **法力药水 / Mana Potion** | 回复法力50点 / Restore 50 mana | 法师法力不足时 / When mage is low on mana |
-| **攻击Buff药 / ATK Potion** | 全队ATK+30%持续2回合 / Party ATK +30% for 2 turns | Boss战爆发回合前用 / Before boss burst phase |
-| **防御Buff药 / DEF Potion** | 全队DEF+50%持续2回合 / Party DEF +50% for 2 turns | Boss大招前使用 / Before boss ultimate |
-| **复活羽毛 / Revive Feather** | 复活单体+50%HP / Revive single +50% HP | 关键角色阵亡时——不要浪费 / When key character dies — don't waste |
-| **油弹 / Oil Shot** | 给敌人上"油"状态(可被火引爆) / Apply "Oil" status (Fire→Explosion) | 维克多的技能——配合火系角色 / Victor's skill — pair with fire character |
+| 类型 / Type | 效果 / Effect | 费用 / Cost | 推荐携带 / Carry |
+|---|---|---|---|
+| 生命药水 / Health Potion | 单体回复30%HP / Single 30% HP | 100金币 / Gold | 10+ |
+| 全体药水 / Party Potion | 全队回复20%HP / Party 20% HP | 500金币 / Gold | 5+ |
+| 能量药水 / Energy Potion | 单体回复2AP / Single 2 AP | 800金币 / Gold | 3+ |
+| 解毒剂 / Antidote | 解除中毒 / Cure Poison | 150金币 / Gold | 3+ |
+| 燃烧药剂 / Fire Flask | 对敌全体火焰伤害 / AoE fire dmg | 400金币 / Gold | 2+ |
+| 力量之种 / Strength Seed | 单体攻击力+50% 3回合 / ATK +50% 3T | 1000金币 / Gold | Boss战带2+ |
+| 守护之种 / Guard Seed | 单体防御力+50% 3回合 / DEF +50% 3T | 1000金币 / Gold | Boss战带2+ |
 
----
+## 宝石镶嵌系统 / Gem Socket System
 
-## 装备搭配推荐 / Gear Build Recommendations
+装备上的插槽可以镶嵌宝石——宝石提供额外属性。宝石有等级(1-5)——通过合成提升。**合成公式**: 3颗同级宝石=1颗上级宝石。**推荐宝石**: 武器插红色(攻击力)、防具插绿色(防御力+生命)、特殊插槽插黄色(全属性)。Boss战前可以免费替换宝石——根据Boss的弱点灵活调整 / Gear sockets accept gems — gems provide bonus stats. Gem levels 1-5 — upgrade via crafting. **Recipe**: 3 same-level gems = 1 higher-level gem. **Recommended**: Weapon = Red (ATK), Armor = Green (DEF+HP), Special = Yellow (all stats). Free gem swapping before boss fights — adjust for boss weaknesses.
 
-| 角色 / Character | 推荐武器 / Weapon | 推荐遗物 / Relic | 推荐属性 / Focus |
-|:----:|:----|:----|:----|
-| **古斯塔夫** | 终末巨剑(Final Greatsword) | 勇者之证(ATK+20%) | 力量+暴击 / STR+Crit |
-| **玛艾勒** | 生命法杖(Life Staff) | 治愈之泉(战后回血) | 智力+体力 / INT+VIT |
-| **露娜** | 永冻法书(Permafrost Spellbook) | 画师之笔(元素连携x1.5) | 智力+速度 / INT+SPD |
-| **泽农** | 暗影匕首(Shadow Daggers) | 时光沙漏(AP上限+1) | 敏捷+暴击伤害 / DEX+Crit dmg |
-| **维克多** | 巨像扳手(Colossus Wrench) | 不灭之灯(自动回血) | 力量+体力 / STR+VIT |
-| **艾莉丝** | 穿心弓(Heartpiercer Bow) | 远征队徽章(终极充能x2) | 敏捷+暴击 / DEX+Crit |
+## 制作系统 / Crafting System
 
----
+在各个区域的铁匠铺或制作站可以制作装备。**制作配方**: 通过探索找到设计图解锁。材料分为: 基础材料(金属锭/木材/布料——击杀怪物和开箱获得)、稀有材料(从精英和Boss掉落)、特殊材料(隐藏区域和任务奖励)。**制作推荐**: 优先制作武器(数值提升最大)——然后制作胸甲(防御核心)——最后制作饰品 / Craft gear at blacksmiths or crafting stations across zones. **Recipes**: Unlocked via exploration (blueprints). Materials: **Basic** (Ingots/Wood/Cloth — monster drops + chests), **Rare** (elite/boss drops), **Special** (hidden zones + quests). **Priority**: Craft weapon first (biggest stat gain) → chest armor (core defense) → accessories last.
 
-标签/Tags: 33号远征队, Expedition 33, 装备, Items, 遗物, Relics, 攻略, Guide
+## 遗物全收集 / All Relic Locations
+
+遗物是33号远征队中的特殊装备——提供独特被动效果——每个角色最多装备2个 / Relics are special gear providing unique passives — each character equips up to 2.
+
+| 遗物 / Relic | 效果 / Effect | 位置 / Location | 获取条件 / Requirement |
+|---|---|---|---|
+| 远古之心 / Ancient Heart | 每回合自动回复5%HP / 5% HP regen per turn | 第一章废墟地下 / Ch.1 ruins underground | 击败隐藏精英——废墟底部 / Defeat hidden elite — ruin bottom |
+| 龙之眼 / Dragon Eye | 暴击率+15%——暴击伤害+30% / CR+15% — CD+30% | 第二章火山洞窟 / Ch.2 volcano cave | 在熔岩池中找到隐藏路径——宝箱 / Hidden path in lava pool — chest |
+| 时空碎片 / Time Shard | 行动顺序+20%——AP上限+2 / Turn order +20% — AP cap +2 | 第三章图书馆密室 / Ch.3 library secret room | 完成学者的解谜——密码在NPC对话中 / Complete Scholar puzzle — code from NPC dialogue |
+| 暗影斗篷 / Shadow Cloak | 受到攻击时20%几率完全闪避 / 20% chance to fully dodge attacks | 第三章暗影森林 / Ch.3 shadow forest | 击败森林守护者——约35级精英 / Defeat forest guardian — ~lvl 35 elite |
+| 生命之源 / Life Source | 最大HP+30%——受到治疗效果+20% / Max HP+30% — healing received +20% | 第四章生命神殿 / Ch.4 life temple | 完成神殿试炼——击败守护Boss / Complete temple trial — defeat guardian |
+| 毁灭者的遗物 / Destroyer's Relic | 攻击时附带5%目标当前HP的真实伤害 / Attacks deal 5% current HP as true damage | 深渊裂隙10层 / Abyss Rift F10 | 通关深渊裂隙10层 / Clear Abyss Rift F10 |
+| 冠军徽记 / Champion's Mark | 击败敌人后恢复20%HP和10%AP / Restore 20%HP + 10%AP on kill | 竞技场冠军奖励 / Arena champion reward | 击败竞技场第10层冠军 / Defeat arena floor 10 champion |
+| 永恒之火 / Eternal Flame | 火属性伤害+30%——火属性攻击附带燃烧 / Fire dmg +30% — fire attacks cause burn | 火山巨像掉落 / Volcano Colossus drop | 击败火山巨像——第二章主线Boss / Defeat Volcano Colossus — Ch.2 story boss |
+| 深海之泪 / Deep Sea Tear | 冰属性伤害+30%——冰属性攻击概率冰冻 / Ice dmg +30% — ice attacks freeze chance | 冰霜巨像掉落 / Frost Colossus drop | 击败冰霜巨像——第三章主线Boss / Defeat Frost Colossus — Ch.3 story boss |
+| 雷霆之心 / Thunder Heart | 雷属性伤害+30%——雷属性攻击连锁额外目标 / Lightning dmg+30% — chain to extra target | 战争巨像掉落 / War Colossus drop | 击败战争巨像——第一章主线Boss / Defeat War Colossus — Ch.1 story boss |
+
+## 装备强化推荐 / Equipment Upgrade Priority
+
+| 强化等级 / Level | 材料消耗 / Materials | 武器伤害提升 / Weapon Dmg | 防具防御提升 / Armor DEF | 推荐优先度 / Priority |
+|---|---|---|---|---|
+| +0→+1 | 基础锭×5 / Basic ingot×5 | +15% | +10% | ★★★★★——全员武器+1 |
+| +1→+2 | 基础锭×10 + 中级锭×3 / Basic×10 + Mid×3 | +20% | +15% | ★★★★☆——主力DPS+2 |
+| +2→+3 | 中级锭×8 + 高级锭×2 / Mid×8 + High×2 | +25% | +20% | ★★★☆☆——通关后做 |
+| +3→+4 | 高级锭×5 + 传说锭×1 / High×5 + Legendary×1 | +30% | +25% | ★★☆☆☆——终局刷材料 |
+| +4→+5 | 传说锭×3 + 远古核心×1 / Legendary×3 + Ancient×1 | +40% | +30% | ★☆☆☆☆——极限挑战 |
+
+**材料刷取**: 基础锭→普通怪物掉落和商店购买。中级锭→精英怪物掉落。高级锭→Boss掉落和深渊裂隙宝箱。传说锭→竞技场高难度奖励和终局Boss。远古核心→深渊裂隙15层Boss / **Farming**: Basic ingots — normal monsters + shop. Mid ingots — elites. High ingots — bosses + Abyss Rift chests. Legendary ingots — arena high difficulty + endgame bosses. Ancient Cores — Abyss Rift F15 boss.
+
+**宝石属性对比**: 中型火焰宝石(+12%火攻+灼烧) ≈ 中型冰霜宝石(+12%冰攻+减速)。大型宝石比中型宝石翻倍(+25% vs +12%)。传说宝石(+45%)是最大提升——1颗传说宝石≈4颗中型宝石。**推荐每个DPS角色至少装备1颗传说宝石——优先做火和冰——雷宝石适用面稍窄 / **Gem comparison**: Medium Fire (+12% fire+burn) ≈ Medium Ice (+12% ice+slow). Large gem doubles medium (+25% vs +12%). Legendary (+45%) is biggest boost — 1 Legendary ≈ 4 Medium. **Recommend at least 1 Legendary per DPS — prioritize fire+ice — lightning narrower use.**
+
+## 全角色专属武器列表 / All Character Exclusive Weapons
+
+| 角色 / Char | 武器名称 / Name | 基础攻击 / Base ATK | 特效 / Effect | 获取方式 / Source |
+|---|---|---|---|---|
+| 主角 / Protag | 光之誓言 / Light Oath | 85 | 防御时队友获得20%护盾 / Guard gives allies 20% shield | 第四章主线奖励 / Ch.4 main reward |
+| 主角 / Protag | 龙鳞盾剑 / Dragon Scale | 100 | 受到伤害时30%反击——附带灼烧 / 30% counter on hit — Burn | 远古之龙掉落(隐藏Boss) / Ancient Dragon drop |
+| 艾伦 / Allen | 暗影之刃 / Shadow Blade | 95 | 背后攻击必定暴击——暴击伤害+25% / Back attacks always crit — CRIT DMG+25% | 第三章暗影领主掉落 / Ch.3 Shadow Lord drop |
+| 艾伦 / Allen | 幻影之匕 / Phantom Dagger | 110 | 完美QTE时额外造成一次幻影攻击(50%伤害)/ Perfect QTE = extra phantom hit (50% dmg) | 幻影之主掉落(隐藏) / Phantom Lord drop |
+| 塞拉 / Sera | 元素之杖 / Element Staff | 80 | 全属性伤害+20%——每次施法有30%免费再施法 / All element dmg+20% — 30% free recast | 第三章学院——图书馆书架后 / Ch.3 Academy — behind library shelf |
+| 塞拉 / Sera | 混沌法杖 / Chaos Staff | 105 | 元素反应伤害+50%——暴击率+10% / Element reaction dmg+50% — CR+10% | 竞技场5层奖励 / Arena F5 reward |
+| 维克多 / Victor | 时之杖 / Time Staff | 70 | 治疗量+30%——AP恢复速度+25% / Heal+30% — AP regen+25% | 第二章支线"时间之谜" / Ch.2 side quest "Time Mystery" |
+| 维克多 / Victor | 生命之杖 / Life Staff | 80 | 复活技能不消耗AP——群体治疗+1目标 / Revive costs 0 AP — mass heal +1 target | 第四章生命神殿试炼奖励 / Ch.4 Life Temple trial |
+| 莉莎 / Lisa | 灵魂之铃 / Soul Bell | 75 | 召唤物伤害+40%——召唤物HP+35% / Summon dmg+40% — summon HP+35% | 第二章火山隐藏洞穴 / Ch.2 Volcano hidden cave |
+| 莉莎 / Lisa | 远古召唤器 / Ancient Summoner | 95 | 可同时召唤3个元素——召唤物附带对应属性AOE / Can summon 3 elements at once — summon AoE | 终局深渊裂隙18层奖励 / Endgame Abyss Rift F18 |
+
+## 全遗物套装效果 / All Relic Set Bonuses
+
+| 套装 / Set | 2件套效果 / 2pc Bonus | 3件套效果 / 3pc Bonus | 推荐角色 / Recommended |
+|---|---|---|---|
+| 龙之套装 / Dragon Set | 火属性伤害+20% / Fire dmg+20% | 火属性技能暴击率+15%——灼烧触发率+30% / Fire CR+15% — Burn chance+30% | 塞拉(火系Build) / Sera (fire build) |
+| 永恒套装 / Eternal Set | 最大HP+25% / Max HP+25% | 被治疗时额外恢复15%HP——受到伤害减少10% / Heal received+15% — DMG taken -10% | 主角、古斯塔夫(坦克) / Protag, Gustave (tank) |
+| 雷霆套装 / Thunder Set | 雷属性伤害+20% / Lightning dmg+20% | 雷属性攻击有25%连锁额外目标——麻痹触发率+30% / 25% chain extra target — Paralyze+30% | 塞拉(雷系)、莉莎(雷召唤) / Sera (lightning), Lisa |
+| 暗影套装 / Shadow Set | 暗属性伤害+25% / Dark dmg+25% | 暗属性攻击恢复造成伤害的15%HP——暴击率+10% / Dark dmg heals 15% — CR+10% | 艾伦(暗影Build) / Allen (shadow build) |
+| 冰霜套装 / Frost Set | 冰属性伤害+20% / Ice dmg+20% | 冰属性攻击减速效果延长2回合——冻结触发率+20% / Ice slow +2 turns — Freeze chance+20% | 塞拉(冰系控场) / Sera (ice control) |
+| 生命套装 / Life Set | 治疗效果+25% / Heal+25% | 治疗时附加护盾(治疗量30%)——复活后目标获得50%HP / Heal grants shield (30% of heal) — revive target gets 50% HP | 维克多(治疗) / Victor (healer) |
+
+标签/Tags: 33号远征队, Expedition 33, Clair Obscur, 装备, Items, 武器, Weapons, 防具, Armor, 遗物, Relics, 宝石, Gems, 制作, Crafting

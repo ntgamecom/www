@@ -1,0 +1,185 @@
+---
+title: 战斗系统 / Combat System
+description: 死亡细胞战斗系统详解——武器、技能、翻滚与盾反机制 / Dead Cells combat system — weapons, skills, dodge roll, and parry mechanics
+---
+
+# 战斗系统 / Combat System
+
+死亡细胞的战斗核心是快节奏的攻防转换——翻滚无敌帧、盾牌弹反、武器连击和技能组合构成了这个游戏的战斗体系。掌握这些基础是所有Build的前提 / Dead Cells' combat core is fast-paced offense-defense transitions — dodge roll i-frames, shield parries, weapon combos, and skill synergies form the combat system. Mastering these fundamentals is the prerequisite for every build.
+
+---
+
+## 翻滚与闪避 / Dodge Roll
+
+| 机制 / Mechanic | 说明 / Description |
+|---|---|
+| **无敌帧 / I-Frames** | 翻滚过程中全程无敌——可以穿过敌人的攻击和弹幕 / Fully invincible during roll — can pass through enemy attacks and projectiles |
+| **冷却 / Cooldown** | 翻滚后约0.5秒冷却——不能连续翻滚 / ~0.5 second cooldown after roll — cannot chain roll |
+| **使用时机 / Timing** | 在敌人攻击前瞬间翻滚可以到敌人背后——背刺造成额外伤害 / Roll just before enemy attack to get behind them — backstab deals bonus damage |
+| **空中翻滚 / Air Roll** | 在空中也可以翻滚一次——用来调整落点和躲避空中攻击 / Can roll once in mid-air — reposition and dodge aerial attacks |
+| **翻滚取消 / Roll Cancel** | 翻滚可以取消大部分攻击后摇——攻击→翻滚→攻击的节奏是进阶基础 / Roll cancels most attack recovery — attack→roll→attack is the foundational advanced rhythm |
+
+**翻滚技巧**: 不要向后退翻滚——向侧面或向敌人背后翻滚更有效。后退翻滚往往会被敌人的追击打中 / **Roll tip**: Don't roll backward — roll sideways or behind enemies. Backward rolling often gets caught by enemy chase attacks.
+
+---
+
+## 盾牌与弹反 / Shields & Parry
+
+| 盾牌类型 / Shield Type | 特点 / Features |
+|---|---|
+| **基础盾 / Basic Shield** | 标准弹反窗口——按举盾瞬间弹反。成功弹反眩晕敌人2秒 / Standard parry window — press block at impact moment. Successful parry stuns enemy for 2s |
+| **突击盾 / Assault Shield** | 举盾时会向前冲刺——可以穿怪。弹反窗口略短 / Charges forward when blocking — can pass through enemies. Slightly shorter parry window |
+| **惩罚盾 / Punishment Shield** | 弹反成功时对周围敌人造成伤害——配合群体敌人效果极佳 / Deals damage to nearby enemies on parry — excellent against groups |
+| **雷盾 / Thunder Shield** | 弹反后召唤闪电链——连锁伤害 / Summons lightning chain after parry — chain damage |
+| **血盾 / Blood Shield** | 弹反造成流血效果——配合流血Build核心 / Inflicts bleed on parry — core for bleed builds |
+
+**弹反收益**:
+| 收益 / Benefit | 说明 / Description |
+|---|---|
+| **眩晕敌人** | 弹反后敌人眩晕2秒——可以安全输出或绕后 / Enemy stunned for 2s — safe DPS or reposition |
+| **免伤** | 弹反完全抵消伤害——比翻滚更安全(翻滚后仍然在攻击范围内) / Completely negates damage — safer than roll (roll may still be in attack path) |
+| **触发效果** | 某些装备和变异有"弹反后"触发效果——如弹反后+伤害、+护盾 / Some gear and mutations have "on parry" effects — +damage, +shield, etc |
+| **格挡投射物** | 弹反可以反弹远程攻击回敌人——造成伤害 / Parry reflects projectiles back at enemies — deals damage |
+
+---
+
+## 武器类型 / Weapon Types
+
+### 近战武器 / Melee Weapons
+
+| 类型 / Type | 速度 / Speed | 范围 / Range | 特点 / Feature |
+|---|---|---|---|
+| **剑 / Sword** | 中等 / Medium | 中等 / Medium | 平衡型——大多数剑类武器连击3-4下 / Balanced — most swords have 3-4 hit combos |
+| **匕首 / Dagger** | 极快 / Very Fast | 短 / Short | 攻速极快——背刺有额外伤害加成 / Very fast attack speed — bonus backstab damage |
+| **巨剑 / Greatsword** | 极慢 / Very Slow | 远 / Long | 高伤害但攻速慢——最后一段连击通常有击退或AOE / High damage, slow speed — final combo hit often has knockback or AOE |
+| **长矛 / Spear** | 慢 / Slow | 极远 / Very Long | 安全距离输出——可以攻击到屏幕外的敌人 / Safe distance DPS — hits off-screen enemies |
+| **锤 / Hammer** | 极慢 / Very Slow | 短 / Short | 最高单发伤害——通常有蓄力机制 / Highest single-hit damage — usually has charge mechanic |
+| **鞭 / Whip** | 快 / Fast | 远 / Long | 可以绕过盾牌直接攻击——对举盾敌人特攻 / Bypasses shields — anti-shield specialty |
+| **爪子 / Claw** | 极快 / Very Fast | 极短 / Very Short | 攻速最快——配合状态效果(流血/毒)效率最高 / Fastest attack speed — best for status effects (bleed/poison) |
+
+### 远程武器 / Ranged Weapons
+
+| 类型 / Type | 弹药 / Ammo | 特点 / Feature |
+|---|---|---|
+| **弓 / Bow** | 无限 / Infinite | 标准远程——按箭数连射 / Standard ranged — fires by arrow count |
+| **弩 / Crossbow** | 有限 / Limited | 高伤害但需要装填——通常是蓄力机制 / High damage, needs reload — usually charge mechanic |
+| **投掷武器 / Thrown** | 无限 / Infinite | 短程远程——通常有特殊效果(如电击、冰冻) / Short-range ranged — usually has special effects (shock, freeze) |
+| **吹箭 / Blowgun** | 1发 / 1 Shot | 单发高伤害——配合毒/流血效果 / Single shot high damage — pairs with poison/bleed |
+
+---
+
+## 技能系统 / Skill System
+
+### 技能类型 / Skill Types
+
+| 技能类型 / Type | 说明 / Description |
+|---|---|
+| **手雷 / Grenade** | 范围爆炸伤害——冷却中等。常见有集束手雷、冰冻手雷、闪光弹 / AOE blast damage — medium cooldown. Cluster Grenade, Ice Grenade, Flashbang |
+| **炮塔 / Turret** | 部署自动攻击炮塔——持续一段时间的定点输出 / Deploy auto-attack turret — stationary DPS for duration |
+| **陷阱 / Trap** | 放置陷阱——敌人踩中触发效果(伤害/减速/流血) / Place trap — triggered on enemy contact (damage/slow/bleed) |
+| **光环 / Aura** | 角色周围持续光环——对近身的敌人造成效果 / Persistent aura around character — effects on nearby enemies |
+| **放置物 / Deployable** | 召唤一个辅助单位——如捕兽夹、蘑菇男孩 / Summon an assisting unit — Bear Trap, Mushroom Boy |
+| **位移 / Mobility** | 位移技能——如猛冲、瞬移、钩爪 / Movement skills — Phaser, Lightning Bolt, Hook |
+
+---
+
+## 战斗连招 / Combat Combos
+
+| 连招 / Combo | 操作 / Input | 效果 / Effect |
+|---|---|---|
+| **基础连击** | 左键×3-4 | 标准武器连击——根据不同武器有不同动作 / Standard weapon combo — varies by weapon |
+| **翻滚攻击** | 翻滚+攻击 | 翻滚后立即攻击——取消后摇快速输出 / Roll-cancel into attack — quick DPS |
+| **跳跃攻击** | 跳跃+下+攻击 | 从空中下砸——高削韧 / Aerial slam — high stagger |
+| **落地攻击** | 落地瞬间攻击 | 从高处落地时攻击——额外伤害 / Attack on landing from height — bonus damage |
+| **弹反连击** | 举盾(弹反后)+攻击 | 弹反眩晕敌人后立即输出——最安全也最有效的输出方式 / Parry then attack — safest and most efficient DPS |
+
+**战斗核心原则**: 跑打结合——不要站着和敌人对砍。死亡细胞的敌人都非常敏捷——翻滚→输出→翻滚的节奏要始终保持 / **Core combat principle**: Hit and run — never trade blows standing still. Dead Cells enemies are highly aggressive — maintain a roll → attack → roll rhythm at all times.
+
+---
+
+## 药瓶与治疗 / Flask & Healing
+
+| 治疗方式 / Method | 说明 / Description |
+|---|---|
+| **药瓶 / Flask** | 初始4次使用——每次恢复50%生命。可以在休息室补充(最多4次) / Start with 4 charges — 50% heal each. Refill at rest stops (max 4) |
+| **食物 / Food** | 关卡中随机掉落——绿色食物恢复15%生命 / Random drops in levels — green food heals 15% HP |
+| **变异治疗 / Mutation Heal** | 特定变异提供击杀回血——如"杀戮天性"击杀回血 / Certain mutations give heal on kill — like "Kill Rhythm" |
+| **商店购买** | 关卡中商店可以购买食物——通常$1000-2000 / Shop food costs $1000-2000 |
+| **药瓶碎片** | 偶尔可以找到药瓶碎片——收集3个增加1次药瓶使用次数 / Rare flask fragments — collect 3 for +1 flask charge |
+
+---
+
+## 战斗环境 / Combat Environment
+
+| 环境元素 / Element | 效果 / Effect |
+|---|---|
+| **陷阱 / Traps** | 关卡中的尖刺、锯刃、箭矢——碰到会受伤。可以用翻滚躲避 / Spikes, sawblades, arrows — damage on contact. Dodgeable with roll |
+| **可破坏墙壁 / Breakable Walls** | 某些墙壁可以用武器打破——隐藏房间和奖励 / Some walls breakable with weapons — secret rooms and rewards |
+| **跳台 / Platforms** | 利用高度差可以躲避地面攻击——远程敌人会被平台卡视角 / Height advantage dodges ground attacks — ranged enemies blocked by platforms |
+| **水域 / Water** | 水中移动速度降低——某些敌人(如飞行类)不会进入水中 / Reduced movement speed in water — some enemies (flyers) don't enter |
+
+---
+
+## 敌人类型与应对 / Enemy Types & Counters
+
+### 基础敌人 / Basic Enemies
+
+| 敌人 / Enemy | 威胁等级 / Threat | 应对方法 / Counter |
+|---|---|---|
+| **僵尸 / Zombie** | 低 / Low | 最基础敌人——移动慢，攻击前摇长。直接连击即可 / Basic enemy — slow, telegraphed attacks. Just combo it |
+| **盾兵 / Shieldbearer** | 中 / Medium | 正面举盾免疫伤害——绕后或使用鞭子/魔法攻击。翻滚到背后 / Shield blocks frontal damage — flank or use whip/magic. Roll behind |
+| **弓箭手 / Archer** | 中 / Medium | 远程射击——弹反弓箭反弹回去。近身后脆弱 / Ranged archer — parry arrows back. Weak in melee |
+| **炸弹兵 / Bomber** | 中高 / Medium-High | 投掷炸弹+自爆——炸弹可以用翻滚闪过或踢回去。保持距离 / Throws bombs + self-destruct — dodge roll or kick bombs back. Keep distance |
+| **刺客 / Assassin** | 高 / High | 隐身+背刺——会在你背后出现。保持移动，攻击前瞬间翻滚 / Invisible + backstab — appears behind you. Keep moving, roll at attack sound |
+
+### 精英敌人 / Elite Enemies
+
+| 精英类型 / Elite Type | 特殊能力 / Ability | 应对 / Counter |
+|---|---|---|
+| **精英大锤 / Elite Golem** | 地面冲击波+3连击 / Ground shockwave + 3-hit combo | 跳跃躲冲击波——翻滚躲连击。弹反最后一下收益最大 / Jump shockwave — roll combo. Parry last hit for best payoff |
+| **精英弓箭手 / Elite Archer** | 快速三连射+后跳 / Quick triple shot + backflip | 举盾弹反——或者近身后连续攻击不给她后跳的机会 / Shield parry — or get close and stunlock |
+| **精英魔法师 / Elite Mage** | 传送+弹幕+召唤 / Teleport + barrage + summon | 弹反弹幕比翻滚更有效——传送到身边时立即翻滚躲避 / Parry barrage > roll — roll immediately when she teleports to you |
+
+---
+
+## 异常状态系统 / Status Effect System
+
+| 状态 / Status | 效果 / Effect | 叠加方式 / Stacking |
+|---|---|---|
+| **流血 / Bleed** | 每秒伤害——叠加层数增加DPS / DPS per second — stacking increases DPS | 最多5层 / Max 5 stacks |
+| **中毒 / Poison** | 持续伤害——比流血伤害更高但持续时间短 / Higher DPS than bleed but shorter duration | 最多10层 / Max 10 stacks |
+| **燃烧 / Burn** | 火焰伤害——对油污的敌人伤害翻倍 / Fire damage — double damage on oiled enemies | 最多5层 / Max 5 stacks |
+| **油污 / Oil** | 本身无伤害——但燃烧触发后伤害x2 / No damage alone — but burn deals 2x on oiled targets | 单一状态 / Single stack |
+| **冰冻 / Freeze** | 定身+无法攻击——被攻击后解除 / Root + disable — breaks on hit | 一次性 / Single proc |
+| **缓慢 / Slow** | 移动+攻击速度-30% / -30% move + attack speed | 单一状态 / Single stack |
+| **致盲 / Blind** | 敌人攻击方向随机化 / Randomizes enemy attack direction | 单一状态 / Single stack |
+
+**状态互动**: 油污+燃烧 = 爆炸伤害(2x)。流血+毒 = 双重DOT。冰冻+任何攻击 = 解冻但眩晕 / **Status interactions**: Oil + Burn = explosive (2x). Bleed + Poison = double DOT. Freeze + hit = unfreeze but stun.
+
+---
+
+## 战斗数值系统 / Combat Stats
+
+| 属性 / Stat | 效果 / Effect | 推荐加点 / Recommended |
+|---|---|---|
+| **暴虐 / Brutality** | 提高红色武器和技能伤害。每点+15%伤害 / Increases red weapon/skill damage. +15% per point | 近战流 / Melee builds |
+| **战术 / Tactics** | 提高紫色武器和技能伤害。每点+15%伤害 / Increases purple weapon/skill damage. +15% per point | 远程/炮塔流 / Ranged/Turret builds |
+| **生存 / Survival** | 提高绿色武器和技能伤害。每点+5%伤害 +5%生命 / Increases green weapon/skill damage. +5% damage +5% HP | 盾牌流 / Shield builds |
+
+**属性分配策略**: 专注单一属性——不要平均分配。死亡细胞的伤害是乘算，单一属性堆高的收益远大于散点 / **Stat allocation**: Focus one stat — don't spread evenly. Damage is multiplicative, stacking one stat yields much higher returns than distributing.
+
+---
+
+## 进阶战斗技巧 / Advanced Combat Techniques
+
+| 技巧 / Technique | 操作 / Input | 效果 / Effect |
+|---|---|---|
+| **重置连击** | 攻击后翻滚再攻击 / Attack → roll → attack | 取消攻击后摇——让原本只能打3下的连击时间内打出4-5下 / Cancel attack recovery — fit 4-5 hits in time normally for 3 |
+| **下落取消** | 从高处跳下时攻击 / Attack while falling | 落地攻击取消下落硬直——直接开始输出 / Cancel landing recovery — start DPS immediately |
+| **弹反取消** | 举盾→弹反成功→立即切换武器攻击 / Parry → switch weapon → attack | 弹反后立即切换武器取消弹反硬直——更快输出 / Cancel parry recovery by switching weapons — faster follow-up |
+| **双绑定** | 同时按两个技能键 / Press both skill buttons | 同时释放两个技能——爆发最大化 / Release both skills simultaneously — burst maximization |
+| **墙壁弹跳** | 向墙壁翻滚→弹墙跳回 / Roll into wall → bounce back | 利用墙壁改变移动方向——迷惑敌人 / Bounce off walls to change direction — confuse enemies |
+
+---
+
+标签/Tags: 死亡细胞, Dead Cells, 战斗, Combat, 翻滚, Roll, 弹反, Parry, 武器, Weapon, 技能, Skill, 攻略, Guide

@@ -11,4 +11,8 @@ export default {
   'characters': '角色攻略 / Character Guide',
   'bosses': 'BOSS与精英 / Bosses & Champions',
   'secrets': '隐藏与挑战 / Secrets & Challenges',
+  'skills': '技巧与操作 / Skills & Techniques',
+  'endgame': '终局内容 / Endgame Content',
+  'builds': '流派构建 / Builds & Synergies',
+  'world': '世界探索 / World Exploration',
 }

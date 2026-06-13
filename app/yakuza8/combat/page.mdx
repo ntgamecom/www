@@ -1,0 +1,109 @@
+---
+title: "战斗系统 — Combat System Guide"
+description: "如龙8战斗系统全解析 — 新动态指令RPG战斗、极技系统、职业切换、场地互动、队伍连携、羁绊系统、合体技、进阶走位技巧"
+---
+
+![战斗系统](/yakuza8/combat/combat.svg)
+
+{/* Yakuza 8 combat system — dynamic command RPG, Extreme Skills, job switching, environment interaction, party combos, Bond system, tag team moves, advanced positioning */}
+
+## 核心战斗机制 / Core Combat Mechanics
+
+如龙8采用**新动态指令RPG**战斗——保留回合制指令但加入了实时走位和QTE要素。战场是3D空间——角色的位置影响攻击范围和伤害。和传统回合制不同——你可以自由移动角色——这和敌人/队友的相对位置直接影响战局 / Yakuza 8 uses a **New Dynamic Command RPG** system — turn-based commands with real-time positioning and QTE elements. Battlefield is 3D space — character positions affect attack range and damage. Unlike traditional turn-based — you can free-move characters — relative positioning with enemies and allies directly affects battle.
+
+### 移动与位置 / Movement & Positioning
+
+战斗中角色可以**自由移动**——移动不消耗行动次数——但走的太远可能会浪费时间。**攻击方向**: 从背后攻击敌人伤害+20%+暴击率+15%——所以尽量绕后。**连携站位**: 两个角色站在相邻位置时——一方使用极技后另一方获得+50%极技槽——保持站位紧凑有巨大收益。**环境互动**: 靠近墙壁/路障/道具时可以使用场景攻击——造成大量额外伤害(约等于2格极技的伤害但0消耗)。**站位禁忌**: 不要站在Boss的AOE红圈内——吃了很痛——特别是终章Boss的蓄力AOE几乎秒杀 / Characters can **free-move** in combat — movement doesn't consume turn — but traveling too far wastes time. **Attack Direction**: Back attacks deal +20% damage +15% crit rate — always reposition behind. **Synergy Positioning**: Adjacent characters — when one uses Extreme Skill, other gains +50% Heat gauge — stay close. **Environment Interaction**: Near walls/barricades/items — use environment attacks for massive bonus damage (~2-bar Extreme for 0 cost). **Positioning taboo**: Don't stand in boss AoE red zones — especially final boss charged AoE — near lethal.
+
+### 极技系统 / Extreme Skill (Heat Action) System
+
+每个职业有3-6个极技——需要消耗**极技槽(Heat Gauge)**。极技槽通过下列方式积累: 普攻命中(+5%)、受击(+10%)、完美QTE(+15%)、队友支援(+5%)。极技是主要的爆发输出手段——每个极技有独特的QTE——成功QTE增加20%伤害+额外效果。**极技等级**: 基础极技(1槽消耗——约3000伤害)、强化极技(2槽消耗——约8000伤害+特效)、觉醒极技(3槽消耗——全屏+特殊效果——约20000伤害)。**极技使用策略**: 平时保留1槽应急——Boss破防时用满3槽觉醒极技爆发 / Each job has 3-6 Extreme Skills — consume **Heat Gauge**. Gain: Hit enemy (+5%), Hit taken (+10%), Perfect QTE (+15%), Ally assist (+5%). Extreme Skills are main burst — each has unique QTE — successful QTE adds +20% damage + bonus effect. **Extreme Levels**: Basic (1 bar, ~3k dmg), Enhanced (2 bars, ~8k dmg + effect), Awakening (3 bars, full-screen + special, ~20k dmg). **Strategy**: Keep 1 bar emergency — burst 3-bar awakening when boss is staggered.
+
+## 职业系统 / Job System
+
+如龙8有**25+职业**——每个角色可以自由转职。职业决定角色的技能、属性和可用装备。转职不消耗任何资源——可以随时切换(战斗中不能切换——需要提前在菜单设置)。**职业等级**: 每个职业有1-30级——升级解锁新技能和被动——推荐每个角色至少练2-3个核心职业到20级以上 / Yakuza 8 has **25+ jobs** — each character can freely change jobs. Job determines skills, stats, and equipment. Job change is free — switch anytime (not in combat — set in menu beforehand). **Job level**: 1-30 per job — leveling unlocks skills and passives — recommend 2-3 core jobs to level 20+ per character.
+
+### 全职业一览 / Job Overview
+
+| 职业 / Job | 类型 / Type | 推荐角色 / Best For | 核心优势 / Core Strength |
+|---|---|---|---|
+| 勇者 / Hero | 物理+治疗 / Phys+Heal | 春日 / Ichiban | 全能——大招全队无敌——最强职业之一 / Versatile — party invincible ult — top tier |
+| 女招待 / Hostess | 治疗+辅助 / Heal+Support | 纱荣子 / Saeko | 最强单体奶+全属性Buff——Boss战核心 / Best single heal + all-stat buff — boss core |
+| 刑警 / Detective | 物理防御 / Phys Tank | 足立 / Adachi | 嘲讽+减伤+破防——坦克标配 / Taunt + DR + stagger — tank standard |
+| 杀手 / Hitman | 物理爆发 / Phys Burst | 韩俊基 / Joon-gi | 单目标最高爆发——单体Boss杀手 / Highest ST burst — single boss killer |
+| 流浪汉 / Homeless | 冰系法师 / Ice Mage | 难波 / Nanba | AOE冰系+减速+控场——清小怪之王 / AoE ice + slow + CC — mob king |
+| 舞者 / Dancer | 辅助+敏捷 / Support+SPD | 纱荣子/难波 | 全场Buff+行动加速——提升全队效率 / Party buff + speed boost — team efficiency |
+| 厨师 / Chef | 物理+火系 / Phys+Fire | 足立/韩俊基 | 火系AOE+燃烧——持续伤害/Dot / Fire AoE + burn — sustained/Dot |
+| 忍者 / Ninja | 敏捷+异常 / SPD+Status | 韩俊基/难波 | 毒+睡眠+隐身——异常状态大师 / Poison+sleep+stealth — status master |
+| 调酒师 / Bartender | 冰系+混乱 / Ice+Confuse | 足立/难波 | 冰系控制+混乱特效——隐藏职业 / Ice control + confuse — hidden job |
+
+### 职业推荐配置 / Recommended Job Setup
+
+**前期(1-20级)**: 春日→勇者(练到14级出全队无敌)、纱荣子→女招待(堆治疗)、足立→刑警(坦克)、难波→流浪汉(法系AOE)。**中期(20-40级)**: 韩俊基加入后给他杀手或忍者——他的输出潜力极高。春日在勇者14出无敌后可以转职玩玩其他职业——比如厨师(火系输出)或英雄(娱乐)。**终局(40+)**: 每个角色练2-3个职业到20+——为了继承辅助被动——终局Build需要堆4个强力被动配合主职业 / **Early (1-20)**: Ichiban Hero (to 14 for invincible), Saeko Hostess (heal stack), Adachi Detective (tank), Nanba Homeless (AoE mage). **Mid (20-40)**: Joon-gi → Hitman or Ninja — his DPS potential is highest. After Hero 14, Ichiban can experiment. **Endgame (40+)**: 2-3 jobs to 20+ per character for inherited passives — endgame builds need 4 stacked passives.
+
+## 合体技 / Tag Team Attacks
+
+当两个角色之间的**羁绊等级**达到5、10、15时解锁新的合体技。合体技消耗两个角色的极技槽各1格——造成巨额伤害+特殊效果。**羁绊等级10解锁的合体技通常最强**。**推荐合体技**: 春日+足立(勇者+刑警)——"正义的铁拳"——单体物理x3+破防。春日+纱荣子(勇者+女招待)——"光与爱"——全队回复50%HP+全属性Buff——Boss战神技。韩俊基+难波(杀手+流浪汉)——"冻结灭亡"——全体冰系+物理混合伤害+冻结——AOE最强。**使用时机**: Boss破防后使用合体技——2倍伤害加成下收益最大化 / When two characters' **Bond level** reaches 5, 10, 15 — unlock new Tag Team attacks. Costs 1 Heat bar from each — massive damage + special effects. **Bond 10 tag teams are usually strongest**. **Recommended**: Ichiban+Adachi — "Justice Fist" — 3x single phys + stagger. Ichiban+Saeko — "Light and Love" — party 50% heal + all-stat buff — boss fight MVP. Joon-gi+Namba — "Freeze Oblivion" — party ice+phys hybrid + freeze — best AoE. **Timing**: Use during boss break/stagger for 2x damage benefit.
+
+## 羁绊系统 / Bond System
+
+角色间的羁绊通过**战斗连携**(同队战斗+每次战斗少量)+**羁绊剧场**(特定地点触发的专属剧情+大量)+**一起活动**(吃/唱/玩+中量)提升。羁绊等级1-15——每级解锁被动加成。**满羁绊(15级)奖励**: 全属性+10、极技槽上限+1、专属合体技、队友自动支援(挡刀/增伤)。**推荐优先提升**: 春日+纱荣子(治疗+无敌=不死组合)、春日+足立(坦克+输出=稳定核心)。**快速提升方法**: 去夏威夷Waikiki海滩的餐厅吃"羁绊套餐"——一次战斗后羁绊经验x2——配合羁绊剧场效率极高 / Bonds improved via: Battle synergy (+small per fight) + Bond Drama (+large, location-specific story) + Activities (+medium, eat/sing/play). Bond levels 1-15 — each level unlocks bonuses. **Max Bond (15) Rewards**: +10 all stats, +1 Heat bar cap, exclusive tag team, auto assist (block/damage up). **Priority bonds**: Ichiban+Saeko (heal+invincible=immortal), Ichiban+Adachi (tank+DPS=stable core). **Fast leveling**: Eat "Bond Set" at Hawaii Waikiki Beach restaurant — 2x bond XP per battle — pair with Bond Drama for max efficiency.
+
+## 进阶战斗技巧 / Advanced Combat Tips
+
+1. **走位打背**——从背后攻击提供20%伤害加成+15%暴击率——养成习惯每次绕后——对Boss战影响巨大 / Back attacks give +20% damage +15% crit — always reposition behind — massive boss fight impact
+2. **环境攻击优先用**——场地上的自行车/路标/油桶都可用——伤害约等于2槽极技但0消耗——第一回合先找环境物品 / Use environment attacks — bicycles, signs, barrels = ~2-bar Extreme for 0 cost — first turn scout for items
+3. **极技不要贪**——留1格极技槽保底——遇到突发AOE时可以及时用防御极技减伤——救命的习惯 / Save 1 Heat bar minimum — emergency defense Extreme for unexpected AoE — life-saving habit
+4. **职业被动继承**——每个职业习得的被动可以跨职业装备(上限4个)——终局需要规划——先把核心职业练到20+拿关键被动 / Job passives can be equipped cross-job (max 4) — endgame planning — level core jobs to 20+ for key passives first
+5. **羁绊支援**——满羁绊的队友会自动支援(挡刀/增伤)——优先堆满主力队友的羁绊——前期先搞到羁绊10出第一个合体技 / Max bond allies auto-assist (block/damage up) — prioritize main party bonds — reach bond 10 first for tag team
+6. **职业克制**——遇到特定弱点敌人切对应职业——职业克制效果伤害x1.5——比如弱火的Boss用厨师 / Switch jobs based on enemy weakness — job advantage x1.5 damage — e.g., fire-weak boss use Chef
+7. **道具不要省**——如龙8中的道具(尤其是全体回复)非常便宜——Boss战前买满——身上常备10个全体中回复道具 / Don't save items — party heals are very cheap — stock up before boss fights — carry 10 party mid-heals at all times
+8. **完美QTE练习**——每个极技和合体技的QTE时间点不同——练习完美QTE=伤害+20%——专门花时间在训练场练习主力技能的QTE / Perfect QTE practice — each Extreme and Tag Team has different timing — perfect QTE = +20% damage — practice main skills in training area
+9. **Boss蓄力打断**——当Boss蓄力准备大招时——使用高冲击力极技可以打断——避免全队受伤 / Boss charge interrupt — when boss charges big attack — use high-stagger Extreme to interrupt — avoid party damage
+10. **弱点属性优先**——每个Boss有3-5个弱点——优先使用弱点属性的职业和技能——破防效率翻倍 / Element weakness priority — each boss has 3-5 weaknesses — prioritize jobs and skills matching weaknesses — double break efficiency
+
+## 全职业Rank30技能一览 / All Job Rank 30 Skills
+
+| 职业 / Job | Rank 30技能 / Skill | 效果 / Effect | 评价 / Rating |
+|---|---|---|---|
+| 勇者 / Hero | 英雄之盾 / Hero Shield | 全队伤害免疫1回合——CD4回合 / Party immune 1 turn — CD 4 | S——保命核心 |
+| 女招待 / Hostess | 永恒微笑 / Eternal Smile | 全队全回复+全异常解除——CD5回合 / Party full heal + all status cure — CD 5 | S——最强治疗 |
+| 刑警 / Detective | 完美分析 / Perfect Analysis | 揭示敌人全部弱点+全属性破防——CD3回合 / Reveal all weaknesses + all-element break — CD 3 | S——Boss战神技 |
+| 杀手 / Hitman | 暗影一击 / Shadow Strike | 单体物理x5——必定暴击——CD3回合 / Single phys x5 — guaranteed crit — CD 3 | S——单体爆发 |
+| 流浪汉 / Homeless | 冰河时代 / Ice Age | 全体冰系x4+冻结——CD4回合 / Party ice x4 + freeze — CD 4 | A——清场+控场 |
+| 舞者 / Dancer | 终幕 / Finale | 全队速度+50%+回避率+30%——持续4回合 / Party SPD+50% + Evasion+30% — 4 turns | A——辅助极强 |
+| 厨师 / Chef | 满汉全席 / Full Course | 全队大回复+全Buff——CD5回合 / Party full heal + all buffs — CD 5 | S——合体治疗+Buff |
+| 忍者 / Ninja | 影分身 / Shadow Clone | 自身复制——复制体造成50%伤害——持续3回合 / Self-clone — 50% dmg — 3 turns | A——变相输出翻倍 |
+
+## 职业经验快速刷取 / Job XP Fast Farming
+
+| 方法 / Method | 效率 / Efficiency | 说明 / Details |
+|---|---|---|
+| 横滨地下迷宫 / Yokohama Dungeon | 中——约1000XP/10分钟 / Medium — ~1000XP/10min | 适合10-20级——怪物密集——难度低 / Good for level 10-20 — dense mobs — low difficulty |
+| 夏威夷地下迷宫 / Hawaii Dungeon | 高——约3000XP/10分钟 / High — ~3000XP/10min | 适合20-30级——经验高但难度中等 / Good for level 20-30 — high XP — medium difficulty |
+| 终极千禧塔低层 / Ult. Tower Lower | 极高——约8000XP/10分钟 / Very high — ~8000XP/10min | 适合30-50级——通关后最佳刷级点——怪物给大量经验 / Good for 30-50 — best post-game farm |
+| 竞技场高难度 / Arena High Diff | 极高——约15000XP/10分钟 / Very high — ~15000XP/10min | 10层连战——最后一层经验最高——但需要好装备 / 10-round gauntlet — last floor has best XP — needs good gear |
+| 职业导师购买 / Job Trainer Purchase | 立即——1万-10万金币/1级 / Instant — 10k-100k gold/level | 后期不缺钱——直接买——最省时间 / Late game money is plenty — buy directly — most time-efficient |
+
+## 最强饰品搭配 / Best Accessory Combinations
+
+| 角色定位 / Role | 饰品1 / Accessory 1 | 饰品2 / Accessory 2 | 总效果 / Total Effect |
+|---|---|---|---|
+| 物理输出 / Phys DPS | 斗神之印(+30%物攻) / Fighter's Mark (+30% ATK) | 会心眼镜(暴击率+25%) / Crit Glasses (+25% CR) | 伤害+30%+暴击率翻倍 / +30% dmg + double crit rate |
+| 魔法输出 / Magic DPS | 贤者之石(+30%魔攻) / Sage Stone (+30% MATK) | 魔力戒指(+150MP) / Mana Ring (+150 MP) | MP续航+30%伤害 / MP sustain + 30% dmg |
+| 坦克 / Tank | 守护者勋章(仇恨+50%) / Guardian Medal (+50% aggro) | 铁壁护符(减伤+20%) / Iron Charm (+20% DR) | 稳定拉仇恨+高生存 / Stable aggro + high survival |
+| 治疗 / Healer | 慈爱之心(治疗效果+30%) / Loving Heart (+30% heal) | 活力腰带(HP+500) / Vitality Belt (+500 HP) | 治疗量+30%+生存 / Heal +30% + survival |
+| 辅助 / Support | 速度之靴(速度+50) / SPD Boots (+50 SPD) | 祈愿念珠(全体Buff持续时间+2回合) / Prayer Beads (buff duration +2) | 先手给Buff+Buff持久 / First strike buffs + longer duration |
+| 通用 / All-purpose | 经验勋章(获得经验x1.5) / XP Medal (+50% XP) | 金币护符(获得金币x1.5) / Gold Charm (+50% money) | 刷级+赚钱兼顾 / Level+money farm |
+
+## 战斗数据 / Combat Data
+
+| 战斗参数 / Parameter | 基础值 / Base | 满Buff/Full Buff | 说明 / Notes |
+|---|---|---|---|
+| 极技槽上限 / Heat Gauge Max | 3格 / 3 bars | 5格(满羁绊+饰品)/ 5 (max bond + acc) | 每格约需6次攻击积累 / ~6 attacks per bar |
+| 背后攻击加成 / Back Attack Bonus | +20%伤害/+15%暴击 / +20% dmg +15% crit | 不变——但和其他Buff乘法叠加 / Same — multiplies with other buffs |
+| 职业克制倍率 / Job Advantage | x1.5伤害 / x1.5 dmg | x2.0(弱点洞察后)/ x2.0 (after weakness reveal) | 刑警Rank30技能可触发2.0 |
+| 合体技倍率 / Tag Team Multi | 基础伤害x2.5 / Base x2.5 | x4.0(满羁绊+完美QTE)/ x4.0 (max bond + perfect QTE) | 全游戏单次最高伤害来源 |
+| 最大单Hit伤害 / Max Single Hit | ~3000(普攻)/ ~3000 (normal) | ~30000(3格觉醒极技+全Buff)/ ~30000 (3-bar awakening + all buffs) | 配合破防可达约60000 / With break ~60000 |
+
+标签/Tags: 如龙8, Yakuza 8, 无限财富, Infinite Wealth, 战斗, Combat, 极技, Extreme Skills, 职业, Job, 羁绊, Bond, 合体技, Tag Team

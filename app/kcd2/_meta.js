@@ -11,4 +11,8 @@ export default {
   skills: '技能 / Skills',
   quests: '任务 / Quests',
   world: '世界 / World',
+  builds: '装备与Build / Gear & Builds',
+  bosses: 'Boss攻略 / Boss Fights',
+  items: '物品装备 / Items & Equipment',
+  secrets: '隐藏要素 / Secrets & Easter Eggs',
 }

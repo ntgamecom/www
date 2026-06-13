@@ -70,4 +70,81 @@ toc: false
 
 ---
 
+## 牌组类型 / Deck Types
+
+| 牌组 / Deck | 特点 / Traits | 难度 / Difficulty | 推荐流派 / Recommended Build |
+|---|---|---|---|
+| **红牌组 / Red Deck** | +1出牌次数 / +1 discard | ⭐ 简单 / Easy | 任何流派——灵活性最强 / Any build — most flexible |
+| **蓝牌组 / Blue Deck** | +1手牌上限 / +1 hand size | ⭐ 简单 / Easy | 高牌/对子流——更多手牌=更高容错 / High Card/Pair — more hands = more room |
+| **绿牌组 / Green Deck** | 每回合$2利息(无额外利息限制) / $2 interest per round (no cap) | ⭐⭐ 中等 / Medium | 经济流——更多钱=更多小丑牌选择 / Economy build — more money = more Joker choices |
+| **黑牌组 / Black Deck** | +1小丑牌位——但起始手牌-1 / +1 Joker slot — but -1 hand size | ⭐⭐⭐ 高 / Hard | 小丑牌叠加流——(黑牌组特有的优势) / Joker stacking build |
+| **黄牌组 / Yellow Deck** | 起始$10——更高的起始经济 / Start with $10 | ⭐ 简单 / Easy | 快速组建经济——适合速攻 / Fast economy — good for quick builds |
+| **棋盘牌组 / Checkered Deck** | 起始牌组26黑26红——保证同花 / Starting deck 26 black 26 red — guaranteed flush | ⭐⭐ 中等 / Medium | 同花流最强牌组——但Boss盲注禁用同花也最致命 / Best flush deck — but boss debuff ban hurts most |
+| **斑马牌组 / Zodiac Deck** | 起始有太阳+月亮+世界塔罗牌 / Start with Sun+Moon+World tarot | ⭐⭐ 中等 / Medium | 塔罗牌辅助流——适合牌组改造 / Tarot-assisted deck fixing |
+| **等离子牌组 / Plasma Deck** | 分数计算方式变为(筹码+倍率)×2——平衡流 / Score = (chips+mult)×2 — balanced play | ⭐⭐⭐ 高 / Hard | 需要平衡筹码和倍率——乘法收益极高但容错低 / Need balanced chips and mult — high multiplier but low tolerance |
+
+---
+
+## 挑战模式 / Challenge Mode
+
+挑战模式提供了全新的游戏规则——每个挑战限制特定条件 / Challenge Mode offers unique rule sets — each with specific restrictions and goals.
+
+| 挑战 / Challenge | 限制 / Restriction | 目标 / Goal |
+|---|---|---|
+| **输家 / The Loser** | 起始0金币——不能买小丑牌 / Start with 0 gold — can't buy Jokers | 赢到第4关 / Win ante 4 |
+| **原始 / Primitive** | 起始牌组(无小丑牌+无塔罗牌)/ No Jokers + no Tarot | 赢到第6关 / Win ante 6 |
+| **幻灵/ Spectral** | 只能使用幻灵牌——没有塔罗和星球牌 / Spectral only — no tarot or planet | 赢到第8关 / Win ante 8 |
+| **双倍 / Double** | 所有小丑牌不能同时生效——上下半场各一半 / Jokers split into two halves | 赢到第5关 / Win ante 5 |
+| **极简 / Minimalist** | 手牌上限减少到5张 / Hand size reduced to 5 | 赢到第4关 / Win ante 4 |
+
+---
+
+## 关卡难度说明 / Difficulty System
+
+| 难度 / Difficulty | 说明 / Description |
+|---|---|
+| **普通 / Normal** | 标准8关——适合熟悉游戏机制 / Standard 8 antes — for learning |
+| **困难 / Hard** | 起始关卡+2——更高的分数要求 / Starting ante +2 — higher score requirements |
+| **极难 / Very Hard** | 起始关卡+4——极高分数要求 / Starting ante +4 — extreme score requirements |
+| **无尽 / Endless** | 通关8关后继续——分数指数级增长——测试Build极限 / Continue after ante 8 — exponential score growth — test build limits |
+
+---
+
+## 分数机制详解 / Score Mechanics
+
+| 概念 / Concept | 公式 / Formula | 说明 / Description |
+|---|---|---|
+| **基础分数 / Base Score** | 牌型基础筹码 + 每张牌点数 × 牌型倍率 / Hand base chips + card rank × hand base mult | 牌型等级越高、打的牌点数越高基础分越高 / Higher hand level + higher rank cards = higher base |
+| **筹码堆叠 / Chip Stacking** | 所有"筹码"来源相加——包括基础、小丑牌、增强牌 / All "+chips" sources stack — base, jokers, enhanced cards | 星球牌升级牌型是加筹码的主要手段 / Planet cards are the main chip scaling method |
+| **倍率堆叠 / Mult Stacking** | 加法倍率(+Mult)先加总——然后乘法倍率(×Mult)乘上去 / Additive mults sum first — then multiplicative mults compound | 乘法倍率是高分核心——一个×3+一个×2=×6 / Multiplicative mult is key — one ×3 + one ×2 = ×6 |
+| **最终分数 / Final Score** | (总筹码 × 总倍率) / (Total chips × Total mult) | 超过盲注要求分数即可过关 / Exceed blind target to pass |
+
+---
+
+## 经济管理 / Economy Management
+
+| 策略 / Strategy | 说明 / Description |
+|---|---|
+| **利息是本 / Interest is King** | 每回合末持有$5获得$1利息(上限$5=$25存金)——保持$25+过回合是基本功 / $5 interest per $5 held (cap $5 = $25 saved) — maintaining $25+ per round is essential |
+| **前期省钱 / Save Early, Spend Late** | 前期前3关尽量少买——靠利息累积到$50+再开始大规模采购 / First 3 antes buy sparingly — accumulate to $50+ via interest before spending big |
+| **跳过小盲注 / Skip Small Blind** | 小盲注(第一个盲注)没有金钱惩罚——直接跳过拿Skip奖励 / Small blind (first blind) has no monetary penalty — skip it for the skip reward bonus |
+| **Boss盲注不跳过 / Never Skip Boss Blind** | 跳过Boss盲注没有Skip奖励——还要多打一层——不划算 / Skipping boss blind gives no skip reward — you just play an extra ante — not worth it |
+| **卖小丑牌回血 / Sell Unused Jokers** | 小丑牌可以卖掉——不需要的(尤其是前期用的过渡牌)果断卖掉换钱 / Jokers can be sold — discard transitional jokers for cash when they've outlived their usefulness |
+
 标签/Tags: 小丑牌, Balatro, LocalThunk, Roguelite, 卡牌, Poker, 攻略, Guide
+
+---
+
+## 常见问题 / FAQ
+
+| 问题 / Question | 回答 / Answer |
+|---|---|
+| **什么牌组最适合新手？** / Best deck for beginners? | 蓝牌组(+1出牌)容错率最高——多一次出牌机会 = 多一次尝试 / Blue Deck (+1 hand) has highest error margin |
+| **该存多少钱？** / How much to save? | 前中期保持$25+吃满$5利息——后期不需要存钱 / Keep $25+ first 8 rounds for max $5 interest — don't hoard late |
+| **乘法倍率和加法倍率哪个重要？** / ×Mult vs +Mult? | 1个×Mult ≥ 10个+Mult。后期全指着乘法倍率 / One ×Mult ≥ ten +Mult. Late game runs on ×Mult alone |
+| **什么时候该跳过大盲？** / When to skip Big Blind? | 当标签奖励(免费小丑/星球/黑暗)比金钱值的时候 / When tag reward (free Joker/Planet/Negative) is worth more than cash |
+| **牌组多大合适？** / Ideal deck size? | 30-45张最理想——小于30牌库枯竭，大于50抽牌不稳定 / 30-45 is ideal — under 30 risks deck-out, over 50 is inconsistent |
+
+**游戏时间**: 新手首次通关约5-15小时——全成就约100-200小时 / **Playtime**: First clear ~5-15h — all achievements ~100-200h
+
+**拓展阅读**: 在线查看Balatro Wiki获取完整小丑牌数据 / **Extras**: Check Balatro Wiki online for complete Joker data

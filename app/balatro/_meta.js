@@ -11,4 +11,8 @@ export default {
   'decks': '牌组与策略 / Decks & Strategy',
   'strategy': '进阶技巧 / Advanced Tips',
   'items': '收藏与成就 / Unlocks & Achievements',
+  'bosses': '首领盲注 / Boss Blinds',
+  'secrets': '隐藏要素 / Secrets & Unlocks',
+  'endgame': '终局内容 / Endgame',
+  'skills': '进阶技巧 / Advanced Skills',
 }

@@ -1,0 +1,151 @@
+---
+title: 战斗系统 / Combat System
+description: 英灵神殿战斗系统详解——武器类型、格挡招架、闪避与对应不同生物的战斗策略 / Valheim combat guide — weapon types, block/parry, dodge and creature-specific strategies
+---
+
+# 战斗系统 / Combat System
+
+英灵神殿的战斗系统基于耐力管理——格挡、招架和翻滚是核心生存手段 / Valheim's combat is stamina-based — blocking, parrying, and dodging are core survival mechanics.
+
+---
+
+## 武器类型 / Weapon Types
+
+### 近战武器 / Melee Weapons
+
+| 武器 / Weapon | 类型 / Type | 伤害 / DMG | 攻速 / Speed | 特殊效果 / Special | 最佳使用 / Best Against |
+|---|---|---|---|---|---|
+| **燧石刀 / Flint Knife** | 匕首 / Dagger | 12 | 极快 / Very Fast | 背刺3倍——潜行流 / 3x backstab | 潜行暗杀 / Stealth |
+| **青铜剑 / Bronze Sword** | 剑 / Sword | 28 | 快 / Fast | 三连击——攻守平衡 / 3-hit combo | 通用 / All-round |
+| **铁斧 / Iron Axe** | 斧 / Axe | 35 | 中等 / Medium | 砍树+战斗两用 / Tree+combat dual | 亡灵/生物 / Undead |
+| **铁锤 / Iron Mace** | 锤 / Club | 35 | 慢 / Slow | 对亡灵+100%伤害 / +100% vs undead | 亡灵核心 / Undead Core |
+| **古木矛 / Ancient Spear** | 矛 / Spear | 30 | 快 / Fast | 可投掷——收回 / Throwable | 中距战斗 / Mid-range |
+| **银剑 / Silver Sword** | 剑 / Sword | 55 | 快 / Fast | 对亡灵额外伤害 / Bonus vs undead | 雪山亡灵 / Mountain |
+| **黑金剑 / Blackmetal Sword** | 剑 / Sword | 85 | 快 / Fast | 最高DPS单手 / Highest 1H DPS | 平原战斗 / Plains |
+| **大锤 / Stagbreaker** | 双手锤 / 2H Club | 20-40 | 极慢 / Very Slow | AOE范围攻击——穿过墙壁 / AoE through walls | 群怪/清巢 / AoE |
+| **水晶战锤 / Crystal Battleaxe** | 双手斧 / 2H Axe | 95 | 慢 / Slow | 高伤害+范围横扫 / High dmg + sweep | 高防敌人 / Armored |
+
+---
+
+### 远程武器 / Ranged Weapons
+
+| 弓 / Bow | 伤害 / DMG | 拉弓速度 / Draw | 射程 / Range | 说明 / Notes |
+|---|---|---|---|---|
+| **粗制弓 / Crude Bow** | 22 | 慢 / Slow | 中等 / Medium | 初期过度用 / Early game |
+| **燧石弓 / Flint Bow** | 28 | 中等 / Medium | 中等 / Medium | 常用早期弓 / Early standard |
+| **青铜弓 / Bronze Bow** | 31 | 中等 / Medium | 中等 / Medium | 稳定输出 / Reliable |
+| **古木弓 / Ancient Bow** | 45 | 快 / Fast | 高 / High | 沼泽利器——毒箭配合 / Swamp + poison arrows |
+| **黑金弓 / Blackmetal Bow** | 68 | 快 / Fast | 高 / High | 最终弓——最高DPS / Endgame bow |
+| **亡灵弓 / Draugr Fang** | 62 | 快 / Fast | 高 / High | 自带毒效果——沼泽Boss克星 / Innate poison |
+
+---
+
+### 箭矢类型 / Arrow Types
+
+| 箭矢 / Arrow | 伤害 / DMG | 特效 / Effect | 制作材料 / Craft |
+|---|---|---|---|
+| **木箭 / Wood Arrow** | 20 | 无 / None | 木材×1 + 羽毛×1 / Wood + Feather |
+| **火石箭 / Flint Arrow** | 27 | 无 / None | 燧石×1 + 羽毛×1 / Flint + Feather |
+| **青铜箭 / Bronze Arrow** | 32 | 无 / None | 青铜×1 + 羽毛×1 / Bronze + Feather |
+| **铁箭 / Iron Arrow** | 42 | 无 / None | 铁×1 + 羽毛×1 / Iron + Feather |
+| **银箭 / Silver Arrow** | 60 | 对亡灵额外伤害 / Bonus vs undead | 银×1 + 羽毛×1 / Silver + Feather |
+| **毒箭 / Poison Arrow** | 20+毒20/5s | 中毒——持续伤害 / Poison DoT | 古木皮+毒囊 / Guck + Poison Sack |
+| **黑金箭 / Blackmetal Arrow** | 78 | 无 / None | 黑金×1 + 羽毛×1 / Blackmetal + Feather |
+| **霜箭 / Frost Arrow** | 50+冰50 | 冰冻减速——对火系敌人+50% / Frost slow | 黑金+霜冻腺 / Blackmetal + Freeze Gland |
+| **针箭 / Needle Arrow** | 70 | 无视护甲 / Armor pierce | 针+羽毛 / Needle + Feather |
+
+---
+
+## 格挡、招架与闪避 / Block, Parry & Dodge
+
+### 防御机制对比 / Defense Comparison
+
+| 动作 / Action | 操作 / Input | 耐力消耗 / Stamina | 效果 / Effect |
+|---|---|---|---|
+| **普通格挡 / Block** | 右键按住 / Hold RMB | 取决于伤害 / Per dmg | 减少伤害——取决于盾牌格挡值 / Dmg reduction |
+| **招架 / Parry** | 攻击瞬间按右键 / RMB at hit | 中等 / Medium | 完美格挡——敌人硬直——大量反击伤害 / Stagger enemy |
+| **翻滚闪避 / Dodge Roll** | 空格+方向 / Space+Dir | 高 / High | 无敌帧——闪避一切攻击 / I-frames — evade everything |
+| **后退闪避 / Backstep** | 方向下+空格 / Back+Space | 中等 / Medium | 向后跳跃——比翻滚少耗耐 / Back jump — less stamina |
+
+---
+
+### 盾牌类型 / Shield Types
+
+| 盾牌 / Shield | 类型 / Type | 格挡值 / Block | 招架倍率 / Parry Bonus | 移动速度 / Move Speed |
+|---|---|---|---|---|
+| **木盾 / Wood Shield** | 小盾 / Buckler | 20 | 1.5x | 正常 / Normal |
+| **青铜盾 / Bronze Shield** | 小盾 / Buckler | 30 | 2x | 正常 / Normal |
+| **铁盾 / Banded Shield** | 小盾 / Buckler | 50 | 2x | 正常 / Normal |
+| **银盾 / Silver Shield** | 小盾 / Buckler | 70 | 2.5x | 正常 / Normal |
+| **黑金盾 / Blackmetal Shield** | 小盾 / Buckler | 90 | 2.5x | 正常 / Normal |
+| **铁塔盾 / Iron Tower Shield** | 塔盾 / Tower | 80 | 1x | -20% / -20% |
+| **黑金塔盾 / BM Tower Shield** | 塔盾 / Tower | 120 | 1x | -20% / -20% |
+| **骨盾 / Bone Shield** | 小盾 / Buckler | 15 | 1.5x | 正常 / Normal |
+
+**小盾 vs 塔盾 / Buckler vs Tower**:
+- 小盾可以招架(完美格挡)——塔盾不行 / Bucklers can parry — towers cannot
+- 塔盾格挡值更高但不消耗耐力时防御极高 / Tower shields have higher block but no parry
+- 塔盾减少移动速度——小盾不影响 / Tower slows movement — buckler doesn't
+
+---
+
+## 生物战斗策略 / Creature Strategies
+
+| 生物 / Creature | 所在区域 / Biome | 建议武器 / Weapon | 防御策略 / Defense | 注意事项 / Note |
+|---|---|---|---|---|
+| **灰矮人 / Greyling** | 青青草原 / Meadows | 任意 / Any | 轻松格挡——直接击杀 / Easy block | 成群出现——注意背刺 / Groups |
+| **灰矮人狂战士 / Brute** | 黑暗森林 / Black Forest | 青铜剑+木盾 / Bronze Sword | 招架后输出——不要贪刀 / Parry then hit | 高伤害——格挡很重要 / Block needed |
+| **骷髅 / Skeleton** | 黑暗森林/沼泽 / BF/Swamp | 铁锤——对亡灵+100% / Mace | 招架——锤子2-3下死 / Parry | 成群——优先清远程 / Kill archers first |
+| **尸鬼 / Draugr** | 沼泽 / Swamp | 铁锤+毒箭 / Mace + Poison | 保持距离——毒箭放风筝 / Kite with poison | 尸鬼精英有弓——最难 / Elite Draugr |
+| **霜狼 / Fenris** | 雪山 / Mountain | 银剑+霜箭 / Silver Sword + Frost | 招架——狼攻击前摇短 / Fast parry | 速度极快——翻滚躲避 / Roll |
+| **死亡黑鸡 / Deathsquito** | 平原 / Plains | 弓+针箭 / Bow + Needle | 听到声音就翻滚——一击致命 / Roll on buzz | 极危险——被叮一下半血 / Half HP |
+| **蝗虫 / Lox** | 平原 / Plains | 弓箭+针箭 / Bow + Needle | 保持距离——不要近战 / Kite only | 高防+高伤——浪费时间不划算 / HP sponge |
+| **矮人 / Dvergr** | 迷雾之地 / Mistlands | 黑金剑+盾 / BM Sword+Shield | 招架+反击——人形敌人 / Parry + counter | 会施法——优先打断 / Interrupt casters |
+
+---
+
+## 耐力管理 / Stamina Management
+
+| 动作 / Action | 消耗 / Cost | 建议 / Advice |
+|---|---|---|
+| 普通攻击 / Normal Attack | 10-15 | 不要空挥——浪费 / Don't swing in air |
+| 重击 / Power Attack | 30-40 | 击倒后用——打硬直敌人 / Use after stagger |
+| 格挡攻击 / Block Attack | 15-25 | 格挡后反击用 / Counter after block |
+| 翻滚 / Roll | 25-30 | 仅关键闪避时用 / Only critical dodges |
+| 持盾跑 / Run with Shield | 持续消耗 / Continuous | 非战斗时不要一直跑 / Don't run constantly |
+
+**耐力食谱 / Stamina Foods**:
+- 早期: 覆盆子+蓝莓+烤鹿肉 / Raspberry + Blueberry + Deer Meat
+- 中期: 胡萝卜汤+烤肉串 / Carrot Soup + Deer Stew
+- 后期: 鱼肉卷+血旺 / Fish Wraps + Blood Pudding
+
+---
+
+## 战斗药剂 / Combat Potions
+
+| 药剂 / Potion | 效果 / Effect | 说明 / Use |
+|---|---|---|
+| **耐力蜜酒 / Stamina Mead** | 中等耐力瞬间恢复 / Medium instant stam | 战斗续航 / Combat sustain |
+| **中型耐力蜜酒 / Medium Stamina** | 大量耐力恢复 / Large instant stam | Boss战必备 / Boss fight essential |
+| **生命蜜酒 / Health Mead** | 中等生命恢复 / Medium instant HP | 紧急回血 / Emergency heal |
+| **中型生命蜜酒 / Medium Health** | 大量生命恢复 / Large instant HP | Boss战生存 / Boss survival |
+| **抗火蜜酒 / Fire Resist** | 免疫火焰伤害 / Immune to fire | 黑暗森林+平原 / BF + Plains |
+| **抗霜蜜酒 / Frost Resist** | 免疫冰冻伤害 / Immune to frost | 雪山 / Mountain |
+
+---
+
+## 战斗环境利用 / Combat Environment
+
+| 地形 / Terrain | 优势 / Advantage |
+|---|---|
+| 高地 / High Ground | 弓箭伤害加成——敌人近战打不到 / Archery bonus |
+| 狭窄通道 / Narrow Path | 避免被包围——一个一个打 / Avoid surround |
+| 水边 / Water Edge | 怕水的生物(灰矮人)不会入水 / AFK enemies |
+| 篝火/火把 / Campfire | 对某些生物(灰矮人)造成恐惧/伤害 / Fear effect |
+| 建筑内 / Inside Building | 限制大型敌人行动 / Restrict large enemies |
+
+---
+
+*战斗系统的核心是耐力管理+时机把握——每个敌人都有最佳应对方式 / Combat mastery comes from stamina management and timing — every enemy has an optimal strategy.*
+
+标签/Tags: Valheim, 战斗, 武器, 格挡, 招架, 战术, Combat, Weapons, Block, Parry, Tactics, 英灵神殿

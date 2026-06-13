@@ -1,0 +1,58 @@
+---
+title: "战斗系统 — Combat Guide"
+description: "原神战斗系统全解析 — 元素反应机制、配队理论、战斗循环、体力管理、元素共鸣、实战技巧与进阶操作"
+---
+
+![战斗系统](/genshin/combat/combat.svg)
+
+{/* Genshin Impact combat guide — elemental reaction mechanics, team composition theory, rotation management, stamina management, elemental resonance, combat tips and advanced techniques */}
+
+## 基础战斗机制 / Core Combat Mechanics
+
+原神的战斗系统围绕**元素反应**构建——所有角色属于7种元素之一(风/岩/雷/草/水/火/冰)——不同元素攻击敌人时触发反应。每个敌人有固有的元素附着冷却(约2.5秒/2.5秒规则)——用同一元素多次攻击不会频繁触发反应 / Genshin's combat system revolves around **elemental reactions** — all characters belong to 1 of 7 elements (Anemo/Geo/Electro/Dendro/Hydro/Pyro/Cryo) — different elements react on enemies. Each enemy has inherent elemental application cooldown (~2.5s / ICD rule) — same element repeated doesn't react frequently.
+
+### 元素附着规则 / Elemental Gauge Theory
+
+每个元素攻击有一个"元素量"——强附着(约2单位)可以覆盖弱附着(约1单位)。**示例**: 班尼特的E技能是强火(2单位)——行秋的雨帘剑是弱水(1单位)。强火+弱水=残留火元素——下次水攻击还能触发蒸发。反之弱火+强水=水元素残留——适合火C打蒸发。理解元素量是进阶配队的基础 / Each elemental attack has an "element gauge" — strong aura (~2U) overrides weak (~1U). **Example**: Bennett's E = strong pyro (2U) — Xingqiu rain swords = weak hydro (1U). Strong pyro + weak hydro = pyro remains — next hydro trigger vaporize. Vice versa, weak pyro + strong hydro = hydro remains — ideal for pyro DPS vaporize. Understanding gauge is fundamental for team building.
+
+## 配队理论 / Team Composition Theory
+
+### 经典配队公式 / Classic Formula
+
+标准队伍结构: **1主C + 1副C + 1辅助 + 1生存位**。主C负责站场输出——副C提供脱手伤害和元素附着——辅助提供增伤/减抗——生存位提供治疗/盾。部分角色可以兼任多个角色(如雷电将军既是主C也是副C的充电宝) / Standard structure: **1 Main DPS + 1 Sub-DPS + 1 Support + 1 Sustain**. Main DPS = on-field damage — Sub-DPS = off-field dmg + element application — Support = buff/debuff — Sustain = heal/shield. Some characters fill multiple roles (e.g., Raiden is both DPS and battery).
+
+### 元素共鸣 / Elemental Resonance
+
+| 共鸣 / Resonance | 条件 / Condition | 效果 / Effect | 推荐队伍 / Recommended Teams |
+|---|---|---|---|
+| 双火 / Double Pyro | 2火 / 2 Pyro | 攻击力+25% / ATK +25% | 胡桃行秋钟离+火 / Hu Tao+Xingqiu+Zhongli+Pyro |
+| 双水 / Double Hydro | 2水 / 2 Hydro | 生命上限+25% / HP +25% | 那维莱特芙宁娜 / Neuvillette+Furina |
+| 双雷 / Double Electro | 2雷 / 2 Electro | 产球加速——超导感电加强 / Energy generation + reaction buff | 雷神国家队 / Rational Team |
+| 双草 / Double Dendro | 2草 / 2 Dendro | 精通+50——草反应增强 / EM+50 — dendro reactions buff | 艾尔海森纳西妲 / Alhaitham+Nahida |
+| 双风 / Double Anemo | 2风 / 2 Anemo | 体力消耗-15%——移速+10%——技能CD-5% / Stamina -15%, move speed +10%, CD -5% | 魈珐露珊 / Xiao+Faruzan |
+| 双冰 / Double Cryo | 2冰 / 2 Cryo | 暴击率+15%(对冻结/冰附着敌人) / Crit rate +15% vs frozen/cryo enemies | 神里绫华申鹤 / Ayaka+Shenhe |
+| 双岩 / Double Geo | 2岩 / 2 Geo | 护盾强度+15%——护盾下伤害+15%——减岩抗20% / Shield +15%, shield active dmg+15%, geo shred -20% | 荒泷一斗五郎 / Itto+Gorou |
+
+## 战斗循环优化 / Rotation Optimization
+
+一个标准的战斗循环通常持续约20秒——配合各角色的技能CD。**核心原则**: 辅助的技能先放——给主C叠Buff——然后主C上场打满Buff窗口。**技能顺序**: 盾/治疗→聚怪→挂元素→增伤→切主C输出→切副C补充→循环。**元素爆发的能量管理**是循环流畅的关键——充能效率不足的队伍会卡手——主C推荐120-140%充能——副C推荐180-220% / A standard rotation lasts ~20s — matching skill cooldowns. **Core principle**: support skills first — stack buffs for DPS — then DPS takes field during buff window. **Skill order**: shield/heal → group → apply element → buff → main DPS field time → sub-DPS refresh → repeat. **Energy management** is key — teams lacking ER get stuck — DPS recommends 120-140% ER — sub-DPS 180-220% ER.
+
+### 进阶技巧 / Advanced Techniques
+
+**跳跃取消**: 部分角色的重击后摇可以用跳跃取消——如胡桃的重击→跳跃→重击——比等后摇结束快约0.5秒。**短E/长E切换**: 钟离的长E生成护盾——短E生成岩柱。温迪的短E对单、长E对群。**冲刺取消**: 那维莱特的重击蓄力后可以用冲刺取消后摇——提前开始下一轮蓄力。**班尼特内鬼火**: 班尼特大招给圈内角色上火附着——在冰环境战会把自己冻住——注意站位 / **Jump Cancel**: some characters' CA ending lag can be canceled by jump — Hu Tao CA → jump → CA — ~0.5s faster than waiting. **Short/Hold E**: Zhongli hold E = shield — short E = pillar. Venti short E = single, hold = AoE. **Dash Cancel**: Neuvillette CA can be dash-canceled — start next CA earlier. **Bennett Self-Pyro**: Bennett burst applies pyro to characters inside — can freeze self in cryo environment — watch positioning.
+
+## 体力管理 / Stamina Management
+
+体力是战斗中最重要的资源——没有体力=不能闪避=吃满伤害。**消耗**: 闪避一次消耗15-20体力(取决于角色)——重击消耗25-50体力——攀爬/游泳持续消耗。**恢复**: 自然恢复约25体力/秒——双风共鸣减少15%消耗。**管理技巧**: 只在闪避Boss的关键技能时用体力——非关键技能靠走位躲。胡桃、神里绫华等重击主C需要比其他角色更注意体力分配——建议配合减少体力消耗的食物 / Stamina is the most important combat resource — no stamina = can't dodge = eat full damage. **Cost**: dodge 15-20 stamina — CA 25-50 — climb/swim continuous. **Recovery**: ~25/s natural — Anemo resonance -15% cost. **Management**: only dodge key boss attacks — walk to avoid others. Hu Tao, Ayaka, etc (CA DPS) need extra stamina care — use stamina-reducing food.
+
+## 元素爆发能量计算 / Burst Energy Calculation
+
+| 技能产生元素微粒 / Particle Generation | 数量 / Amount | 能量值 / Energy Value |
+|---|---|---|
+| 元素战技命中(同元素) / Elemental Skill hit (same element) | 3-4微粒 / 3-4 particles | 9-12能量 / 9-12 energy |
+| 元素战技命中(不同元素) / Elemental Skill hit (diff element) | 3-4微粒 / 3-4 particles | 6-8能量 / 6-8 energy |
+| 敌人掉落的元素晶球 / Enemy elemental orbs | 无属性 / Neutral | 2能量/个 / 2 each |
+| 西风系列武器 / Favonius weapons | 无属性 / Neutral | 6能量(需暴击触发) / 6 energy (crit trigger) |
+| 元素爆发本身 / Burst itself | - | 0(放完不立即回复) / 0 (no immediate return) |
+
+标签/Tags: 原神, Genshin Impact, 战斗, Combat, 系统, System, 元素反应, Reactions, 配队, Team, 体力, Stamina, 进阶, Advanced

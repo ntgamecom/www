@@ -12,78 +12,142 @@ toc: false
 
 | 概念 / Concept | 说明 / Description |
 |:----:|------|
-| **基础AP / Base AP** | 每个角色每回合获得4点行动点(Action Points) / Each character gets 4 AP per turn |
-| **攻击消耗 / Attack Cost** | 轻击=1AP、重击=2AP、技能=2-3AP、强力技能=4AP / Light=1AP, Heavy=2AP, Skill=2-3AP, Ultimate=4AP |
-| **防御消耗 / Defense Cost** | 闪避=1AP、格挡=1AP、反击=2AP(需要完美格挡后) / Dodge=1AP, Block=1AP, Counter=2AP (after perfect block) |
-| **道具消耗 / Item Cost** | 使用道具=1AP / Use item = 1AP |
-| **AP恢复 / AP Recovery** | 每回合自动恢复全部AP。部分技能和遗物可以增加每回合AP上限 / Full AP restore each turn. Some skills and relics increase AP cap |
-| **未使用AP / Unused AP** | 本回合未消耗的AP不会累积到下回合——**每回合用光AP** / Unused AP does NOT carry over — **spend all AP each turn** |
+| **基础AP / Base AP** | 每个角色每回合获得4点行动点 / Each character gets 4 AP per turn |
+| **技能消耗 / Skill Cost** | 技能消耗1-3AP，终极技消耗4AP / Skills cost 1-3 AP, ultimates cost 4 AP |
+| **道具消耗 / Item Cost** | 大部分道具消耗1AP / Most items cost 1 AP |
+| **防御 / Defend** | 消耗1AP——75%减伤+回复少量HP / Costs 1 AP — 75% damage reduction + small HP regen |
+| **待机 / Wait** | 不消耗AP——角色跳过回合——下回合获得+1额外AP / Costs 0 AP — skip turn — next turn gets +1 bonus AP |
+| **AP上限 / AP Cap** | 最大AP为10——通过装备和被动技能提升 / Max AP is 10 — increased via gear and passives |
 
-**核心战术**: 每回合尽量用完全部AP——留AP不用=浪费输出。除非需要留1AP应急闪避 / **Core tactic**: Spend all AP each turn — leaving AP unused = wasted DPS. Exception: save 1AP for emergency dodge.
-
----
+**AP管理核心技巧**: 不要每回合都用完所有AP——留1-2AP用于防御或应对突发情况。待机战术在需要爆发时非常有效——待机一回合下回合有5AP可以连放两个2AP技能 / **AP Management Tip**: Don't spend all AP every turn — save 1-2 AP for defense or emergencies. Wait tactic is great for burst setup — wait one turn for 5 AP next turn to chain two 2-AP skills.
 
 ## QTE系统 / QTE System
 
-| 判定 / Judgment | 区域 / Zone | 效果 / Effect |
-|:----:|:----:|------|
-| **完美 / Perfect** | 绿色区域中心 / Center of green zone | 伤害x1.5 + 额外效果触发 / 1.5x damage + bonus effect |
-| **良好 / Good** | 绿色区域边缘 / Edge of green zone | 伤害x1.0 / 1.0x damage |
-| **失误 / Miss** | 绿色区域外 / Outside green zone | 伤害x0.5 / 0.5x damage |
+每个攻击和技能命中时触发QTE——**在命中瞬间再次按下技能键**触发完美判定。普通命中 = 100%伤害。完美命中 = 150%伤害 + 额外效果(击退/眩晕/附加状态)。**防御QTE**: 被攻击时按防御键——完美防御 = 完全免伤 + 反击机会 / Every attack and skill triggers QTE on hit — **press skill key again at impact moment** for perfect timing. Normal hit = 100% damage. Perfect hit = 150% damage + bonus effect (knockback/stun/status). **Defense QTE**: Press defend when attacked — perfect defend = full immunity + counterattack chance.
 
-**QTE类型**: 攻击时按圈/空格(伤害加成)、闪避时按圈(无敌帧延长)、格挡时按圈(减伤率提升)、连携技时按顺序按键(全队增伤) / **QTE types**: Attack (dmg boost), Dodge (i-frame extension), Block (dmg reduction), Combo (party-wide dmg buff).
+### QTE难度分角色 / QTE Difficulty by Character
 
----
+| 角色 / Character | QTE窗口 / Window | 难度 / Difficulty | 技巧 / Tip |
+|---|---|---|---|
+| 古斯塔夫 / Gustave | 较宽(0.6s) / Wide | ★☆☆☆☆ | 看武器接触到敌人的瞬间 / Watch weapon contact |
+| 主角 / Protagonist | 中等(0.4s) / Medium | ★★☆☆☆ | 听音效——命中音效起步时按键 / Listen for hit sfx start |
+| 艾伦 / Allen | 较窄(0.3s) / Narrow | ★★★☆☆ | 看箭矢飞行轨迹末端 / Watch arrow trail end |
+| 塞拉 / Sera | 中等(0.4s) / Medium | ★★☆☆☆ | 法术弹道较慢——容易预判 / Slow projectile — easy timing |
+| 莉莎 / Lisa | 宽窄混合 / Mixed | ★★★★☆ | 机械技能QTE节奏不同 / Mech skills have varying rhythms |
 
-## 新手成长路线 / Beginner Progression Path
+### QTE练习方法
 
-| 阶段 / Phase | 目标 / Goal | 推荐行动 / Recommended Actions |
-|:----:|:----|:----|
-| **1. 熟悉基础 / Learn Basics** (1-2小时) | 掌握AP管理和QTE / Master AP + QTE | 完成白崖镇探索→做QTE练习模式→熟悉4角色技能 / Complete White Cliff → QTE practice → learn 4 skills per char |
-| **2. 装备积累 / Gear Up** (2-5小时) | 武器+3, 防具升级 / Weapon +3, armor upgraded | 灰烬森林探全图→收集铁矿石→升级古斯塔夫和露娜武器 / Explore Ashen Forest fully → collect Iron Ore → upgrade Gustave + Luna |
-| **3. 元素精通 / Element Master** (5-10小时) | 熟练掌握元素连携 / Master elemental combos | 冰封湖→学习冰+水冻结连携→购买全回复药→刷精炼钢 / Frozen Lake → learn Freeze combo → buy Mega Potions → farm Refined Steel |
-| **4. 阵容成型 / Party Setup** (10-15小时) | 确定主力4人阵容 / Finalize main 4 | 锈蚀工厂→解锁维克多终极技能→收集防具套装→武器+4 / Rusted Factory → Victor's ultimate → collect armor sets → weapon +4 |
-| **5. 终局准备 / Endgame Prep** (15-20小时) | 全队+5装备, 终极技能全解锁 / All +5 gear, all ultimates | 画师之塔→收集最终武器蓝图→全隐藏宝藏→准备最终Boss / Painter's Tower → final blueprints → all secrets → prep for final boss |
+在学院的训练室可以无限次练习QTE。推荐新玩家在这里花10分钟熟悉每个角色的QTE节奏。**进阶技巧**: 完美QTE也受角色敏捷属性影响——敏捷越高完美判定窗口越宽。堆敏捷的角色更容易打出完美QTE / Training room at Academy allows unlimited QTE practice. Recommended: 10 min to learn each character's rhythm. **Advanced**: Perfect QTE window also scales with Dexterity — higher Dex = wider window. Dex-stacking characters land perfect QTEs more easily.
 
----
+## 属性系统 / Stat System
 
-## 队伍搭配 / Party Composition
+| 属性 / Stat | 效果 / Effect | 谁点 / Who Pushes |
+|---|---|---|
+| 力量 / STR | 物理攻击伤害+负重 / Phys damage + carry weight | 近战角色 / Melee chars |
+| 敏捷 / DEX | 暴击率+闪避率+QTE窗口 / Crit + dodge + QTE window | 远程+输出角色 / Ranged + DPS |
+| 智力 / INT | 法术伤害+元素抗性 / Magic damage + elem resist | 法师角色 / Mage chars |
+| 体质 / CON | 生命值+物理抗性 / HP + phys resist | 所有角色(至少点15) / All (at least 15) |
+| 精神 / SPR | 技能能量回复+治疗量 / Energy regen + healing | 辅助+治疗 / Support + healer |
 
-| 角色 / Character | 定位 / Role | 推荐搭配 / Synergies |
-|:----:|:----:|:----|
-| **古斯塔夫(Gustave)** | 前排输出+坦克 / Frontline DPS + Tank | 配玛艾勒(治疗)或露娜(控制) / Pair with Maelle (heal) or Luna (control) |
-| **玛艾勒(Maelle)** | 治疗+辅助 / Healer + Support | 通用——任何队伍都需要 / Universal — every party needs |
-| **露娜(Luna)** | 法师+控制 / Mage + Control | 配古斯塔夫(冰→物理增伤) / Pair with Gustave (freeze → phys dmg bonus) |
-| **泽农(Zenon)** | 刺客+爆发 / Assassin + Burst | 配露娜(冰冻后暴击必中) / Pair with Luna (guaranteed crit on frozen) |
-| **维克多(Victor)** | 工程师+召唤 / Engineer + Summon | 配任意前排角色 / Pair with any frontline |
-| **艾莉丝(Iris)** | 弓手+标记 / Archer + Mark | 配泽农(标记+背刺=爆发) / Pair with Zenon (mark + backstab = burst) |
+**推荐初始加点**: 开局先平均分配给主属性+体质到15——然后再专精主属性。不要忽视体质——HP太低会导致频繁死亡。每5级获得3点属性点——合理规划 / **Recommended Start**: Even distribution in main stat + CON to 15 first — then specialize. Don't neglect CON — low HP = frequent death. 3 stat points per 5 levels — plan ahead.
 
-**开荒推荐**: 古斯塔夫+玛艾勒+露娜——打不过就换维克多(召唤物吸引仇恨) / **Beginner party**: Gustave + Maelle + Luna. Swap Victor for fights where you need a tank.
+## 装备基础 / Equipment Basics
 
----
+装备分为**白色(普通)>绿色(优秀)>蓝色(精良)>紫色(史诗)>橙色(传说)**五个品质。装备可以通过**锻造**升级(+1至+5)——每次升级提升基础属性20%。**镶嵌系统**: 装备有插槽——可以镶嵌宝石获得额外属性——宝石也可以合成升级。推荐优先升级武器(+5比+0的伤害翻倍) / Gear tiers: **White > Green > Blue > Purple > Orange**. Gear can be upgraded via **crafting** (+1 to +5) — +20% base stats per level. **Socket System**: Gear has sockets for gems — gems also upgradeable via crafting. Priority: upgrade weapons first (+5 = 2x damage vs +0).
 
-## 元素系统 / Elemental System
+## 新手常见错误 / Common Newbie Mistakes
 
-| 元素 / Element | 效果 / Effect | 连携 / Combo |
-|:----:|:------|:----:|
-| **物理 / Physical** | 基础伤害——无特殊效果 / Base damage | — |
-| **火焰 / Fire** | 灼烧DoT(3回合) / Burn DoT (3 turns) | 火+油=爆炸(范围伤害x2) / Fire+Oil=Explosion (AoE x2) |
-| **冰霜 / Ice** | 减速(减AP恢复速度)+概率冻结 / Slow (+reduce AP regen) + chance to freeze | 水+冰=冻结(目标跳过一回合) / Water+Ice=Freeze (skip 1 turn) |
-| **闪电 / Lightning** | 传导+概率麻痹 / Conduct + chance to paralyze | 雷+水=传导(伤害溅射到相邻敌人) / Lightning+Water=Conduct (chain to adjacent enemies) |
-| **暗影 / Shadow** | 减攻击+恐惧(概率逃跑) / ATK down + fear (chance to flee) | 暗+火=烟雾(闪避率上升) / Shadow+Fire=Smoke (+evasion) |
+1. **AP用完不留防御**——经常被打到残血。留1AP防御可以大幅度降低生存压力 / Spending all AP without saving for defense — leads to critical HP. Save 1 AP for defend.
+2. **忽视QTE**——完美QTE是150%伤害而不完美是100%——长期差距巨大 / Ignoring QTE — perfect = 150% vs normal = 100% — massive long-term gap.
+3. **不升级装备**——前期锻造材料充足——把武器升到+3可以提高50%输出 / Not upgrading gear — plenty of early crafting mats — +3 weapon = +50% DPS.
+4. **忽略支线任务**——支线给予大量经验和永久属性奖励——第七章前尽可能多完成 / Skipping side quests — they give big XP and permanent stat rewards — do as many as possible before Ch.3.
+5. **队伍搭配单一**——不要全队同一属性伤害——遇到抗性Boss会打不动 / One-dimensional party — don't use same damage type — countered by resist bosses.
 
----
+## 推荐新人Build / Recommended New Build
 
-## 新手常见错误 / Common Beginner Mistakes
+**主角(力量流)+艾伦(敏捷流)+塞拉(智力流)**: 三种伤害类型均衡——适应任何情况。主角坦克+输出、艾伦单体爆发、塞拉AOE清图。AP分配: 主角主防御+控制——艾伦主输出——塞拉辅助清图。这个组合可以无压力通关全剧情 / **Protagonist (STR) + Allen (DEX) + Sera (INT)**: Balanced three damage types — adapts to any situation. Protagonist tank+DPS, Allen single-target burst, Sera AoE clear. AP: Main defend+control, Allen main DPS, Sera support+clear. This combo clears all story content easily.
 
-| 错误 / Mistake | 正确做法 / Correct |
-|:----:|------|
-| **忽略QTE / Ignoring QTE** | 完美QTE的1.5倍伤害在Boss战中等于多打50%输出——练好QTE / Perfect QTE = 50% more damage in boss fights — practice it |
-| **AP不用完 / Not spending AP** | 每回合4AP至少用3AP。留太多AP=输出浪费 / Spend at least 3AP per turn. Wasted AP = wasted damage |
-| **忽视元素反应 / Ignoring elements** | 冰+水=冻结(敌方跳过一回合)——这比任何单体技能都强 / Water+Ice=Freeze (enemy skips a turn) — stronger than any single skill |
-| **不升级装备 / Skipping gear upgrades** | 武器每升级一次=伤害+15%——素材在探索中获得。每到一个新区域先找铁匠 / Each weapon upgrade = +15% damage — materials found through exploration. Find smith in each new zone |
-| **不用道具 / Not using items** | 回复药和Buff道具在Boss战中极其重要——不要省着不用 / Potions and buff items are crucial in boss fights — don't hoard them |
+## 全角色详解 / All Characters Guide
 
----
+| 角色 / Character | 类型 / Type | 核心属性 / Core Stat | 战斗风格 / Playstyle | 推荐AP技能 / Recommended AP Skills |
+|---|---|---|---|---|
+| 主角 / Protagonist | 力量坦克 / STR Tank | 力量+体力 / STR+VIT | 近战——吸收伤害+反击 / Melee — tank + counter | 铁壁(防御+反击)、战吼(嘲讽+减伤)、破军(高伤害单体) / Iron Wall, War Cry, Break Army |
+| 艾伦 / Allen | 敏捷输出 / DEX DPS | 敏捷+暴击 / DEX+Crit | 快速连击——单体爆发 / Fast combos — single burst | 疾风斩(快速3连)、暗影步(背后攻击+暴击)、终结技(低血量斩杀) / Wind Slash, Shadowstep, Execute |
+| 塞拉 / Sera | 智力法师 / INT Mage | 智力+AP / INT+AP | AOE法系——范围清场 / AoE mage — zone clear | 火焰风暴(范围火伤)、冰霜新星(范围冰+减速)、闪电链(连索雷击) / Firestorm, Frost Nova, Chain Lightning |
+| 维克多 / Victor | 敏捷辅助 / DEX Support | 敏捷+感知 / DEX+PER | 治疗+控制——团队支援 / Heal+CC — team support | 治愈之光(群体治疗)、时空锁(单控)、加速领域(全队加速) / Heal Light, Time Lock, Speed Zone |
+| 莉莲 / Lilian | 力量双持 / STR Dual | 力量+体力 / STR+VIT | 双持近战——高攻速 / Dual-wield — fast attacks | 双刃斩(双持连击)、旋风(范围物理)、血怒(吸血Buff) / Dual Slash, Whirlwind, Blood Rage |
+| 米歇尔 / Michelle | 智力召唤 / INT Summon | 智力+AP / INT+AP | 召唤物辅助——持续输出 / Summon support — sustain DPS | 召唤元素(火/冰/雷)、元素爆发(自爆AOE)、元素共鸣(全队Buff) / Summon Element, Element Burst, Element Resonance |
 
-标签/Tags: 33号远征队, Expedition 33, Clair Obscur, 新手, Beginner, 攻略, Guide
+## 新手指南常见错误 / Common Beginner Mistakes
+
+1. **忽视AP管理**: 前期AP非常有限——不要把所有AP都用在攻击上——至少保留1-2AP用于防御和紧急闪避。AP用光的角色在BossAOE时无法防御——可能被秒 / Ignoring AP management — keep 1-2 AP for defense and emergency dodge. Empty AP = can't defend against boss AoE = possible one-shot.
+2. **不升级装备**: 很多新玩家只顾升等级不管装备——但33号远征队的装备提升约等于3-5级的属性收益。推荐每到一个新区域更新武器和胸甲 / Not upgrading gear — equipment boost equals 3-5 levels of stats. Update weapon and chest armor every new zone.
+3. **无视QTE练习**: 完美QTE=伤害+30%——前期可以不追求——但中后期不练完美QTE会卡Boss。推荐在训练场花10分钟练主力技能的QTE节奏 / Ignoring QTE practice — perfect QTE = +30% damage. Fine to ignore early game but mid-late game boss walls require perfect QTE. Practice main skills at training ground.
+4. **单一属性队伍**: 全队同一种属性遇到抗性Boss无法处理——至少两种属性输出。推荐物理+法系混搭 / Single element team — get walled by resistant bosses. At least 2 damage types. Recommend phys+magic hybrid.
+5. **不探索隐藏路径**: 33号远征队的地图有大量分支路径——很多连主路都不显示——里面有更好的装备、更多的AP恢复点和捷径 / Not exploring hidden paths. Maps have many branches not visible from main path — better gear, more AP recovery points, and shortcuts.
+
+## 推荐升级路线 / Recommended Progression
+
+**第一章** → 主角单人战——熟悉基础QTE和AP系统。**第二章** → 队伍扩大到3人——开始练习配合——优先解锁艾伦和塞拉——物理+法系=覆盖全面。**第三章** → 队伍满5人——开始深入角色Build——每个角色确定主方向。**第四章** → 终章前准备——装备全强化——收集隐藏遗物——准备终局Boss战。**终局** → 通关后深渊裂隙+竞技场——刷终极装备和成就 / **Ch.1**: Solo protagonist — learn QTE and AP basics. **Ch.2**: Party of 3 — practice combos — unlock Allen+Sera first. **Ch.3**: Full 5-person party — build characters — each pick main direction. **Ch.4**: Pre-final prep — max gear — collect hidden relics — prepare for final boss. **Endgame**: Abyss Rift + Arena — farm ultimate gear and achievements.
+
+## 新手常见问题FAQ / Beginner FAQ
+
+| 问题 / Question | 回答 / Answer |
+|---|---|
+| Q: 前期最应该投资什么属性？ / What stats to invest early? | A: 暴击率(CR)和攻击力(ATK)收益最高——前期暴击率>暴击伤害——到达25%暴击后再堆暴伤 / CR and ATK are king — early CR > CRIT DMG — stack CR to 25% then CRIT DMG |
+| Q: 装备应该优先强化武器还是防具？ / Weapon vs armor upgrade priority? | A: 武器优先——提高输出=减少战斗时间=变相减少受到的伤害——推荐武器+6后再开始强化防具 / Weapon first — more DPS = shorter fights = less damage taken — weapon +6 before armor upgrades |
+| Q: AP怎么恢复最快？ / Fastest AP regen? | A: 完美QTE(+2AP/次)、使用AP恢复技能(维克多的加速领域)、装备AP恢复属性的饰品和遗物 / Perfect QTE (+2AP), AP regen skills (Victor's Speed Zone), AP regen gear |
+| Q: 角色死亡后怎么复活？ / How to revive dead characters? | A: 战斗中使用维克多的"治愈之光"(需要30AP)——战斗中只能使用1次复活技能——战斗外使用营地道具全恢复 / Victor's Heal Light (30AP) in battle — limited to 1 revive per battle — full restore at camp |
+| Q: 钱不够用怎么办？ / How to earn more gold? | A: 第一章避免花钱——第二章开始刷——在港口接运送任务(每次1000金币——3-5分钟完成)——优先打精英怪掉落装备卖钱 / Avoid spending in Ch.1 — farm in Ch.2 — delivery quests in port (1000g each — 3-5 min) — kill elites for gear to sell |
+| Q: 这游戏有多周目继承吗？ / NG+ carryover? | A: 有——通关后开启新游戏+——继承等级、装备(不继承任务道具)、属性——敌人加强但掉落更好 / Yes — NG+ after clear — carry level, gear (not quest items), stats — enemies stronger but better drops |
+| Q: 什么时候去刷深渊裂隙？ / When to farm Abyss Rift? | A: 队伍平均等级45+——装备全+8+该阶段最高——建议通关主线后再深入 / Party level 45+ — gear all +8+ — recommended after main story clear |
+
+## 新手最速上手流程图 / Beginner Fastest Learning Path
+
+**第1小时**: 完成第一章主线——熟悉基础操作——收集废墟3个宝箱——击败战争巨像——到达城镇 / **Hour 1**: Clear Ch.1 main story — learn basic controls — collect 3 ruin chests — defeat War Colossus — reach town.
+
+**第2-3小时**: 第二章——解锁艾伦和塞拉——完成港口支线"失落的货物"(好装备奖励)——火山区域收集8个矿石——击败火山Boss / **Hours 2-3**: Ch.2 — unlock Allen and Sera — complete "Lost Cargo" (good gear reward) — collect 8 volcano ores — defeat volcano boss.
+
+**第4-6小时**: 第三章——学院区——图书馆找技能书——光之森林收集碎片——完成学者支线——暗影森林刷等级到35——击败暗影领主 / **Hours 4-6**: Ch.3 — academy — find skill books in library — Light Forest fragments — scholar quest — Shadow Forest grind to lvl 35 — defeat Shadow Lord.
+
+**第7-9小时**: 第四章——神殿区域——完成试炼——全队装备+8——收集最后道具——击败最终Boss(注意QTE阶段变化) / **Hours 7-9**: Ch.4 — temple region — complete trials — all gear +8 — final collectibles — defeat final boss (watch QTE phase changes).
+
+**第10小时+**: 终局——深渊裂隙1-10层(练手)——竞技场1-5层(练习)——收集回声点和光之碎片——挑战深渊裂隙10-20层 / **Hours 10+**: Endgame — Abyss Rift 1-10 (warm-up) — Arena 1-5 (practice) — collect echoes + fragments — challenge Abyss 10-20.
+
+## 新玩家资源收集建议 / New Player Resource Priority
+
+| 资源 / Resource | 重要性 / Priority | 用途 / Use | 获取方式 / Source |
+|---|---|---|---|
+| 金币 / Gold | ★★★★★ | 强化装备——购买关键道具 / Gear upgrade — key items | 卖装备——做支线——精英掉落 / Sell gear — side quests — elite drops |
+| 强化材料 / Upgrade Mats | ★★★★★ | 强化+6以上必须 / Required for +6+ upgrades | 分解装备——矿洞采集——分解多余装备 / Salvage gear — mining — salvage extras |
+| 宝石结晶 / Gem Crystals | ★★★★☆ | 宝石合成——属性提升大 / Gem crafting — big stat boost | 精英掉落——隐藏宝箱——矿区 / Elites — hidden chests — mines |
+| 技能书 / Skill Books | ★★★★☆ | 解锁隐藏技能 / Unlock hidden skills | 图书馆购买——隐藏商人——Boss掉落 / Library buy — hidden merchants — boss drops |
+| 食谱 / Recipes | ★★★☆☆ | 制作永久Buff料理 / Permanent buff food | 支线奖励——商人购买 / Side quest rewards — shop buys |
+| 鱼饵 / Baits | ★★☆☆☆ | 钓鱼获得稀有材料 / Fishing for rare mats | 商人购买——宝箱 / Store — chests |
+
+## 战斗系统进阶理解 / Advanced Combat Understanding
+
+**QTE完美时机**: 每个角色攻击动画不同——完美QTE时机不同——艾伦的疾风斩在第三段动画的闪光瞬间按——塞拉的火焰风暴在法阵完全展开时按——主角的铁壁在被击中的前一帧按。训练场(第三章解锁)可以反复练习每个技能的QTE时机 / **Perfect QTE Timing**: Each character has unique animation timing — Allen's Wind Slash = 3rd animation flash moment — Sera's Firestorm = when glyph fully expands — Protag's Iron Wall = frame before hit. Training room (Ch.3) for practice.
+
+**AP管理策略**: 战斗初期不急着用AP——先攒到50AP(上限)——然后爆发: 先用加Buff技能(增加伤害/暴击)——再用高AP消耗技能(终极技/高倍率技能)——保留10-20AP用于紧急回避和治疗。维克多的时空锁(15AP)在Boss蓄力时使用可以打断必杀技——这是最关键的AP用途之一 / **AP Management**: Early fight — save AP to 50 cap — then burst: buff first (dmg/CR buffs) — then high-cost skills (ultimates) — keep 10-20AP for dodge/heal. Victor's Time Lock (15AP) can interrupt boss charge attacks — most critical AP use.
+
+**元素反应系统**: 火+冰=蒸发——1.5倍伤害——降低敌人抗性。火+雷=超载——AoE爆炸——周围敌人击退。冰+雷=超导——降低敌人防御20%持续3回合。三种以上异常状态同时存在=元素风暴——全队额外+50%伤害持续1回合。**推荐连招**: 塞拉先火焰风暴→然后冰霜新星=蒸发→接着闪电链=超载→最后暴风雪=继续叠冰异常 / **Element Reactions**: Fire+Ice = Vaporize (1.5x dmg, lower enemy resist). Fire+Lightning = Overload (AoE blast, knockback). Ice+Lightning = Superconduct (lower enemy DEF 20% — 3 turns). 3+ status effects = Elemental Storm (+50% dmg 1 turn). **Recommended combo**: Sera Firestorm → Frost Nova (Vaporize) → Chain Lightning (Overload) → Blizzard (stack ice).
+
+## 游戏设置优化 / Game Settings Optimization
+
+**推荐设置**: 战斗速度→1.25x(默认1x太长——1.5x太快看不清QTE)。QTE提示→开启"提前指示"(画面边缘闪光——比音效提示更快)。自动存档→开启。对话自动推进→关闭(免得错过关键信息)。视角→战斗视角改为"动态"(更好观察战场全貌) / **Recommended settings**: Battle speed 1.25x (default too slow — 1.5x too fast for QTE). QTE hint: enable "Advance Warning" (screen edge flash — faster than audio). Auto-save: ON. Auto-advance dialogue: OFF. Camera: "Dynamic" for better battlefield view.
+
+**按键设置**: QTE确认键→建议绑定到手感最好的键(空格键或左键)。快捷换位→绑定到鼠标侧键。快捷技能→1234对应4个角色——QERT对应4个技能槽——F为终极技能。**手柄推荐**: QTE用A/B/X/Y——换位用LB/RB——技能用方向键+ABXY组合 / **Keybinds**: QTE confirm → bind to most comfortable key (Space or left click). Quick swap → mouse side button. Quick skills: 1234=characters, QERT=skill slots, F=ultimate. **Controller**: QTE with A/B/X/Y, swap with LB/RB, skills with dpad+ABXY.
+
+## 难度选择指南 / Difficulty Selection Guide
+
+| 难度 / Difficulty | 特点 / Features | 适合人群 / For |
+|---|---|---|
+| 故事模式 / Story | 敌人伤害减半——QTE窗口延长50%——AP恢复速度翻倍 / Half enemy dmg — 50% longer QTE window — double AP regen | 纯剧情玩家——不擅长动作游戏的玩家 / Story-only — action game beginners |
+| 普通模式 / Normal | 标准体验——QTE窗口0.3秒——敌人属性和掉落均衡 / Standard — 0.3s QTE window — balanced enemy stats/drops | 大多数玩家——第一次游玩推荐 / Most players — recommended first playthrough |
+| 困难模式 / Hard | 敌人伤害+50%——HP+30%——QTE窗口缩短至0.15秒——Boss新增技能模式 / 50% more enemy dmg — 30% more HP — 0.15s QTE — new boss patterns | 有JRPG经验的玩家——寻求挑战 / JRPG vets — seeking challenge |
+| 专家模式 / Expert | 敌人全属性+100%——无QTE窗口提示——永久死亡模式(队伍全灭=存档消失) / 100% enemy stats — no QTE indicator — permadeath (wipe=save delete) | 极限挑战玩家——二周目推荐 / Extreme challenge — recommend NG+ |
+
+**难度更改**: 随时随地可以在设置中更改难度——但专家模式一旦选择不能切回低难度——且专家模式下不能获得白金成就 / **Change anytime**: Difficulty changeable in settings anytime — except Expert: once chosen, can't downgrade — Expert mode locks Platinum achievement.
+
+标签/Tags: 33号远征队, Expedition 33, Clair Obscur, 新手, Beginner, 入门, Guide, QTE, 行动点, AP System

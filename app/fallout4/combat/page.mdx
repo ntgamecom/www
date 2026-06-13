@@ -1,0 +1,190 @@
+---
+title: 战斗系统 / Combat System
+description: 辐射4战斗机制详解——VATS、武器类型、动力甲与潜行系统 / Fallout 4 combat mechanics — VATS, weapon types, power armor and stealth system
+---
+
+# 战斗系统 / Combat System
+
+辐射4的战斗系统融合了传统FPS射击与VATS辅助瞄准系统——同时加入动力甲和近战格斗 / Fallout 4 combat blends traditional FPS shooting with the VATS assisted aiming system — plus power armor and melee.
+
+---
+
+## VATS系统 / V.A.T.S.
+
+### VATS基础 / VATS Basics
+
+VATS (Vault-Tec辅助瞄准系统) 可以暂停时间——选择目标部位进行精准攻击 / VATS (Vault-Tec Assisted Targeting System) pauses time — select body parts for precision attacks.
+
+| 部位 / Body Part | 效果 / Effect | 命中率惩罚 / Hit Chance |
+|---|---|---|
+| **头部 / Head** | 暴击伤害2倍+可能即死 / 2x crit + possible instant kill | -20% |
+| **躯干 / Torso** | 标准伤害 / Standard damage | 0% |
+| **左/右臂 / Arms** | 降低敌人攻击精度 / Reduce enemy attack accuracy | -15% |
+| **左/右腿 / Legs** | 降低敌人移动速度 / Reduce enemy movement speed | -15% |
+| **武器 / Weapon** | 可能打落敌人武器 / May disarm enemy | -25% |
+
+**VATS关键参数 / Key VATS Stats**:
+| 参数 / Stat | 效果 / Effect | 受什么影响 / Affected By |
+|---|---|---|
+| AP消耗 / AP Cost | 每次VATS攻击消耗的行动点 / Action points per VATS shot | 武器重量+Perk |
+| 命中率 / Hit Chance | 每次攻击的概率 / Per-attack chance | 感知+距离+掩体 / Perception + range + cover |
+| 暴击条 / Crit Meter | 满后下次攻击100%暴击 / Full = next attack auto-crit | 运气+暴击perk / Luck + crit perks |
+| 暴击倍率 / Crit Multiplier | 暴击造成的额外伤害 / Bonus damage on crit | 武器改装+Perk |
+
+---
+
+### VATS流派构建 / VATS Build
+
+| 核心SPECIAL / Core Stats | 推荐Perk / Recommended Perks |
+|---|---|
+| 感知P(步枪手/使枪高手) / Perception (Rifleman/Gunslinger) | 暴击银行/更好的暴击/四叶草 / Critical Banker/Better Crits/Four Leaf Clover |
+| 运气L(暴击) / Luck (Crits) | 穿透器/集中火力 / Penetrator/Concentrated Fire |
+| 敏捷A(AP) / Agility (AP) | 快手/枪手 / Quick Hands/Gunslinger |
+
+---
+
+## 武器类型与改造 / Weapon Types & Modding
+
+### 武器类别 / Weapon Categories
+
+| 类别 / Category | 代表武器 / Example | 弹药 / Ammo | 最佳距离 / Best Range | 特点 / Trait |
+|---|---|---|---|---|
+| **手枪 / Pistol** | 10mm手枪 / 10mm Pistol | 10mm | 近-中 / Short-Med | 小巧——AP消耗低 / Compact — low AP cost |
+| **左轮 / Revolver** | .44左轮 / .44 Revolver | .44 | 中 / Medium | 高伤害——换弹慢 / High damage — slow reload |
+| **步枪 / Rifle** | 战斗步枪 / Combat Rifle | .45 | 中-远 / Med-Long | 全能 / All-rounder |
+| **狙击枪 / Sniper** | 猎枪改 / Hunting Rifle Modded | .308 | 远 / Long | 高精度——慢射速 / High accuracy — slow fire |
+| **霰弹枪 / Shotgun** | 战斗霰弹 / Combat Shotgun | 霰弹 / Shell | 近 / Short | 范围伤害——近距离致命 / AoE — deadly close range |
+| **冲锋枪 / SMG** | 冲锋枪 / Submachine Gun | 10mm | 近-中 / Short-Med | 高射速——弹药消耗快 / High fire rate — ammo-hungry |
+| **能量武器 / Energy** | 镭射步枪 / Laser Rifle | 融合电池 / Fusion Cell | 中-远 / Med-Long | 弹道可见——无下坠 / Visible beam |
+| **重型武器 / Heavy** | 旋转机枪 / Minigun | 5mm | 中 / Medium | 高DPS——重量大 / High DPS — heavy |
+| **近战 / Melee** | 超级大锤 / Super Sledge | 无 / None | 近 / Melee | 高基础伤害——AP消耗低 / High base dmg — low AP cost |
+| **徒手 / Unarmed** | 拳击手套改 / Power Fist | 无 / None | 近 / Melee | 攻速快——可中距离冲刺攻击 / Fast — sprint attack |
+
+---
+
+### 武器改造全解 / Weapon Modding
+
+每把武器有7个改造槽——每个改变性能 / 7 mod slots per weapon — each changes performance.
+
+| 改造槽 / Slot | 选项 / Options | 效果 / Effect |
+|---|---|---|
+| **枪膛 / Receiver** | 舒适/强力/自动/校准/微等 / Standard/Powerful/Auto/Calibrated/Tuned | 决定伤害和射速 / Determines dmg + fire rate |
+| **枪管 / Barrel** | 短/中/长/阻击 / Short/Medium/Long/Sniper | 影响射程和后座 / Range + recoil |
+| **枪托 / Stock** | 标准/神射手/全自动 / Standard/Marksman/Full Auto | 后座力控制 / Recoil control |
+| **瞄具 / Sights** | 标准/反射/准直/狙击镜 / Standard/Reflex/Glow Sight/Scope | 瞄准精度 / Aim precision |
+| **弹匣 / Magazine** | 标准/加长/快拔/穿甲 / Standard/Extended/Quick/Armor-Piercing | 容量和换弹 / Capacity + reload |
+| **枪口 / Muzzle** | 补偿制退器/消音器 / Compensator/Suppressor | 后座减少或隐蔽 / Recoil reduction or stealth |
+| **涂装 / Paint** | 各种颜色迷彩 / Various camo colors | 纯外观(无属性) / Cosmetic only |
+
+---
+
+## 护甲与防御 / Armor & Defense
+
+### 护甲类型 / Armor Types
+
+| 护甲 / Armor | 类型 / Type | 物理抗性 / Ballistic | 能量抗性 / Energy | 重量 / Weight |
+|---|---|---|---|---|
+| **皮甲 / Leather** | 轻 / Light | 低 / Low | 中等 / Medium | 轻 / Light |
+| **金属甲 / Metal** | 重 / Heavy | 高 / High | 低 / Low | 重 / Heavy |
+| **战斗甲 / Combat** | 混合 / Hybrid | 中等 / Medium | 中等 / Medium | 中等 / Medium |
+| **合成年人甲 / Synth** | 混合 / Hybrid | 中等 / Medium | 高 / High | 中等 / Medium |
+| **兄弟会甲 / Brotherhood** | 重 / Heavy | 高 / High | 中等 / Medium | 重 / Heavy |
+| **学院甲 / Institute** | 轻 / Light | 低 / Low | 高 / High | 轻 / Light |
+| **传奇护甲 / Legendary** | 可变 / Varies | 可变 / Varies | 可变 / Varies | 可变 / Varies |
+
+**护甲改造 / Armor Mods**:
+
+| 改造 / Mod | 效果 / Effect |
+|---|---|
+| 深口袋 / Deep Pocketed | 负重+10 / Carry capacity +10 |
+| 铅衬 / Lead Lined | 辐射抗性+10 / Rad resist +10 |
+| 强化 / Strengthened | 肢体伤害抗性 / Limb damage resistance |
+| 气密 / Sealed | 免疫水上辐射 / Immune to water rads |
+| 暗影 / Shadowed | 潜行时更难被发现 / Harder to detect sneaking |
+| 超轻 / Ultra-Light | 重量减半——AP恢复更快 / Half weight — faster AP regen |
+| 石棉 / Asbestos | 免疫燃烧伤害 / Immune to burning |
+
+---
+
+## 动力甲系统 / Power Armor
+
+### 动力甲部件 / PA Parts
+
+| 部件 / Part | 说明 / Description | 改造效果 / Mods |
+|---|---|---|
+| **头盔 / Helmet** | 提供瞄准HUD / Provides targeting HUD | 夜视/生命探测 / Night vision/Life detection |
+| **躯干 / Torso** | 核心护甲值 / Core armor rating | 喷气背包/紧急协议 / Jet pack/Emergency protocols |
+| **左/右臂 / Arms** | 近战伤害 / Melee damage | 液压/减重 / Hydraulic/Weight reduction |
+| **左/右腿 / Legs** | 负重+冲刺 / Carry + sprint | 减冲击/跑得快 / Shock absorbing/Speed increase |
+
+**动力甲核心 / Fusion Core**:
+- 核心决定运行时间——移动消耗核心能量 / Core determines runtime — movement drains core
+- 每个核心可运行约20分钟(常态) / Each core lasts ~20 min (normal use)
+- VATS消耗额外核心能量 / VATS drains extra core energy
+- 可以在发电机的核心提取器中找到 / Found in generators and core extractors
+
+| 动力甲型号 / PA Model | 物抗 / Ballistic | 能抗 / Energy | 辐射抗 / Rad | 获取地点 / Location |
+|---|---|---|---|---|
+| T-45 | 280 | 220 | 850 | 早期任务 / Early missions |
+| T-51 | 350 | 400 | 1050 | 军火库 / Military stockpiles |
+| T-60 | 380 | 350 | 1000 | 兄弟会 / Brotherhood |
+| X-01 | 470 | 510 | 1250 | 高等级区域 / High-level zones |
+| X-02(黑魔鬼) / X-02 Black Devil | 500 | 530 | 1300 | DLC / DLC |
+
+---
+
+## 潜行系统 / Stealth System
+
+### 潜行机制 / Stealth Mechanics
+
+| 因素 / Factor | 对潜行的影响 / Effect on Stealth |
+|---|---|
+| 光照 / Light | 在阴影中难以被发现——光亮中容易 / Harder in shadows — easier in light |
+| 护甲重量 / Armor Weight | 重甲潜行更难 / Heavy armor = harder stealth |
+| 移动速度 / Move Speed | 行走比奔跑更安静 / Walk quieter than run |
+| Perk / Perks | 忍者/潜行Perk大幅提升 / Ninja/Sneak perks drastically improve |
+| 消音武器 / Suppressed Weapons | 不打草惊蛇——位置不被暴露 / Don't reveal position |
+| 掩体 / Cover | 躲在物体后面不易被发现 / Hiding behind objects |
+| 距离 / Distance | 距敌人越远越不易被发现 / Further = safer |
+
+**潜行&忍者Perk伤害倍率 / Sneak & Ninja Perk Multipliers**:
+
+| Perk等级 / Perk Rank | 近战倍率 / Melee | 远程倍率 / Ranged |
+|---|---|---|
+| 忍者1 / Ninja 1 | 4x | 2.5x |
+| 忍者2 / Ninja 2 | 5x | 3x |
+| 忍者3 / Ninja 3 | 10x | 3.5x |
+| 忍者3+死神的时尚 / Ninja 3 + Deacon's Perk | 12x | 4x |
+
+---
+
+## 传奇敌人系统 / Legendary Enemies
+
+| 传奇词缀 / Legendary Prefix | 效果 / Effect | 应对策略 / Counter |
+|---|---|---|
+| 突变 / Mutant | 随机前缀——击杀时全身发光 / Random prefix — glows on kill | 集中火力 / Focus fire |
+| 血腥 / Bloodied | 低血量时提升伤害 / High damage at low HP | 远程击杀——不要靠近 / Ranged kill |
+| 激怒 / Raging | 受伤后攻击力大增 / Damage increases when hurt | 快速击杀——高DPS / Fast kill — high DPS |
+| 隐匿 / Assassin | 对玩家额外伤害 / Extra damage vs player | 用潜行接近 / Sneak approach |
+| 尸鬼化 / Ghoulish | 在辐射中回血 / Heals in radiation | 引到无辐射区域 / Lure to clean area |
+
+**传奇掉落 / Legendary Drops**:
+传奇敌人击杀后掉落一件传奇装备——词缀随机 / Legendary kills drop one legendary item — random prefix.
+
+---
+
+## 战斗推荐 / Combat Recommendations
+
+### Perk优先等级 / Perk Priority
+
+| 流派 / Build | 优先Perk / Priority Perks | 武器 / Weapon |
+|---|---|---|
+| 潜行狙击 / Stealth Sniper | 步枪手+忍者+潜行 / Rifleman+Ninja+Sneak | 消音猎枪 / Suppressed Hunting Rifle |
+| 动力甲重机枪 / PA Heavy | 重枪手+装甲商+科学 / Heavy Gunner+Armorer+Science | 旋转机枪 / Minigun |
+| VATS手枪 / VATS Pistol | 使枪高手+暴击银行+四叶草 / Gunslinger+Crit Banker+Four Leaf | 10mm改装 / Modded 10mm |
+| 近战狂战 / Melee Berserker | 大联盟+根深蒂固+闪电突袭 / Big Leagues+Rooted+Blitz | 超级大锤 / Super Sledge |
+| 能量武器 / Energy Weapons | 步枪手+科学+核物理 / Rifleman+Science+ Nuclear Physicist | 镭射步枪 / Laser Rifle |
+
+---
+
+标签/Tags: Fallout 4, 战斗, VATS, 武器, 动力甲, 潜行, Combat, VATS, Weapons, Power Armor, Stealth, 辐射4

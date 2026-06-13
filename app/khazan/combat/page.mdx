@@ -1,0 +1,160 @@
+---
+title: 战斗系统 / Combat System
+description: 第一狂战士卡赞战斗机制详解——耐力、狂战士模式与武器切换 / The First Berserker Khazan combat — stamina, berserker mode, and weapon swap
+---
+
+# 战斗系统 / Combat System
+
+卡赞的战斗系统融合硬核魂系机制与狂战士特色——以耐力管理和愤怒值为核心 / Khazan's combat system blends hardcore souls mechanics with berserker features — centered on stamina management and rage.
+
+---
+
+## 基础战斗 / Basic Combat
+
+### 攻击类型 / Attack Types
+
+| 攻击 / Attack | 操作 / Input | 说明 / Description |
+|---|---|---|
+| **轻攻击 / Light Attack** | R1 / 鼠标左键 | 快速攻击——积攒愤怒值 / Fast attacks — builds rage |
+| **重攻击 / Heavy Attack** | R2 / Shift+左键 | 高伤害+削韧——消耗更多耐力 / High damage + stagger — costs more stamina |
+| **跳跃攻击 / Jump Attack** | 跳跃+R2 / Jump+R2 | 可打出敌人硬直 / Can stagger enemies |
+| **冲刺攻击 / Running Attack** | 奔跑+攻击 / Sprint+attack | 突进起手技 / Gap closer |
+| **处决 / Execution** | 敌人硬直时R1 / R1 when staggered | 高伤害终结技 / High damage finisher |
+
+---
+
+## 耐力系统 / Stamina System
+
+| 机制 / Mechanic | 说明 / Description |
+|---|---|
+| **耐力槽 / Stamina Bar** | 绿色槽——攻击+格挡+翻滚消耗 / Green bar — consumed by attacks, blocking, rolls |
+| **耐力恢复 / Stamina Regen** | 不消耗时快速恢复 / Fast recovery when idle |
+| **耐力见底 / Exhausted** | 耐力归零=大硬直——非常危险 / Zero stamina = big stagger — very dangerous |
+| **愤怒值 / Rage Gauge** | 攻击命中+被攻击累积——满了可进入狂战士模式 / Builds on hit/taken — full = berserker mode |
+
+---
+
+## 狂战士模式 / Berserker Mode
+
+狂战士模式是卡赞的核心特色——激活后大幅提升攻防 / Berserker Mode is Khazan's core feature — massively boosts offense and defense.
+
+| 效果 / Effect | 说明 / Description |
+|---|---|
+| **攻击力提升 / Attack Up** | 所有伤害+30% / All damage +30% |
+| **攻速提升 / Speed Up** | 攻击速度+25% / Attack speed +25% |
+| **减伤 / Damage Reduction** | 受到伤害-20% / Incoming damage -20% |
+| **霸体 / Hyper Armor** | 攻击中不会被轻易打断 / Attacks are hard to interrupt |
+| **特殊攻击 / Special Attack** | 解锁狂战士专属技能 / Unlocks berserker-exclusive skills |
+
+### 狂战士激活 / Activation
+
+| 条件 / Condition | 说明 / Description |
+|---|---|
+| **愤怒值满 / Full Rage** | 持续攻击或受伤积累 / Continuous attack or taking damage |
+| **主动激活 / Manual Activate** | L1+R1同时按 / Press L1+R1 together |
+| **持续时间 / Duration** | 约15秒——攻击可延长 / ~15 seconds — extended by attacking |
+| **冷却 / Cooldown** | 结束后愤怒值归零——重新累积 / Empties on end — need to rebuild |
+
+---
+
+## 武器系统 / Weapon System
+
+### 武器类型 / Weapon Types
+
+| 武器 / Weapon | 特点 / Features |
+|---|---|
+| **大剑 / Greatsword** | 高伤害+长范围——但慢 / High damage + range — but slow |
+| **双刀 / Dual Blades** | 快速连击——愤怒值累积快 / Fast combos — fast rage build |
+| **长矛 / Spear** | 中距离+突刺——安全 / Mid range + thrusts — safe |
+| **战斧 / Battle Axe** | 高削韧+破盾 / High stagger + shield break |
+| **巨锤 / War Hammer** | 极致削韧——慢但致命 / Max stagger — slow but deadly |
+
+### 武器切换 / Weapon Swap
+
+| 操作 / Input | 说明 / Description |
+|---|---|
+| **双武器槽 / Dual Weapon Slots** | 可装备两把武器——战斗中随时切换 / Equip two weapons — swap mid-combat |
+| **武器切换 / Weapon Swap** | 按方向键左右切换 / D-pad left/right to swap |
+| **切换攻击 / Swap Attack** | 切换瞬间按攻击——特殊连击 / Press attack on swap — special combo |
+| **战术意义 / Tactical Value** | 大剑+双刀组合——大剑削韧+双刀追击 / Greatsword stagger + dual blade chase |
+
+---
+
+## 防御与闪避 / Defense & Evasion
+
+### 翻滚 / Rolling
+
+| 负重 / Load | 翻滚质量 / Roll Quality |
+|---|---|
+| **轻负重 / Light Load** | 快+远 / Fast + far |
+| **中负重 / Medium Load** | 标准 / Standard |
+| **重负重 / Heavy Load** | 慢+近——危险 / Slow + short — dangerous |
+
+### 格挡 / Blocking
+
+| 盾牌 / Shield | 效果 / Effect |
+|---|---|
+| **小盾 / Small Shield** | 物防70-85%——可弹反 / Block 70-85% — can parry |
+| **中盾 / Medium Shield** | 物防85-95%——最平衡 / 85-95% — most balanced |
+| **大盾 / Greatshield** | 物防95-100%——最强防御 / 95-100% — best defense |
+
+### 完美格挡 / Perfect Block
+
+| 机制 / Mechanic | 说明 / Description |
+|---|---|
+| **完美格挡时机 / Timing** | 攻击命中前瞬间按格挡 / Press block right before impact |
+| **完美格挡效果 / Effect** | 不减耐力+弹开敌人——造成大硬直 / No stamina cost + pushes enemy back — big stagger |
+| **完美格挡反击 / Counter** | 完美格挡后按攻击键——反击连击 / Press attack after perfect block — counter combo |
+
+---
+
+## BOSS战斗策略 / Boss Combat
+
+| Boss | 策略 / Strategy |
+|---|---|
+| **兽人将军 / Orc General** | 注意他的大范围横扫——翻滚到他背后输出 / Watch for wide sweep — roll behind for damage |
+| **冰霜巨人 / Frost Giant** | 弱火——用火焰武器伤害翻倍。躲开踩地AOE / Weak to fire — double damage. Avoid stomp AOE |
+| **暗影骑士 / Shadow Knight** | 暗属性攻击——使用光属性护符抵抗 / Dark attacks — use holy amulet |
+| **狂战士之魂 / Berserker Soul** | 镜像战——他也会狂战士模式。你的狂战士比他强 / Mirror fight — he also uses berserker mode |
+
+---
+
+## 战斗常见问题 / Combat FAQ
+
+| 问题 / Question | 回答 / Answer |
+|---|---|
+| **愤怒值怎么快速累积？/ Fast rage build?** | 双刀轻攻击连击最快——被攻击也累积 / Dual blade light combo fastest — taking damage also builds |
+| **狂战士模式什么时候开？/ When to berserker?** | Boss战开场——或敌人有大硬直时 / Boss fight start — or when enemy is staggered |
+| **武器怎么搭配好？/ Best weapon combo?** | 大剑（削韧）+ 双刀（输出）/ Greatsword (stagger) + Dual blades (DPS) |
+| **完美格挡难吗？/ Perfect block difficulty?** | 比只狼弹反宽松——练习后容易掌握 / More lenient than Sekiro parry — learnable with practice |
+| **耐力不够用？/ Not enough stamina?** | 加耐力属性+不要连续攻击太多次——留耐力翻滚 / Level endurance + don't overcommit — save stamina for rolls |
+| **负重多少合适？/ Ideal equip load?** | 保持在70%以下——超过70%翻滚极慢。推荐中负重30-70% / Keep under 70% — over 70% fat roll. Medium load 30-70% recommended |
+| **处决时机？/ Execution timing?** | 敌人出现大硬直时——通常出现在削韧打满后。处决伤害高且有短暂无敌 / When enemy is fully staggered — usually after poise is broken. High damage + brief invincibility |
+
+---
+
+## 武器进阶 / Advanced Weapon Tactics
+
+| 武器 / Weapon | 连段推荐 / Combo | 最佳使用场景 / Best Use |
+|---|---|---|
+| **大剑 / Greatsword** | 重攻击→跳跃攻击→重攻击——高削韧循环 / Heavy → Jump → Heavy — stagger loop | Boss战削韧 / Boss stagger |
+| **双刀 / Dual Blades** | 轻攻击×4→重攻击——快速累积愤怒值 / Light×4 → Heavy — fast rage build | 快速输出/愤怒累积 / Fast DPS/rage |
+| **长矛 / Spear** | 重攻击(蓄力)→轻攻击×2——安全突刺 / Heavy(charge) → Light×2 — safe thrust | 安全距离输出 / Safe distance |
+| **战斧 / Battle Axe** | 跳跃攻击→轻攻击×3——破盾连段 / Jump → Light×3 — shield break | 面多持盾敌人 / vs shielded |
+| **巨锤 / War Hammer** | 重攻击(蓄力满)→处决——极致削韧 / Heavy(full charge) → Execute — max stagger | 精英怪/Boss / Elites/Bosses |
+
+---
+
+## 属性加点 / Stat Allocation
+
+| 属性 / Stat | 影响 / Affects | 推荐加点 / Recommendation |
+|---|---|---|
+| **力量 / Strength** | 近战伤害+负重上限 / Melee dmg + equip load | 主修——大剑/战斧/巨锤 / Main for heavy weapons |
+| **敏捷 / Dexterity** | 攻速+暴击率 / Attack speed + crit rate | 主修——双刀/长矛 / Main for dual blades/spear |
+| **耐力 / Endurance** | 最大耐力+防御 / Max stamina + defense | 副修——全部需要 / Sub for everyone |
+| **活力 / Vitality** | HP+回血速度 / HP + regen speed | 副修——生存提升 / Sub for survival |
+| **灵性 / Spirit** | 愤怒值累积+狂战士强度 / Rage build + berserker strength | 中后期加 / Add mid-late |
+
+---
+
+标签/Tags: 第一狂战士卡赞, Khazan, 战斗, Combat, 狂战士, Berserker, 武器, Weapons

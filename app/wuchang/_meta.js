@@ -11,4 +11,8 @@ export default {
   'combat': '战斗系统 / Combat System',
   'builds': '配装Build / Builds Guide',
   'world': '世界探索 / World Exploration',
+  'skills': '技能与法术 / Skills & Magic',
+  'quests': '任务与NPC / Quests & NPCs',
+  'items': '物品收集 / Items & Collectibles',
+  'secrets': '隐藏要素与终局 / Secrets & Endgame',
 }

@@ -1,0 +1,204 @@
+---
+title: "战斗系统 — Combat System Guide"
+description: "文明7战斗系统全解析 — 部队类型、战争支持度、指挥官系统、攻城战、战术策略、单位升级"
+---
+
+![战斗系统](/civ7/combat/combat.svg)
+
+{/* Civ7 combat — unit types, war support, commander system, sieges, tactics, unit upgrades */}
+
+## 战斗基础 / Combat Basics
+
+文明7的战斗系统在保留核心六角格战棋的基础上——引入了**指挥官系统**和**战争支持度**两个全新机制，让战斗更加注重战略层面而非单纯堆兵 / Civ7's combat system keeps the core hex-based wargaming while introducing **Commanders** and **War Support** — shifting focus from unit spam to strategic depth.
+
+### 核心机制 / Core Mechanics
+
+| 机制 / Mechanic | 说明 / Description |
+|---|---|
+| 单位类型 / Unit Type | 近战/远程/骑兵/攻城/侦察/空中——6大兵种 / Melee/Ranged/Cavalry/Siege/Recon/Air |
+| 指挥官 / Commander | 可升级的将领——提供光环加成和战术能力 / Upgradable general — aura bonuses + tactical abilities |
+| 战争支持度 / War Support | 决定战争中的全局战斗修正——受外交和时代影响 / Global combat modifier — influenced by diplomacy and age |
+| 夹击加成 / Flanking | 从多个方向攻击获得战斗加成 / Multi-direction attack = combat bonus |
+| 地形加成 / Terrain | 森林/丘陵/河流提供不同的防御加成 / Forest/Hill/River = different defense bonuses |
+| 经验系统 / XP | 单位通过战斗获得经验——可升级/强化 / Units gain XP through combat — upgrades and promotions |
+
+## 兵种详解 / Unit Types
+
+### 近战单位 / Melee Units
+
+| 单位 / Unit | 时代 / Age  | 力 / Strength | 特点 / Trait | 最佳用途 / Best Use |
+|---|---|---|---|---|
+| 勇士 / Warrior | 古代 / Ancient | 15 | 基础单位 / Basic | 早期探索+轻微战斗 / Early scouting + light combat |
+| 剑士 / Swordsman | 古典 / Classical | 25 | 对抗远程+5 / +5 vs Ranged | 主力近战——配合攻城 / Primary melee — with siege |
+| 骑士 / Knight | 探索 / Exploration | 40 | 高机动 / High mobility | 快速突破防线 / Fast breakthrough |
+
+**近战使用技巧 / Melee Tips**：
+- 近战单位是**攻城战的核心**——没有近战你无法占领城市 / Melee = **core of sieges** — can't capture cities without them
+- 剑士+支援单位的组合能有效对抗骑兵 / Swordsman + support = effective against cavalry
+- 远古时代不要过度造勇士——他们会迅速过时 / Don't overbuild Warriors in Ancient — they obsolete fast
+
+### 远程单位 / Ranged Units
+
+| 单位 / Unit | 时代 / Age | 远程力 / Ranged Strength | 射程 / Range | 特点 / Trait |
+|---|---|---|---|---|
+| 弓箭手 / Archer | 古代 / Ancient | 15 | 1 | 基础远程 / Basic ranged |
+| 弩手 / Crossbowman | 中古 / Medieval | 30 | 1 | 高伤害——对抗近战+10 / High dmg — +10 vs Melee |
+| 火枪手 / Musketman | 探索 / Exploration | 40 | 1 | 远程力最高的陆军 / Highest ranged strength in army |
+
+**远程使用技巧 / Ranged Tips**：
+- **永远不要站在前排**——远程单位被近战贴脸后战斗力减半 / Never front-line — ranged units at melee range = half strength
+- 利用地形——森林/丘陵的防御加成让远程更难被击杀 / Use terrain — forest/hill defense bonuses keep them alive
+- 2个远程+1个近战是标准战斗小组 / 2 ranged + 1 melee = standard combat group
+
+### 骑兵单位 / Cavalry Units
+
+| 单位 / Unit | 时代 / Age | 力 / Strength | 机动力 / Moves | 特点 / Trait |
+|---|---|---|---|---|
+| 骑手 / Horseman | 古典 / Classical | 25 | 3 | 可撤退攻击——打完能撤 / Retreat attack — attack then retreat |
+| 骑射手 / Horse Archer | 古典 / Classical | 20远程 / 20 ranged | 4 | 放风筝战术 / Kite tactics |
+| 坦克 / Tank | 现代 / Modern | 65 | 3 | 碾压步兵 / Crushes infantry |
+
+**骑兵使用技巧 / Cavalry Tips**：
+- 骑兵的**撤退攻击**是最大优势——打一下然后撤回安全位置 / Retreat attack is key — strike then pull back
+- 最适合偷袭敌方的远程单位和攻城武器 / Best for flanking enemy ranged and siege units
+- 不要用骑兵正面冲击驻防单位——会损失惨重 / Don't charge fortified units head-on — heavy losses
+
+### 攻城单位 / Siege Units
+
+| 单位 / Unit | 时代 / Age | 攻城力 / Siege Strength | 射程 / Range | 特点 / Trait |
+|---|---|---|---|---|
+| 投石机 / Catapult | 古典 / Classical | 20 | 2 | 对城墙+10 / +10 vs Walls |
+| 抛石机 / Trebuchet | 中古 / Medieval | 35 | 2 | 对城墙+15 / +15 vs Walls |
+| 大炮 / Cannon | 探索 / Exploration | 45 | 2 | 攻城主力 / King of sieges |
+| 火炮 / Artillery | 现代 / Modern | 60 | 3 | 远距离压制 / Long-range suppression |
+
+**攻城使用技巧 / Siege Tips**：
+- 攻城单位需要**展开**（消耗1点移动力）后才能攻击——提前部署 / Siege units require **set up** (costs 1 move) — deploy in advance
+- **保护你的攻城单位**——它们在近战面前极其脆弱 / Protect your siege units — extremely vulnerable in melee
+- 使用大军（Great General）光环增加攻城单位的攻击力 / Use Great General aura to boost siege attack
+
+### 侦察单位 / Recon Units
+
+| 单位 / Unit | 时代 / Age | 视距 / Sight | 特点 / Trait |
+|---|---|---|---|
+| 侦察兵 / Scout | 古代 / Ancient | 3 | 无视地形移动消耗 / Ignores terrain movement cost |
+| 探路者 / Pathfinder | 古典 / Classical | 3 | 视野更大 / Larger vision range |
+
+**侦察使用技巧 / Recon Tips**：
+- **开局第一件事**：造侦察兵探路——找到城邦和自然奇观 / First action: build Scout — find city-states and natural wonders
+- 侦察兵升级后可以获得**隐藏视野**——看到匿踪单位 / Upgraded Scouts get **hidden vision** — see stealth units
+- 后期可以升级为**无人机**——但不要因此保留侦察兵到现代 / Upgrade to Drone in Modern — but don't keep Scouts that long
+
+## 指挥官系统 / Commander System
+
+### 指挥官基础 / Commander Basics
+
+| 属性 / Stat | 说明 / Description |
+|---|---|
+| 光环范围 / Aura Range | 相邻格——覆盖己方单位 / Adjacent tiles — allied units within |
+| 光环加成 / Aura Bonus | +3~+8战斗力和移动力 / +3 to +8 combat strength + movement |
+| 指令技能 / Command Skills | 使用经验解锁的技能——如强化、治疗、急行军 / Unlockable skills — fortify, heal, forced march |
+| 复活机制 / Revival | 指挥官被击败后可在首都复活——但需要支付金币 / Defeated commander revives in capital for gold cost |
+| 经验获取 / XP | 周围单位战斗时指挥官获得经验 / Commander gains XP from nearby unit combat |
+
+### 指挥官技能树 / Commander Skill Tree
+
+| 技能 / Skill | 等级要求 / Level | 效果 / Effect |
+|---|---|---|
+| 强化I / Fortify I | 1 | 光环内单位防御+3 / +3 defense in aura |
+| 急行军 / Forced March | 2 | 光环内单位机动力+1 / +1 movement in aura |
+| 火力支援 / Fire Support | 3 | 远程单位在光环内+5远程力 / +5 ranged strength |
+| 攻城专家 / Siege Expert | 4 | 攻城单位在光环内+10攻城力 / +10 siege strength |
+| 强化II / Fortify II | 5 | 光环内单位防御+6（叠加）/ +6 defense (stacks) |
+| 双重攻击 / Double Attack | 6 | 光环内近战单位可攻击两次 / Melee units attack twice in aura |
+| 全面战争 / Total War | 7 | 光环内全部单位+10战斗力 / All units +10 strength in aura |
+
+**指挥官升级策略 / Commander Upgrade Priority**：
+1. 第一个指挥官：强化I > 急行军 > 火力支援 / First: Fortify I > Forced March > Fire Support
+2. 第二个指挥官：攻城专家 > 双重攻击 > 全面战争 / Second: Siege Expert > Double Attack > Total War
+
+## 战争支持度 / War Support
+
+战争支持度是文明7新增的系统——影响你在战争中的全局战斗力修正 / War Support is a new Civ7 system — affects global combat strength modifier in wars.
+
+### 影响战争支持度的因素 / War Support Factors
+
+| 因素 / Factor | 效果 / Effect |
+|---|---|
+| 宣战理由 / Casus Belli | 有正当理由+2~+4 / Valid reason = +2 to +4 |
+| 战争时长 / War Length | 每10回合-1 / -1 per 10 turns |
+| 城市被占领 / City Lost | 每丢失一座城市-2 / -2 per lost city |
+| 盟友参战 / Allies Join | 每个盟友+1 / +1 per ally |
+| 时代/政策影响 / Age/Policies | 特定政策和时代特性修正 / Specific policies and age traits |
+
+### 维持高战争支持度的策略 / Strategies for High War Support
+
+1. **不要打不宣而战的战争**——永远找一个理由 / Always declare war with a valid Casus Belli
+2. **速战速决**——战争拖久了支持度会崩溃 / Fight fast — prolonged wars tank support
+3. **不要让你的城市被占领**——这比丢军队还伤 / Don't lose cities — worse than losing armies
+4. **拉盟友参战**——即使他们不打——数量加成也有用 / Bring allies into the war — even inactive ones help
+
+## 攻城战 / Siege Warfare
+
+### 攻城准备 / Siege Preparation
+
+1. **包围城市**：用3-4个单位围住城市所有出口——切断补给 / Surround city: 3-4 units block all exits — cut supply
+2. **部署攻城武器**：在城市2格外展开——不要进入射程内 / Deploy siege 2 tiles away — stay out of city range
+3. **用远程消耗城墙**：弓箭手/弩手先削弱城防 / Use ranged to wear down walls first
+4. **指挥官光环**：确保攻城单位在指挥官范围内 / Keep siege units in commander aura
+
+### 攻城阶段 / Siege Phases
+
+| 阶段 / Phase | 行动 / Action | 目标 / Goal |
+|---|---|---|
+| 第一阶段 / Phase 1 | 部队包围——远程消耗 / Surround + ranged attrition | 降低城防至50%以下 / Reduce walls below 50% |
+| 第二阶段 / Phase 2 | 攻城武器破坏城墙 / Siege weapons breach walls | 打穿城墙（0%城防）/ Breach walls (0% hp) |
+| 第三阶段 / Phase 3 | 近战单位占领城市 / Melee captures city | 攻入城市——消灭守军 / Enter city — eliminate garrison |
+
+### 防御性攻城策略 / Defensive Siege Tactics
+
+- 在城市内驻防单位获得防御加成 / Garrisoned units get defense bonus in city
+- 驻军（Garrison）远程攻击力翻倍 / Garrison has doubled ranged attack
+- 建造城墙前城市非常脆弱——**古老时代优先建城墙** / Very vulnerable before walls — **build Ancient Walls first**
+- 利用城市进攻（City Attack）减少围攻单位的血量 / Use city attack to wear down siege units
+
+## 战术建议 / Tactical Tips
+
+### 各时代战斗策略 / Combat by Age
+
+**远古时代 / Ancient Era**：
+- 主要战斗目标是清理野蛮人营地和对城邦的征服 / Main combat: clear barb camps + city-state conquest
+- 2-3个勇士+1个弓箭手足够应对早期威胁 / 2-3 Warriors + 1 Archer handles early threats
+- 不要打全面战争——你的经济和军力都不支持 / Don't go to full war — economy can't support it
+
+**古典-中古时代 / Classical-Medieval**：
+- 这是扩张的关键时期——造3-5个剑士+弩手+投石机 / Key expansion period — build 3-5 Swordsmen + Crossbowmen + Catapult
+- 组建第一支有指挥官的军队 / Form first army with a Commander
+- 选择战争理由——攻击发展比你慢的文明 / Pick a target — attack a civilization that's behind you
+
+**探索时代 / Exploration Age**：
+- 海军变得重要——控制海域保护殖民 / Navy becomes important — control seas for colonization
+- 火枪手和大炮的组合是陆战标准配置 / Musketman + Cannon = standard land army
+- 此时应该拥有2-3名高级指挥官 / Should have 2-3 leveled Commanders by now
+
+**现代-未来时代 / Modern-Future**：
+- 空军的加入改变了游戏规则——制空权至关重要 / Air power changes everything — air superiority is critical
+- 坦克+机械化步兵的闪电战极为致命 / Tank + Mechanized Infantry blitz is devastating
+- 核武器是终极武器——但使用后会有严重外交惩罚 / Nukes are the ultimate weapon — severe diplomatic penalty
+
+### 地形利用 / Terrain Utilization
+
+| 地形 / Terrain | 防御加成 / Defense Bonus | 移动消耗 / Move Cost | 建议 / Advice |
+|---|---|---|---|
+| 平原 / Plains | 0 | 1 | 无加成——快速通过 / No bonus — move through fast |
+| 森林 / Forest | +3 | 2 | 防守优势——远程躲在森林里 / Defensive advantage — hide ranged here |
+| 丘陵 / Hill | +3 | 2 | 远程单位的最佳位置——高地+防御 / Best for ranged — high ground + defense |
+| 河流 / River | +5(攻击者跨河/ Attacker crossing) | +1(跨河) | 利用河流防御——不要跨河攻击 / Use rivers defensively — don't attack across |
+| 山脉 / Mountain | 不可通行 / Impassable | - | 自然屏障——用山脉保护你的边界 / Natural barrier — use as border protection |
+
+### 单位保持/升级策略 / Unit Retention & Upgrade
+
+- **不要解散精英单位**——升级比重新训练便宜 / Don't disband elite units — upgrading is cheaper than training
+- 单位等级保留：升到高级的单位保留所有升级和技能 / Unit rank persists: upgraded units keep all promotions
+- 升级费用随时代增加——所以尽量让你的远古单位活到后期 / Upgrade cost increases with age — keep Ancient units alive
+- 指挥官保留全部经验——即使你的军队被消灭 / Commander retains all XP even if army is wiped out

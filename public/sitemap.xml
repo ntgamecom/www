@@ -43,13 +43,25 @@
     <loc>https://ntgame.com/balatro/beginner/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/balatro/bosses/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/balatro/decks/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/balatro/endgame/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/balatro/items/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/balatro/jokers/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/balatro/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/balatro/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/balatro/strategy/</loc>
@@ -67,7 +79,19 @@
     <loc>https://ntgame.com/baldursgate3/builds/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/baldursgate3/combat/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/baldursgate3/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/baldursgate3/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/baldursgate3/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/baldursgate3/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/baldursgate3/world/</loc>
@@ -109,7 +133,19 @@
     <loc>https://ntgame.com/civ7/beginner/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/civ7/builds/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/civ7/civs/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/civ7/combat/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/civ7/leaders/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/civ7/secrets/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/civ7/strategy/</loc>
@@ -127,10 +163,22 @@
     <loc>https://ntgame.com/cod6/beginner/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/cod6/bosses/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/cod6/campaign/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/cod6/combat/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/cod6/multiplayer/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/cod6/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/cod6/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/cod6/specops/</loc>
@@ -184,7 +232,19 @@
     <loc>https://ntgame.com/cyberpunk2077/builds/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/cyberpunk2077/combat/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/cyberpunk2077/endgame/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/cyberpunk2077/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/cyberpunk2077/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/cyberpunk2077/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/cyberpunk2077/world/</loc>
@@ -202,7 +262,19 @@
     <loc>https://ntgame.com/darksouls3/builds/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/darksouls3/combat/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/darksouls3/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/darksouls3/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/darksouls3/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/darksouls3/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/darksouls3/world/</loc>
@@ -220,7 +292,19 @@
     <loc>https://ntgame.com/deadcells/builds/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/deadcells/combat/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/deadcells/endgame/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/deadcells/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/deadcells/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/deadcells/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/deadcells/world/</loc>
@@ -232,16 +316,31 @@
     <loc>https://ntgame.com/diablo4/beginner/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/diablo4/bosses/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/diablo4/builds/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/diablo4/classes/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/diablo4/combat/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/diablo4/endgame/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/diablo4/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/diablo4/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/diablo4/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/diablo4/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/discoelysium/</loc>
@@ -286,7 +385,19 @@
     <loc>https://ntgame.com/dragonsdogma2/builds/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/dragonsdogma2/combat/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/dragonsdogma2/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/dragonsdogma2/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/dragonsdogma2/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/dragonsdogma2/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/dragonsdogma2/world/</loc>
@@ -304,7 +415,19 @@
     <loc>https://ntgame.com/eldenring/builds/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/eldenring/combat/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/eldenring/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/eldenring/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/eldenring/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/eldenring/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/eldenring/world/</loc>
@@ -346,6 +469,12 @@
     <loc>https://ntgame.com/expedition33/beginner/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/expedition33/bosses/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/expedition33/builds/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/expedition33/characters/</loc>
   </url>
   <url>
@@ -353,6 +482,12 @@
   </url>
   <url>
     <loc>https://ntgame.com/expedition33/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/expedition33/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/expedition33/secrets/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/expedition33/world/</loc>
@@ -394,13 +529,25 @@
     <loc>https://ntgame.com/fallout4/beginner/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/fallout4/bosses/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/fallout4/builds/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/fallout4/combat/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/fallout4/items/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/fallout4/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/fallout4/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/fallout4/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/fallout4/world/</loc>
@@ -475,13 +622,25 @@
     <loc>https://ntgame.com/genshin/beginner/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/genshin/bosses/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/genshin/characters/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/genshin/combat/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/genshin/items/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/genshin/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/genshin/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/genshin/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/genshin/world/</loc>
@@ -493,10 +652,22 @@
     <loc>https://ntgame.com/ghostoftsushima/beginner/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/ghostoftsushima/bosses/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/ghostoftsushima/combat/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/ghostoftsushima/endgame/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/ghostoftsushima/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/ghostoftsushima/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/ghostoftsushima/secrets/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/ghostoftsushima/skills/</loc>
@@ -541,10 +712,22 @@
     <loc>https://ntgame.com/gta5/beginner/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/gta5/bosses/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/gta5/combat/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/gta5/items/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/gta5/online/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/gta5/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/gta5/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/gta5/story/</loc>
@@ -565,10 +748,22 @@
     <loc>https://ntgame.com/hades2/boons/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/hades2/bosses/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/hades2/builds/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/hades2/endgame/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/hades2/enemies/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/hades2/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/hades2/secrets/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/hades2/weapons/</loc>
@@ -584,6 +779,12 @@
   </url>
   <url>
     <loc>https://ntgame.com/helldivers2/beginner/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/helldivers2/bosses/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/helldivers2/combat/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/helldivers2/enemies/</loc>
@@ -604,10 +805,22 @@
     <loc>https://ntgame.com/hogwartslegacy/beginner/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/hogwartslegacy/bosses/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/hogwartslegacy/combat/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/hogwartslegacy/items/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/hogwartslegacy/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/hogwartslegacy/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/hogwartslegacy/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/hogwartslegacy/spells/</loc>
@@ -685,13 +898,25 @@
     <loc>https://ntgame.com/isaac/bosses/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/isaac/builds/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/isaac/characters/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/isaac/endgame/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/isaac/items/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/isaac/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/isaac/skills/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/isaac/world/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/ittakestwo/</loc>
@@ -730,10 +955,22 @@
     <loc>https://ntgame.com/kcd2/beginner/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/kcd2/bosses/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/kcd2/builds/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/kcd2/combat/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/kcd2/items/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/kcd2/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/kcd2/secrets/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/kcd2/skills/</loc>
@@ -752,6 +989,18 @@
   </url>
   <url>
     <loc>https://ntgame.com/khazan/builds/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/khazan/combat/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/khazan/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/khazan/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/khazan/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/khazan/weapons/</loc>
@@ -829,7 +1078,19 @@
     <loc>https://ntgame.com/monsterhunterwilds/builds/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/monsterhunterwilds/combat/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/monsterhunterwilds/monsters/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/monsterhunterwilds/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/monsterhunterwilds/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/monsterhunterwilds/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/monsterhunterwilds/weapons/</loc>
@@ -850,7 +1111,19 @@
     <loc>https://ntgame.com/nioh2/builds/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/nioh2/combat/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/nioh2/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/nioh2/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/nioh2/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/nioh2/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/nioh2/world/</loc>
@@ -862,13 +1135,25 @@
     <loc>https://ntgame.com/octopath2/beginner/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/octopath2/bosses/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/octopath2/builds/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/octopath2/characters/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/octopath2/combat/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/octopath2/items/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/octopath2/jobs/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/octopath2/secrets/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/octopath2/world/</loc>
@@ -886,10 +1171,22 @@
     <loc>https://ntgame.com/palworld/builds/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/palworld/combat/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/palworld/endgame/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/palworld/items/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/palworld/map/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/palworld/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/palworld/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/persona5royal/</loc>
@@ -928,6 +1225,12 @@
     <loc>https://ntgame.com/poe2/beginner/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/poe2/bosses/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/poe2/builds/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/poe2/classes/</loc>
   </url>
   <url>
@@ -935,6 +1238,12 @@
   </url>
   <url>
     <loc>https://ntgame.com/poe2/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/poe2/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/poe2/secrets/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/poe2/skills/</loc>
@@ -949,10 +1258,22 @@
     <loc>https://ntgame.com/rdr2/beginner/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/rdr2/bosses/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/rdr2/combat/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/rdr2/hunting/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/rdr2/items/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/rdr2/online/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/rdr2/secrets/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/rdr2/story/</loc>
@@ -970,10 +1291,22 @@
     <loc>https://ntgame.com/re4/bosses/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/re4/characters/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/re4/combat/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/re4/endgame/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/re4/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/re4/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/re4/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/re4/world/</loc>
@@ -988,10 +1321,22 @@
     <loc>https://ntgame.com/sekiro/bosses/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/sekiro/combat/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/sekiro/items/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/sekiro/prosthetics/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/sekiro/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/sekiro/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/sekiro/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/sekiro/world/</loc>
@@ -1069,7 +1414,19 @@
     <loc>https://ntgame.com/shadowoftheerdtree/builds/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/shadowoftheerdtree/combat/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/shadowoftheerdtree/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/shadowoftheerdtree/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/shadowoftheerdtree/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/shadowoftheerdtree/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/shadowoftheerdtree/world/</loc>
@@ -1081,13 +1438,25 @@
     <loc>https://ntgame.com/skullandbones/beginner/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/skullandbones/bosses/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/skullandbones/combat/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/skullandbones/items/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/skullandbones/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/skullandbones/secrets/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/skullandbones/ships/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/skullandbones/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/skullandbones/world/</loc>
@@ -1099,10 +1468,22 @@
     <loc>https://ntgame.com/skyrim/beginner/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/skyrim/bosses/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/skyrim/builds/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/skyrim/combat/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/skyrim/items/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/skyrim/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/skyrim/secrets/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/skyrim/skills/</loc>
@@ -1117,6 +1498,12 @@
     <loc>https://ntgame.com/stardewvalley/beginner/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/stardewvalley/bosses/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/stardewvalley/combat/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/stardewvalley/farming/</loc>
   </url>
   <url>
@@ -1124,6 +1511,12 @@
   </url>
   <url>
     <loc>https://ntgame.com/stardewvalley/mining/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/stardewvalley/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/stardewvalley/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/stardewvalley/villagers/</loc>
@@ -1141,7 +1534,19 @@
     <loc>https://ntgame.com/stellarblade/combat/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/stellarblade/endgame/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/stellarblade/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/stellarblade/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/stellarblade/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/stellarblade/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/stellarblade/world/</loc>
@@ -1153,13 +1558,25 @@
     <loc>https://ntgame.com/sts/beginner/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/sts/bosses/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/sts/defect/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/sts/ironclad/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/sts/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/sts/secrets/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/sts/silent/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/sts/strategy/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/sts/watcher/</loc>
@@ -1177,10 +1594,22 @@
     <loc>https://ntgame.com/sts2/bosses/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/sts2/builds/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/sts2/characters/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/sts2/items/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/sts2/mechanics/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/sts2/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/sts2/strategy/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/subnautica2/</loc>
@@ -1192,7 +1621,19 @@
     <loc>https://ntgame.com/subnautica2/biomes/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/subnautica2/bosses/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/subnautica2/combat/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/subnautica2/creatures/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/subnautica2/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/subnautica2/secrets/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/subnautica2/story/</loc>
@@ -1270,13 +1711,25 @@
     <loc>https://ntgame.com/totalwarwarhammer3/beginner/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/totalwarwarhammer3/bosses/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/totalwarwarhammer3/builds/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/totalwarwarhammer3/combat/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/totalwarwarhammer3/factions/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/totalwarwarhammer3/items/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/totalwarwarhammer3/legends/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/totalwarwarhammer3/secrets/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/totalwarwarhammer3/strategy/</loc>
@@ -1294,7 +1747,19 @@
     <loc>https://ntgame.com/valheim/bosses/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/valheim/builds/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/valheim/combat/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/valheim/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/valheim/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/valheim/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/valheim/world/</loc>
@@ -1342,7 +1807,19 @@
     <loc>https://ntgame.com/witcher3/builds/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/witcher3/combat/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/witcher3/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/witcher3/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/witcher3/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/witcher3/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/witcher3/world/</loc>
@@ -1360,7 +1837,19 @@
     <loc>https://ntgame.com/wolong/builds/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/wolong/combat/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/wolong/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/wolong/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/wolong/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/wolong/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/wolong/world/</loc>
@@ -1379,6 +1868,18 @@
   </url>
   <url>
     <loc>https://ntgame.com/wuchang/combat/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/wuchang/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/wuchang/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/wuchang/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/wuchang/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/wuchang/world/</loc>
@@ -1403,6 +1904,18 @@
   </url>
   <url>
     <loc>https://ntgame.com/wukong/ch6/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/wukong/combat/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/wukong/items/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/wukong/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/wukong/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/wutheringwaves/</loc>
@@ -1441,6 +1954,12 @@
     <loc>https://ntgame.com/yakuza8/beginner/</loc>
   </url>
   <url>
+    <loc>https://ntgame.com/yakuza8/bosses/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/yakuza8/combat/</loc>
+  </url>
+  <url>
     <loc>https://ntgame.com/yakuza8/items/</loc>
   </url>
   <url>
@@ -1448,6 +1967,12 @@
   </url>
   <url>
     <loc>https://ntgame.com/yakuza8/quests/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/yakuza8/secrets/</loc>
+  </url>
+  <url>
+    <loc>https://ntgame.com/yakuza8/skills/</loc>
   </url>
   <url>
     <loc>https://ntgame.com/yakuza8/world/</loc>

@@ -1,0 +1,72 @@
+---
+title: "战斗系统 — Combat System Guide"
+description: "博德之门3战斗系统全解析 — 动作机制、法术联动、环境交互、战术策略、难度差异、荣誉模式技巧"
+---
+
+![战斗系统](/baldursgate3/combat/combat.svg)
+
+{/* Baldur's Gate 3 combat system — action mechanics, spell synergy, environment interaction, tactical strategy, difficulty modes, Honor Mode tips */}
+
+## 核心战斗机制 / Core Combat Mechanics
+
+博德之门3使用**回合制D&D 5E规则**——每个角色在一回合内有**动作(Action)**、**附赠动作(Bonus Action)**和**移动(Movement)**。动作是核心——用于攻击/施法/使用道具。附赠动作是次要动作——部分技能和道具可用。移动用于走位——可以分割使用(走几步→攻击→再走几步) / BG3 uses **turn-based D&D 5E rules** — each character has **Action**, **Bonus Action**, and **Movement** per turn. Action is core — attack/cast/use item. Bonus Action is secondary — some skills and items. Movement can be split (move → attack → move).
+
+### 战斗资源对比 / Combat Resource Comparison
+
+| 资源 / Resource | 恢复方式 / Recovery | 用途 / Use |
+|---|---|---|
+| 动作 / Action | 每回合 / Per turn | 攻击、施法、使用道具、躲藏、疾走 / Attack, cast, use item, hide, dash |
+| 附赠动作 / BA | 每回合 / Per turn | 副手攻击、部分法术、加速药水 / Off-hand attack, some spells, speed potion |
+| 反应 / Reaction | 每回合一次 / Once per turn | 借机攻击、护盾术、反制法术 / Opportunity attack, Shield, Counterspell |
+| 法术位 / Spell Slots | 长休/短休(邪术师) / Long/short rest | 施放法术 / Cast spells |
+| 动作如潮 / Action Surge | 短休(战士) / Short rest (Fighter) | 额外一个动作和附赠动作 / Extra action + BA |
+| 气势如虹 / War Priest | 短休(战争领域牧师) / Short rest (War Cleric) | 额外攻击一次 / Extra attack |
+
+## 环境互动 / Environment Interaction
+
+博德之门3的战斗地图充满了可互动物体——利用环境可以让战斗变得简单得多。**高地优势**: 站在高处攻击低处的敌人——攻击检定+2。**低处劣势**: 反之攻击检定-2 / BG3 battlefields are full of interactable objects — using the environment makes fights much easier. **High Ground**: Attacking from above = +2 attack roll. **Low Ground**: Vice versa = -2 attack roll.
+
+### 地表系统 / Surface System
+
+| 地表类型 / Surface Type | 创造方式 / How to Create | 效果 / Effect |
+|---|---|---|
+| 火焰 / Fire | 火焰箭/火球术/油+火 / Firebolt/Fireball/Oil+Fire | 每回合1d4火伤 / 1d4 fire per turn |
+| 冰面 / Ice | 冰冻术/冰霜射线 / Freeze spell/Ray of Frost | 行走可能滑倒(倒地) / Slippery (prone chance) |
+| 积水 / Water | 造水术/水瓶 / Create Water/water bottle | 导电(闪电伤害加倍)/可冰冻 / Conductive (2x lightning)/freezable |
+| 毒云 / Poison | 毒药瓶/部分法术 / Poison vial/some spells | 每回合2d4毒伤 / 2d4 poison per turn |
+| 油 / Oil | 油瓶/燃烧之手(附带) / Oil vial/burning hands | 可点燃(爆炸)/无火=减速 / Ignites (explosion)/no fire = slow |
+| 神圣地面 / Holy Ground | 牧师部分能力 / Cleric abilities | 进入治疗1d4/亡灵受到伤害 / Heal 1d4/undead take damage |
+
+### 环境互动最大化技巧
+
+1. **水瓶+闪电法术**——第一人用水瓶泼湿Boss(全队准备)→第二人用雷电法术(闪电伤害x2对潮湿目标)——可以打出全游戏最廉价的爆发伤害 / Water bottle + lightning spell — first person drenches boss → second casts lightning (2x dmg vs wet) — cheapest burst in game
+2. **油+火球术**——在狭窄通道倒油→等敌人踩上去→火球术点燃油面——全体敌人受到2d6爆炸+火球术8d6——总伤害10d6+/ Water bottle + lightning spell: first person drenches boss → second person casts lightning for 2x damage vs wet — cheapest burst combo in game. Oil + Fire: pour oil in choke point → wait for enemies → Fireball ignites oil — 2d6 explosion + 8d6 Fireball = 10d6+ total.
+
+## 战术策略 / Tactical Strategies
+
+### 高地作战 / High Ground Tactics
+
+**近战**: 从高处跳劈造成额外伤害+击倒敌人。**远程**: 高地+2攻击检定——提升命中和暴击率。**推人**: 从高处把敌人推下悬崖——即死(无视HP)——这是全游戏最有趣也最有效的击杀方式 / **Melee**: Jump attacks from above = bonus damage + prone. **Ranged**: +2 attack from height — better hit and crit rate. **Shove**: Push enemies off cliffs from height — instant kill (ignores HP) — most fun and effective kill in game.
+
+### 控制与爆发循环 / Control & Burst Cycle
+
+**第一回合**: 施法者上群体控制(睡眠术/人类定身术/恐惧术)→坦克上前吸引仇恨→游荡者躲藏准备偷袭。**第二回合**: 游荡者偷袭被控敌人(自动暴击)+战士动作如潮爆发输出→施法者补刀/继续控制。**第三回合**: 清理残敌或准备下一波。这个循环适用于大部分战斗——前期控制、中期爆发、后期清理 / Turn 1: Caster CC (Sleep/Hold Person/Fear) → tank moves up → Rogue hides for sneak. Turn 2: Rogue crits CC'd enemy (auto-crit) + Fighter Action Surge burst → caster cleanup/continues CC. Turn 3: Mop up. This cycle works for most fights — early CC, mid burst, late cleanup.
+
+## 难度对比 / Difficulty Comparison
+
+| 难度 / Difficulty | 敌人HP倍率 / Enemy HP | 敌人命中加成 / Enemy Hit | 传奇动作 / Legendary Action | 推荐玩家 / Best For |
+|---|---|---|---|---|
+| 探索者 / Explorer | x0.5 | -2 | 无 / No | 新手/剧情党 / New/story |
+| 平衡 / Balanced | x1.0 | +0 | 无 / No | 标准体验 / Standard |
+| 战术家 / Tactician | x1.3 | +2 | 无(但AI优化) / No (smarter AI) | 有经验玩家 / Experienced |
+| 荣誉 / Honor | x1.5 | +3 | 有(所有Boss) / Yes (all bosses) | 极限挑战者 / Hardcore |
+
+### 荣誉模式特色 / Honor Mode Features
+
+**单存档**(死亡即删除——无法复活已死角色/全灭=通关失败变普通模式)。**Boss拥有传奇动作**(每回合一次额外行动——打断你的连招)。**敌人AI大幅提升**(优先集火施法者/更聪明地走位)。**全新增传奇Boss技能**(如盖尔的传奇动作可以反制你的法术)。**通关奖励**: 金色骰子外观(全账号通用) / Single save (permadeath — dead characters can't be resurrected/TOTAL party wipe = run ends, continues in normal mode). **Legendary Actions** (bosses get 1 extra action per turn — interrupts combos). **Smart AI** (prioritize casters/smarter positioning). **Unique legendary boss skills**. **Reward**: Golden dice skin (account-wide).
+
+### 荣誉模式必胜策略 / Honor Mode Winning Strategy
+
+**爆发队**: 游侠(刺客)12级+牧师(战争领域)+法师(塑能系)+战士(勇者)。刺客在战斗开始前隐身→偷袭(自动暴击+暴击伤害翻倍)→战士动作如潮输出→法师火球清场。大部分战斗在第一回合结束。Boss战采用**控制链**: 牧师定身术→刺客暴击→法师加速术持续输出。不建议荣誉模式打所有战斗——有些战斗可以绕开或通过对话解决 / **Burst Party**: Ranger (Assassin) 12 + Cleric (War) + Wizard (Evocation) + Fighter (Champion). Assassin pre-combat stealth → surprise round (auto-crit + 2x crit dmg) → Fighter Action Surge → Wizard Fireball. Most fights end turn 1. Boss fights use **CC chain**: Cleric Hold Person → Assassin crit → Wizard Haste sustain. Don't fight every battle in Honor Mode — some can be bypassed or solved through dialogue.
+
+标签/Tags: 博德之门3, Baldur's Gate 3, BG3, 战斗, Combat, 系统, System, 战术, Tactics, 荣誉模式, Honor Mode, 环境互动, Environment, 策略, Strategy

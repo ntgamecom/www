@@ -12,107 +12,139 @@ toc: false
 
 | 阶段 / Phase | 操作 / Actions |
 |:----:|------|
-| **1. 指令阶段 / Command Phase** | 选择每个角色的行动(攻击/技能/道具/防御)——每个行动消耗AP / Choose each character's action (attack/skill/item/defend) — each action costs AP |
-| **2. QTE阶段 / QTE Phase** | 发动攻击时出现QTE判定——完美判定(绿区中心)=伤害x1.5 / QTE on attack — perfect (green center) = 1.5x damage |
-| **3. 敌方行动 / Enemy Phase** | 敌人攻击——玩家可以消耗1AP闪避/格挡——同样有QTE判定 / Enemy attacks — player can spend 1AP to dodge/block — also has QTE |
-| **4. 回合结束 / End Turn** | 所有角色AP重置为4——进入下一回合 / All characters AP reset to 4 — next turn begins |
+| **1. 指令阶段 / Command Phase** | 选择每个角色的行动(攻击/技能/道具/防御)——每个行动消耗AP / Choose each action (attack/skill/item/defend) — each costs AP |
+| **2. 行动阶段 / Action Phase** | 按速度顺序执行行动——每个行动命中时触发QTE / Actions execute in speed order — QTE triggers on hit |
+| **3. 敌方阶段 / Enemy Phase** | 敌人行动——玩家可以按防御键触发防御QTE / Enemies act — press defend for defense QTE |
+| **4. 回合结束 / Turn End** | 结算持续伤害/回复效果——进入下一回合 / Tick DoT/Heal — next turn |
 
----
+### 行动顺序 / Turn Order
 
-## 行动点(AP)管理 / AP Management
+行动顺序由**速度(SPD)**属性决定——速度最高的角色最先行动。行动条在屏幕上方显示——可以看到下三个行动者。**加速/减速效果**可以影响行动顺序——将敌人的行动推迟非常有效。注意: 等待(Wait)会让角色在本回合不行动但下回合提前行动 / Turn order determined by **Speed (SPD)** — highest goes first. Turn bar at top of screen shows next 3 actors. **Haste/Slow effects** manipulate order — delaying enemy turns is very effective. Note: Wait skips current turn but moves character earlier next turn.
 
-| 策略 / Strategy | 说明 / Description |
-|:----:|------|
-| **3+1原则 / 3+1 Rule** | 每回合3AP用于进攻+留1AP用于防御闪避——最稳妥的分配方式 / 3AP for offense + 1AP reserved for defense — safest allocation |
-| **爆发回合 / Burst Turn** | 有终极技时存AP——4AP全部用于放技能。但要注意终极技需要蓄力/准备回合 / Save AP for ultimate skill — 4AP for full skill combo. Note: ultimates may need charge turns |
-| **防御型回合 / Defensive Turn** | Boss放大招时——全队2AP防御+2AP治疗——减员等于战斗失败 / Boss uses ultimate — party 2AP defend + 2AP heal — death = fight over |
-| **AP上限提升 / AP Cap Up** | 部分遗物和技能可以提升AP上限(如+1=上限5)。上限越高=爆发越强 / Some relics and skills boost AP cap. Higher cap = bigger burst potential |
+## 技能分类 / Skill Categories
 
----
+### 物理技能 / Physical Skills
 
-## 元素反应详解 / Elemental Reactions
+消耗AP: 1-3 / 适用角色: 古斯塔夫、主角、艾伦 / 特点: 受力量/敏捷加成——物理伤害——可触发暴击 / Cost: 1-3 AP. For: Gustave, Protagonist, Allen. Features: STR/DEX scaling — physical damage — can crit.
 
-| 组合 / Combo | 触发方式 / Trigger | 效果 / Effect |
-|:----:|:----:|------|
-| **冻结 / Freeze** | 水+冰(先后顺序可互换) / Water + Ice | 目标跳过下一回合——对Boss效果减半(只跳过部分行动) / Target skips next turn — halved on bosses |
-| **爆炸 / Explosion** | 火+油(敌人需要先有"油"状态) / Fire + Oil | 范围伤害x2+击退——油状态可由维克多的油弹技能施加 / AoE dmg x2 + knockback — oil applied by Victor's Oil Shot |
-| **传导 / Conduct** | 雷+水 / Lightning + Water | 单体伤害传导到相邻敌人——每传导一次伤害-20% / Single dmg chains to adjacent enemies — -20% per chain |
-| **烟雾 / Smoke** | 暗+火 / Shadow + Fire | 全队闪避率+50%持续2回合——配合泽农烟雾弹效果叠加 / Party evasion +50% for 2 turns — stacks with Zenon's Smoke Bomb |
-| **腐蚀 / Corrode** | 暗+水 / Shadow + Water | 目标全属性抗性-40%持续3回合——对高抗性Boss极有效 / Target all elemental resist -40% for 3 turns — excellent against high-resist bosses |
+**连击技能**: 多次命中——每次命中独立QTE——全部完美判定时最后一击伤害x2。例如主角的"光之连斩"——3连击——全部完美QTE时额外追加一次光属性伤害 / **Combo Skills**: Multi-hit — each hit has independent QTE — all perfect = final hit damage x2. Example: Protagonist's "Light Combo" — 3 hits — perfect all = bonus Light damage.
 
-**元素连携核心技巧**: 让露娜(冰)+古斯塔夫(物理)配合——先水后冰冻结→古斯塔夫重击冻结目标→额外伤害x1.5 / **Elemental combo core**: Luna (ice) + Gustave (physical) — water then ice to freeze → Gustave heavy on frozen target → bonus dmg x1.5.
+**蓄力技能**: 一回合蓄力——下回合自动释放——伤害x2但蓄力期间受伤增加50%。适合在敌人被控制时使用 / **Charge Skills**: Charge one turn — auto-release next turn — damage x2 but +50% damage taken during charge. Best used when enemies are CC'd.
 
----
+### 法术技能 / Magic Skills
 
-## 完美QTE练习 / Perfect QTE Practice
+消耗AP: 2-3 / 适用角色: 塞拉、主角(光系) / 特点: 受智力加成——元素属性——可触发元素反应 / Cost: 2-3 AP. For: Sera, Protagonist (Light). Features: INT scaling — elemental — triggers reactions.
 
-| QTE类型 / Type | 判定方式 / Judgment | 完美区间 / Perfect Window |
-|:----:|:----:|:----:|
-| **攻击QTE / Attack QTE** | 光圈收缩到中心时按键 / Press when circle shrinks to center | ±0.1秒 / ±0.1s |
-| **防御QTE / Block QTE** | 攻击命中前瞬间按键 / Press right before hit connects | ±0.15秒 / ±0.15s |
-| **闪避QTE / Dodge QTE** | 同防御——但失误后闪避失败直接受伤 / Same as block — miss = hit taken | ±0.1秒 / ±0.1s |
-| **连携QTE / Combo QTE** | 多个角色连续按键——每个角色有一个按键 / Multiple characters press in sequence | 每人±0.2秒 / ±0.2s per char |
+**火焰法术**: 高伤害+点燃效果(每回合持续伤害, 3回合)。点燃状态在受到冰霜法术时解除但不额外效果 / **Fire Spells**: High damage + Burn (DoT, 3 turns). Burn removed by Frost spells with no extra effect.
 
-**QTE练习方法**: 游戏设置中有QTE练习模式——建议开荒前练习10分钟。完美QTE等于全队伤害x1.5——相当于多了一个角色 / **Practice**: The game has a QTE practice mode in settings — spend 10 min before starting. Perfect QTE = 1.5x party damage — equivalent to an extra character.
+**冰霜法术**: 中等伤害+减速效果(敌人速度-30%, 2回合)。冰冻+闪电可以触发**超导**——降低敌人防御50%持续2回合 / **Frost Spells**: Medium damage + Slow (-30% SPD, 2 turns). Frost + Lightning triggers **Superconduct** — -50% enemy defense for 2 turns.
 
----
+**闪电法术**: 中等伤害+暴击率提升(自身+10%暴击, 3回合)。对受冰冻的敌人暴击率额外+20% / **Lightning Spells**: Medium damage + self-crit buff (+10% crit, 3 turns). +20% crit vs Frozen enemies.
 
-## 角色战斗定位 / Character Combat Roles
+**光系法术**: 主角专属——对暗影系敌人伤害x2——治疗队友50%伤害值的HP——全能型技能 / **Light Spells**: Protagonist exclusive — 2x damage vs Shadow enemies — heal party for 50% damage dealt — versatile.
 
-| 角色 / Character | 定位 / Role | 核心职责 / Core Duty | 最佳出手时机 / Best Timing |
-|:----:|:----:|------|:----:|
-| **古斯塔夫 / Gustave** | 坦克+物理DPS / Tank + Physical DPS | 吸引仇恨、巨剑重击输出 / Taunt, greatsword heavy attacks | Boss蓄力时——重击可打断 / Interrupt boss charge with heavy |
-| **玛艾勒 / Maelle** | 治疗+增益 / Healer + Buffer | 全队血量维持>50%、驱散Debuff / Party HP >50%, debuff cleanse | 回合开始时——评估全队血量再行动 / Start of turn — assess party HP |
-| **露娜 / Luna** | 法师+控场 / Mage + Controller | 元素连携触发者——冰系控场优先 / Elemental combo trigger — freeze control | 敌人聚堆时——AOE冻结+连携 / When enemies group — AoE freeze + combo |
-| **泽农 / Zenon** | 刺客+破甲 / Assassin + Armor Break | 背刺、破甲Debuff、单体爆发 / Backstab, armor break, single-target burst | Boss露出破绽时——烟雾弹+背刺连招 / Boss exposed — smoke bomb + backstab |
-| **维克多 / Victor** | 炮台+辅助 / Turret + Support | 放置炮台提供持续输出、减伤盾 / Deploy turret for sustained DPS, damage shield | 回合开始先放炮台——炮台每回合自动攻击 / Place turret first — auto-attacks each turn |
-| **艾莉丝 / Iris** | 弓手+爆发 / Archer + Burst | 远程攻击、标记目标增伤、终极技充能 / Range attacks, mark target, ultimate charge | Boss破防后——终极技+爆发连射 / After boss stagger — ultimate + burst volley |
+### 元素反应系统 / Elemental Reaction System
 
----
+| 组合 / Combo | 效果 / Effect | 优先级 / Priority |
+|---|---|---|
+| 火焰+火焰 / Fire + Fire | 引爆——额外50%爆炸伤害 / Detonation — +50% explosion | 高(有多个火系时) / High |
+| 火焰+冰霜 / Fire + Frost | 蒸发——两个效果抵消——无额外 / Vaporize — both cancel | 避免 / Avoid |
+| 冰霜+闪电 / Frost + Lightning | 超导——敌人防御-50% 2回合 / Superconduct — -50% def 2 turns | 极高 / Very High |
+| 闪电+火焰 / Lightning + Fire | 过载——扩散到周围敌人50%伤害 / Overload — splash 50% to nearby | 高(群战) / High (AoE) |
+| 光系+暗影 / Light + Shadow | 净化——额外100%伤害——只对暗影敌人 / Purify — +100% vs shadow | 极高(暗影敌人) / Very High |
 
-## Boss战策略 / Boss Strategy
+## 战斗策略 / Battle Strategies
 
-| Boss类型 / Type | 通用策略 / General Strategy |
-|:----:|:------|
-| **单体Boss / Single Boss** | 玛艾勒保持全队血量>50%。古斯塔夫/艾莉丝持续输出。露娜控场。Boss放大招时全队防御 / Maelle keeps HP >50%. Gustave/Iris sustained DPS. Luna controls. Party defends during boss ultimate |
-| **多目标Boss / Multi-target Boss** | 维克多炮台+露娜AOE→优先清小怪→再打Boss本体。不要被包围 / Victor turret + Luna AoE → clear adds first → then main boss. Don't get surrounded |
-| **高抗性Boss / High Resist Boss** | 先用腐蚀连携(暗+水)降低抗性→再上主力输出。元素抗性降低后伤害x1.6+ / Corrode combo (Shadow+Water) first to reduce resist → then DPS. After debuff = 1.6x+ damage |
-| **限时Boss / Timed Boss** | 全队堆爆发输出——泽农+艾莉丝+古斯塔夫——4回合内解决。不需要玛艾勒——速战速决 / All burst — Zenon + Iris + Gustave — finish in 4 turns. No healer needed — kill before they kill you |
+### 群战策略 / AoE Strategy
 
-### Boss攻击模式识别 / Boss Attack Pattern Recognition
+面对3个以上敌人时——优先使用塞拉的**火焰风暴**或闪电链清场。QTE以命中更多敌人为目标——范围技能的完美QTE可以扩大范围50%。第二优先级控制敌人——使用冰霜法术减速或主角的盾击眩晕——减少同时面对的敌人数量 / Against 3+ enemies — prioritize Sera's Fire Storm or Chain Lightning. QTE aim for maximum targets — perfect QTE expands AoE by 50%. Second priority: CC — Frost spells slow or Protagonist's Shield Stun — reduce active enemies.
 
-| 前兆 / Telegraph | 即将释放 / Incoming | 对策 / Counter |
-|:----:|:----|:----|
-| **Boss身上泛红** | 强力单体攻击（可格挡） | 坦克角色消耗1AP格挡——完美格挡可反击 / Tank spend 1AP to block — perfect block = counter |
-| **Boss脚下出现光圈** | 范围AOE攻击（不可格挡） | 全队消耗1AP闪避——闪避失败会被击飞 / All party spend 1AP to dodge — miss = knockback |
-| **Boss停止行动一回合** | 下回合将释放终极技 / Charging ultimate | 全队防御+加满血——下回合全员1AP防御 / All defend + heal — next turn all spend 1AP on defend |
-| **Boss召唤小怪** | 需要快速清理 / Adds need quick clear | 露娜/维克多AOE——2回合内清完 / Luna/Victor AoE — clear within 2 turns |
-| **Boss目标切换至后排** | 跳过坦克攻击治疗/法师 | 古斯塔夫使用嘲讽技能强制拉回仇恨 / Gustave use taunt to pull aggro back |
+### Boss战策略 / Boss Strategy
 
----
+Boss战的关键是**阶段转换管理**。大部分Boss在70%/40%HP时转换阶段——转换前有短暂停顿——此时使用大招(4AP终极技)可以获得全额伤害。Boss战中保留至少1人防御——确保在Boss放大招时有角色可以存活。**破防机制**: 部分Boss需要先破坏护盾才能造成伤害——使用高AP技能集中破盾 / Boss key is **phase transition management**. Most bosses transition at 70%/40% HP — pause before transition — use ults for full damage. Keep at least 1 character defending — ensures survivability during boss ults. **Shield Break**: Some bosses need shield destroyed first — focus high-AP skills.
 
-## 推荐阵容 / Recommended Parties
+## 防御与闪避 / Defense & Evasion
 
-| 阵容 / Party | 配置 / Setup | 适用场景 / Best For |
-|:----:|:----|:----|
-| **开荒均衡队 / Balanced Starter** | 古斯塔夫 + 玛艾勒 + 露娜 + 艾莉丝 | 探索+主线推进——有坦有奶有输出有控制 / Exploration + main story — balanced all-round |
-| **爆发速杀队 / Burst Speed Kill** | 泽农 + 艾莉丝 + 维克多 + 古斯塔夫 | 限时Boss、刷素材——没有治疗，速战速决 / Timed boss, farming — no healer, kill fast |
-| **法系轰杀队 / Magic Burst** | 露娜 + 维克多 + 玛艾勒 + 艾莉丝 | 群体战斗——维克多炮台+露娜AOE覆盖全场 / Group fights — Victor turret + Luna AoE coverage |
-| **Boss挑战队 / Boss Slayer** | 古斯塔夫 + 玛艾勒 + 泽农 + 露娜 | 高难度Boss——泽农破甲+露娜控制+古斯塔夫输出 / Hard bosses — Zenon armor break + Luna control + Gustave DPS |
+| 选项 / Option | AP消耗 / AP Cost | 效果 / Effect | 使用时机 / When to Use |
+|---|---|---|---|
+| 防御 / Defend | 1 | 75%减伤+5%HP回复 / 75% DR + 5% HP regen | 敌人即将放大招 / Boss ult incoming |
+| 完美防御 / Perfect Defend | 1 | 免疫伤害+反击 / Immune + counterattack | 熟悉敌人攻击时机后 / Known enemy timing |
+| 闪避 / Dodge | 0 | 30%几率完全回避 / 30% chance full dodge | 敏捷高的角色常驻 / High DEX characters |
+| 格挡 / Block | 0 | 减伤50%+需要盾牌 / 50% DR + requires shield | 持盾角色 / Shield users |
 
----
+## 状态效果一览 / Status Effects
 
-## 战斗状态效果 / Battle Status Effects
+**增益**: 攻击力上升(+50%伤害, 3回合)、防御力上升(-50%受伤, 3回合)、加速(+50%速度, 3回合)、再生(每回合回复10%HP, 3回合)、暴击率提升(+20%暴击, 3回合)。**减益**: 燃烧(每回合15%HP, 3回合)、冰冻(速度-50%, 2回合——受攻击解除)、眩晕(无法行动, 1回合)、中毒(每回合10%HP+减治疗, 3回合)、减速(速度-30%, 2回合) / **Buffs**: ATK Up (+50% dmg, 3T), DEF Up (-50% dmg taken, 3T), Haste (+50% SPD, 3T), Regen (10% HP/turn, 3T), Crit Up (+20%, 3T). **Debuffs**: Burn (15% HP/turn, 3T), Frost (-50% SPD, 2T — breaks on hit), Stun (can't act, 1T), Poison (10% HP/turn + -heal, 3T), Slow (-30% SPD, 2T).
 
-| 状态 / Status | 效果 / Effect | 常见来源 / Common Source |
-|:----:|:------|:----:|
-| **灼烧 / Burn** | 每回合损失HPx0.1(3回合) / Lose HP x0.1 each turn (3 turns) | 火系技能 / Fire skills |
-| **冻结 / Freeze** | 跳过下一回合 / Skip next turn | 水+冰连携 / Water + Ice combo |
-| **麻痹 / Paralyze** | 30%概率跳过回合 / 30% chance to skip turn | 雷系技能 / Lightning skills |
-| **减速 / Slow** | AP恢复上限-1(持续2回合) / AP cap -1 (2 turns) | 冰系技能 / Ice skills |
-| **恐惧 / Fear** | 20%概率逃跑(持续2回合) / 20% chance to flee (2 turns) | 暗影技能 / Shadow skills |
-| **护盾 / Shield** | 吸收伤害(数值=施放者智力x2) / Absorb dmg (amount = caster INT x2) | 玛艾勒/维克多技能 / Maelle/Victor skills |
+## 队伍协作技巧 / Teamwork Tips
 
----
+**连携攻击**: 两个角色对同一个敌人使用同属性攻击时——第二次攻击获得20%伤害加成。**交替控制**: 一控一输出——一个角色控制敌人时另一个角色的暴击率+25%。**集火优先级**: 治疗者>高输出敌人>控制者>坦克——优先击杀能治疗或高输出的敌人。**待机配合**: 在Boss即将转换阶段时全队待机——下回合全员满AP爆发——可以在阶段转换窗口打出最高输出 / **Chain Attack**: Two characters using same element on same enemy — 2nd hit +20% damage. **Alternate Control**: One CC, one DPS — DPS gets +25% crit vs CC'd enemy. **Focus Priority**: Healer > High DPS > Controller > Tank. **Wait Combo**: All party members wait before boss phase transition — full AP burst next turn during transition window.
 
-标签/Tags: 33号远征队, Expedition 33, 战斗, Combat, QTE, 攻略, Guide
+## QTE判定详解 / QTE Timing Details
+
+33号远征队的QTE分为三种类型——每种有不同的判定窗口和成功率 / Three types of QTEs in Expedition 33 — each with different timing and success windows:
+
+| QTE类型 / Type | 判定窗口 / Window | 完美QTE奖励 / Perfect Bonus | 失败惩罚 / Failure Penalty |
+|---|---|---|---|
+| 攻击QTE / Attack QTE | 0.5秒——指示器到达高亮区时按 / 0.5s — press when indicator hits highlight zone | 伤害+30%——额外效果触发 / +30% dmg — bonus effect | 伤害减半 / Half damage |
+| 防御QTE / Defend QTE | 0.3秒——敌人攻击前出现红色提示 / 0.3s — red indicator before enemy attack | 完全防御——反击+20%伤害 / Full block — counter +20% dmg | 受到全额伤害 / Full damage taken |
+| 闪避QTE / Dodge QTE | 0.2秒——比防御窗口更短——黄色提示 / 0.2s — yellow indicator — shorter than block | 无伤+触发一次免费攻击机会 / No damage + free attack | 受到150%伤害 / 150% damage taken |
+
+**完美QTE练习**: 每种技能有不同的QTE节奏——建议在训练场逐一练习主力技能的完美QTE。一般规律: 技能速度越快→QTE窗口越短——大招的QTE通常比小技能长——但失败惩罚也更大 / **Practice**: Each skill has different QTE rhythm — practice main skills at training ground. Rule: Faster skills = shorter window — ultimate skills have longer window but bigger failure penalty.
+
+## 元素反应系统 / Element Reaction System
+
+| 基础元素 / Base | 组合元素 / Combine | 结果 / Result | 效果 / Effect |
+|---|---|---|---|
+| 火 + 冰 / Fire + Ice | 蒸发 / Vaporize | 目标受到额外火伤+被减速 / Bonus fire dmg + slow |
+| 火 + 雷 / Fire + Lightning | 爆炸 / Explosion | 范围AOE——击倒周围敌人 / AoE — knock down nearby enemies |
+| 冰 + 雷 / Ice + Lightning | 超导 / Superconduct | 目标物理防御降低30%持续3回合 / -30% phys DEF — 3 turns |
+| 光 + 暗 / Light + Dark | 湮灭 / Annihilate | 真实伤害——无视防御——对Boss固定5%HP / True damage — ignores DEF — 5% boss HP |
+| 水 + 任何 / Water + Any | 传导 / Conductive | 下次元素攻击对目标伤害+50% / Next element attack +50% dmg |
+| 毒 + 火 / Poison + Fire | 燃烧爆裂 / Burn Burst | 毒立刻结算双倍伤害+燃烧 / Poison deals 2x instantly + burn |
+
+**元素反应策略**: 战斗前先查看敌人抗性表——选择Boss弱点的两个元素组合——先上基础元素再上组合元素触发反应。推荐主角上火+维克多上冰=蒸发——或者塞拉上冰+主角上雷=超导。元素反应在Boss战中可以贡献约30%的总伤害 / **Strategy**: Check enemy resistances first — pick 2 elements boss is weak to — apply base element then combine for reaction. Recommended: Protag Fire + Victor Ice = Vaporize. Sera Ice + Protag Lightning = Superconduct. Element reactions contribute ~30% total boss damage.
+
+## 状态异常详解 / Status Effect Details
+
+| 状态 / Status | 效果 / Effect | 持续 / Duration | 驱散方式 / Cure |
+|---|---|---|---|
+| 燃烧 / Burn | 每回合6%HP伤害——可叠加3层 / 6% HP/turn — stacks 3x | 3回合 / 3 turns | 水属性攻击洗掉 / Water attack cleanses |
+| 冰冻 / Freeze | 无法行动——受到物理伤害+30% / Can't act — +30% phys dmg | 2回合 / 2 turns | 火属性攻击解冻 / Fire attack thaws |
+| 中毒 / Poison | 每回合8%HP伤害——不可叠加 / 8% HP/turn | 5回合 / 5 turns | 解毒道具 / Antidote item |
+| 眩晕 / Stun | 无法行动——所有抗性-50% / Can't act — all resist -50% | 1回合 / 1 turn | 自然恢复 / Natural recovery |
+| 恐惧 / Fear | 攻击时有30%几率miss——防御失效 / 30% miss chance — guard disabled | 3回合 / 3 turns | 光属性技能驱散 / Light skill cleanses |
+| 沉默 / Silence | 无法使用技能——只能普攻 / Can't use skills — normal attack only | 3回合 / 3 turns | 暗属性技能驱散 / Dark skill cleanses |
+| 减速 / Slow | 行动顺序延后50% / Turn order delayed 50% | 4回合 / 4 turns | 加速技能抵消 / Speed buff negates |
+| 魅惑 / Charm | 攻击队友——持续1-2回合 / Attacks allies — 1-2 turns | 2回合 / 2 turns | 攻击被魅惑角色可提前解除 / Hitting charmed char early dispels |
+
+## 连招系统详解 / Combo System Detailed Guide
+
+**基础连招**: 同一角色连续使用技能——每次连击增加15%伤害——上限3连(1.45倍)。连击在角色被击中或使用普通攻击时重置 / Basic combo: Same character chain skills — +15% dmg per hit — cap 3 hits (1.45x). Combo resets on hit taken or normal attack.
+
+**接力连招**: 角色A最后一下→角色B接上→全队获得"接力"Buff(+25%暴击率持续1回合)。接力连招需要角色A的攻击动画结束时立即按下角色B的快捷——完美衔接可获得额外+10%暴击伤害 / Relay combo: Char A final hit → Char B chains → party gets "Relay" buff (+25% CR — 1 turn). Relay needs immediate button press at end of A's animation — perfect link = extra +10% CRIT DMG.
+
+**终极连招**: 接力3次后(ABCD4人)——第4人使用终极技能——获得"终焉之力"——终极技能伤害翻倍。这是游戏中最顶级的输出手段——推荐在Boss破防/虚弱时使用 / Ultimate combo: Relay 3 times (A→B→C→D) — D uses ultimate — "End Power" — ultimate dmg x2. Best burst in game — use during boss weakness phase.
+
+**QTE等级判定**: 不同QTE结果有不同的奖励 / QTE Grade System:
+
+| QTE等级 / Grade | 判定窗口 / Window | 奖励 / Bonus |
+|---|---|---|
+| 完美 / Perfect | ≤0.1秒偏差 / ≤0.1s off | 伤害+30%——恢复2AP / Dmg+30% — restore 2AP |
+| 良好 / Good | ≤0.3秒偏差 / ≤0.3s off | 伤害+15%——恢复1AP / Dmg+15% — restore 1AP |
+| 普通 / Normal | ≤0.5秒偏差 / ≤0.5s off | 标准伤害 / Standard dmg |
+| 失误 / Miss | >0.5秒偏差 / >0.5s off | 伤害减半——无AP恢复 / Dmg halved — no AP restore |
+
+**每角色最优QTE帧**: 每个角色的完美QTE窗口帧不同。艾伦: 攻击动画挥刀至最高点时按。塞拉: 法阵收缩到最小时按。主角: 盾牌挡在前方时按。维克多: 光球到最高点时按。莉莎: 召唤物出现瞬间按 / Each character has unique perfect frame — learn timing in training room.
+
+## 战斗站位与仇恨系统 / Battle Positioning & Aggro
+
+**仇恨机制**: 坦克(主角/古斯塔夫)使用嘲讽技能强制Boss攻击自己——每嘲讽1次增加仇恨值(持续5回合)。DPS和治疗的高伤害/高治疗会累积仇恨——超出坦克仇恨值后Boss会转头攻击 / Aggro: Tank (Protag/Gustave) taunt forces boss attack — 1 taunt = aggro value (5 turns). DPS/heal high actions build aggro — exceeds tank aggro = boss switches target.
+
+**站位推荐**: 坦克>前排——DPS>中排——治疗>后排。物理DPS(艾伦)和坦克站同侧(吃相同AOE)——法系(塞拉)和后排(维克多/莉莎)站另一侧——避免全队被范围攻击同时覆盖 / Recommended formation: Tank front, DPS mid, Heal back. Phys DPS (Allen) same side as tank — magic (Sera) + backline (Victor/Lisa) other side — avoid full party AoE coverage.
+
+**换位技巧**: 战斗中每回合可以免费换位1次——额外换位消耗10AP。面对范围攻击时——把脆皮拉到安全位置——让坦克去吃AOE——这是最关键的操作技巧 / Position swap: 1 free swap per turn — extra swaps cost 10AP. Pull squishies to safety against AoE — tank eats the hit — most critical combat technique.
+
+**防御时机**: 不是所有攻击都需要防御——普通攻击可以硬吃——必杀技必须防御。必杀技前摇特征: Boss身上出现红光+屏幕边缘闪烁——此时按防御键进入QTE防御模式——完美防御可以完全无伤并恢复2AP。学会区分普通攻击和必杀技是进阶第一课 / **Guard timing**: Not all attacks need guarding — normal hits can be tanked — ults must be guarded. Ultimate tell: boss glows red+screen edge flash — press guard for QTE guard mode — perfect guard = zero dmg + 2AP restore. Distinguishing normal vs ultimate is advance lesson #1.
+
+标签/Tags: 33号远征队, Expedition 33, Clair Obscur, 战斗, Combat, 系统, System, QTE, 元素, Element, 策略, Strategy
