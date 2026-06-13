@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#0d1117"/>
+  <rect x="300" y="130" width="80" height="100" rx="6" fill="none" stroke="#58a6ff" stroke-width="3"/>
+  <rect x="420" y="130" width="80" height="100" rx="6" fill="none" stroke="#f0883e" stroke-width="3"/>
+  <line x1="320" y1="200" x2="340" y2="220" stroke="#58a6ff" stroke-width="2"/>
+  <line x1="340" y1="200" x2="360" y2="220" stroke="#58a6ff" stroke-width="2"/>
+  <circle cx="340" cy="160" r="10" fill="#58a6ff"/>
+  <circle cx="460" cy="160" r="10" fill="#f0883e"/>
+  <text x="400" y="340" text-anchor="middle" fill="#f0883e" font-size="24" font-family="serif">配装策略</text>
+  <text x="400" y="370" text-anchor="middle" fill="#8b949e" font-size="14" font-family="sans-serif">Loadouts</text>
+</svg>

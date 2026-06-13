@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#0d1117"/>
+  <polygon points="400,80 500,150 500,250 400,320 300,250 300,150" fill="none" stroke="#58a6ff" stroke-width="3"/>
+  <circle cx="400" cy="200" r="40" fill="none" stroke="#f0883e" stroke-width="3"/>
+  <line x1="400" y1="240" x2="400" y2="280" stroke="#58a6ff" stroke-width="2"/>
+  <line x1="370" y1="260" x2="430" y2="260" stroke="#58a6ff" stroke-width="2"/>
+  <text x="400" y="350" text-anchor="middle" fill="#f0883e" font-size="24" font-family="serif">致命公司</text>
+  <text x="400" y="378" text-anchor="middle" fill="#8b949e" font-size="14" font-family="sans-serif">Lethal Company</text>
+</svg>

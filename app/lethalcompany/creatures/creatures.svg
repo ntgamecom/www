@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#0d1117"/>
+  <circle cx="350" cy="180" r="35" fill="none" stroke="#f0883e" stroke-width="3"/>
+  <circle cx="450" cy="180" r="35" fill="none" stroke="#58a6ff" stroke-width="3"/>
+  <circle cx="335" cy="170" r="4" fill="#f0883e"/>
+  <circle cx="365" cy="170" r="4" fill="#f0883e"/>
+  <circle cx="435" cy="170" r="4" fill="#58a6ff"/>
+  <circle cx="465" cy="170" r="4" fill="#58a6ff"/>
+  <path d="M360 195 Q400 220 440 195" fill="none" stroke="#8b949e" stroke-width="2"/>
+  <text x="400" y="340" text-anchor="middle" fill="#f0883e" font-size="24" font-family="serif">怪物图鉴</text>
+  <text x="400" y="370" text-anchor="middle" fill="#8b949e" font-size="14" font-family="sans-serif">Creatures</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#0d1117"/>
+  <line x1="300" y1="100" x2="300" y2="250" stroke="#58a6ff" stroke-width="4"/>
+  <line x1="500" y1="100" x2="500" y2="250" stroke="#f0883e" stroke-width="4"/>
+  <line x1="300" y1="100" x2="500" y2="100" stroke="#8b949e" stroke-width="2"/>
+  <line x1="300" y1="250" x2="500" y2="250" stroke="#8b949e" stroke-width="2"/>
+  <circle cx="320" cy="130" r="10" fill="#58a6ff"/>
+  <circle cx="480" cy="130" r="10" fill="#f0883e"/>
+  <text x="400" y="340" text-anchor="middle" fill="#f0883e" font-size="24" font-family="serif">生存战斗</text>
+  <text x="400" y="370" text-anchor="middle" fill="#8b949e" font-size="14" font-family="sans-serif">Survival</text>
+</svg>

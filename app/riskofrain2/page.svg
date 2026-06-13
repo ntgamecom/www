@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#0d1117"/>
+  <rect x="250" y="140" width="300" height="120" rx="8" fill="none" stroke="#ff6b35" stroke-width="3"/>
+  <circle cx="320" cy="200" r="20" fill="none" stroke="#47d4b3" stroke-width="3"/>
+  <circle cx="480" cy="200" r="20" fill="none" stroke="#47d4b3" stroke-width="3"/>
+  <line x1="340" y1="200" x2="460" y2="200" stroke="#ff6b35" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="400" y="330" text-anchor="middle" fill="#ff6b35" font-size="26" font-family="serif">雨中冒险2</text>
+  <text x="400" y="360" text-anchor="middle" fill="#8899aa" font-size="16" font-family="sans-serif">Risk of Rain 2</text>
+</svg>

@@ -1,0 +1,207 @@
+![战斗系统](/riskofrain2/combat/combat.svg)
+
+{/* ===== 战斗系统 COMBAT ===== */}
+
+# 战斗系统 — 敌人与战斗机制
+# Combat System — Enemies and Combat Mechanics
+
+---
+
+{/* ===== 战斗基础 ===== */}
+
+## 战斗基础 / Combat Basics
+
+《雨中冒险2》的战斗核心是**持续移动**与**道具驱动的伤害输出**。不同于传统射击游戏，你的伤害主要来自道具叠加而非武器本身。
+
+The core of *Risk of Rain 2* combat is **constant movement** and **item-driven damage output**. Unlike traditional shooters, your damage comes primarily from item stacking rather than the weapon itself.
+
+---
+
+{/* ===== 伤害类型 ===== */}
+
+## 伤害类型 / Damage Types
+
+| 类型 / Type | 描述 / Description |
+|---|---|
+| 物理伤害 / Physical | 普通攻击，受护甲减免 / Basic attacks, reduced by armor |
+| 火焰伤害 / Fire | 燃烧效果，持续伤害 / Burning effect, damage over time |
+| 闪电伤害 / Lightning | 连锁伤害 / Chain lightning damage |
+| 毒素伤害 / Poison | 基于最大生命值的百分比伤害 / Percentage max HP damage |
+| 虚空伤害 / Void | 虚空道具的特殊伤害类型 / Special void item damage |
+
+**暴击机制 / Crit Mechanics:**
+- 基础暴击率 1% / Base crit rate is 1%
+- 暴击造成双倍伤害 / Crits deal double damage
+- 暴击眼镜 (Lens-Maker's Glasses) 每件 +10% 暴击 / Each pair gives +10% crit
+
+---
+
+{/* ===== 敌人类型 ===== */}
+
+## 敌人类型 / Enemy Types
+
+### 常见敌人 / Common Enemies
+
+| 敌人 / Enemy | 特性 / Traits |
+|---|---|
+| Lemurian / 蜥蜴人 | 远程火球，基础近战 / Ranged fireball, basic melee |
+| Beetle / 甲虫 | 近战冲锋 / Melee charge |
+| Stone Golem / 石傀儡 | 远程激光，高血量 / Ranged laser, high HP |
+| Jellyfish / 水母 | 自爆攻击 / Suicide explosion |
+| Wisp / 鬼火 | 远程射击，飞行单位 / Ranged shot, flying unit |
+| Bighorn Bison / 大角野牛 | 远程冲锋 / Ranged charge attack |
+
+### 精英敌人 / Elite Enemies
+
+精英怪是普通敌人的强化版本，带有特殊光环效果：
+
+Elites are enhanced versions of normal enemies with special aura effects:
+
+| 精英类型 / Elite Type | 光环颜色 / Aura Color | 特效 / Effect |
+|---|---|---|
+| 火焰精英 / Blazing | 红色 / Red | 近身灼烧 / Burning aura |
+| 冰霜精英 / Glacial | 蓝色 / Blue | 攻击附带减速 / Attacks slow you |
+| 过载精英 / Overloading | 紫色 / Purple | 护盾 + 范围电击 / Shield + AoE shock |
+| 玛瑙精英 / Malachite | 绿色 / Green | 攻击附带抗性降低 / Attacks reduce resistance |
+| 虚空精英 / Void-touched | 黑色 / Black | 虚空伤害 + 传送 / Void damage + teleport |
+
+---
+
+{/* ===== 战斗走位 ===== */}
+
+## 战斗走位 / Combat Movement
+
+### 基础原则 / Core Principles
+
+1. **永远不要停** / Never stop moving — 站桩输出等于送死
+2. **利用Z轴** / Use the Z-axis — 高地优势在3D环境中极其重要
+3. **绕圈走位** / Circle strafing — 围绕敌人旋转射击
+4. **预判敌人弹道** / Predict enemy projectiles — 火球和激光都有飞行时间
+
+1. **Never stop** — standing still equals death
+2. **Use verticality** — high ground advantage is crucial in 3D
+3. **Circle strafe** — rotate around enemies while shooting
+4. **Predict projectiles** — fireballs and lasers have travel time
+
+### 针对不同敌人的走位 / Positioning Against Different Enemies
+
+- **对抗石傀儡 / vs Stone Golems**: 侧向移动躲避激光 / Strafe to dodge lasers
+- **对抗蜥蜴人 / vs Lemurians**: 保持中距离，不要被围困 / Maintain mid-range, avoid being surrounded
+- **对抗鬼火 / vs Wisps**: 优先击杀，飞行单位很难躲避 / Prioritize kills, flying units are hard to dodge
+- **对抗精英怪 / vs Elites**: 观察光环颜色，针对性走位 / Observe aura color, position accordingly
+
+---
+
+{/* ===== 精英战斗策略 ===== */}
+
+## 精英战斗策略 / Elite Combat Strategies
+
+### 火焰精英 / Blazing Elite
+
+火焰精英在近身时会持续灼烧玩家。不要靠近，使用远程攻击消耗。
+
+Blazing elites continuously burn nearby players. Do not approach, use ranged attacks to wear them down.
+
+### 冰霜精英 / Glacial Elite
+
+冰霜精英的弹幕会减速，一旦被减速容易被后续攻击命中。优先处理，利用翻滚解除减速效果。
+
+Glacial elite projectiles slow you down, making you vulnerable to follow-up attacks. Prioritize them and use dodges to mitigate slow effects.
+
+### 过载精英 / Overloading Elite
+
+过载精英拥有可再生的护盾。使用持续伤害道具可以阻止护盾再生。
+
+Overloading elites have regenerating shields. Use damage-over-time items to prevent shield regeneration.
+
+### 玛瑙精英 / Malachite Elite
+
+玛瑙精英的攻击会降低你的抗性，使你更易受伤。保持距离，不要在抗性降低时交战。
+
+Malachite elite attacks reduce your resistance, making you more vulnerable. Keep distance and avoid engagement when debuffed.
+
+---
+
+{/* ===== 团队协作 ===== */}
+
+## 团队协作 / Team Combat
+
+### 多人模式战术 / Multiplayer Tactics
+
+- **分工明确** / Divide roles — 坦克在前，输出在后 / Tank in front, DPS in back
+- **集中火力** / Focus fire — 优先秒杀高威胁目标 / Prioritize high-threat targets
+- **互相复活** / Revive each other — 3秒读条，注意保护 / 3-second channel, protect the reviver
+- **道具分配** / Item distribution — 攻击道具给DPS，防御道具给前排 / Damage items for DPS, defense for frontline
+- **不要分散** / Do not split — 团队分散容易被逐个击破 / Split team gets picked off
+
+### 多人BOSS战术 / Multiplayer Boss Tactics
+
+BOSS战在多人模式下更具挑战性，因为BOSS生命值会按玩家人数倍增。需要更好的沟通和站位。
+
+Boss fights are more challenging in multiplayer since boss HP scales with player count. Better communication and positioning are required.
+
+---
+
+{/* ===== 状态效果 ===== */}
+
+## 状态效果 / Status Effects
+
+| 效果 / Effect | 描述 / Description |
+|---|---|
+| 燃烧 / Burn | 持续火焰伤害 / Fire damage over time |
+| 流血 / Bleed | 物理持续伤害 / Physical damage over time |
+| 减速 / Slow | 降低移动速度 / Reduced movement speed |
+| 眩晕 / Stun | 暂时失去行动能力 / Temporarily incapacitated |
+| 恐惧 / Fear | 强制后退移动 / Forced backward movement |
+| 护盾 / Shield | 额外吸收伤害的护盾 / Extra damage absorption |
+| 虚弱 / Weak | 降低造成的伤害 / Reduced damage output |
+
+---
+
+{/* ===== 战斗道具优先级 ===== */}
+
+## 战斗道具优先级 / Combat Item Priority
+
+在战斗中，以下道具类型最为重要 / These item categories are most important in combat:
+
+| 优先级 / Priority | 道具类型 / Item Type | 理由 / Reason |
+|---|---|---|
+| 1 | 攻击速度 / Attack Speed | 提升所有攻击效率 |
+| 2 | 暴击 / Crit | 稳定的伤害倍率 |
+| 3 | 移速 / Movement Speed | 生存即输出 |
+| 4 | 治疗 / Healing | 持续作战能力 |
+| 5 | 护甲 / Armor | 减少受到的伤害 |
+
+---
+
+{/* ===== 实用技巧 ===== */}
+
+## 实用技巧 / Combat Tips
+
+1. **利用跳跃** / Use jumping — 跳跃中可以改变方向，规避地面攻击
+2. **弹道预判** / Lead your shots — 远程敌人的弹道可以预判躲避
+3. **角落卡视野** / Corner peeking — 利用地形阻挡敌人弹道
+4. **道具联动** / Item proc chains — 某些道具可以触发其他道具效果
+5. **不要贪刀** / Do not overcommit — 血量低时优先撤退恢复
+
+---
+
+{/* ===== 精英击杀奖励 ===== */}
+
+## 精英击杀奖励 / Elite Kill Rewards
+
+击杀精英怪会掉落额外金币和经验值。精英怪也有更高概率掉落道具。
+
+Killing elite enemies drops extra gold and experience. Elites also have a higher chance of dropping items.
+
+| 精英类型 / Elite Type | 掉落加成 / Drop Bonus |
+|---|---|
+| 火焰 / Blazing | 金币 +50% |
+| 冰霜 / Glacial | 金币 +50% |
+| 过载 / Overloading | 金币 +50% |
+| 玛瑙 / Malachite | 金币 +100% + 可能掉落道具 |
+| 虚空 / Void | 虚空币 / Void coins |
+
+---
+
+*战斗系统指南结束 / Combat Guide End*

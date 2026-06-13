@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#0d1117"/>
+  <polygon points="400,90 440,160 400,200 360,160" fill="none" stroke="#f0883e" stroke-width="3"/>
+  <polygon points="400,130 470,220 330,220" fill="none" stroke="#58a6ff" stroke-width="3"/>
+  <text x="400" y="340" text-anchor="middle" fill="#f0883e" font-size="24" font-family="serif">挑战模式</text>
+  <text x="400" y="370" text-anchor="middle" fill="#8b949e" font-size="14" font-family="sans-serif">Endgame</text>
+</svg>

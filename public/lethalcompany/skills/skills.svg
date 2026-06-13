@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#0d1117"/>
+  <path d="M400 100 L420 160 L480 160 L430 195 L450 260 L400 225 L350 260 L370 195 L320 160 L380 160 Z" fill="none" stroke="#58a6ff" stroke-width="3"/>
+  <text x="400" y="340" text-anchor="middle" fill="#f0883e" font-size="24" font-family="serif">技巧策略</text>
+  <text x="400" y="370" text-anchor="middle" fill="#8b949e" font-size="14" font-family="sans-serif">Strategies</text>
+</svg>
