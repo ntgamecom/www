@@ -15,19 +15,22 @@ function findPages(dir) {
     } else if (entry.name === 'page.mdx') {
       const route = relative(APP_DIR, dir)
       if (route === 'layout') continue
-      pages.push(route === '' ? '' : `/${route}`)
+      pages.push({ route: route === '' ? '' : `/${route}`, path: full })
     }
   }
   return pages
 }
 
-const routes = findPages(APP_DIR).sort()
+const pages = findPages(APP_DIR)
 
-const urls = routes.map(route =>
-  `  <url>
+const urls = pages.map(({ route, path }) => {
+  const mtime = statSync(path).mtime
+  const lastmod = mtime.toISOString().split('T')[0]
+  return `  <url>
     <loc>${SITE_URL}${route}/</loc>
+    <lastmod>${lastmod}</lastmod>
   </url>`
-).join('\n')
+}).join('\n')
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -36,4 +39,5 @@ ${urls}
 `
 
 writeFileSync(join(PUBLIC_DIR, 'sitemap.xml'), sitemap, 'utf-8')
-console.log(`Sitemap generated: ${routes.length} URLs`)
+console.log(`Sitemap generated: ${pages.length} URLs`)
+

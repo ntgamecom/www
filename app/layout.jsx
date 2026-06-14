@@ -23,6 +23,8 @@ const footer = (
       <a href="/contact" style={{ color: 'inherit' }}>联系 / Contact</a>
       <a href="/privacy" style={{ color: 'inherit' }}>隐私 / Privacy</a>
       <a href="/terms" style={{ color: 'inherit' }}>条款 / Terms</a>
+      <a href="https://github.com/ntgamecom/www" style={{ color: 'inherit' }} target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://twitter.com/NTGameCom" style={{ color: 'inherit' }} target="_blank" rel="noopener noreferrer">Twitter / X</a>
     </div>
     <div style={{ marginTop: '8px' }}>
       {'\u00A9'} {new Date().getFullYear()} NTGame. All rights reserved.
@@ -41,6 +43,22 @@ export default async function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3251810306927366" crossOrigin="anonymous" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "NTGame",
+          "url": "https://ntgame.com",
+          "description": "NTGame provides free bilingual game guides for 71+ popular games. NTGame 提供免费中英双语游戏攻略",
+          "inLanguage": ["zh", "en"],
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://ntgame.com/?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        }) }} />
       </Head>
       <body>
         <Layout
