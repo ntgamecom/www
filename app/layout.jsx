@@ -3,6 +3,7 @@ import { Banner, Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
 import './globals.css'
+import CookieConsent from '../components/CookieConsent'
 
 export const metadata = {
   title: 'NTGame - 游戏攻略 / Game Guides',
@@ -35,7 +36,7 @@ export default async function RootLayout({ children }) {
     pageMap = await getPageMap()
   } catch {}
   return (
-    <html lang="en" dir="ltr" suppressHydrationWarning>
+    <html lang="zh" dir="ltr" suppressHydrationWarning>
       <Head faviconGlyph="">
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -50,10 +51,10 @@ export default async function RootLayout({ children }) {
             footer={footer}
             editLink={null}
             feedback={{ content: null }}
-            search={null}
           >
           {children ?? <></>}
         </Layout>
+        <CookieConsent />
       </body>
     </html>
   )
